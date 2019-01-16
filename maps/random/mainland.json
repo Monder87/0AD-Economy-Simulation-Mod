@@ -1,0 +1,10 @@
+{
+	"settings" : {
+		"Name" : "Mainland",
+		"Script" : "mainland.js",
+		"Description" : "A typical map without any water.",
+		"Preview" : "mainland_temperate.png",
+		"SupportedBiomes": "generic/",
+		"CircularMap" : true
+	}
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="100" name="Base">
+      <animations/>
+      <mesh>gaia/wrld_palm_date_leaves_d.dae</mesh>
+      <props/>
+      <textures><texture file="gaia/tree_palmdate_a.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+
+  <material>basic_trans.xml</material>
+
+</actor>

@@ -1,0 +1,9 @@
+{
+	"settings" : {
+		"Name" : "Syria",
+		"Script" : "syria.js",
+		"Description" : "Players start in a plains with slightly rolling highlands.",
+		"Preview" : "syria.png",
+		"CircularMap" : true
+	}
+}

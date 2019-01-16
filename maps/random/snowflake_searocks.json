@@ -1,0 +1,10 @@
+{
+	"settings" : {
+		"Name" : "Snowflake Searocks",
+		"Script" : "snowflake_searocks.js",
+		"Description" : "Many small islands connected to each other by narrow passages.",
+		"Preview" : "snowflake_searocks.png",
+		"SupportedBiomes": "generic/",
+		"CircularMap" : true
+	}
+}

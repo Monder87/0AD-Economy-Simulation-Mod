@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Cost>
+    <Resources>
+      <wood>100</wood>
+      <stone>200</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="23" depth="23"/>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ptol</Civ>
+    <SpecificName>ḥwt-n-mš'</SpecificName>
+    <Tooltip>Train Egyptian and Middle-Eastern citizen-soldiers. Research training improvements.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="20.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/ptolemies/barracks.xml</Actor>
+  </VisualActor>
+</Entity>

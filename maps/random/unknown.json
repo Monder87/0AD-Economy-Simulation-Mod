@@ -1,0 +1,10 @@
+{
+	"settings" : {
+		"Name" : "Unknown",
+		"Script" : "unknown.js",
+		"Description" : "The unknown. Warning: May be a naval map.",
+		"Preview" : "unknown.png",
+		"SupportedBiomes": "generic/",
+		"CircularMap" : true
+	}
+}

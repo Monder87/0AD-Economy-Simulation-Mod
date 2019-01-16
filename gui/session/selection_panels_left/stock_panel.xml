@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object name="unitStockPanel" size="14 22 100% 100%">
+	<object size="0 0 100% 100%">
+		<repeat count="8">
+			<object name="unitStockButton[n]" hidden="true" style="iconButton" type="button" size="0 0 41 41" tooltip_style="sessionToolTipBottomBold" z="100">
+				<object name="unitStockIcon[n]" type="image" ghost="true" size="3 3 38 38"/>
+				<object name="unitStockSelection[n]" hidden="true" type="image" ghost="true" size="3 3 38 38" sprite="stretched:session/icons/corners.png"/>
+				<object size="100%-98 -2 100%-36 34" type="text" name="unitStockStat[n]" style="CarryingTextRight"/>
+			</object>
+		</repeat>
+	</object>
+</object>

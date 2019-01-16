@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_spearman">
+  <Identity>
+    <Civ>pers</Civ>
+    <GenericName>Persian Immortal</GenericName>
+    <SpecificName>Anusiya</SpecificName>
+    <Classes datatype="tokens">Immortal</Classes>
+    <Icon>units/pers_champion_infantry.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/persians/infantry_spearman_c2.xml</Actor>
+  </VisualActor>
+</Entity>

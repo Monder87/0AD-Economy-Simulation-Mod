@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="c">
+      <mesh>gaia/tree_apple_top_c.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant name="c-bloom">
+      <textures><texture file="gaia/tree_apple_bloom.dds" name="baseTex"/></textures>
+    </variant>
+    <variant name="c-ripe">
+      <textures><texture file="gaia/tree_apple_a.dds" name="baseTex"/></textures>
+    </variant>
+    <variant name="c-ripe2">
+      <textures><texture file="gaia/orchard_apple_a.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>basic_trans_wind.xml</material>
+</actor>

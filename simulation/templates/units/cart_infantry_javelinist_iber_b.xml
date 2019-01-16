@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_javelinist">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/cart_super_dock
+      structures/cart_embassy_celtic
+      structures/cart_embassy_iberian
+      structures/cart_embassy_italiote
+    </Entities>
+  </Builder>
+  <Cost>
+    <Resources>
+      <food op="add">-25</food>
+      <metal op="add">25</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>cart</Civ>
+    <Classes datatype="tokens">Iberian</Classes>
+    <GenericName>Iberian Mercenary Skirmisher</GenericName>
+    <Icon>units/cart_infantry_javelinist.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SelectionGroupName>units/cart_infantry_javelinist_iber_b</SelectionGroupName>
+    <SpecificName>Sǝḫīr Kidōn</SpecificName>
+    <VisibleClasses datatype="tokens">Mercenary</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/cart_infantry_javelinist_iber_a</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/iberians/infantry_javelinist_b.xml</Actor>
+  </VisualActor>
+</Entity>

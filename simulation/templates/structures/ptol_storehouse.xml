@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_storehouse">
+  <Cost>
+    <BuildTime>80</BuildTime>
+    <Resources>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="19.0" depth="18.0"/>
+  </Footprint>
+  <Health>
+    <Max>400</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ptol</Civ>
+    <SpecificName>h-n-ḫt.w</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="17.0" depth="16.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/ptolemies/storehouse.xml</Actor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

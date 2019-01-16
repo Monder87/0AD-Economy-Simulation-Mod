@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_female_citizen">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/gaul_rotarymill
+    </Entities>
+  </Builder>
+  <Identity>
+    <Civ>gaul</Civ>
+    <SpecificName>Bodu</SpecificName>
+    <GenericName>Celtic Woman</GenericName>
+    <Icon>units/celt_support_female_citizen.png</Icon>
+    <SelectionGroupName>units/gaul_support_female_citizen</SelectionGroupName>
+  </Identity>
+  <VisualActor>
+    <Actor>units/celts/female_citizen.xml</Actor>
+  </VisualActor>
+</Entity>

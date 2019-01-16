@@ -1,0 +1,640 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skeletons>
+  <standard_skeleton id="a" title="a">
+    <bone name="pelvic_2">
+      <bone name="tail_1">
+        <bone name="tail_2">
+          <bone name="tail_3">
+            <bone name="ik_ACT_tail_5" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="Oberschenkel_L">
+        <bone name="lowerleg_L">
+          <bone name="kneecap_Act_L" />
+          <bone name="lowerleg_muscle_L" />
+        </bone>
+      </bone>
+      <bone name="Oberschenkel_R">
+        <bone name="lowerleg_R">
+          <bone name="kneecap_Act_R" />
+          <bone name="lowerleg_muscle_R" />
+        </bone>
+      </bone>
+      <bone name="pelvic_1">
+        <bone name="paunch">
+          <bone name="breast">
+            <bone name="paunch.002" />
+            <bone name="ACT_neck_4">
+              <bone name="ACT_neck_3">
+                <bone name="ACT_neck_2">
+                  <bone name="ACT_neck_1">
+                    <bone name="head" />
+                  </bone>
+                </bone>
+              </bone>
+            </bone>
+            <bone name="upper_arm_L">
+              <bone name="ik_underarm_L" />
+            </bone>
+            <bone name="upper_arm_R">
+              <bone name="ik_underarm_R" />
+            </bone>
+            <bone name="w_C_L.001">
+              <bone name="w_C_L">
+                <bone name="w1_L">
+                  <bone name="w2_L">
+                    <bone name="w3_L">
+                      <bone name="w3_L.001" />
+                    </bone>
+                  </bone>
+                </bone>
+                <bone name="w4_L">
+                  <bone name="w5_L">
+                    <bone name="w6_L" />
+                  </bone>
+                </bone>
+                <bone name="w7_L">
+                  <bone name="w8_L">
+                    <bone name="w9_L" />
+                  </bone>
+                </bone>
+              </bone>
+            </bone>
+            <bone name="w_C_R.001">
+              <bone name="w_C_R">
+                <bone name="w1_R">
+                  <bone name="w2_R">
+                    <bone name="w3_R">
+                      <bone name="w3_R.001" />
+                    </bone>
+                  </bone>
+                </bone>
+                <bone name="w4_R">
+                  <bone name="w5_R">
+                    <bone name="w6_R" />
+                  </bone>
+                </bone>
+                <bone name="w7_R">
+                  <bone name="w8_R">
+                    <bone name="w9_R" />
+                  </bone>
+                </bone>
+              </bone>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+    </bone>
+    <bone name="Bone.002" />
+    <bone name="Helper_Bone" />
+    <bone name="back_food_L">
+      <bone name="back_food_C_1_L">
+        <bone name="back_S_1_L">
+          <bone name="back_S_2_L">
+            <bone name="back_S_3_L" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="back_food_C_2_L">
+        <bone name="back_M_1_L">
+          <bone name="back_M_2_L">
+            <bone name="back_M_3_L" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="back_food_C_3_L">
+        <bone name="back_Z_1_L">
+          <bone name="back_Z_2_L">
+            <bone name="back_Z_3_L" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="back_food_C_4_L">
+        <bone name="back_D_1_L">
+          <bone name="back_D_2_L">
+            <bone name="back_D_3_L" />
+          </bone>
+        </bone>
+      </bone>
+    </bone>
+    <bone name="Hand_R">
+      <bone name="front_food_C_1_R">
+        <bone name="front_S_1_R">
+          <bone name="front_S_2_R">
+            <bone name="front_S_3_R" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="front_food_C_2_R">
+        <bone name="front_M_1_R">
+          <bone name="front_M_2_R">
+            <bone name="front_M_3_R" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="front_food_C_3_R">
+        <bone name="front_Z_1_R">
+          <bone name="front_Z_2_R">
+            <bone name="front_Z_3_R" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="front_food_C_4_R">
+        <bone name="front_D_1_R">
+          <bone name="front_D_2_R">
+            <bone name="front_D_3_R" />
+          </bone>
+        </bone>
+      </bone>
+    </bone>
+    <bone name="back_food_R">
+      <bone name="back_food_C_1_R">
+        <bone name="back_S_1_R">
+          <bone name="back_S_2_R">
+            <bone name="back_S_3_R" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="back_food_C_2_R">
+        <bone name="back_M_1_R">
+          <bone name="back_M_2_R">
+            <bone name="back_M_3_R" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="back_food_C_3_R">
+        <bone name="back_Z_1_R">
+          <bone name="back_Z_2_R">
+            <bone name="back_Z_3_R" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="back_food_C_4_R">
+        <bone name="back_D_1_R">
+          <bone name="back_D_2_R">
+            <bone name="back_D_3_R" />
+          </bone>
+        </bone>
+      </bone>
+    </bone>
+    <bone name="Hand_L">
+      <bone name="front_food_C_1_L">
+        <bone name="front_S_1_L">
+          <bone name="front_S_2_L">
+            <bone name="front_S_3_L" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="front_food_C_2_L">
+        <bone name="front_M_1_L">
+          <bone name="front_M_2_L">
+            <bone name="front_M_3_L" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="front_food_C_3_L">
+        <bone name="front_Z_1_L">
+          <bone name="front_Z_2_L">
+            <bone name="front_Z_3_L" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="front_food_C_4_L">
+        <bone name="front_D_1_L">
+          <bone name="front_D_2_L">
+            <bone name="front_D_3_L" />
+          </bone>
+        </bone>
+      </bone>
+    </bone>
+    <bone name="Arm_Cont_R.001" />
+    <bone name="Arm_Cont_L.001" />
+    <bone name="back_food_L.001">
+      <bone name="Leg_Cont_L" />
+    </bone>
+    <bone name="back_food_R.001">
+      <bone name="Leg_Cont_R" />
+    </bone>
+    <bone name="Arm_Cont_L.002" />
+    <bone name="Bone.001" />
+    <bone name="Cont_tail.001">
+      <bone name="Cont_tail" />
+    </bone>
+    <bone name="Cont_tail.002" />
+    <bone name="Bone.004" />
+    <bone name="Arm_Cont_R" />
+    <bone name="Arm_Cont_L" />
+    <bone name="root" />
+  </standard_skeleton>
+  <skeleton target="a" title="a">
+    <identifier>
+      <root>pelvic_2</root>
+    </identifier>
+    <bone name="pelvic_2">
+      <target>pelvic_2</target>
+      <bone name="tail_1">
+        <target>tail_1</target>
+        <bone name="tail_2">
+          <target>tail_2</target>
+          <bone name="tail_3">
+            <target>tail_3</target>
+            <bone name="ik_ACT_tail_5">
+              <target>ik_ACT_tail_5</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="Oberschenkel_L">
+        <target>Oberschenkel_L</target>
+        <bone name="lowerleg_L">
+          <target>lowerleg_L</target>
+          <bone name="kneecap_Act_L">
+            <target>kneecap_Act_L</target>
+          </bone>
+          <bone name="lowerleg_muscle_L">
+            <target>lowerleg_muscle_L</target>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="Oberschenkel_R">
+        <target>Oberschenkel_R</target>
+        <bone name="lowerleg_R">
+          <target>lowerleg_R</target>
+          <bone name="kneecap_Act_R">
+            <target>kneecap_Act_R</target>
+          </bone>
+          <bone name="lowerleg_muscle_R">
+            <target>lowerleg_muscle_R</target>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="pelvic_1">
+        <target>pelvic_1</target>
+        <bone name="paunch">
+          <target>paunch</target>
+          <bone name="breast">
+            <target>breast</target>
+            <bone name="paunch.002">
+              <target>paunch.002</target>
+            </bone>
+            <bone name="ACT_neck_4">
+              <target>ACT_neck_4</target>
+              <bone name="ACT_neck_3">
+                <target>ACT_neck_3</target>
+                <bone name="ACT_neck_2">
+                  <target>ACT_neck_2</target>
+                  <bone name="ACT_neck_1">
+                    <target>ACT_neck_1</target>
+                    <bone name="head">
+                      <target>head</target>
+                    </bone>
+                  </bone>
+                </bone>
+              </bone>
+            </bone>
+            <bone name="upper_arm_L">
+              <target>upper_arm_L</target>
+              <bone name="ik_underarm_L">
+                <target>ik_underarm_L</target>
+              </bone>
+            </bone>
+            <bone name="upper_arm_R">
+              <target>upper_arm_R</target>
+              <bone name="ik_underarm_R">
+                <target>ik_underarm_R</target>
+              </bone>
+            </bone>
+            <bone name="w_C_L.001">
+              <target>w_C_L.001</target>
+              <bone name="w_C_L">
+                <target>w_C_L</target>
+                <bone name="w1_L">
+                  <target>w1_L</target>
+                  <bone name="w2_L">
+                    <target>w2_L</target>
+                    <bone name="w3_L">
+                      <target>w3_L</target>
+                      <bone name="w3_L.001">
+                        <target>w3_L.001</target>
+                      </bone>
+                    </bone>
+                  </bone>
+                </bone>
+                <bone name="w4_L">
+                  <target>w4_L</target>
+                  <bone name="w5_L">
+                    <target>w5_L</target>
+                    <bone name="w6_L">
+                      <target>w6_L</target>
+                    </bone>
+                  </bone>
+                </bone>
+                <bone name="w7_L">
+                  <target>w7_L</target>
+                  <bone name="w8_L">
+                    <target>w8_L</target>
+                    <bone name="w9_L">
+                      <target>w9_L</target>
+                    </bone>
+                  </bone>
+                </bone>
+              </bone>
+            </bone>
+            <bone name="w_C_R.001">
+              <target>w_C_R.001</target>
+              <bone name="w_C_R">
+                <target>w_C_R</target>
+                <bone name="w1_R">
+                  <target>w1_R</target>
+                  <bone name="w2_R">
+                    <target>w2_R</target>
+                    <bone name="w3_R">
+                      <target>w3_R</target>
+                      <bone name="w3_R.001">
+                        <target>w3_R.001</target>
+                      </bone>
+                    </bone>
+                  </bone>
+                </bone>
+                <bone name="w4_R">
+                  <target>w4_R</target>
+                  <bone name="w5_R">
+                    <target>w5_R</target>
+                    <bone name="w6_R">
+                      <target>w6_R</target>
+                    </bone>
+                  </bone>
+                </bone>
+                <bone name="w7_R">
+                  <target>w7_R</target>
+                  <bone name="w8_R">
+                    <target>w8_R</target>
+                    <bone name="w9_R">
+                      <target>w9_R</target>
+                    </bone>
+                  </bone>
+                </bone>
+              </bone>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+    </bone>
+    <bone name="Bone.002">
+      <target>Bone.002</target>
+    </bone>
+    <bone name="Helper_Bone">
+      <target>Helper_Bone</target>
+    </bone>
+    <bone name="back_food_L">
+      <target>back_food_L</target>
+      <bone name="back_food_C_1_L">
+        <target>back_food_C_1_L</target>
+        <bone name="back_S_1_L">
+          <target>back_S_1_L</target>
+          <bone name="back_S_2_L">
+            <target>back_S_2_L</target>
+            <bone name="back_S_3_L">
+              <target>back_S_3_L</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="back_food_C_2_L">
+        <target>back_food_C_2_L</target>
+        <bone name="back_M_1_L">
+          <target>back_M_1_L</target>
+          <bone name="back_M_2_L">
+            <target>back_M_2_L</target>
+            <bone name="back_M_3_L">
+              <target>back_M_3_L</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="back_food_C_3_L">
+        <target>back_food_C_3_L</target>
+        <bone name="back_Z_1_L">
+          <target>back_Z_1_L</target>
+          <bone name="back_Z_2_L">
+            <target>back_Z_2_L</target>
+            <bone name="back_Z_3_L">
+              <target>back_Z_3_L</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="back_food_C_4_L">
+        <target>back_food_C_4_L</target>
+        <bone name="back_D_1_L">
+          <target>back_D_1_L</target>
+          <bone name="back_D_2_L">
+            <target>back_D_2_L</target>
+            <bone name="back_D_3_L">
+              <target>back_D_3_L</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+    </bone>
+    <bone name="Hand_R">
+      <target>Hand_R</target>
+      <bone name="front_food_C_1_R">
+        <target>front_food_C_1_R</target>
+        <bone name="front_S_1_R">
+          <target>front_S_1_R</target>
+          <bone name="front_S_2_R">
+            <target>front_S_2_R</target>
+            <bone name="front_S_3_R">
+              <target>front_S_3_R</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="front_food_C_2_R">
+        <target>front_food_C_2_R</target>
+        <bone name="front_M_1_R">
+          <target>front_M_1_R</target>
+          <bone name="front_M_2_R">
+            <target>front_M_2_R</target>
+            <bone name="front_M_3_R">
+              <target>front_M_3_R</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="front_food_C_3_R">
+        <target>front_food_C_3_R</target>
+        <bone name="front_Z_1_R">
+          <target>front_Z_1_R</target>
+          <bone name="front_Z_2_R">
+            <target>front_Z_2_R</target>
+            <bone name="front_Z_3_R">
+              <target>front_Z_3_R</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="front_food_C_4_R">
+        <target>front_food_C_4_R</target>
+        <bone name="front_D_1_R">
+          <target>front_D_1_R</target>
+          <bone name="front_D_2_R">
+            <target>front_D_2_R</target>
+            <bone name="front_D_3_R">
+              <target>front_D_3_R</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+    </bone>
+    <bone name="back_food_R">
+      <target>back_food_R</target>
+      <bone name="back_food_C_1_R">
+        <target>back_food_C_1_R</target>
+        <bone name="back_S_1_R">
+          <target>back_S_1_R</target>
+          <bone name="back_S_2_R">
+            <target>back_S_2_R</target>
+            <bone name="back_S_3_R">
+              <target>back_S_3_R</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="back_food_C_2_R">
+        <target>back_food_C_2_R</target>
+        <bone name="back_M_1_R">
+          <target>back_M_1_R</target>
+          <bone name="back_M_2_R">
+            <target>back_M_2_R</target>
+            <bone name="back_M_3_R">
+              <target>back_M_3_R</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="back_food_C_3_R">
+        <target>back_food_C_3_R</target>
+        <bone name="back_Z_1_R">
+          <target>back_Z_1_R</target>
+          <bone name="back_Z_2_R">
+            <target>back_Z_2_R</target>
+            <bone name="back_Z_3_R">
+              <target>back_Z_3_R</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="back_food_C_4_R">
+        <target>back_food_C_4_R</target>
+        <bone name="back_D_1_R">
+          <target>back_D_1_R</target>
+          <bone name="back_D_2_R">
+            <target>back_D_2_R</target>
+            <bone name="back_D_3_R">
+              <target>back_D_3_R</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+    </bone>
+    <bone name="Hand_L">
+      <target>Hand_L</target>
+      <bone name="front_food_C_1_L">
+        <target>front_food_C_1_L</target>
+        <bone name="front_S_1_L">
+          <target>front_S_1_L</target>
+          <bone name="front_S_2_L">
+            <target>front_S_2_L</target>
+            <bone name="front_S_3_L">
+              <target>front_S_3_L</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="front_food_C_2_L">
+        <target>front_food_C_2_L</target>
+        <bone name="front_M_1_L">
+          <target>front_M_1_L</target>
+          <bone name="front_M_2_L">
+            <target>front_M_2_L</target>
+            <bone name="front_M_3_L">
+              <target>front_M_3_L</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="front_food_C_3_L">
+        <target>front_food_C_3_L</target>
+        <bone name="front_Z_1_L">
+          <target>front_Z_1_L</target>
+          <bone name="front_Z_2_L">
+            <target>front_Z_2_L</target>
+            <bone name="front_Z_3_L">
+              <target>front_Z_3_L</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="front_food_C_4_L">
+        <target>front_food_C_4_L</target>
+        <bone name="front_D_1_L">
+          <target>front_D_1_L</target>
+          <bone name="front_D_2_L">
+            <target>front_D_2_L</target>
+            <bone name="front_D_3_L">
+              <target>front_D_3_L</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+    </bone>
+    <bone name="Arm_Cont_R.001">
+      <target>Arm_Cont_R.001</target>
+    </bone>
+    <bone name="Arm_Cont_L.001">
+      <target>Arm_Cont_L.001</target>
+    </bone>
+    <bone name="back_food_L.001">
+      <target>back_food_L.001</target>
+      <bone name="Leg_Cont_L">
+        <target>Leg_Cont_L</target>
+      </bone>
+    </bone>
+    <bone name="back_food_R.001">
+      <target>back_food_R.001</target>
+      <bone name="Leg_Cont_R">
+        <target>Leg_Cont_R</target>
+      </bone>
+    </bone>
+    <bone name="Arm_Cont_L.002">
+      <target>Arm_Cont_L.002</target>
+    </bone>
+    <bone name="Bone.001">
+      <target>Bone.001</target>
+    </bone>
+    <bone name="Cont_tail.001">
+      <target>Cont_tail.001</target>
+      <bone name="Cont_tail">
+        <target>Cont_tail</target>
+      </bone>
+    </bone>
+    <bone name="Cont_tail.002">
+      <target>Cont_tail.002</target>
+    </bone>
+    <bone name="Bone.004">
+      <target>Bone.004</target>
+    </bone>
+    <bone name="Arm_Cont_R">
+      <target>Arm_Cont_R</target>
+    </bone>
+    <bone name="Arm_Cont_L">
+      <target>Arm_Cont_L</target>
+    </bone>
+    <bone name="root">
+      <target>root</target>
+    </bone>
+  </skeleton>
+</skeletons>

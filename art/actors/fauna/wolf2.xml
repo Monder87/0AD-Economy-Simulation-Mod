@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Mesh">
+      <mesh>skeletal/wolf2.dae</mesh>
+      <animations>
+        <animation file="quadraped/wolf2.dae" name="Idle" speed="100"/>
+      </animations>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="4" name="fur-brown">
+      <textures><texture file="skeletal/wolf2.png" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/ptol_hero_ptolemy_IV
+  </Auras>
+  <Identity>
+    <Civ>ptol</Civ>
+    <GenericName>Ptolemy IV "Father Loving"</GenericName>
+    <SpecificName>Ptolemaios D' Philopator</SpecificName>
+    <Classes datatype="tokens">PtolemyIV</Classes>
+    <Icon>units/mace_hero_philip.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/ptolemies/hero_cavalry_swordsman_ptolemy_IV_m.xml</Actor>
+  </VisualActor>
+</Entity>

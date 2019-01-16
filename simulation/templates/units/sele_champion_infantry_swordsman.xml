@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Identity>
+    <Civ>sele</Civ>
+    <Lang>greek</Lang>
+    <GenericName>Romanized Heavy Swordsman</GenericName>
+    <SpecificName>Thorakitès Rhomaïkós</SpecificName>
+    <Icon>units/sele_champion_swordsman.png</Icon>
+    <RequiredTechnology>successors/unlock_reform_army</RequiredTechnology>
+  </Identity>
+  <VisualActor>
+    <Actor>units/seleucids/infantry_swordsman_c.xml</Actor>
+  </VisualActor>
+</Entity>

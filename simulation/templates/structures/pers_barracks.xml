@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_barracks">
+  <Identity>
+    <Civ>pers</Civ>
+    <SpecificName>Padgan</SpecificName>
+    <Tooltip>Levy citizen-infantry units.</Tooltip>
+    <Icon>structures/pers_barracks.png</Icon>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      -units/{civ}_cavalry_swordsman_b
+      -units/{civ}_cavalry_spearman_b
+      -units/{civ}_cavalry_javelinist_b
+      -units/{civ}_cavalry_archer_b
+    </Entities>
+    <Technologies datatype="tokens">
+      persians/training_levy_infantry
+      persians/training_conscription_infantry
+      persians/special_archery_tradition
+      -training_conscription
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/persians/barracks.xml</Actor>
+  </VisualActor>
+</Entity>

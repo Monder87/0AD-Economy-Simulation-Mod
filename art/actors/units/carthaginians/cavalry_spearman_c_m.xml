@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" file="quadraped/base_horse_spearman.xml" name="Spearman Horse">
+      <mesh>skeletal/horse.dae</mesh>
+      <props>
+        <prop actor="units/carthaginians/cavalry_spearman_c_r.xml" attachpoint="rider"/>
+        <prop actor="props/horse/cav_front_armor_bronze.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_kart.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Horse Brown">
+      <textures>
+        <texture file="skeletal/horse_kart_sacredband_cav_brown.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Horse White">
+      <textures>
+        <texture file="skeletal/horse_kart_sacredband_cav_white.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Horse Black">
+      <textures>
+        <texture file="skeletal/horse_kart_sacredband_cav_black.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="quadraped/base_horse_death.xml">
+      <props>
+        <prop actor="props/horse/cav_front_armor_bronze.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_kart.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant file="quadraped/base_horse_run.xml">
+      <props>
+        <prop actor="props/horse/cav_front_armor_bronze.xml" attachpoint="root"/>
+        <prop actor="props/horse/cav_blanket_kart.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>objectcolor.xml</material>
+</actor>

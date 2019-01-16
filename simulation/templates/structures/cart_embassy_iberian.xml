@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_embassy">
+  <Cost>
+    <Resources>
+      <wood>0</wood>
+      <stone>200</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Iberian Embassy</SpecificName>
+      <Tooltip>Hire Iberian mercenaries. Research improvements for these mercenaries.</Tooltip>
+    <Icon>structures/iberian_embassy.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="16.0" depth="16.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_infantry_javelinist_iber_b
+      units/{civ}_infantry_slinger_iber_b
+      units/{civ}_cavalry_swordsman_iber_b
+    </Entities>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/carthaginians/embassy_iberian.xml</Actor>
+  </VisualActor>
+</Entity>

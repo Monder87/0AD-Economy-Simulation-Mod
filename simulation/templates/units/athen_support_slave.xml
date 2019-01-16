@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_slave">
+  <Identity>
+    <Civ>athen</Civ>
+    <SpecificName>Doûlos</SpecificName>
+  </Identity>
+  <VisualActor>
+    <Actor>units/global/slave.xml</Actor>
+  </VisualActor>
+</Entity>

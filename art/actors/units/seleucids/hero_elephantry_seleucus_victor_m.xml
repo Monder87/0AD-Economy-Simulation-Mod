@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="quadraped/base_elephant_asian_armor.xml">
+      <mesh>skeletal/sele_champion_elephant.dae</mesh>
+      <props>
+        <prop actor="units/seleucids/hero_elephantry_seleucus_victor_d.xml" attachpoint="rider"/>
+        <prop actor="units/seleucids/hero_elephantry_seleucus_victor_r.xml" attachpoint="turret"/>
+        <prop actor="props/units/turret_sele_hero_ele.xml" attachpoint="turret"/>
+      </props>
+      <textures>
+        <texture file="skeletal/sele_champion_elephant.png" name="baseTex"/>
+        <texture file="skeletal/sele_champion_elephant_spec.png" name="specTex"/>
+        <texture file="skeletal/sele_champion_elephant_norm.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant file="quadraped/base_elephant_death.xml"/>
+    <variant file="quadraped/base_elephant_run.xml"/>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

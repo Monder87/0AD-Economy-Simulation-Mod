@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["Warship"],
+	"affectedPlayers": ["ExclusiveMutualAlly"],
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.75 }
+	],
+	"auraName": "Delian League",
+	"auraDescription": "Ships construct 25% faster."
+}

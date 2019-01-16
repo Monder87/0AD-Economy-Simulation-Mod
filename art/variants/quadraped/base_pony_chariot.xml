@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variant file="quadraped/base_pony.xml">
+  <animations>
+    <animation file="quadraped/pony_canter.dae" name="Walk" id="walk1" speed="5"/>
+    <animation file="quadraped/pony_canter.dae" name="Walk" id="walk2" speed="6"/>
+    <animation file="quadraped/pony_canter.dae" name="Walk" id="walk3" speed="7"/>
+    <animation file="quadraped/pony_gallop.dae" name="Run" id="run1" speed="10"/>
+    <animation file="quadraped/pony_gallop.dae" name="Run" id="run2" speed="9"/>
+    <animation file="quadraped/pony_gallop.dae" name="Run" id="run3" speed="11"/>
+  </animations>
+</variant>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Footprint>
+    <Square width="26.0" depth="28.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>ptol</Civ>
+    <SpecificName>mktr-'a</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="26.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_champion_infantry_pikeman
+      units/{civ}_champion_cavalry
+      units/{civ}_champion_elephant
+    </Entities>
+    <Technologies datatype="tokens">
+      siege_attack
+      siege_armor
+      siege_cost_metal
+      siege_cost_wood
+      siege_bolt_accuracy
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/ptolemies/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>24.0</Length>
+    <Indent>8.7</Indent>
+  </WallPiece>
+</Entity>

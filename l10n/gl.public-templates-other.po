@@ -1,0 +1,968 @@
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright © 2014 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant project.
+# 
+# Translators:
+# Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2014-2015
+# Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2016
+# mandruis <manuiglesias96@yahoo.es>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: 0 A.D.\n"
+"POT-Creation-Date: 2018-02-07 09:03+0100\n"
+"PO-Revision-Date: 2018-02-07 15:04+0000\n"
+"Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
+"Language-Team: Galician (http://www.transifex.com/wildfire-games/0ad/language/gl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: gl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: simulation/templates/template_gaia.xml:6
+msgid "Gaia"
+msgstr "Gaia"
+
+#: simulation/templates/template_gaia_flora_bush.xml:8
+msgid "Bush"
+msgstr "Arbusto"
+
+#: simulation/templates/template_gaia_flora_tree.xml:8
+msgid "Tree"
+msgstr "árbore"
+
+#: simulation/templates/template_gaia_flora_tree.xml:9
+msgid "Chop down to accumulate Wood."
+msgstr "Tállese para acumular madeira."
+
+#: simulation/templates/template_gaia_geo.xml:8
+msgid "Generic Geology"
+msgstr "Xeoloxía xenérica"
+
+#: simulation/templates/template_gaia_geo_mineral.xml:4
+msgid "Mineral"
+msgstr "Mineral"
+
+#: simulation/templates/template_gaia_geo_mineral.xml:5
+msgid "Metal Mine"
+msgstr "Mina de metal"
+
+#: simulation/templates/template_gaia_geo_mineral.xml:6
+msgid "A mineral deposit, providing access to rare forms of precious Metal."
+msgstr "Un depósito de mineral que fornece acceso a formas estrañas de do prezado metal."
+
+#: simulation/templates/template_gaia_geo_rock.xml:4
+msgid "Rock"
+msgstr "rocha"
+
+#: simulation/templates/template_gaia_geo_rock.xml:5
+msgid "Stone Mine"
+msgstr "Mina de pedra"
+
+#: simulation/templates/template_gaia_geo_rock.xml:6
+msgid "Mine these to provide Stone building material."
+msgstr "Pícaas para obter pedra para a construción."
+
+#: simulation/templates/template_gaia_ruins.xml:8
+msgid "Generic Ruins"
+msgstr "Ruínas xenéricas"
+
+#: simulation/templates/template_gaia_ruins.xml:9
+#: simulation/templates/gaia/ruins/column_doric.xml:9
+#: simulation/templates/gaia/ruins/unfinished_greek_temple.xml:9
+msgid "Ruins"
+msgstr "ruínas"
+
+#: simulation/templates/template_gaia_ruins.xml:10
+msgid "These ruins that can be mined for resources."
+msgstr "Estas ruínas poden escavarse para obter recursos."
+
+#: simulation/templates/template_gaia_treasure.xml:8
+msgid "Generic Treasure"
+msgstr "Tesouro xenérico"
+
+#: simulation/templates/template_gaia_treasure.xml:9
+#: simulation/templates/gaia/treasure/food_barrel.xml:9
+#: simulation/templates/gaia/treasure/food_barrels_buried.xml:9
+#: simulation/templates/gaia/treasure/food_bin.xml:9
+#: simulation/templates/gaia/treasure/food_crate.xml:9
+#: simulation/templates/gaia/treasure/food_jars.xml:9
+#: simulation/templates/gaia/treasure/golden_fleece.xml:9
+#: simulation/templates/gaia/treasure/pegasus.xml:9
+#: simulation/templates/gaia/treasure/shipwreck.xml:9
+#: simulation/templates/gaia/treasure/shipwreck_debris.xml:9
+#: simulation/templates/gaia/treasure/shipwreck_ram_bow.xml:9
+#: simulation/templates/gaia/treasure/shipwreck_sail_boat.xml:9
+#: simulation/templates/gaia/treasure/shipwreck_sail_boat_cut.xml:9
+#: simulation/templates/gaia/treasure/stone.xml:9
+#: simulation/templates/gaia/treasure/wood.xml:9
+msgid "Treasure"
+msgstr "tesouro"
+
+#: simulation/templates/template_gaia_treasure.xml:10
+msgid "A treasure that can be quickly gathered."
+msgstr "Un tesouro que se pode recoller rapidamente."
+
+#: simulation/templates/template_structure.xml:59
+msgid "Structure"
+msgstr "Estrutura"
+
+#: simulation/templates/template_unit.xml:40
+msgid "Unit"
+msgstr "Unidade"
+
+#: simulation/templates/campaigns/army_mace_hero_alexander.xml:27
+msgid "Army of Alexander the Great."
+msgstr "Exército de Alexandre Magno"
+
+#: simulation/templates/campaigns/army_mace_hero_alexander.xml:28
+msgid "Army of Alexander the Great"
+msgstr "Exército de Alexandre Magno"
+
+#: simulation/templates/campaigns/army_mace_hero_alexander.xml:29
+#: simulation/templates/campaigns/army_mace_standard.xml:21
+#: simulation/templates/campaigns/army_spart_hero_leonidas.xml:29
+msgid "This is what an army would look like on the Strat Map."
+msgstr "Así é como se vería un exército nun mapa de estratexia."
+
+#: simulation/templates/campaigns/army_mace_standard.xml:19
+msgid "Army of Macedonia"
+msgstr "Exército macedonio"
+
+#: simulation/templates/campaigns/army_mace_standard.xml:20
+msgid "Army of Macedon"
+msgstr "Exército de Macedonia"
+
+#: simulation/templates/campaigns/army_spart_hero_leonidas.xml:27
+msgid "Army of Leonidas I."
+msgstr "Exercito de Leónidas I"
+
+#: simulation/templates/campaigns/army_spart_hero_leonidas.xml:28
+msgid "Army of Leonidas I"
+msgstr "Exercito de Leónidas I"
+
+#: simulation/templates/campaigns/campaign_city_minor_test.xml:25
+#: simulation/templates/campaigns/campaign_city_test.xml:25
+msgid "Market"
+msgstr ""
+
+#: simulation/templates/campaigns/campaign_city_minor_test.xml:26
+#: simulation/templates/campaigns/campaign_city_test.xml:26
+msgid "Settlement"
+msgstr "Asentamento"
+
+#: simulation/templates/campaigns/campaign_city_minor_test.xml:27
+msgid "Minor Greek Polis"
+msgstr "Cidade grega pequena"
+
+#: simulation/templates/campaigns/campaign_city_minor_test.xml:28
+msgid "This is a minor Greek city."
+msgstr "Esta é unha cidade grega pequena."
+
+#: simulation/templates/campaigns/campaign_city_test.xml:27
+msgid "Greek Polis"
+msgstr "Poli grega"
+
+#: simulation/templates/campaigns/campaign_city_test.xml:28
+msgid "This is a major Greek city."
+msgstr "Esta é unha cidade grega grande."
+
+#: simulation/templates/campaigns/campaign_religious_test.xml:12
+msgid "Religious Sanctuary"
+msgstr "Santuario relixioso"
+
+#: simulation/templates/campaigns/campaign_religious_test.xml:13
+msgid "Greek Religious Sanctuary"
+msgstr "Santuario relixioso grego"
+
+#: simulation/templates/gaia/fauna_arctic_wolf.xml:4
+msgid "Arctic Wolf"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_bear.xml:18
+msgid "Bear"
+msgstr "Oso"
+
+#: simulation/templates/gaia/fauna_boar.xml:18
+msgid "Wild Boar"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_boar.xml:19
+msgid "Sus scrofa"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_camel.xml:9
+msgid "Camel"
+msgstr "Dromedario"
+
+#: simulation/templates/gaia/fauna_chicken.xml:12
+msgid "Chicken"
+msgstr "Galiña"
+
+#: simulation/templates/gaia/fauna_crocodile.xml:18
+msgid "Crocodylus niloticus"
+msgstr "Crocodylus niloticus"
+
+#: simulation/templates/gaia/fauna_crocodile.xml:19
+msgid "Nile Crocodile"
+msgstr "Crocodilo do Nilo"
+
+#: simulation/templates/gaia/fauna_deer.xml:9
+msgid "Deer"
+msgstr "Cervo"
+
+#: simulation/templates/gaia/fauna_elephant_african_bush.xml:11
+msgid "African Bush Elephant"
+msgstr "Elefante africano de sabana"
+
+#: simulation/templates/gaia/fauna_elephant_african_infant.xml:4
+msgid "African Elephant Calf"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_elephant_asian.xml:11
+msgid "Asian Elephant"
+msgstr "Elefante asiático"
+
+#: simulation/templates/gaia/fauna_elephant_asian_infant.xml:4
+msgid "Asian Elephant Calf"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_elephant_north_african.xml:11
+msgid "North African Elephant"
+msgstr "Elefante norteafricano"
+
+#: simulation/templates/gaia/fauna_fish.xml:5
+#: simulation/templates/gaia/fauna_fish_tuna.xml:5
+msgid "Tuna Fish"
+msgstr "Atún"
+
+#: simulation/templates/gaia/fauna_fish.xml:6
+#: simulation/templates/gaia/fauna_fish_tuna.xml:6
+msgid "Gather food from this bountiful oceanic resource."
+msgstr ""
+
+#: simulation/templates/gaia/fauna_fish_tilapia.xml:5
+msgid "Tilapia Fish"
+msgstr "Tilapia"
+
+#: simulation/templates/gaia/fauna_fish_tilapia.xml:6
+msgid "Gather food from this bountiful riparian resource."
+msgstr ""
+
+#: simulation/templates/gaia/fauna_fox_arctic.xml:4
+msgid "Arctic Fox"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_fox_red.xml:4
+msgid "Red Fox"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_gazelle.xml:9
+msgid "Gazelle"
+msgstr "Gacela"
+
+#: simulation/templates/gaia/fauna_giraffe.xml:12
+msgid "Giraffe (Adult)"
+msgstr "Xirafa adulta"
+
+#: simulation/templates/gaia/fauna_giraffe_infant.xml:9
+msgid "Giraffe (Juvenile)"
+msgstr "Xirafa nova"
+
+#: simulation/templates/gaia/fauna_goat.xml:9
+msgid "Goat"
+msgstr "Cabra"
+
+#: simulation/templates/gaia/fauna_horse.xml:9
+msgid "Horse"
+msgstr "Cabalo "
+
+#: simulation/templates/gaia/fauna_lion.xml:18
+msgid "Lion"
+msgstr "León"
+
+#: simulation/templates/gaia/fauna_lioness.xml:18
+msgid "Lioness"
+msgstr "Leoa"
+
+#: simulation/templates/gaia/fauna_mastiff.xml:4
+msgid "Mastiff"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_muskox.xml:9
+msgid "Muskox"
+msgstr "Boi almiscrado"
+
+#: simulation/templates/gaia/fauna_peacock.xml:8
+msgid "Peacock"
+msgstr "Pavo"
+
+#: simulation/templates/gaia/fauna_peacock.xml:9
+msgid "Pavo cristatus"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_pig.xml:9
+msgid "Pig"
+msgstr "Porco"
+
+#: simulation/templates/gaia/fauna_pig_flaming.xml:18
+msgid "Flaming Pig"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_pig_flaming.xml:19
+msgid "Sus scrofa domesticus igne"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_pony.xml:4
+msgid "Pony"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_rabbit.xml:9
+msgid "Rabbit"
+msgstr "Coello"
+
+#: simulation/templates/gaia/fauna_rhino.xml:18
+msgid "Rhinoceros"
+msgstr "Rinoceronte"
+
+#: simulation/templates/gaia/fauna_shark.xml:13
+msgid "Great White"
+msgstr "Tiburón branco"
+
+#: simulation/templates/gaia/fauna_shark.xml:14
+msgid "Shark"
+msgstr "Quenlla"
+
+#: simulation/templates/gaia/fauna_sheep.xml:9
+msgid "Sheep"
+msgstr "Ovella"
+
+#: simulation/templates/gaia/fauna_tiger.xml:18
+msgid "Tiger"
+msgstr "Tigre"
+
+#: simulation/templates/gaia/fauna_walrus.xml:25
+msgid "Walrus"
+msgstr "Morsa"
+
+#: simulation/templates/gaia/fauna_whale_fin.xml:8
+msgid "Fin Whale"
+msgstr "Rorcual común"
+
+#: simulation/templates/gaia/fauna_whale_humpback.xml:8
+msgid "Humpback Whale"
+msgstr "Xibardo"
+
+#: simulation/templates/gaia/fauna_wildebeest.xml:9
+msgid "Wildebeest"
+msgstr "Ñu"
+
+#: simulation/templates/gaia/fauna_wolf.xml:4
+msgid "Wolf"
+msgstr "Lobo"
+
+#: simulation/templates/gaia/fauna_wolfhound.xml:4
+msgid "Wolfhound"
+msgstr ""
+
+#: simulation/templates/gaia/fauna_zebra.xml:9
+msgid "Zebra"
+msgstr "Cebra"
+
+#: simulation/templates/gaia/fauna_zebu.xml:9
+msgid "Zebu"
+msgstr ""
+
+#: simulation/templates/gaia/flora_bush_badlands.xml:4
+msgid "Hardy Bush"
+msgstr "Arbusto robusto"
+
+#: simulation/templates/gaia/flora_bush_berry.xml:4
+msgid "Berries"
+msgstr "Froitos"
+
+#: simulation/templates/gaia/flora_bush_berry.xml:5
+msgid "Gather the fruit from these bushes to accumulate Food."
+msgstr "Recolle a froita destes arbustos para acumular comida."
+
+#: simulation/templates/gaia/flora_bush_grapes.xml:4
+msgid "Grapes"
+msgstr "Uvas"
+
+#: simulation/templates/gaia/flora_bush_grapes.xml:5
+msgid "Gather grapes from these vines for Food."
+msgstr "Recolle uvas destas viñas para conseguir comida."
+
+#: simulation/templates/gaia/flora_bush_temperate.xml:4
+msgid "Deciduous Bush"
+msgstr "Arbusto caducifolio"
+
+#: simulation/templates/gaia/flora_tree_acacia.xml:4
+msgid "Acacia Tree"
+msgstr "Acacia"
+
+#: simulation/templates/gaia/flora_tree_aleppo_pine.xml:4
+msgid "Aleppo Pine Tree"
+msgstr "Piñeiro carrasco"
+
+#: simulation/templates/gaia/flora_tree_apple.xml:4
+msgid "Apple Tree"
+msgstr "Maceira"
+
+#: simulation/templates/gaia/flora_tree_baobab.xml:8
+msgid "Baobab"
+msgstr "Baobab"
+
+#: simulation/templates/gaia/flora_tree_carob.xml:4
+msgid "Carob Tree"
+msgstr "Alfarrobeira"
+
+#: simulation/templates/gaia/flora_tree_cretan_date_palm_patch.xml:8
+#: simulation/templates/gaia/flora_tree_cretan_date_palm_short.xml:4
+#: simulation/templates/gaia/flora_tree_cretan_date_palm_tall.xml:4
+msgid "Cretan Date Palm"
+msgstr "Palmeira cretense"
+
+#: simulation/templates/gaia/flora_tree_cypress.xml:4
+msgid "Cypress Tree"
+msgstr "Ciprés"
+
+#: simulation/templates/gaia/flora_tree_date_palm.xml:4
+msgid "Date Palm"
+msgstr "Datileira"
+
+#: simulation/templates/gaia/flora_tree_dead.xml:4
+msgid "Dead Tree"
+msgstr "Árbore morta"
+
+#: simulation/templates/gaia/flora_tree_euro_beech.xml:4
+#: simulation/templates/gaia/flora_tree_euro_beech_aut.xml:4
+msgid "European Beech Tree"
+msgstr "Faia"
+
+#: simulation/templates/gaia/flora_tree_fig.xml:7
+msgid "Fig"
+msgstr "Figueira"
+
+#: simulation/templates/gaia/flora_tree_fig.xml:8
+msgid "Gather figs for Food."
+msgstr "Recolle figos de alimento."
+
+#: simulation/templates/gaia/flora_tree_medit_fan_palm.xml:4
+msgid "Mediterranean Fan Palm"
+msgstr "Palmeira ibérica"
+
+#: simulation/templates/gaia/flora_tree_oak.xml:4
+#: simulation/templates/gaia/flora_tree_oak_aut.xml:4
+#: simulation/templates/gaia/flora_tree_oak_aut_new.xml:4
+#: simulation/templates/gaia/flora_tree_oak_dead.xml:4
+#: simulation/templates/gaia/flora_tree_oak_new.xml:4
+msgid "Oak Tree"
+msgstr "Carballo"
+
+#: simulation/templates/gaia/flora_tree_oak_large.xml:4
+msgid "Large Oak Tree"
+msgstr "Carballo grande"
+
+#: simulation/templates/gaia/flora_tree_olive.xml:4
+msgid "Olive Tree"
+msgstr "Oliveira"
+
+#: simulation/templates/gaia/flora_tree_palm_tropic.xml:4
+msgid "Palm"
+msgstr "Palmeira"
+
+#: simulation/templates/gaia/flora_tree_palm_tropical.xml:4
+msgid "Tropical Palm"
+msgstr "Palmeira tropical"
+
+#: simulation/templates/gaia/flora_tree_pine.xml:4
+#: simulation/templates/gaia/flora_tree_pine_w.xml:4
+msgid "Pine Tree"
+msgstr "Piñeiro"
+
+#: simulation/templates/gaia/flora_tree_poplar.xml:4
+msgid "Poplar Tree"
+msgstr "Lamigueiro"
+
+#: simulation/templates/gaia/flora_tree_poplar_lombardy.xml:4
+msgid "Black Poplar Tree"
+msgstr ""
+
+#: simulation/templates/gaia/flora_tree_senegal_date_palm.xml:4
+msgid "Senegal Date Palm"
+msgstr "Palmeira senegalesa"
+
+#: simulation/templates/gaia/flora_tree_tamarix.xml:4
+msgid "Tamarix Tree"
+msgstr "Tamargueira"
+
+#: simulation/templates/gaia/flora_tree_toona.xml:4
+msgid "Toona Tree"
+msgstr "Tuna"
+
+#: simulation/templates/gaia/ruins/column_doric.xml:10
+msgid "Ancient Ruins"
+msgstr "Ruínas antigas"
+
+#: simulation/templates/gaia/ruins/pyramid_great.xml:9
+#: simulation/templates/gaia/ruins/pyramid_minor.xml:9
+msgid "Pyramid"
+msgstr "Pirámide"
+
+#: simulation/templates/gaia/ruins/pyramid_great.xml:10
+msgid "Great Pyramid"
+msgstr "Gran pirámide"
+
+#: simulation/templates/gaia/ruins/pyramid_minor.xml:10
+msgid "Minor Pyramid"
+msgstr "Pirámide pequena"
+
+#: simulation/templates/gaia/ruins/standing_stone.xml:9
+#: simulation/templates/gaia/ruins/stone_statues_egyptian.xml:9
+#: simulation/templates/gaia/ruins/stone_statues_kushite.xml:9
+#: simulation/templates/gaia/ruins/stone_statues_roman.xml:9
+msgid "Stone Ruins"
+msgstr "Ruínas de pedra"
+
+#: simulation/templates/gaia/ruins/standing_stone.xml:10
+#: simulation/templates/gaia/treasure/standing_stone.xml:10
+msgid "Celtic Standing Stone"
+msgstr "Pedra celta"
+
+#: simulation/templates/gaia/ruins/stone_statues_egyptian.xml:10
+msgid "Ptolemaic Egyptian Statues"
+msgstr "Estatuas dos exipcios tolemaicos"
+
+#: simulation/templates/gaia/ruins/stone_statues_kushite.xml:10
+msgid "Kushite Statue"
+msgstr ""
+
+#: simulation/templates/gaia/ruins/stone_statues_roman.xml:10
+msgid "Roman Statues"
+msgstr "Estatuas romanas"
+
+#: simulation/templates/gaia/ruins/unfinished_greek_temple.xml:10
+msgid "Unfinished Greek Temple"
+msgstr "Templo grego sen rematar"
+
+#: simulation/templates/gaia/ruins/unfinished_greek_temple.xml:11
+msgid "This temple is unfinished and has fallen to ruin."
+msgstr "A construción deste templo nunca rematou, e quedou en ruínas."
+
+#: simulation/templates/gaia/treasure/food_barrel.xml:10
+#: simulation/templates/gaia/treasure/food_bin.xml:10
+#: simulation/templates/gaia/treasure/food_crate.xml:10
+#: simulation/templates/gaia/treasure/food_jars.xml:10
+#: simulation/templates/gaia/treasure/food_persian_big.xml:9
+#: simulation/templates/gaia/treasure/food_persian_small.xml:9
+msgid "Food Treasure"
+msgstr "Tesouro de comida"
+
+#: simulation/templates/gaia/treasure/food_barrels_buried.xml:10
+msgid "Half-buried Barrels"
+msgstr "Barrís a medio soterrar"
+
+#: simulation/templates/gaia/treasure/food_persian_big.xml:10
+msgid "Persian Food Stores"
+msgstr "Almacéns de comida persas"
+
+#: simulation/templates/gaia/treasure/food_persian_small.xml:10
+msgid "Persian Food Treasure"
+msgstr "Tesouro de comida persa"
+
+#: simulation/templates/gaia/treasure/golden_fleece.xml:10
+msgid "Golden Fleece"
+msgstr "La dourada"
+
+#: simulation/templates/gaia/treasure/metal.xml:9
+#: simulation/templates/gaia/treasure/metal_persian_big.xml:9
+#: simulation/templates/gaia/treasure/metal_persian_small.xml:9
+msgid "Metal Treasure"
+msgstr "Tesouro de metal"
+
+#: simulation/templates/gaia/treasure/metal.xml:10
+msgid "Secret Box"
+msgstr "Caixa secreta"
+
+#: simulation/templates/gaia/treasure/metal_persian_big.xml:10
+msgid "Persian Wares"
+msgstr "Útiles persas"
+
+#: simulation/templates/gaia/treasure/metal_persian_small.xml:10
+msgid "Persian Rugs"
+msgstr "Alfombras persas"
+
+#: simulation/templates/gaia/treasure/pegasus.xml:10
+msgid "Pegasus"
+msgstr "Pegaso"
+
+#: simulation/templates/gaia/treasure/shipwreck.xml:10
+#: simulation/templates/gaia/treasure/shipwreck_ram_bow.xml:10
+#: simulation/templates/gaia/treasure/shipwreck_sail_boat.xml:10
+#: simulation/templates/gaia/treasure/shipwreck_sail_boat_cut.xml:10
+msgid "Shipwreck"
+msgstr "Afundimento de barco"
+
+#: simulation/templates/gaia/treasure/shipwreck.xml:11
+msgid "A decaying military shipwreck. A good opportunity for any businessman."
+msgstr "Un afundimento militar ao que o tempo non perdoa. Unha boa oportunidade para calquera home de negocios."
+
+#: simulation/templates/gaia/treasure/shipwreck_debris.xml:10
+msgid "Shipwreck Cargo"
+msgstr "Cargamento dun barco afundido"
+
+#: simulation/templates/gaia/treasure/shipwreck_ram_bow.xml:11
+msgid ""
+"A shipwreck with much loss of life. A good opportunity for any businessman."
+msgstr "Un afundimento de barco no que se perderon moitas vidas. Unha oportunidade ideal para calquera persoa de negocios."
+
+#: simulation/templates/gaia/treasure/shipwreck_sail_boat.xml:11
+msgid ""
+"The wreck of a small cargo ship. A good opportunity for any businessman."
+msgstr "O afundimento dun pequeno barco de transporte. Unha boa oportunidade para calquera home de negocios."
+
+#: simulation/templates/gaia/treasure/shipwreck_sail_boat_cut.xml:11
+msgid "A cargo ship rammed in half. A good opportunity for any businessman."
+msgstr "Un barco de transporte partido pola metade. Unha boa oportunidade para calquera home de negocios."
+
+#: simulation/templates/gaia/treasure/standing_stone.xml:9
+#: simulation/templates/gaia/treasure/stone.xml:10
+msgid "Stone Treasure"
+msgstr "Tesouro de pedra"
+
+#: simulation/templates/gaia/treasure/wood.xml:10
+msgid "Wood Treasure"
+msgstr "Tesouro de madeira"
+
+#: simulation/templates/other/bench.xml:20
+msgid "Bench"
+msgstr "Banco"
+
+#: simulation/templates/other/bench.xml:21
+msgid "Wooden Bench"
+msgstr "Banco de madeira"
+
+#: simulation/templates/other/bridge_hele.xml:16
+#: simulation/templates/other/bridge_hele.xml:17
+msgid "Bridge"
+msgstr "Ponte"
+
+#: simulation/templates/other/bridge_wooden.xml:16
+#: simulation/templates/other/bridge_wooden.xml:17
+msgid "Wooden Bridge"
+msgstr "Ponte de madeira"
+
+#: simulation/templates/other/celt_hut.xml:22
+msgid "Hut"
+msgstr "Cabana"
+
+#: simulation/templates/other/celt_longhouse.xml:22
+msgid "Longhouse"
+msgstr "Fogar comunal"
+
+#: simulation/templates/other/column_doric.xml:20
+#: simulation/templates/other/column_doric_fallen.xml:20
+#: simulation/templates/other/column_doric_fallen_b.xml:20
+msgid "Column"
+msgstr "Columna"
+
+#: simulation/templates/other/column_doric.xml:21
+msgid "Doric Column"
+msgstr "Columna dórica"
+
+#: simulation/templates/other/column_doric_fallen.xml:21
+#: simulation/templates/other/column_doric_fallen_b.xml:21
+msgid "Fallen Doric Column"
+msgstr "Columna dórica caída"
+
+#: simulation/templates/other/desert_trading_post.xml:15
+msgid "Desert Trading Post"
+msgstr ""
+
+#: simulation/templates/other/desert_trading_post.xml:16
+msgid "Ardatašta"
+msgstr "Ardatašta"
+
+#: simulation/templates/other/fence_long.xml:21
+#: simulation/templates/other/fence_short.xml:21
+msgid "Fence"
+msgstr "Valo"
+
+#: simulation/templates/other/fence_long.xml:22
+msgid "Long Wooden Fence"
+msgstr "Cerca longa de madeira"
+
+#: simulation/templates/other/fence_short.xml:22
+msgid "Short Wooden Fence"
+msgstr "Cerca curta de madeira"
+
+#: simulation/templates/other/fence_stone.xml:21
+#: simulation/templates/other/fence_stone.xml:22
+msgid "Stone Fence"
+msgstr "Valo de pedra"
+
+#: simulation/templates/other/generic_field.xml:9
+msgid "Wheat Field"
+msgstr "Campo de trigo"
+
+#: simulation/templates/other/hellenic_epic_temple.xml:29
+msgid "Epic Temple"
+msgstr "Templo épico"
+
+#: simulation/templates/other/hellenic_epic_temple.xml:30
+msgid "Naos Parthenos"
+msgstr "Naos Parthenos"
+
+#: simulation/templates/other/hellenic_epic_temple.xml:31
+msgid "Garrison units to heal them at a quick rate."
+msgstr ""
+
+#: simulation/templates/other/hellenic_propylaea.xml:25
+msgid "Portico"
+msgstr "Pórtico"
+
+#: simulation/templates/other/hellenic_propylaea.xml:26
+msgid "Propylaea"
+msgstr "Propileo"
+
+#: simulation/templates/other/hellenic_stoa.xml:25
+msgid "Stoa"
+msgstr "Stoá"
+
+#: simulation/templates/other/hellenic_stoa.xml:26
+msgid "Hellenic Stoa"
+msgstr "Stoá helena"
+
+#: simulation/templates/other/obelisk.xml:20
+msgid "Obelisk"
+msgstr "Obelisco"
+
+#: simulation/templates/other/obelisk.xml:21
+msgid "Egyptian Obelisk"
+msgstr "Obelisco exipcio"
+
+#: simulation/templates/other/palisades_angle_spike.xml:15
+msgid "Palisade Angle Spike"
+msgstr "Punta de ángulo de cerca"
+
+#: simulation/templates/other/palisades_angle_spike.xml:16
+msgid "Big Spike"
+msgstr "Gran punta"
+
+#: simulation/templates/other/palisades_rocks_curve.xml:15
+msgid "Palisade Curve"
+msgstr "Curva de cerca"
+
+#: simulation/templates/other/palisades_rocks_curve.xml:16
+msgid "Wooden Wall Corner"
+msgstr "Esquina de muralla de madeira"
+
+#: simulation/templates/other/palisades_rocks_end.xml:15
+msgid "Palisade End"
+msgstr "Extremo de cerca"
+
+#: simulation/templates/other/palisades_rocks_end.xml:16
+msgid "Wooden Wall End"
+msgstr "Extremo de muralla de madeira"
+
+#: simulation/templates/other/palisades_rocks_fort.xml:6
+msgid "Palisade Fort"
+msgstr "Fortaleza cercada"
+
+#: simulation/templates/other/palisades_rocks_fort.xml:7
+msgid "Wooden Tower"
+msgstr ""
+
+#: simulation/templates/other/palisades_rocks_gate.xml:18
+msgid "Palisade Gate"
+msgstr "Porta de cerca"
+
+#: simulation/templates/other/palisades_rocks_gate.xml:19
+msgid "Wooden Gate"
+msgstr "Porta de madeira"
+
+#: simulation/templates/other/palisades_rocks_long.xml:27
+#: simulation/templates/other/palisades_rocks_medium.xml:27
+#: simulation/templates/other/palisades_rocks_short.xml:26
+#: simulation/templates/other/palisades_rocks_straight.xml:15
+#: simulation/templates/other/palisades_rocks_tower.xml:25
+#: simulation/templates/other/wallset_palisade.xml:6
+msgid "Palisade"
+msgstr "Cerca"
+
+#: simulation/templates/other/palisades_rocks_long.xml:28
+#: simulation/templates/other/palisades_rocks_medium.xml:28
+#: simulation/templates/other/palisades_rocks_short.xml:27
+#: simulation/templates/other/palisades_rocks_straight.xml:16
+#: simulation/templates/other/palisades_rocks_tower.xml:26
+#: simulation/templates/other/wallset_palisade.xml:5
+msgid "Wooden Wall"
+msgstr "Muralla de madeira"
+
+#: simulation/templates/other/palisades_rocks_outpost.xml:15
+msgid "Outpost"
+msgstr "Atalaia"
+
+#: simulation/templates/other/palisades_rocks_outpost.xml:16
+#: simulation/templates/other/palisades_rocks_watchtower.xml:16
+msgid "Wooden Watch Tower"
+msgstr "Torre de madeira de vixilancia"
+
+#: simulation/templates/other/palisades_rocks_watchtower.xml:15
+msgid "Watchtower"
+msgstr "Torre de vixilancia"
+
+#: simulation/templates/other/palisades_small_spikes.xml:15
+msgid "Spikes Small"
+msgstr "Puntas pequenas"
+
+#: simulation/templates/other/palisades_small_spikes.xml:16
+msgid "Small Spikes"
+msgstr "Puntas pequenas"
+
+#: simulation/templates/other/palisades_tall_spikes.xml:15
+msgid "Spikes Tall"
+msgstr "Puntas altas"
+
+#: simulation/templates/other/palisades_tall_spikes.xml:16
+msgid "Tall Spikes"
+msgstr "Puntas altas"
+
+#: simulation/templates/other/sele_colonnade.xml:20
+msgid "Colonnade"
+msgstr "Columnata"
+
+#: simulation/templates/other/sele_colonnade.xml:21
+msgid "Corinthian Colonnade"
+msgstr "Columnata Corintia"
+
+#: simulation/templates/other/stall_big.xml:12
+msgid "Big stall"
+msgstr "Caseta grande"
+
+#: simulation/templates/other/stall_med.xml:12
+msgid "Medium stall"
+msgstr "Caseta mediana"
+
+#: simulation/templates/other/stall_small_a.xml:12
+#: simulation/templates/other/stall_small_b.xml:12
+msgid "Small stall"
+msgstr "Caseta pequena"
+
+#: simulation/templates/other/table_rectangle.xml:20
+#: simulation/templates/other/table_square.xml:20
+msgid "Table"
+msgstr "Mesa"
+
+#: simulation/templates/other/table_rectangle.xml:21
+msgid "Rectangle Table"
+msgstr "Mesa rectangular"
+
+#: simulation/templates/other/table_square.xml:21
+msgid "Square Table"
+msgstr "Mesa redonda"
+
+#: simulation/templates/skirmish/structures/default_house_10.xml:5
+msgid ""
+"Changes in a 10-pop house for civilisations with those houses, is deleted "
+"for other civs"
+msgstr "Cambia nunha case de 10 de poboación par civilizacións con ese tipo de casas, para o resto de civilizacións elimínase."
+
+#: simulation/templates/skirmish/structures/default_house_5.xml:8
+msgid ""
+"Changes in a 5-pop house for civilisations with those houses, is deleted for"
+" other civs"
+msgstr "Cambia nunha case de 5 de poboación par civilizacións con ese tipo de casas, para o resto de civilizacións elimínase."
+
+#: simulation/templates/special/spy.xml:17
+msgid "Spy"
+msgstr ""
+
+#: simulation/templates/special/formations/battle_line.xml:5
+msgid "Battle Line"
+msgstr "Liña de batalla"
+
+#: simulation/templates/special/formations/box.xml:6
+msgid "4 units required"
+msgstr "Necesítanse 4 unidades."
+
+#: simulation/templates/special/formations/box.xml:7
+msgid "Box"
+msgstr "Cadrado"
+
+#: simulation/templates/special/formations/column_closed.xml:5
+msgid "Forced March"
+msgstr ""
+
+#: simulation/templates/special/formations/column_open.xml:5
+msgid "Column Open"
+msgstr "Columna aberta"
+
+#: simulation/templates/special/formations/flank.xml:6
+msgid "8 units required"
+msgstr "Necesítanse 8 unidades."
+
+#: simulation/templates/special/formations/flank.xml:7
+msgid "Flank"
+msgstr "Flanco"
+
+#: simulation/templates/special/formations/line_closed.xml:5
+msgid "Close Order"
+msgstr ""
+
+#: simulation/templates/special/formations/line_open.xml:5
+msgid "Open Order"
+msgstr ""
+
+#: simulation/templates/special/formations/null.xml:5
+msgid "None"
+msgstr "Ningunha"
+
+#: simulation/templates/special/formations/phalanx.xml:6
+msgid "10 hoplite infantry required"
+msgstr ""
+
+#: simulation/templates/special/formations/phalanx.xml:7
+msgid "Phalanx"
+msgstr "Falanxe"
+
+#: simulation/templates/special/formations/scatter.xml:5
+msgid "Scatter"
+msgstr "Esparexidos"
+
+#: simulation/templates/special/formations/skirmish.xml:5
+msgid "Only ranged units allowed"
+msgstr "Só se permiten unidades de proxectís."
+
+#: simulation/templates/special/formations/skirmish.xml:6
+msgid "Skirmish"
+msgstr "Escaramuza"
+
+#: simulation/templates/special/formations/syntagma.xml:6
+msgid "16 pike infantry units required"
+msgstr ""
+
+#: simulation/templates/special/formations/syntagma.xml:8
+msgid "Syntagma"
+msgstr "Falanxe macedonia"
+
+#: simulation/templates/special/formations/testudo.xml:6
+msgid "9 melee infantry units required"
+msgstr "Necesítanse 9 unidades de infantaría de contacto."
+
+#: simulation/templates/special/formations/testudo.xml:7
+msgid "Testudo"
+msgstr "Tartaruga"
+
+#: simulation/templates/special/formations/wedge.xml:6
+msgid "6 cavalry units required"
+msgstr ""
+
+#: simulation/templates/special/formations/wedge.xml:7
+msgid "Wedge"
+msgstr "Cuña"
+
+#: simulation/templates/special/player/player.xml:57
+msgid "Player"
+msgstr "Xogador"

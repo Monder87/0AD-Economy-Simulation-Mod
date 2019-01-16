@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>props/rome_s2.dae</mesh>
+      <textures><texture file="structural/rome_s2_prop.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+
+  <material>player_trans.xml</material>
+
+</actor>

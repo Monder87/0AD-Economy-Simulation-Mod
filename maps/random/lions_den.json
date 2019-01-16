@@ -1,0 +1,11 @@
+{
+  "settings" : {
+    "Name" : "Lion's Den",
+    "Script" : "lions_den.js",
+    "Description" : "High cliffs protect each player's main base. Venturing into the unknown can be risky, but necessary.",
+    "Preview" : "lions_den.png",
+    "Keywords": [],
+    "SupportedBiomes": "generic/",
+    "CircularMap" : true
+  }
+}

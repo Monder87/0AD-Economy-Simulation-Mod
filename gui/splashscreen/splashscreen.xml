@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<objects>
+
+	<script directory="gui/common/"/>
+	<script directory="gui/splashscreen/"/>
+
+	<!-- Add a translucent black background to fade out the menu page -->
+	<object type="image" z="0" sprite="ModernFade"/>
+
+	<object type="image" style="ModernDialog" size="50%-274 50%-200 50%+274 50%+200">
+		<object type="text" style="ModernLabelText" size="50%-128 -18 50%+128 14">
+			<translatableAttribute id="caption">Welcome!</translatableAttribute>
+		</object>
+
+		<object name="mainText" type="text" style="ModernTextPanel" size="20 20 100%-20 100%-52">
+			<object name="displaySplashScreenText" size="30 100%-30 100% 100%-8" type="text" style="ModernLeftLabelText">
+				<translatableAttribute id="caption">Show this message in the future</translatableAttribute>
+			</object>
+			<object name="displaySplashScreen" size="8 100%-30 22 100%-8" type="checkbox" style="ModernTickBox"/>
+		</object>
+		<object type="button" style="ModernButtonRed" size="50%+5 100%-45 100%-18 100%-17">
+			<translatableAttribute id="caption">Known Issues (web)</translatableAttribute>
+			<action on="Press"><![CDATA[
+				openURL("http://www.wildfiregames.com/forum/index.php?showtopic=15796");
+			]]></action>
+		</object>
+		<object name="btnOK" type="button" style="ModernButtonRed" size="18 100%-45 50%-5 100%-17" hotkey="cancel">
+			<translatableAttribute id="caption">OK</translatableAttribute>
+			<action on="Press"><![CDATA[
+			saveSettingAndWriteToUserConfig("gui.splashscreen.enable", String(Engine.GetGUIObjectByName("displaySplashScreen").checked));
+			saveSettingAndWriteToUserConfig("gui.splashscreen.version", Engine.GetFileMTime("gui/splashscreen/splashscreen.txt"));
+			Engine.PopGuiPageCB();
+			]]></action>
+		</object>
+	</object>
+</objects>

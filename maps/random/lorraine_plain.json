@@ -1,0 +1,9 @@
+{
+	"settings" : {
+		"Name" : "Lorraine Plain",
+		"Script" : "lorraine_plain.js",
+		"Description" : "Players start in a nearly flat Gallic plain divided by a river and its tributaries.",
+		"Preview" : "lorraine_plain.png",
+		"CircularMap" : true
+	}
+}

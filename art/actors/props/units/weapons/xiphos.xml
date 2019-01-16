@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <textures><texture file="props/prop_weap.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="xiphos-goldgrip">
+      <mesh>props/weap_xiphos_a.dae</mesh>
+    </variant>
+    <variant frequency="1" name="xiphos-c">
+      <mesh>props/weap_xiphos_c.dae</mesh>
+    </variant>
+    <variant frequency="1" name="xiphos-steel">
+      <mesh>props/weap_xiphos_d.dae</mesh>
+    </variant>
+    <variant frequency="1" name="xiphos-e">
+      <mesh>props/weap_xiphos_e.dae</mesh>
+    </variant>
+    <variant frequency="1" name="xiphos-steelgrip2">
+      <mesh>props/weap_xiphos_f.dae</mesh>
+    </variant>
+  </group>
+  <material>basic_spec.xml</material>
+</actor>

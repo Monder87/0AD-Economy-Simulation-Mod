@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="temple_c_columns">
+      <mesh>structural/hele_temple_c_props.dae</mesh>
+      <textures><texture file="props/hele_props_a.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>
