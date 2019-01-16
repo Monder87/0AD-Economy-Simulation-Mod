@@ -19,9 +19,10 @@ Timer.prototype.GetTime = function() {
   return this.time;
 };
 
+// here we broadcast to other component that is passed 1 day (10 min game in real time)
 Timer.prototype.GetDay = function() {
   let timeInSec = this.time / 1000;
-  let dayInSec = 60;
+  let dayInSec = 600;
 
   if (timeInSec % dayInSec == 0 && timeInSec != this.lastTimeSec) {
     this.day += 1;

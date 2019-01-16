@@ -119,6 +119,8 @@ EntityConsumer.prototype.OnEntityFinanceChanged = function(msg) {
   //this.PerformPurchase();
 };
 
+// We count the day here
+
 EntityConsumer.prototype.OnTimerDayChanged = function(msg) {
   if (msg.day !== this.dayOfMonth) {
     this.dayOfMonth = msg.day;
@@ -126,9 +128,12 @@ EntityConsumer.prototype.OnTimerDayChanged = function(msg) {
   }
 };
 
+// Here the entities consume the product needed daily
+
 EntityConsumer.prototype.ConsumeDaily = function() {
-  this.test += 1;
-  error(this.test);
+  for (let type in this.productDailyConsume) {
+    this.productsCarring[type] -= this.productDailyConsume[type];
+  }
 };
 
 EntityConsumer.prototype.GetProductCarring = function() {
@@ -142,7 +147,12 @@ EntityConsumer.prototype.GetProductCarring2 = function() {
 EntityConsumer.prototype.AddProductCarring = function(type, amount) {
   for (let type2 in this.productsCarring) {
     if (type2 == type) {
-      this.productsCarring[type2] += amount;
+      if (
+        this.productsCarring[type2] < this.productsCapacities[type2] &&
+        this.productsCarring[type2] + amount < this.productsCapacities[type2]
+      ) {
+        this.productsCarring[type2] += amount;
+      }
     }
   }
 };
