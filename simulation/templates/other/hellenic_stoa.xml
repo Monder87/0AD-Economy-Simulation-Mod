@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic">
+  <BuildRestrictions>
+    <Category>Stoa</Category>
+  </BuildRestrictions>
+  <Cost>
+    <PopulationBonus>10</PopulationBonus>
+    <BuildTime>110</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>100</stone>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="28" depth="12.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1100</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Stoa</GenericName>
+    <SpecificName>Hellenic Stoa</SpecificName>
+    <Icon>gaia/special_stoa.png</Icon>
+  </Identity>
+  <Loot>
+    <stone>50</stone>
+    <metal>50</metal>
+  </Loot>
+  <Obstruction>
+    <Static width="26.0" depth="10.5"/>
+  </Obstruction>
+  <ProductionQueue disable=""/>
+  <RallyPoint disable=""/>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>36</Radius>
+    <Weight>65535</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>special/greek_stoa.xml</Actor>
+    <FoundationActor>structures/fndn_6x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_spearman_hoplite">
+  <Auras datatype="tokens">
+    units/heroes/spart_hero_leonidas
+  </Auras>
+  <Identity>
+    <Civ>spart</Civ>
+    <Lang>greek</Lang>
+    <GenericName>Leonidas I</GenericName>
+    <SpecificName>Leōnídēs</SpecificName>
+    <Icon>units/spart_hero_leonidas.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/spartans/hero_infantry_spearman_leonidas.xml</Actor>
+  </VisualActor>
+</Entity>

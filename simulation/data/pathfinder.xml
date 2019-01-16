@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Pathfinder>
+  <!-- Sets limit on the number of same turns moves we will process -->
+  <!-- Setting the value to 0 disable this functionality -->
+  <MaxSameTurnMoves>64</MaxSameTurnMoves>
+
+  <PassabilityClasses>
+
+    <!-- Unit pathfinding classes: -->
+    <default>
+      <Obstructions>pathfinding</Obstructions>
+      <MaxWaterDepth>2</MaxWaterDepth>
+      <MaxTerrainSlope>1.0</MaxTerrainSlope>
+      <Clearance>0.8</Clearance>
+    </default>
+    <large>
+      <Obstructions>pathfinding</Obstructions>
+      <MaxWaterDepth>2</MaxWaterDepth>
+      <MaxTerrainSlope>1.0</MaxTerrainSlope>
+      <Clearance>3.0</Clearance>
+    </large>
+    <ship>
+      <Obstructions>pathfinding</Obstructions>
+      <MinWaterDepth>1</MinWaterDepth>
+      <Clearance>10.0</Clearance>
+    </ship>
+    <ship-small>
+      <Obstructions>pathfinding</Obstructions>
+      <MinWaterDepth>1</MinWaterDepth>
+      <Clearance>3.0</Clearance>
+    </ship-small>
+
+    <!--
+    Building construction classes:
+    * Land is used for most buildings, which must be away
+        from water and not on cliffs or mountains.
+    * Shore is used for docks, which must be near water and
+        land, yet shallow enough for builders to approach.
+    -->
+    <building-land>
+      <Obstructions>foundation</Obstructions>
+      <MaxWaterDepth>0</MaxWaterDepth>
+      <MinShoreDistance>4.0</MinShoreDistance>
+      <MaxTerrainSlope>1.0</MaxTerrainSlope>
+    </building-land>
+    <building-shore>
+      <Obstructions>foundation</Obstructions>
+      <MaxShoreDistance>8.0</MaxShoreDistance>
+      <MaxTerrainSlope>1.25</MaxTerrainSlope>
+    </building-shore>
+
+    <!--
+    Unrestricted: only off-world limits.
+
+    Default-terrain-only: used by the AI, for wall-building
+        placement and for territory influence growth.
+        It must be kept in sync with "default".
+    Ship-terrain-only: used by the AI.
+        It must be kept in sync with "ship" and "ship-small".
+    -->
+    <unrestricted>
+      <Obstructions>none</Obstructions>
+    </unrestricted>
+    <default-terrain-only>
+      <Obstructions>none</Obstructions>
+      <MaxWaterDepth>2</MaxWaterDepth>
+      <MaxTerrainSlope>1.0</MaxTerrainSlope>
+    </default-terrain-only>
+    <ship-terrain-only>
+      <Obstructions>none</Obstructions>
+      <MinWaterDepth>1</MinWaterDepth>
+    </ship-terrain-only>
+
+  </PassabilityClasses>
+</Pathfinder>

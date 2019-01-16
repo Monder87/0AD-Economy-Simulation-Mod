@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="5" name="snow1">
+      <textures><texture file="gaia/pine_w.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="4" name="snow2">
+      <textures><texture file="gaia/pine_w2.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="a1">
+      <mesh>gaia/pine1.dae</mesh>
+    </variant>
+    <variant frequency="2" name="a2">
+      <mesh>gaia/pine2.dae</mesh>
+    </variant>
+    <variant frequency="2" name="a3">
+      <mesh>gaia/pine3.dae</mesh>
+    </variant>
+    <variant frequency="2" name="a4">
+      <mesh>gaia/pine4.dae</mesh>
+    </variant>
+    <variant frequency="2" name="a5">
+      <mesh>gaia/pine5.dae</mesh>
+    </variant>
+    <variant frequency="1" name="b1">
+      <mesh>gaia/pine6.dae</mesh>
+    </variant>
+    <variant frequency="1" name="b2">
+      <mesh>gaia/pine7.dae</mesh>
+    </variant>
+    <variant frequency="1" name="b3">
+      <mesh>gaia/pine8.dae</mesh>
+    </variant>
+    <variant frequency="1" name="b4">
+      <mesh>gaia/pine9.dae</mesh>
+    </variant>
+    <variant frequency="1" name="b5">
+      <mesh>gaia/pine10.dae</mesh>
+    </variant>
+    <variant frequency="1" name="c1">
+      <mesh>gaia/pine11.dae</mesh>
+    </variant>
+    <variant frequency="1" name="c2">
+      <mesh>gaia/pine12.dae</mesh>
+    </variant>
+    <variant frequency="1" name="c3">
+      <mesh>gaia/pine13.dae</mesh>
+    </variant>
+    <variant frequency="1" name="c4">
+      <mesh>gaia/pine14.dae</mesh>
+    </variant>
+    <variant frequency="1" name="c5">
+      <mesh>gaia/pine15.dae</mesh>
+    </variant>
+    <variant frequency="3" name="mr2">
+      <mesh>gaia/tree_pine_02.dae</mesh>
+    </variant>
+    <variant frequency="3" name="mr3">
+      <mesh>gaia/tree_pine_03.dae</mesh>
+    </variant>
+  </group>
+  <material>basic_trans_wind.xml</material>
+</actor>

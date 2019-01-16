@@ -1,0 +1,10 @@
+{
+	"settings" : {
+		"Name" : "Lake",
+		"Script" : "lake.js",
+		"Description" : "Players start around a lake in the center of the map.",
+		"Preview" : "lake.png",
+		"SupportedBiomes": "generic/",
+		"CircularMap" : true
+	}
+}

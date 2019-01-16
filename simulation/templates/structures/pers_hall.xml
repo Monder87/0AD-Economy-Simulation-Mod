@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <BuildRestrictions>
+    <Category>Hall</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>300</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>250</stone>
+      <metal>250</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="25.0" depth="25.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>pers</Civ>
+    <GenericName>Persian Hall</GenericName>
+    <SpecificName>Duvarthi Visadahyu</SpecificName>
+    <Icon>structures/pers_hall.png</Icon>
+    <Tooltip>Train War Elephants and Kardakes mercenaries.</Tooltip>
+  </Identity>
+  <Loot>
+    <wood>0</wood>
+    <stone>50</stone>
+    <metal>50</metal>
+  </Loot>
+  <Obstruction>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}_kardakes_hoplite
+      units/{civ}_kardakes_skirmisher
+      units/{civ}_champion_elephant
+    </Entities>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_broch.xml</select>
+      <constructed>interface/complete/building/complete_broch.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>38</Radius>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/persians/hall.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="1" name="props-1">
+      <mesh>props/iber_gate_door_2.dae</mesh>
+    </variant>
+  </group>
+
+  <group>
+    <variant>
+      <textures><texture file="props/iber_prop_a.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+
+</actor>

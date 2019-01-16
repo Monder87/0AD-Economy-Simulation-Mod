@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="6">
+	<Environment>
+		<SkySet>default</SkySet>
+		<SunColor r="0.74902" g="0.74902" b="0.74902"/>
+		<SunElevation angle="0.785398"/>
+		<SunRotation angle="-0.785396"/>
+		<TerrainAmbientColor r="0.501961" g="0.501961" b="0.501961"/>
+		<UnitsAmbientColor r="0.501961" g="0.501961" b="0.501961"/>
+		<Water>
+			<WaterBody>
+				<Type>lake</Type>
+				<Color r="0.294118" g="0.34902" b="0.694118"/>
+				<Height>8.07869</Height>
+				<Waviness>3.0</Waviness>
+				<Murkiness>0.45</Murkiness>
+				<Tint r="0.27451" g="0.294118" b="0.584314"/>
+			</WaterBody>
+		</Water>
+	</Environment>
+	<Camera>
+		<Position x="546.182" y="568.13" z="-281.75"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "CircularMap": true,
+  "Description": "A riparian gorge meanders its way through the South lands of Gaul.",
+  "Keywords": [
+    "hidden"
+  ],
+  "LockTeams": false,
+  "Name": "Gorge",
+  "PlayerData": [
+    {
+      "Civ": "pers"
+    },
+    {
+      "Civ": "cart"
+    }
+  ],
+  "RevealMap": false,
+  "VictoryConditions": [
+    "conquest"
+  ]
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="11">
+			<Template>structures/cart_civil_centre</Template>
+			<Player>2</Player>
+			<Position x="808.81403" z="273.3158"/>
+			<Orientation y="2.35621"/>
+		</Entity>
+		<Entity uid="12">
+			<Template>structures/pers_civil_centre</Template>
+			<Player>1</Player>
+			<Position x="354.87638" z="830.6186"/>
+			<Orientation y="2.35621"/>
+		</Entity>
+	</Entities>
+	<Paths/>
+</Scenario>

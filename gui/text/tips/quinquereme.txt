@@ -1,0 +1,9 @@
+HEAVY WARSHIP
+- The heaviest standard warship. Available to: Rome, Carthage, Ptolemies, and Seleucids.
+
+- Transports up to 50 units.
+
+- Increases firepower with garrisoned catapults.
+
+- Has a ramming attack that sinks enemy ships (NOT IMPLEMENTED YET).
+

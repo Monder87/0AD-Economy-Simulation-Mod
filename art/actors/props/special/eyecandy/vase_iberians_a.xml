@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="vase a">
+      <mesh>props/wrld_vase_a.dae</mesh>
+    </variant>
+    <variant frequency="1" name="vase b">
+      <mesh>props/wrld_vase_b.dae</mesh>
+    </variant>
+    <variant frequency="1" name="vase c">
+      <mesh>props/wrld_vase_c.dae</mesh>
+    </variant>
+    <variant frequency="1" name="vase d">
+      <mesh>props/wrld_vase_d.dae</mesh>
+    </variant>
+    <variant frequency="1" name="vase e">
+      <mesh>props/wrld_vase_e.dae</mesh>
+    </variant>
+    <variant frequency="1" name="vase f">
+      <mesh>props/wrld_vase_f.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant>
+      <textures>
+        <texture file="props/vase_iberians.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

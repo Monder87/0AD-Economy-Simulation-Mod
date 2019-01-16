@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_spearman_hoplite">
+  <Health>
+    <Max>2000</Max>
+  </Health>
+  <Identity>
+    <Civ>spart</Civ>
+    <Lang>greek</Lang>
+    <GenericName>Agis III</GenericName>
+    <SpecificName>Agis</SpecificName>
+    <Icon>units/spart_hero_agis.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/spartans/hero_infantry_spearman_agis.xml</Actor>
+  </VisualActor>
+</Entity>

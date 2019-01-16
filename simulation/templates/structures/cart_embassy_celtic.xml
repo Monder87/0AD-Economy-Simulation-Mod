@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_embassy">
+  <Cost>
+    <Resources>
+      <wood>200</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="16.0" depth="13.0"/>
+    <Height>11.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1200</Max>
+  </Health>
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Celtic Embassy</SpecificName>
+    <Tooltip>Hire Celtic mercenaries. Research improvements for these mercenaries.</Tooltip>
+    <Icon>structures/celtic_embassy.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="15.0" depth="12.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/{civ}_infantry_swordsman_gaul_b
+      units/{civ}_cavalry_swordsman_gaul_b
+    </Entities>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/carthaginians/embassy_celtic.xml</Actor>
+  </VisualActor>
+</Entity>

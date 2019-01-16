@@ -1,0 +1,4145 @@
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright © 2014 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant project.
+# 
+# Translators:
+# lynx121 <adam.ostruszka@seznam.cz>, 2016
+# Filip Kružík <fildakr@gmail.com>, 2015
+# Jaroslav Lichtblau <dragonlord@seznam.cz>, 2016
+# Josef Hrdina <hrdinajosef11@gmail.com>, 2016
+# Katie Trochimovičová <Kattienika@gmail.com>, 2018
+# Lukas Koutsky <tekumseh65@seznam.cz>, 2015
+# Marek Harok <kenturin@seznam.cz>, 2017
+# fri, 2014-2018
+# Pavel Šindelář <pavelsin123@gmail.com>, 2015
+# Petr Hála <halapetr@selfnet.cz>, 2016-2017
+# Radek Mašek <warrriog@gmail.com>, 2018
+# Robin Kriebel <kriebel.robin@gmail.com>, 2016
+# Vojtěch Valigura <Encounter@seznam.cz>, 2015,2017-2018
+msgid ""
+msgstr ""
+"Project-Id-Version: 0 A.D.\n"
+"POT-Creation-Date: 2018-04-23 09:03+0200\n"
+"PO-Revision-Date: 2018-04-28 20:48+0000\n"
+"Last-Translator: fri\n"
+"Language-Team: Czech (http://www.transifex.com/wildfire-games/0ad/language/cs/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: globalscripts/DamageTypes.js:6
+msgctxt "damage type"
+msgid "Hack"
+msgstr "Seknutí"
+
+#: globalscripts/DamageTypes.js:7
+msgctxt "damage type"
+msgid "Pierce"
+msgstr "Bodnutí"
+
+#: globalscripts/DamageTypes.js:8
+msgctxt "damage type"
+msgid "Crush"
+msgstr "Drcení"
+
+#: gui/civinfo/civinfo.js:28
+#, javascript-format
+msgid "%(hotkey)s: Switch to Structure Tree."
+msgstr "%(hotkey)s: Přepnout na strom staveb."
+
+#: gui/civinfo/civinfo.js:29
+#, javascript-format
+msgid "%(hotkey)s: Close History."
+msgstr "%(hotkey)s: Zavřít historii."
+
+#: gui/civinfo/civinfo.js:124
+#, javascript-format
+msgid "%(civilization)s Gameplay"
+msgstr "%(civilization)s hra"
+
+#: gui/civinfo/civinfo.js:127
+msgid "Civilization Bonus"
+msgid_plural "Civilization Bonuses"
+msgstr[0] "Civilizační přídavek"
+msgstr[1] "Civilizační přídavky"
+msgstr[2] "Civilizačních přídavků"
+
+#: gui/civinfo/civinfo.js:132
+msgid "Team Bonus"
+msgid_plural "Team Bonuses"
+msgstr[0] "Týmový přídavek"
+msgstr[1] "Týmové přídavky"
+msgstr[2] "Týmových přídavků"
+
+#: gui/civinfo/civinfo.js:139
+msgid "Special Technologies"
+msgstr "Zvláštní technologie"
+
+#: gui/civinfo/civinfo.js:145
+msgid "Special Building"
+msgid_plural "Special Buildings"
+msgstr[0] "Zvláštní budova"
+msgstr[1] "Zvláštní budovy"
+msgstr[2] "Zvláštních budov"
+
+#: gui/civinfo/civinfo.js:152 gui/summary/layout.js:67
+msgid "Heroes"
+msgstr "Hrdinové"
+
+#: gui/civinfo/civinfo.js:162
+#, javascript-format
+msgid "History of the %(civilization)s"
+msgstr "Historie %(civilization)s"
+
+#: gui/common/color.js:164
+#, javascript-format
+msgid "Unassigned hotkey: %(hotkeyName)s"
+msgstr "Nepřiřazená klávesová zkratka: %(hotkeyName)s"
+
+#: gui/common/color.js:179
+#, javascript-format
+msgid "Press %(hotkey)s to autocomplete playernames."
+msgstr "Stiskněte %(hotkey)s k automatickému doplnění jmen hráčů."
+
+#: gui/common/color.js:181
+msgctxt "hotkey"
+msgid "Tab"
+msgstr "Tab"
+
+#: gui/common/functions_global_object.js:8
+#, javascript-format
+msgid ""
+"Opening %(url)s\n"
+" in default web browser. Please wait…"
+msgstr "Otevírá se %(url)s\n ve výchozím prohlížeči internetu. Počkejte, prosím..."
+
+#: gui/common/functions_global_object.js:11
+msgid "Opening page"
+msgstr "Otevírá se stránka"
+
+#. dennis-ignore: *
+#: gui/common/functions_global_object.js:21
+#, javascript-format
+msgid "FPS: %(fps)4s"
+msgstr "FPS: %(fps)4s"
+
+#: gui/common/functions_global_object.js:90
+msgid "Loading Aborted"
+msgstr "Načítání přerušeno"
+
+#: gui/common/functions_utility.js:29
+msgid "Gaia"
+msgstr "Gaia"
+
+#: gui/common/functions_utility.js:105
+msgctxt "map selection"
+msgid "Random"
+msgstr "Náhodná"
+
+#: gui/common/functions_utility_loadsave.js:14
+msgid "yyyy-MM-dd HH:mm:ss"
+msgstr "dd mm rrrr hh:mm:ss"
+
+#: gui/common/functions_utility_loadsave.js:22
+#, javascript-format
+msgid "%(dateString)s %(map)s - %(description)s"
+msgstr "%(dateString)s %(map)s - %(description)s"
+
+#: gui/common/functions_utility_loadsave.js:23
+#, javascript-format
+msgid "%(dateString)s %(map)s"
+msgstr "%(dateString)s %(map)s"
+
+#: gui/common/functions_utility_loadsave.js:53
+#, javascript-format
+msgid "\"%(label)s\""
+msgstr "\"%(label)s\""
+
+#: gui/common/functions_utility_loadsave.js:55
+msgid "Saved game will be permanently deleted, are you sure?"
+msgstr "Uložená hra bude trvale smazána. Opravdu to chcete?"
+
+#: gui/common/functions_utility_loadsave.js:56
+msgid "DELETE"
+msgstr "SMAZAT"
+
+#: gui/common/functions_utility_loadsave.js:57 gui/common/tooltips.js:325
+#: gui/options/options.js:301 gui/options/options.js:351
+#: gui/options/options.js:377 gui/pregame/mainmenu.js:261
+#: gui/pregame/mainmenu.js:275 gui/replaymenu/replay_actions.js:169
+msgid "No"
+msgstr "Ne"
+
+#: gui/common/functions_utility_loadsave.js:57 gui/common/tooltips.js:325
+#: gui/options/options.js:301 gui/options/options.js:351
+#: gui/options/options.js:377 gui/pregame/mainmenu.js:261
+#: gui/pregame/mainmenu.js:275 gui/replaymenu/replay_actions.js:169
+msgid "Yes"
+msgstr "Ano"
+
+#: gui/common/functions_utility_loadsave.js:74
+#, javascript-format
+msgid "Delete the selected entry using %(hotkey)s."
+msgstr "Smažte vybrané položky zmáčknutím %(hotkey)s."
+
+#: gui/common/functions_utility_loadsave.js:79
+#, javascript-format
+msgid "Hold %(hotkey)s to delete without confirmation."
+msgstr "Podržte %(hotkey)s k odstranění bez potvrzení."
+
+#: gui/common/gamedescription.js:44
+msgid "A randomly selected map."
+msgstr "Náhodně vybraná mapa."
+
+#: gui/common/gamedescription.js:53 gui/common/gamedescription.js:337
+msgid "Sorry, no description available."
+msgstr "Bohužel, popis není dostupný."
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:104
+#, javascript-format
+msgid "%(playerName)s (%(civ)s, %(AIdescription)s)"
+msgstr "%(playerName)s (%(civ)s, %(AIdescription)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:107
+#, javascript-format
+msgid "%(playerName)s (%(civ)s, %(AIdescription)s, %(state)s)"
+msgstr "%(playerName)s (%(civ)s, %(AIdescription)s, %(state)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:113
+#, javascript-format
+msgid "%(playerName)s (%(AIdescription)s)"
+msgstr "%(playerName)s (%(AIdescription)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:116
+#, javascript-format
+msgid "%(playerName)s (%(AIdescription)s, %(state)s)"
+msgstr "%(playerName)s (%(AIdescription)s, %(state)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:126
+#, javascript-format
+msgid "%(playerName)s (OFFLINE)"
+msgstr "%(playerName)s (NEPŘIPOJEN)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:129
+#, javascript-format
+msgid "%(playerName)s (OFFLINE, %(state)s)"
+msgstr "%(playerName)s (NEPŘIPOJEN, %(state)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:136
+#, javascript-format
+msgid "%(playerName)s (%(civ)s)"
+msgstr "%(playerName)s (%(civ)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:139
+#, javascript-format
+msgid "%(playerName)s (%(civ)s, %(state)s)"
+msgstr "%(playerName)s (%(civ)s, %(state)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:143
+#, javascript-format
+msgid "%(playerName)s"
+msgstr "%(playerName)s"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:146
+#, javascript-format
+msgid "%(playerName)s (%(state)s)"
+msgstr "%(playerName)s (%(state)s)"
+
+#: gui/common/gamedescription.js:166
+msgid "Unknown Civilization"
+msgstr "Neznámá civilizace"
+
+#: gui/common/gamedescription.js:173
+msgctxt "playerstate"
+msgid "defeated"
+msgstr "poražen"
+
+#: gui/common/gamedescription.js:174
+msgctxt "playerstate"
+msgid "won"
+msgstr "vyhrál"
+
+#: gui/common/gamedescription.js:195
+msgid "No Team"
+msgstr "Žádný tým"
+
+#: gui/common/gamedescription.js:196
+#, javascript-format
+msgid "Team %(team)s"
+msgstr "Tým %(team)s"
+
+#. Translation: Describe players of one team in a selected game, f.e. in the
+#. replay- or savegame menu or lobby
+#: gui/common/gamedescription.js:199 gui/common/gamedescription.js:206
+#, javascript-format
+msgid ""
+"%(team)s:\n"
+"%(playerDescriptions)s"
+msgstr "%(team)s:\n%(playerDescriptions)s"
+
+#: gui/common/gamedescription.js:207
+msgid "Observer"
+msgid_plural "Observers"
+msgstr[0] "Pozorovatel"
+msgstr[1] "Pozorovatelé"
+msgstr[2] "Pozorovatelů"
+
+#: gui/common/gamedescription.js:224
+msgctxt "victory condition"
+msgid "Endless Game"
+msgstr "Hra bez konce"
+
+#: gui/common/gamedescription.js:225
+msgid "No winner will be determined, even if everyone is defeated."
+msgstr "Nebude určen žádný vítěz, i když jsou všichni poraženi."
+
+#: gui/common/gamedescription.js:236
+#, javascript-format
+msgctxt "victory condition"
+msgid "Wonder (%(min)s minute)"
+msgid_plural "Wonder (%(min)s minutes)"
+msgstr[0] "Div světa (%(min)s minuta)"
+msgstr[1] "Div světa (%(min)s minuty)"
+msgstr[2] "Div světa (%(min)s minut)"
+
+#: gui/common/gamedescription.js:248
+#, javascript-format
+msgctxt "victory condition"
+msgid "Capture the Relic (%(min)s minute)"
+msgid_plural "Capture the Relic (%(min)s minutes)"
+msgstr[0] "Ukořistit památku (%(min)s minuta)"
+msgstr[1] "Ukořistit památku (%(min)s minuty)"
+msgstr[2] "Ukořistit památku (%(min)s minut)"
+
+#: gui/common/gamedescription.js:264
+msgid "Relic Count"
+msgstr "Počet památek"
+
+#: gui/common/gamedescription.js:271
+msgid "Hero Garrison"
+msgstr "Ubytování hrdiny"
+
+#: gui/common/gamedescription.js:272
+msgid "Heroes can be garrisoned."
+msgstr "Hrdinové mohou být ubytováni."
+
+#: gui/common/gamedescription.js:276
+msgid "Exposed Heroes"
+msgstr "Nechránění hrdinové"
+
+#: gui/common/gamedescription.js:277
+msgid "Heroes cannot be garrisoned and they are vulnerable to raids."
+msgstr "Hrdinové nemohou být ubytováni a jsou zranitelní při přepadení."
+
+#: gui/common/gamedescription.js:284
+msgid "Rated game"
+msgstr "Hodnocená hra"
+
+#: gui/common/gamedescription.js:285
+msgid ""
+"When the winner of this match is determined, the lobby score will be "
+"adapted."
+msgstr "Když je určen vítěz zápasu, je upraven i výsledek herní skupiny."
+
+#: gui/common/gamedescription.js:290
+msgid "Locked Teams"
+msgstr "Zamčené týmy"
+
+#: gui/common/gamedescription.js:291
+msgid "Players can't change the initial teams."
+msgstr "Hráči nemohou změnit počáteční týmy."
+
+#: gui/common/gamedescription.js:295
+msgid "Diplomacy"
+msgstr "Diplomacie"
+
+#: gui/common/gamedescription.js:296
+msgid "Players can make alliances and declare war on allies."
+msgstr "Hráči mohou založit spolky a vyhlásit válku spojencům."
+
+#: gui/common/gamedescription.js:301
+msgid "Last Man Standing"
+msgstr "Každý proti každému"
+
+#: gui/common/gamedescription.js:302
+msgid ""
+"Only one player can win the game. If the remaining players are allies, the "
+"game continues until only one remains."
+msgstr "Pouze jeden hráč může vyhrát hru. Pokud jsou zbývající hráči spojenci, hra stále pokračuje, dokud nezbyde jen jeden."
+
+#: gui/common/gamedescription.js:306
+msgid "Allied Victory"
+msgstr "Spojenecké vítězství"
+
+#: gui/common/gamedescription.js:307
+msgid ""
+"If one player wins, his or her allies win too. If one group of allies "
+"remains, they win."
+msgstr "Pokud vyhraje jeden hráč, vyhrají zároveň i jeho nebo její spojenci. Pokud zůstane jedna skupina spojenců, zvítězí."
+
+#: gui/common/gamedescription.js:311
+msgid "Ceasefire"
+msgstr "Klid zbraní"
+
+#: gui/common/gamedescription.js:314 gui/pregame/mainmenu.js:95
+msgid "disabled"
+msgstr "vypnuto"
+
+#: gui/common/gamedescription.js:315
+msgid "For the first minute, other players will stay neutral."
+msgid_plural "For the first %(min)s minutes, other players will stay neutral."
+msgstr[0] "Po první minutu zůstanou ostatní hráči neutrální."
+msgstr[1] "Po první %(min)s minuty zůstanou ostatní hráči neutrální."
+msgstr[2] "Po prvních %(min)s minut zůstanou ostatní hráči neutrální."
+
+#: gui/common/gamedescription.js:324
+msgctxt "Map Selection"
+msgid "Random Map"
+msgstr "Náhodná mapa"
+
+#: gui/common/gamedescription.js:325
+msgid "Randomly select a map from the list."
+msgstr "Náhodně vybrat mapu ze seznamu."
+
+#: gui/common/gamedescription.js:330
+msgid "Map Name"
+msgstr "Název mapy"
+
+#: gui/common/gamedescription.js:334
+msgid "Map Description"
+msgstr "Popis mapy"
+
+#: gui/common/gamedescription.js:342
+msgid "Map Type"
+msgstr "Typ mapy"
+
+#: gui/common/gamedescription.js:348
+msgid "Map Filter"
+msgstr "Filtr map"
+
+#: gui/common/gamedescription.js:357
+msgid "Map Size"
+msgstr "Velikost mapy"
+
+#: gui/common/gamedescription.js:366
+msgctxt "biome"
+msgid "Random Biome"
+msgstr "Náhodný bióm"
+
+#: gui/common/gamedescription.js:367
+msgid "Randomly select a biome from the list."
+msgstr "Náhodně vybrat bióm ze seznamu."
+
+#: gui/common/gamedescription.js:381
+msgid "Nomad Mode"
+msgstr "Kočovnický režim"
+
+#: gui/common/gamedescription.js:381
+msgid "Civic Centers"
+msgstr "Správní střediska"
+
+#: gui/common/gamedescription.js:384
+msgid ""
+"Players start with only few units and have to find a suitable place to build"
+" their city."
+msgstr "Hráči začínají jen s několika jednotkami a mají najít vhodné místo k postavení jejich města."
+
+#: gui/common/gamedescription.js:385
+msgid "Players start with a Civic Center."
+msgstr "Hráči začínají se správními středisky."
+
+#: gui/common/gamedescription.js:389
+msgid "Starting Resources"
+msgstr "Počáteční zdroje"
+
+#: gui/common/gamedescription.js:390
+#, javascript-format
+msgid "%(startingResourcesTitle)s (%(amount)s)"
+msgstr "%(startingResourcesTitle)s (%(amount)s)"
+
+#: gui/common/gamedescription.js:400
+msgid "Population Limit"
+msgstr "Populační mez"
+
+#: gui/common/gamedescription.js:408
+msgid "Treasures"
+msgstr "Poklad"
+
+#: gui/common/gamedescription.js:410
+msgctxt "treasures"
+msgid "Disabled"
+msgstr "Zakázáno"
+
+#: gui/common/gamedescription.js:411
+msgctxt "treasures"
+msgid "As defined by the map."
+msgstr "Jak je stanoveno mapou."
+
+#: gui/common/gamedescription.js:415
+msgid "Revealed Map"
+msgstr "Odhalená mapa"
+
+#: gui/common/gamedescription.js:420
+msgid "Explored Map"
+msgstr "Prozkoumaná mapa"
+
+#: gui/common/gamedescription.js:425
+msgid "Cheats"
+msgstr "Kódy"
+
+#: gui/common/gamedescription.js:429 gui/common/tooltips.js:164
+#: gui/common/tooltips.js:219 gui/common/tooltips.js:260
+#: gui/common/tooltips.js:395 gui/common/tooltips.js:417
+#: gui/common/tooltips.js:501 gui/common/tooltips.js:522
+#: gui/common/tooltips.js:820
+#, javascript-format
+msgid "%(label)s %(details)s"
+msgstr "%(label)s %(details)s"
+
+#: gui/common/gamedescription.js:432
+msgctxt "gamesetup option"
+msgid "enabled"
+msgstr "povoleno"
+
+#: gui/common/gamedescription.js:433
+msgctxt "gamesetup option"
+msgid "disabled"
+msgstr "zakázáno"
+
+#: gui/common/gamedescription.js:449
+msgid "Victorious"
+msgstr "Vítězný"
+
+#: gui/common/gamedescription.js:454
+msgid "Defeated"
+msgstr "Poražen"
+
+#: gui/common/gamedescription.js:463
+#, javascript-format
+msgid "%(AIdifficulty)s %(AIbehavior)s %(AIname)s"
+msgstr "%(AIdifficulty)s %(AIbehavior)s %(AIname)s"
+
+#: gui/common/network.js:17
+#, javascript-format
+msgid "Losing connection to server (%(seconds)ss)"
+msgstr "Ztrácí se spojení se serverem (%(seconds)s)"
+
+#: gui/common/network.js:22
+#, javascript-format
+msgid "%(player)s losing connection (%(seconds)ss)"
+msgstr "%(player)s ztrácí spojení (%(seconds)s)"
+
+#: gui/common/network.js:28
+#, javascript-format
+msgid "Bad connection to server (%(milliseconds)sms)"
+msgstr "Špatné spojení se serverem (%(milliseconds)sms)"
+
+#: gui/common/network.js:33
+#, javascript-format
+msgid "Bad connection to %(player)s (%(milliseconds)sms)"
+msgstr "Špatné spojení s %(player)s (%(milliseconds)sms)"
+
+#: gui/common/network.js:66
+msgctxt "network disconnect"
+msgid "Unknown reason"
+msgstr "Neznámý důvod"
+
+#: gui/common/network.js:67
+msgid ""
+"This is often caused by UDP port 20595 not being forwarded on the host side,"
+" by a firewall, or anti-virus software"
+msgstr "Toto je často způsobeno tím, že UDP port 20595 není správně směrován k serveru, kvůli firewallu nebo antivirovému programu."
+
+#: gui/common/network.js:68
+msgid "The host has ended the game"
+msgstr "Server skončil hru"
+
+#: gui/common/network.js:69
+msgid "Incorrect network protocol version"
+msgstr "Nesprávná verze síťového protokolu"
+
+#: gui/common/network.js:70
+msgid "Game is loading, please try again later"
+msgstr "Hra se načítá, zkuste to prosím znovu později"
+
+#: gui/common/network.js:71
+msgid "Game has already started, no observers allowed"
+msgstr "Hra již byla spuštěna, žádní pozorovatelé nejsou povoleni"
+
+#: gui/common/network.js:72
+msgid "You have been kicked"
+msgstr "Byl jste vyhozen"
+
+#: gui/common/network.js:73
+msgid "You have been banned"
+msgstr "Byl jste zakázán"
+
+#: gui/common/network.js:74
+msgid "Playername in use. If you were disconnected, retry in few seconds"
+msgstr "Jméno hráče je již použito. V případě odpojení to zkuste za pár sekund"
+
+#: gui/common/network.js:75
+msgid "Server full"
+msgstr "Plný server"
+
+#: gui/common/network.js:76
+msgid "Secure lobby authentication failed. Join via lobby"
+msgstr ""
+
+#: gui/common/network.js:79
+#, javascript-format
+msgid "\\[Invalid value %(id)s]"
+msgstr "\\[Neplatná hodnota %(id)s]"
+
+#. Translation: States the reason why the client disconnected from the server.
+#: gui/common/network.js:91
+#, javascript-format
+msgid "Reason: %(reason)s."
+msgstr "Důvod: %(reason)s."
+
+#: gui/common/network.js:96
+msgid "Lost connection to the server."
+msgstr "Spojení se serverem ztraceno."
+
+#: gui/common/network.js:97
+msgid "Failed to connect to the server."
+msgstr "Nepodařilo se připojit k serveru."
+
+#: gui/common/network.js:99
+msgid "Disconnected"
+msgstr "Odpojeno"
+
+#: gui/common/network.js:107
+msgid "Only the host can kick clients!"
+msgstr "Jenom pořadatel může vyhazovat klienty!"
+
+#. Translation: Number of currently connected players/observers and their
+#. names
+#: gui/common/network.js:161
+#, javascript-format
+msgid "Users (%(num)s): %(users)s"
+msgstr "Uživatelé (%(num)s): %(users)s"
+
+#: gui/common/network.js:162 gui/common/tooltips.js:83
+#: gui/common/tooltips.js:232 gui/common/tooltips.js:246
+#: gui/common/tooltips.js:324 gui/common/tooltips.js:357
+#: gui/common/tooltips.js:390 gui/common/tooltips.js:685
+#: gui/common/tooltips.js:719 gui/common/tooltips.js:785
+#: gui/reference/common/draw.js:51 gui/replaymenu/replay_menu.js:272
+msgid ", "
+msgstr ", "
+
+#: gui/common/settings.js:117
+msgctxt "aiDiff"
+msgid "Sandbox"
+msgstr "Pískoviště"
+
+#: gui/common/settings.js:121
+msgctxt "aiDiff"
+msgid "Very Easy"
+msgstr "Velmi lehká"
+
+#: gui/common/settings.js:125
+msgctxt "aiDiff"
+msgid "Easy"
+msgstr "Lehká"
+
+#: gui/common/settings.js:129
+msgctxt "aiDiff"
+msgid "Medium"
+msgstr "Střední"
+
+#: gui/common/settings.js:134
+msgctxt "aiDiff"
+msgid "Hard"
+msgstr "Těžká"
+
+#: gui/common/settings.js:138
+msgctxt "aiDiff"
+msgid "Very Hard"
+msgstr "Velmi těžká"
+
+#: gui/common/settings.js:148
+msgctxt "aiBehavior"
+msgid "Random"
+msgstr "Náhodná"
+
+#: gui/common/settings.js:153
+msgctxt "aiBehavior"
+msgid "Balanced"
+msgstr "Vyváženo"
+
+#: gui/common/settings.js:157
+msgctxt "aiBehavior"
+msgid "Defensive"
+msgstr "Obranný"
+
+#: gui/common/settings.js:161
+msgctxt "aiBehavior"
+msgid "Aggressive"
+msgstr "Útočný"
+
+#: gui/common/settings.js:183
+#, javascript-format
+msgctxt "victory duration"
+msgid "%(min)s minute"
+msgid_plural "%(min)s minutes"
+msgstr[0] "%(min)s minuta"
+msgstr[1] "%(min)s minuty"
+msgstr[2] "%(min)s minut"
+
+#: gui/common/settings.js:205
+msgctxt "ceasefire"
+msgid "No ceasefire"
+msgstr "Žádný klid zbraní"
+
+#: gui/common/settings.js:206
+#, javascript-format
+msgctxt "ceasefire"
+msgid "%(minutes)s minute"
+msgid_plural "%(minutes)s minutes"
+msgstr[0] "%(minutes)s minuta"
+msgstr[1] "%(minutes)s minuty"
+msgstr[2] "%(minutes)s minut"
+
+#: gui/common/settings.js:220
+msgctxt "map"
+msgid "Skirmish"
+msgstr "Potyčka"
+
+#: gui/common/settings.js:221
+msgid ""
+"A map with a predefined landscape and number of players. Freely select the "
+"other gamesettings."
+msgstr ""
+
+#: gui/common/settings.js:226
+msgctxt "map"
+msgid "Random"
+msgstr "Náhodná"
+
+#: gui/common/settings.js:227
+msgid ""
+"Create a unique map with a different resource distribution each time. Freely"
+" select the number of players and teams."
+msgstr ""
+
+#: gui/common/settings.js:231
+msgctxt "map"
+msgid "Scenario"
+msgstr "Scénář"
+
+#: gui/common/settings.js:232
+msgid "A map with a predefined landscape and matchsettings."
+msgstr "Mapa s dopředu stanovenou krajinou a nastavením střetnutí."
+
+#: gui/common/settings.js:306
+msgid "Unlimited"
+msgstr "Bez omezení"
+
+#: gui/common/settings.js:359
+msgctxt "AI name"
+msgid "Unknown"
+msgstr "Neznámý"
+
+#: gui/common/settings.js:370
+msgctxt "AI difficulty"
+msgid "Unknown"
+msgstr "Neznámý"
+
+#: gui/common/settings.js:381
+msgctxt "AI behavior"
+msgid "Default"
+msgstr "Výchozí"
+
+#: gui/common/settings.js:393
+msgctxt "map type"
+msgid "Unknown"
+msgstr "Neznámý"
+
+#: gui/common/settings.js:405
+msgctxt "map size"
+msgid "Default"
+msgstr "Výchozí"
+
+#: gui/common/settings.js:417
+msgctxt "population capacity"
+msgid "Unknown"
+msgstr "Neznámý"
+
+#: gui/common/settings.js:429
+msgid "Unknown Victory Condition"
+msgstr "Neznámá podmínka vítězství"
+
+#: gui/common/tooltips.js:12
+msgid "Melee Attack:"
+msgstr "Útok zblízka:"
+
+#: gui/common/tooltips.js:13
+msgid "Ranged Attack:"
+msgstr "Útok na dálku:"
+
+#: gui/common/tooltips.js:14
+msgid "Capture Attack:"
+msgstr "Zajímací útok:"
+
+#: gui/common/tooltips.js:20
+msgid "Circular Splash Damage"
+msgstr "Kruhové plošné škody"
+
+#: gui/common/tooltips.js:21
+msgid "Linear Splash Damage"
+msgstr "Přímočaré plošné škody"
+
+#. Translation: For example: Ranged Attack: 12.0 Pierce, Range: 2 to 10 (+2)
+#. meters, Interval: 3 arrows / 2 seconds
+#: gui/common/tooltips.js:27
+#, javascript-format
+msgid ""
+"%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(minRange)s to %(maxRange)s"
+" (%(relativeRange)s) %(rangeUnit)s, %(rate)s"
+msgstr "%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(minRange)s do %(maxRange)s (%(relativeRange)s) %(rangeUnit)s, %(rate)s"
+
+#. Translation: For example: Ranged Attack: 12.0 Pierce, Range: 10 (+2)
+#. meters, Interval: 3 arrows / 2 seconds
+#: gui/common/tooltips.js:29
+#, javascript-format
+msgid ""
+"%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(maxRange)s "
+"(%(relativeRange)s) %(rangeUnit)s, %(rate)s"
+msgstr "%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(maxRange)s (%(relativeRange)s) %(rangeUnit)s, %(rate)s"
+
+#. Translation: For example: Ranged Attack: 12.0 Pierce, Range: 2 to 10
+#. meters, Interval: 3 arrows / 2 seconds
+#: gui/common/tooltips.js:33
+#, javascript-format
+msgid ""
+"%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(minRange)s to %(maxRange)s"
+" %(rangeUnit)s, %(rate)s"
+msgstr "%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(minRange)s do %(maxRange)s %(rangeUnit)s, %(rate)s"
+
+#. Translation: For example: Ranged Attack: 12.0 Pierce, Range: 10 meters,
+#. Interval: 3 arrows / 2 seconds
+#: gui/common/tooltips.js:35
+#, javascript-format
+msgid ""
+"%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(maxRange)s %(rangeUnit)s, "
+"%(rate)s"
+msgstr "%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(maxRange)s %(rangeUnit)s, %(rate)s"
+
+#: gui/common/tooltips.js:72
+#, javascript-format
+msgid "%(amount)s %(resourceType)s"
+msgstr "%(amount)s %(resourceType)s"
+
+#: gui/common/tooltips.js:81
+#, javascript-format
+msgid "%(previousAmounts)s and %(lastAmount)s"
+msgstr "%(previousAmounts)s a %(lastAmount)s"
+
+#: gui/common/tooltips.js:110
+#, javascript-format
+msgid "%(time)s %(second)s"
+msgid_plural "%(time)s %(second)s"
+msgstr[0] "%(time)s %(second)s"
+msgstr[1] "%(time)s %(second)s"
+msgstr[2] "%(time)s %(second)s"
+
+#: gui/common/tooltips.js:112 gui/common/tooltips.js:353
+#: gui/common/tooltips.js:717
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "sekunda"
+msgstr[1] "sekundy"
+msgstr[2] "sekund"
+
+#: gui/common/tooltips.js:165 gui/common/tooltips.js:176
+msgid "Health:"
+msgstr "Zdraví:"
+
+#: gui/common/tooltips.js:175
+#, javascript-format
+msgid "%(healthLabel)s %(current)s / %(max)s"
+msgstr "%(healthLabel)s %(current)s / %(max)s"
+
+#: gui/common/tooltips.js:193
+#, javascript-format
+msgid "%(arrowcount)s %(arrows)s"
+msgid_plural "%(arrowcount)s %(arrows)s"
+msgstr[0] "%(arrowcount)s %(arrows)s"
+msgstr[1] "%(arrowcount)s %(arrows)s"
+msgstr[2] "%(arrowcount)s %(arrows)s"
+
+#: gui/common/tooltips.js:195
+msgid "arrow"
+msgid_plural "arrows"
+msgstr[0] "šíp"
+msgstr[1] "šípy"
+msgstr[2] "šípů"
+
+#: gui/common/tooltips.js:198
+#, javascript-format
+msgid "%(arrowString)s / %(timeString)s"
+msgstr "%(arrowString)s / %(timeString)s"
+
+#: gui/common/tooltips.js:209
+#, javascript-format
+msgid "%(percentage)s%%"
+msgstr "%(percentage)s%%"
+
+#: gui/common/tooltips.js:220
+msgid "Armor:"
+msgstr "Brnění:"
+
+#: gui/common/tooltips.js:223
+#, javascript-format
+msgid "%(damage)s %(damageType)s %(armorPercentage)s"
+msgstr "%(damage)s %(damageType)s %(armorPercentage)s"
+
+#: gui/common/tooltips.js:228
+#, javascript-format
+msgid "(%(armorPercentage)s)"
+msgstr "(%(armorPercentage)s)"
+
+#: gui/common/tooltips.js:239
+msgid "(None)"
+msgstr "(Žádný)"
+
+#: gui/common/tooltips.js:243
+#, javascript-format
+msgid "%(damage)s %(damageType)s"
+msgstr "%(damage)s %(damageType)s"
+
+#: gui/common/tooltips.js:264
+msgid "Interval:"
+msgstr "Interval:"
+
+#: gui/common/tooltips.js:265 gui/common/tooltips.js:715
+msgid "Rate:"
+msgstr "Výše:"
+
+#: gui/common/tooltips.js:272
+#, javascript-format
+msgid "%(attackLabel)s %(details)s, %(rate)s"
+msgstr "%(attackLabel)s %(details)s, %(rate)s"
+
+#: gui/common/tooltips.js:291 gui/common/tooltips.js:710
+msgid "Range:"
+msgstr "Dostřel:"
+
+#: gui/common/tooltips.js:294
+#, javascript-format
+msgid "+%(number)s"
+msgstr "+%(number)s"
+
+#. Translation: For example "0.5 to 1 meters", "1 (+1) meters" or "1 to 2 (+3)
+#. meters"
+#: gui/common/tooltips.js:298
+msgid "meters"
+msgstr "metrů"
+
+#: gui/common/tooltips.js:299 gui/common/tooltips.js:712
+#: gui/common/tooltips.js:742
+msgid "meter"
+msgid_plural "meters"
+msgstr[0] "metr"
+msgstr[1] "metry"
+msgstr[2] "metry"
+
+#: gui/common/tooltips.js:318 gui/common/tooltips.js:376
+#: gui/common/tooltips.js:381 gui/common/tooltips.js:386
+#, javascript-format
+msgid "%(label)s: %(value)s"
+msgstr "%(label)s: %(value)s"
+
+#: gui/common/tooltips.js:324
+#, javascript-format
+msgid "Friendly Fire: %(enabled)s"
+msgstr "Útok na spojence: %(enabled)s"
+
+#: gui/common/tooltips.js:341
+#, javascript-format
+msgid "%(label)s: %(garrisonLimit)s"
+msgstr "%(label)s: %(garrisonLimit)s"
+
+#: gui/common/tooltips.js:342
+msgid "Garrison Limit"
+msgstr "Nejvyšší počet posádky"
+
+#: gui/common/tooltips.js:349
+#, javascript-format
+msgid "%(healRateLabel)s %(value)s %(health)s / %(second)s"
+msgstr "%(healRateLabel)s %(value)s %(health)s / %(second)s"
+
+#: gui/common/tooltips.js:350 gui/common/tooltips.js:704
+msgid "Heal:"
+msgstr "Léčit:"
+
+#: gui/common/tooltips.js:352
+msgid "Health"
+msgstr "Zdraví"
+
+#: gui/common/tooltips.js:377
+msgid "Projectile Limit"
+msgstr "Nejvyšší počet střel"
+
+#: gui/common/tooltips.js:382
+msgctxt "projectiles"
+msgid "Default"
+msgstr "Výchozí"
+
+#: gui/common/tooltips.js:387
+msgctxt "projectiles"
+msgid "Per Unit"
+msgstr "Na jednotku"
+
+#: gui/common/tooltips.js:396
+msgid "Number of repairers:"
+msgstr "Počet opravářů:"
+
+#: gui/common/tooltips.js:402
+#, javascript-format
+msgid "Add another worker to speed up the repairs by %(second)s second."
+msgid_plural ""
+"Add another worker to speed up the repairs by %(second)s seconds."
+msgstr[0] "Přidat dalšího dělníka pro urychlení oprav o %(second)s sekundu."
+msgstr[1] "Přidat dalšího dělníka pro urychlení oprav o %(second)s sekundy."
+msgstr[2] "Přidat dalšího dělníka pro urychlení oprav o %(second)s sekund."
+
+#: gui/common/tooltips.js:409
+#, javascript-format
+msgid "Add a worker to finish the repairs in %(second)s second."
+msgid_plural "Add a worker to finish the repairs in %(second)s seconds."
+msgstr[0] "Přidat dělníka pro dokončení oprav za %(second)s sekundu."
+msgstr[1] "Přidat dělníka pro dokončení oprav za %(second)s sekundy."
+msgstr[2] "Přidat dělníka pro dokončení oprav za %(second)s sekund."
+
+#: gui/common/tooltips.js:418
+msgid "Number of builders:"
+msgstr "Počet stavitelů:"
+
+#: gui/common/tooltips.js:424
+#, javascript-format
+msgid "Add another worker to speed up the construction by %(second)s second."
+msgid_plural ""
+"Add another worker to speed up the construction by %(second)s seconds."
+msgstr[0] "Přidat dalšího dělníka pro urychlení výstavby o %(second)s sekundu."
+msgstr[1] "Přidat dalšího dělníka pro urychlení výstavby o %(second)s sekundy."
+msgstr[2] "Přidat dalšího dělníka pro urychlení výstavby o %(second)s sekund."
+
+#: gui/common/tooltips.js:431
+#, javascript-format
+msgid "Add a worker to finish the construction in %(second)s second."
+msgid_plural "Add a worker to finish the construction in %(second)s seconds."
+msgstr[0] "Přidat dělníka pro dokončení výstavby za %(second)s sekundu."
+msgstr[1] "Přidat dělníka pro dokončení výstavby za %(second)s sekundy."
+msgstr[2] "Přidat dělníka pro dokončení výstavby za %(second)s sekund."
+
+#: gui/common/tooltips.js:466 gui/common/tooltips.js:657
+#, javascript-format
+msgid "%(component)s %(cost)s"
+msgstr "%(component)s %(cost)s"
+
+#: gui/common/tooltips.js:502
+msgid "Gather Rates:"
+msgstr "Rychlost sbírání:"
+
+#: gui/common/tooltips.js:505 gui/common/tooltips.js:527
+#, javascript-format
+msgid "%(resourceIcon)s %(rate)s"
+msgstr "%(resourceIcon)s %(rate)s"
+
+#: gui/common/tooltips.js:523
+msgid "Resource Trickle:"
+msgstr "Malé množství zásob:"
+
+#: gui/common/tooltips.js:524
+#, javascript-format
+msgid "%(resources)s / %(time)s"
+msgstr "%(resources)s / %(time)s"
+
+#. Translation: This string is part of the resources cost string on
+#. the tooltip for wall structures.
+#: gui/common/tooltips.js:576
+#, javascript-format
+msgid "%(resourceIcon)s %(minimum)s to %(resourceIcon)s %(maximum)s"
+msgstr "%(resourceIcon)s %(minimum)s na %(resourceIcon)s %(maximum)s"
+
+#: gui/common/tooltips.js:605
+#, javascript-format
+msgid "Walls:  %(costs)s"
+msgstr "Hradby:  %(costs)s"
+
+#: gui/common/tooltips.js:606
+#, javascript-format
+msgid "Towers:  %(costs)s"
+msgstr "Věže:  %(costs)s"
+
+#. Translation: Label in tooltip showing cost of a unit, structure or
+#. technology.
+#: gui/common/tooltips.js:614
+#, javascript-format
+msgid "%(label)s %(costs)s"
+msgstr "%(label)s %(costs)s"
+
+#: gui/common/tooltips.js:615
+msgid "Cost:"
+msgstr "Cena:"
+
+#: gui/common/tooltips.js:628
+#, javascript-format
+msgid "Requires %(technology)s"
+msgstr "Vyžaduje %(technology)s"
+
+#: gui/common/tooltips.js:640
+#, javascript-format
+msgid "%(label)s %(populationBonus)s"
+msgstr "%(label)s %(populationBonus)s"
+
+#: gui/common/tooltips.js:641
+msgid "Population Bonus:"
+msgstr "Populační zvýhodnění:"
+
+#: gui/common/tooltips.js:662
+msgid "Insufficient resources:"
+msgstr "Nedostatečné zdroje:"
+
+#: gui/common/tooltips.js:678
+#, javascript-format
+msgid "%(label)s %(speeds)s"
+msgstr "%(label)s %(speeds)s"
+
+#: gui/common/tooltips.js:679
+msgid "Speed:"
+msgstr "Rychlost:"
+
+#: gui/common/tooltips.js:681 gui/common/tooltips.js:686
+#, javascript-format
+msgid "%(speed)s %(movementType)s"
+msgstr "%(speed)s %(movementType)s"
+
+#: gui/common/tooltips.js:683
+msgid "Walk"
+msgstr "Jít"
+
+#: gui/common/tooltips.js:688
+msgid "Run"
+msgstr "Běžet"
+
+#: gui/common/tooltips.js:703 gui/common/tooltips.js:709
+#: gui/common/tooltips.js:714 gui/common/tooltips.js:739
+#, javascript-format
+msgid "%(label)s %(val)s %(unit)s"
+msgid_plural "%(label)s %(val)s %(unit)s"
+msgstr[0] "%(label)s %(val)s %(unit)s"
+msgstr[1] "%(label)s %(val)s %(unit)s"
+msgstr[2] "%(label)s %(val)s %(unit)s"
+
+#. Translation: Short for hit points (or health points) that are healed in one
+#. healing action
+#: gui/common/tooltips.js:707
+msgid "HP"
+msgid_plural "HP"
+msgstr[0] "HP"
+msgstr[1] "HP"
+msgstr[2] "HP"
+
+#: gui/common/tooltips.js:731
+#, javascript-format
+msgid "%(auralabel)s %(aurainfo)s"
+msgstr "%(auralabel)s %(aurainfo)s"
+
+#: gui/common/tooltips.js:732
+#, javascript-format
+msgid "%(auraname)s:"
+msgstr "%(auraname)s:"
+
+#: gui/common/tooltips.js:740
+msgctxt "aura"
+msgid "Range:"
+msgstr "Dosah:"
+
+#: gui/common/tooltips.js:757
+#, javascript-format
+msgid "%(specificName)s (%(genericName)s)"
+msgstr "%(specificName)s (%(genericName)s)"
+
+#. Translation: Example: "Epibátēs Athēnaîos [font="sans-bold-16"](Athenian
+#. Marine)[/font]"
+#: gui/common/tooltips.js:769
+#, javascript-format
+msgid "%(specificName)s %(fontStart)s(%(genericName)s)%(fontEnd)s"
+msgstr "%(specificName)s %(fontStart)s(%(genericName)s)%(fontEnd)s"
+
+#: gui/common/tooltips.js:784
+msgid "Classes:"
+msgstr "Třídy:"
+
+#. Translation: %(component) will be the icon for the loot type and %(loot)
+#. will be the value.
+#: gui/common/tooltips.js:811
+#, javascript-format
+msgid "%(component)s %(loot)s"
+msgstr "%(component)s %(loot)s"
+
+#: gui/common/tooltips.js:821
+msgid "Loot:"
+msgstr "Kořist:"
+
+#. Translation: Appears in a tooltip to indicate that right-clicking the
+#. corresponding GUI element will open the Template Details GUI page.
+#: gui/common/tooltips.js:829
+msgid "Right-click to view more information."
+msgstr "Pro zobrazení více informací klepněte pravým tlačítkem myši."
+
+#. Translation: Appears in a tooltip to indicate that clicking the
+#. corresponding GUI element will open the Template Details GUI page.
+#: gui/common/tooltips.js:835
+msgid "Click to view more information."
+msgstr "Klepněte pro zobrazení více informací."
+
+#: gui/credits/credits.js:69
+#, javascript-format
+msgid "%(nick)s - %(name)s"
+msgstr "%(nick)s - %(name)s"
+
+#: gui/options/options.js:100
+#, javascript-format
+msgid "Default: %(value)s"
+msgstr "Výchozí: %(value)s"
+
+#: gui/options/options.js:126
+#, javascript-format
+msgctxt "option number"
+msgid "Min: %(min)s, Max: %(max)s"
+msgstr "Min: %(min)s, Max: %(max)s"
+
+#: gui/options/options.js:128
+#, javascript-format
+msgctxt "option number"
+msgid "Min: %(min)s"
+msgstr "Nejméně: %(min)s"
+
+#: gui/options/options.js:130
+#, javascript-format
+msgctxt "option number"
+msgid "Max: %(max)s"
+msgstr "Nejvíce: %(max)s"
+
+#: gui/options/options.js:163
+#, javascript-format
+msgctxt "slider number"
+msgid "Value: %(val)s (min: %(min)s, max: %(max)s)"
+msgstr "Hodnota: %(val)s (min: %(min)s, max: %(max)s)"
+
+#: gui/options/options.js:299
+msgid ""
+"Resetting the options will erase your saved settings. Do you want to "
+"continue?"
+msgstr "Jste si jisti, že chcete uvést nastavení do výchozího stavu ?"
+
+#: gui/options/options.js:300 gui/options/options.js:350
+#: gui/options/options.js:376
+msgid "Warning"
+msgstr "Varování"
+
+#: gui/options/options.js:349
+msgid "Some setting values are invalid! Are you sure to save them?"
+msgstr "Některé nastavené hodnoty jsou chybné! Chcete je opravdu uložit?"
+
+#: gui/options/options.js:375
+msgid "You have unsaved changes, do you want to close this window?"
+msgstr "Máte neuložené změny. Chcete zavřít toto okno?"
+
+#: gui/pregame/mainmenu.js:42
+#, javascript-format
+msgid ""
+"%(hotkey)s: View the structure tree of civilizations featured in 0 A.D."
+msgstr "%(hotkey)s: Podívejte se na strom staveb civilizací uváděných v 0 A.D."
+
+#: gui/pregame/mainmenu.js:45
+#, javascript-format
+msgid "%(hotkey)s: Learn about the many civilizations featured in 0 A.D."
+msgstr "%(hotkey)s: Učte se o mnoha civilizacích uváděných v 0 A.D."
+
+#: gui/pregame/mainmenu.js:48
+#, javascript-format
+msgid ""
+"%(hotkey)s: Launch the multiplayer lobby to join and host publicly visible "
+"games and chat with other players."
+msgstr "%(hotkey)s: Spusťte herní skupinu pro více hráčů po připojení se a pro hostování veřejně viditelných her a pro hovory s ostatními hráči."
+
+#: gui/pregame/mainmenu.js:98
+msgid "connecting to server"
+msgstr "Připojuje se k serveru"
+
+#: gui/pregame/mainmenu.js:101
+#, javascript-format
+msgid "uploading (%f%%)"
+msgstr "Odesílá se (%f%%)"
+
+#: gui/pregame/mainmenu.js:107
+msgid "upload succeeded"
+msgstr "Odesílání uspělo"
+
+#: gui/pregame/mainmenu.js:108
+#, javascript-format
+msgid "upload failed (%(errorCode)s)"
+msgstr "Nahrání se nezdařilo (%(errorCode)s)"
+
+#: gui/pregame/mainmenu.js:112
+#, javascript-format
+msgid "upload failed (%(errorMessage)s)"
+msgstr "Nahrání se nezdařilo (%(errorMessage)s)"
+
+#: gui/pregame/mainmenu.js:114
+msgid "unknown"
+msgstr "Neznámý"
+
+#: gui/pregame/mainmenu.js:129
+msgid "Thank you for helping improve 0 A.D.!"
+msgstr "Děkujeme za pomoc při vylepšování 0 A.D.!"
+
+#: gui/pregame/mainmenu.js:130
+msgid "Anonymous feedback is currently enabled."
+msgstr "Anonymní zpětná vazba je nyní povolena."
+
+#: gui/pregame/mainmenu.js:131
+#, javascript-format
+msgid "Status: %(status)s."
+msgstr "Stav: %(status)s."
+
+#: gui/pregame/mainmenu.js:155
+#, javascript-format
+msgid ""
+"%(warning)s You appear to be using non-shader (fixed function) graphics. "
+"This option will be removed in a future 0 A.D. release, to allow for more "
+"advanced graphics features. We advise upgrading your graphics card to a more"
+" recent, shader-compatible model."
+msgstr ""
+
+#. Translation: This is the second paragraph of a warning. The
+#. warning explains that the user is using “non-shader“ graphics,
+#. and that in the future this will not be supported by the game, so
+#. the user will need a better graphics card.
+#: gui/pregame/mainmenu.js:163
+msgid "Please press \"Read More\" for more information or \"OK\" to continue."
+msgstr "Stiskněte, prosím, Číst více pro další informace nebo OK pro pokračování."
+
+#: gui/pregame/mainmenu.js:164
+msgid "WARNING!"
+msgstr "VAROVÁNÍ!"
+
+#: gui/pregame/mainmenu.js:165 gui/splashscreen/splashscreen.xml:(caption):29
+msgid "OK"
+msgstr "OK"
+
+#: gui/pregame/mainmenu.js:165
+msgid "Read More"
+msgstr "Číst více"
+
+#: gui/pregame/mainmenu.js:247
+#, javascript-format
+msgid "Build: %(buildDate)s (%(revision)s)"
+msgstr "Sestaveno: %(buildDate)s (%(revision)s)"
+
+#: gui/pregame/mainmenu.js:259
+msgid "Are you sure you want to quit 0 A.D.?"
+msgstr "Opravdu chcete ukončit 0 A.D.?"
+
+#: gui/pregame/mainmenu.js:260 gui/pregame/mainmenu.js:274
+msgid "Confirmation"
+msgstr "Potvrzení"
+
+#: gui/pregame/mainmenu.js:273
+msgid "Are you sure you want to quit 0 A.D. and open the Scenario Editor?"
+msgstr "Opravdu chcete vypnout hru a spustit editor scénářů?"
+
+#: gui/pregame/mainmenu.js:281
+msgid ""
+"The scenario editor is not available or failed to load. See the game logs "
+"for additional information."
+msgstr "Editor scénářů je nedostupný, nebo se jej nepodařilo nahrát. Pro další informace se podívejte do herních záznamů."
+
+#: gui/pregame/mainmenu.js:282 gui/replaymenu/replay_actions.js:117
+msgid "Error"
+msgstr "Chyba"
+
+#: gui/pregame/mainmenu.js:288
+msgid ""
+"Launch the multiplayer lobby to join and host publicly visible games and "
+"chat with other players. \\[DISABLED BY BUILD]"
+msgstr ""
+
+#: gui/pregame/mainmenu.js:293 gui/pregame/mainmenu.xml:(caption):68
+#: gui/pregame/mainmenu.xml:(caption):95
+msgid "Technical Details"
+msgstr "Technické podrobnosti"
+
+#: gui/pregame/mainmenu.js:298 gui/pregame/mainmenu.xml:(caption):146
+msgid "Manual"
+msgstr "Příručka"
+
+#. Translation: Label followed by a list of values.
+#: gui/reference/common/draw.js:48
+#, javascript-format
+msgid "%(listHeader)s %(listOfValues)s"
+msgstr "%(listHeader)s %(listOfValues)s"
+
+#. Translation: Label in tooltip showing the resource type and quantity of a
+#. given resource supply.
+#: gui/reference/common/draw.js:67
+#, javascript-format
+msgid "%(label)s %(component)s %(amount)s"
+msgstr "%(label)s %(component)s %(amount)s"
+
+#: gui/reference/common/draw.js:68
+msgid "Resource Supply:"
+msgstr "Zdroj surovin:"
+
+#. Translation: Marks that a resource supply entity has an unending, infinite,
+#. supply of its resource.
+#: gui/reference/common/draw.js:71 gui/summary/summary.js:111
+msgid "∞"
+msgstr "∞"
+
+#: gui/reference/common/load.js:193
+#, javascript-format
+msgid "%(health_min)s to %(health_max)s"
+msgstr "%(health_min)s do %(health_max)s"
+
+#: gui/reference/structree/structree.js:49
+#, javascript-format
+msgid "%(hotkey)s: Switch to History."
+msgstr "%(hotkey)s: Přepnout na historii."
+
+#: gui/reference/structree/structree.js:50
+#, javascript-format
+msgid "%(hotkey)s: Close Structure Tree."
+msgstr "%(hotkey)s: Zavřít strom staveb."
+
+#. Translation: Label before a list of the names of units that build the
+#. structure selected.
+#: gui/reference/viewer/viewer.js:139
+msgid "Built by:"
+msgstr "Postaveno:"
+
+#. Translation: Label before a list of the names of structures or units that
+#. train the unit selected.
+#: gui/reference/viewer/viewer.js:152
+msgid "Trained by:"
+msgstr "Vycvičeno:"
+
+#. Translation: Label before a list of names of structures or units that
+#. research the technology selected.
+#: gui/reference/viewer/viewer.js:165
+msgid "Researched at:"
+msgstr "Vyzkoumáno v:"
+
+#. Translation: Label before a list of the names of structures the selected
+#. unit can construct or build.
+#: gui/reference/viewer/viewer.js:177
+msgid "Builds:"
+msgstr "Stavby:"
+
+#. Translation: Label before a list of the names of technologies the selected
+#. unit or structure can research.
+#: gui/reference/viewer/viewer.js:198
+msgid "Researches:"
+msgstr "Výzkumy:"
+
+#. Translation: Label before a list of the names of units the selected unit or
+#. structure can train.
+#: gui/reference/viewer/viewer.js:210
+msgid "Trains:"
+msgstr "Výcvik:"
+
+#. Translation: Label before a list of the names of units or structures the
+#. selected unit or structure can be upgradable to.
+#: gui/reference/viewer/viewer.js:223
+msgid "Upgradable to:"
+msgstr "Vylepšitelné na:"
+
+#: gui/replaymenu/replay_actions.js:90
+msgid "This replay needs a different sequence of mods:"
+msgstr "Toto znovupřehrání potřebuje odlišné pořadí pozměněných verzí hry:"
+
+#: gui/replaymenu/replay_actions.js:95
+msgid "This replay is not compatible with your version of the game!"
+msgstr "Tento záznam se neslučuje s touto verzí hry!"
+
+#: gui/replaymenu/replay_actions.js:96
+#, javascript-format
+msgid "Your version: %(version)s"
+msgstr "Vaše verze: %(version)s"
+
+#: gui/replaymenu/replay_actions.js:97
+#, javascript-format
+msgid "Required version: %(version)s"
+msgstr "Požadovaná verze: %(version)s"
+
+#: gui/replaymenu/replay_actions.js:100
+msgid "Incompatible replay"
+msgstr "Neslučující se záznam"
+
+#: gui/replaymenu/replay_actions.js:117
+msgid "No summary data available."
+msgstr "Není dostupné žádné shrnutí."
+
+#: gui/replaymenu/replay_actions.js:166
+msgid "Are you sure you want to delete this replay permanently?"
+msgstr "Jste si jistý, že chcete navždy smazat tento záznam?"
+
+#: gui/replaymenu/replay_actions.js:168
+msgid "Delete replay"
+msgstr "Smazat záznam"
+
+#: gui/replaymenu/replay_filters.js:50
+msgctxt "datetime"
+msgid "Any"
+msgstr "Jakýkoli"
+
+#: gui/replaymenu/replay_filters.js:66
+msgctxt "map size"
+msgid "Any"
+msgstr "Jakákoli"
+
+#: gui/replaymenu/replay_filters.js:82
+msgctxt "map name"
+msgid "Any"
+msgstr "Jakékoli"
+
+#: gui/replaymenu/replay_filters.js:98
+msgctxt "population capacity"
+msgid "Any"
+msgstr "Jakákoli"
+
+#: gui/replaymenu/replay_filters.js:117
+msgctxt "duration"
+msgid "Any"
+msgstr "Jakákoli"
+
+#. Translation: Shorter duration than max minutes.
+#: gui/replaymenu/replay_filters.js:121
+#, javascript-format
+msgctxt "duration filter"
+msgid "< %(max)s min"
+msgid_plural "< %(max)s min"
+msgstr[0] "< %(max)s min"
+msgstr[1] "< %(max)s min"
+msgstr[2] "< %(max)s min"
+
+#. Translation: Longer duration than min minutes.
+#: gui/replaymenu/replay_filters.js:125
+#, javascript-format
+msgctxt "duration filter"
+msgid "> %(min)s min"
+msgid_plural "> %(min)s min"
+msgstr[0] "> %(min)s min"
+msgstr[1] "> %(min)s min"
+msgstr[2] "> %(min)s min"
+
+#. Translation: Duration between min and max minutes.
+#: gui/replaymenu/replay_filters.js:128
+#, javascript-format
+msgctxt "duration filter"
+msgid "%(min)s - %(max)s min"
+msgstr "%(min)s - %(max)s min"
+
+#: gui/replaymenu/replay_filters.js:142
+msgid "Single- and multiplayer"
+msgstr "Hra pro jednoho a více hráčů"
+
+#: gui/replaymenu/replay_filters.js:142 gui/pregame/mainmenu.xml:(caption):481
+msgid "Single Player"
+msgstr "Hra jednoho hráče"
+
+#: gui/replaymenu/replay_filters.js:142 gui/pregame/mainmenu.xml:(caption):496
+msgid "Multiplayer"
+msgstr "Hra více hráčů"
+
+#: gui/replaymenu/replay_filters.js:155
+msgid "Any Victory Condition"
+msgstr "Jakákoliv podmínka vítězství"
+
+#: gui/replaymenu/replay_filters.js:168
+msgid "Rated and unrated games"
+msgstr "Hodnocené a nehodnocené hry"
+
+#: gui/replaymenu/replay_filters.js:168
+msgid "Rated games"
+msgstr "Hodnocené hry"
+
+#: gui/replaymenu/replay_filters.js:168
+msgid "Unrated games"
+msgstr "Nehodnocené hry"
+
+#: gui/replaymenu/replay_menu.js:193
+msgid "Filter replays by typing one or more, partial or complete playernames."
+msgstr "Filtrování záznamů her, podle jednoho či více anebo částečných jmen hráčů."
+
+#: gui/replaymenu/replay_menu.js:273
+#, javascript-format
+msgid "Players: %(numberOfPlayers)s"
+msgstr "Hráči: %(numberOfPlayers)s"
+
+#: gui/replaymenu/replay_menu.js:300
+msgid "yyyy-MM-dd HH:mm"
+msgstr "rrrr-MM-dd HH:mm"
+
+#: gui/replaymenu/replay_menu.js:330
+msgid "yyyy-MM"
+msgstr "rrrr-MM"
+
+#: gui/summary/layout.js:3 gui/summary/summary.xml:(caption):74
+msgid "Score"
+msgstr "Výsledek"
+
+#: gui/summary/layout.js:5 gui/summary/layout.js:23 gui/summary/layout.js:61
+#: gui/summary/layout.js:101 gui/summary/layout.js:152
+#: gui/summary/layout.js:184 gui/summary/summary.xml:(caption):123
+msgid "Player name"
+msgstr "Jméno hráče"
+
+#: gui/summary/layout.js:6
+msgid "Total score"
+msgstr "Celkový výsledek"
+
+#: gui/summary/layout.js:7
+msgid "Economy score"
+msgstr "Hospodářský výsledek"
+
+#: gui/summary/layout.js:8
+msgid "Military score"
+msgstr "Vojenský výsledek"
+
+#: gui/summary/layout.js:9
+msgid "Exploration score"
+msgstr "Výsledek průzkumu"
+
+#: gui/summary/layout.js:21 gui/summary/summary.xml:(caption):81
+msgid "Buildings"
+msgstr "Budovy"
+
+#: gui/summary/layout.js:24 gui/summary/layout.js:62 gui/summary/layout.js:102
+msgid "Total"
+msgstr "Celkem"
+
+#: gui/summary/layout.js:25
+msgid "Houses"
+msgstr "Domy"
+
+#: gui/summary/layout.js:26
+msgid "Economic"
+msgstr "Hospodářství"
+
+#: gui/summary/layout.js:27
+msgid "Outposts"
+msgstr "Rozhledny"
+
+#: gui/summary/layout.js:28
+msgid "Military"
+msgstr "Vojenství"
+
+#: gui/summary/layout.js:29
+msgid "Fortresses"
+msgstr "Pevnosti"
+
+#: gui/summary/layout.js:30
+msgid "Civ centers"
+msgstr "Správní střediska"
+
+#: gui/summary/layout.js:31
+msgid "Wonders"
+msgstr "Divy světa"
+
+#: gui/summary/layout.js:35
+#, javascript-format
+msgid ""
+"Buildings Statistics (%(constructed)s / %(destroyed)s / %(captured)s / "
+"%(lost)s)"
+msgstr "Statistika budov (%(constructed)s / %(destroyed)s / %(captured)s / %(lost)s)"
+
+#: gui/summary/layout.js:59 gui/summary/summary.xml:(caption):88
+msgid "Units"
+msgstr "Jednotky"
+
+#: gui/summary/layout.js:63
+msgid "Infantry"
+msgstr "Pěchota"
+
+#: gui/summary/layout.js:64
+msgid "Worker"
+msgstr "Dělník"
+
+#: gui/summary/layout.js:65
+msgid "Cavalry"
+msgstr "Jezdectvo"
+
+#: gui/summary/layout.js:66
+msgid "Champion"
+msgstr "Elitní jednotka"
+
+#: gui/summary/layout.js:68
+msgid "Siege"
+msgstr "Obléhání"
+
+#: gui/summary/layout.js:69
+msgid "Navy"
+msgstr "Loďstvo"
+
+#: gui/summary/layout.js:70
+msgid "Traders"
+msgstr "Obchodníci"
+
+#: gui/summary/layout.js:74
+#, javascript-format
+msgid "Units Statistics (%(trained)s / %(killed)s / %(captured)s / %(lost)s)"
+msgstr "Statistika jednotek (%(trained)s / %(killed)s / %(captured)s / %(lost)s)"
+
+#: gui/summary/layout.js:99 gui/summary/summary.xml:(caption):95
+msgid "Resources"
+msgstr "Zdroje"
+
+#: gui/summary/layout.js:111
+msgid "Tributes"
+msgstr "Poplatky"
+
+#: gui/summary/layout.js:112
+#, javascript-format
+msgid ""
+"Tributes \n"
+"(%(sent)s / %(received)s)"
+msgstr "Poplatky\n(%(sent)s / %(received)s)"
+
+#: gui/summary/layout.js:120
+msgid "Treasures collected"
+msgstr "Shromážděné poklady"
+
+#: gui/summary/layout.js:121
+msgid "Loot"
+msgstr "Kořist"
+
+#: gui/summary/layout.js:122
+msgid "Livestock bred"
+msgstr "Chov hospodářských zvířat"
+
+#: gui/summary/layout.js:126
+#, javascript-format
+msgid "Resource Statistics (%(gathered)s / %(used)s)"
+msgstr "Statistika zdrojů (%(gathered)s / %(used)s)"
+
+#: gui/summary/layout.js:150 gui/summary/summary.xml:(caption):102
+msgid "Market"
+msgstr "Trh"
+
+#: gui/summary/layout.js:153
+msgid "Trade income"
+msgstr "Příjem z obchodu"
+
+#: gui/summary/layout.js:154
+msgid "Barter efficiency"
+msgstr "Účinnost výměnného obchodu"
+
+#. Translation: use %(resourceWithinSentence)s if needed
+#: gui/summary/layout.js:160
+#, javascript-format
+msgid "%(resourceFirstWord)s exchanged"
+msgstr "%(resourceFirstWord)s vyměněno"
+
+#: gui/summary/layout.js:182 gui/summary/summary.xml:(caption):109
+#: gui/credits/texts/misc.jsonTitle
+msgid "Miscellaneous"
+msgstr "Různé"
+
+#: gui/summary/layout.js:185
+msgid "Kill / Death ratio"
+msgstr "Poměr zabití a smrtí"
+
+#: gui/summary/layout.js:186
+msgid "Map control (peak)"
+msgstr "Ovládání mapy (nejvyšší stupeň)"
+
+#: gui/summary/layout.js:187
+msgid "Map control (finish)"
+msgstr "Ovládání mapy (ukončení)"
+
+#: gui/summary/layout.js:188
+msgid "Map exploration"
+msgstr "Průzkum mapy"
+
+#: gui/summary/layout.js:189
+msgid "Vegetarian ratio"
+msgstr "Poměr vegetariánů"
+
+#: gui/summary/layout.js:190
+msgid "Feminization"
+msgstr "Poženštění"
+
+#: gui/summary/layout.js:193
+msgid "Bribes"
+msgstr "Úplatky"
+
+#: gui/summary/layout.js:194
+#, javascript-format
+msgid ""
+"Bribes\n"
+"(%(succeeded)s / %(failed)s)"
+msgstr "Úplatky\n(%(succeeded)s / %(failed)s)"
+
+#: gui/summary/layout.js:357
+msgid "Team total"
+msgstr "Tým celkem"
+
+#: gui/summary/summary.js:30
+msgid "Trained"
+msgstr "Vycvičeno"
+
+#: gui/summary/summary.js:35
+msgid "Constructed"
+msgstr "Postaveno"
+
+#: gui/summary/summary.js:40
+msgid "Gathered"
+msgstr "Shromážděno"
+
+#: gui/summary/summary.js:45
+msgid "Sent"
+msgstr "Posláno"
+
+#: gui/summary/summary.js:50
+msgid "Bought"
+msgstr "Koupeno"
+
+#: gui/summary/summary.js:55
+msgid "Income"
+msgstr "Příjem"
+
+#: gui/summary/summary.js:60
+msgid "Captured"
+msgstr "Zajmuto"
+
+#: gui/summary/summary.js:65
+msgid "Succeeded"
+msgstr "Podařilo se"
+
+#: gui/summary/summary.js:70
+msgid "Destroyed"
+msgstr "Zničeno"
+
+#: gui/summary/summary.js:75
+msgid "Killed"
+msgstr "Zabito"
+
+#: gui/summary/summary.js:80
+msgid "Lost"
+msgstr "Ztraceno"
+
+#: gui/summary/summary.js:85
+msgid "Used"
+msgstr "Použito"
+
+#: gui/summary/summary.js:90
+msgid "Received"
+msgstr "Přijato"
+
+#: gui/summary/summary.js:95
+msgid "Sold"
+msgstr "Prodáno"
+
+#: gui/summary/summary.js:100
+msgid "Outcome"
+msgstr "Výsledek"
+
+#: gui/summary/summary.js:105
+msgid "Failed"
+msgstr "Nepodařilo se"
+
+#: gui/summary/summary.js:335
+msgid "Time elapsed"
+msgstr "Uplynulý čas"
+
+#: gui/summary/summary.js:491
+msgid "Current Scores"
+msgstr "Nynější bodový stav"
+
+#: gui/summary/summary.js:493
+msgid "Scores at the end of the game."
+msgstr "Bodový stav na konci hry."
+
+#: gui/summary/summary.js:495
+msgid "You have been disconnected."
+msgstr "Byl jste odpojen."
+
+#: gui/summary/summary.js:497
+msgid "You have left the game."
+msgstr "Opustil jste hru."
+
+#: gui/summary/summary.js:499
+msgid "You have won the battle!"
+msgstr "Vyhrál jste bitvu!"
+
+#: gui/summary/summary.js:501
+msgid "You have been defeated…"
+msgstr "Byl jsi poražen..."
+
+#: gui/summary/summary.js:502
+msgid "You have abandoned the game."
+msgstr "Opustil jste hru."
+
+#: gui/summary/summary.js:505
+#, javascript-format
+msgid "Game time elapsed: %(time)s"
+msgstr "Uplynulý herní čas: %(time)s"
+
+#: gui/summary/summary.js:513
+#, javascript-format
+msgid "%(mapName)s - %(mapType)s"
+msgstr "%(mapName)s - %(mapType)s"
+
+#: gui/summary/summary.js:525
+#, javascript-format
+msgid "%(hotkey)s: Toggle the multiplayer lobby in a dialog window."
+msgstr "%(hotkey)s: Přepnout skupinu hry pro více hráčů v dialogovém okně."
+
+#: gui/civinfo/civinfo.xml:(caption):20
+msgid "Civilizations"
+msgstr "Civilizace"
+
+#: gui/civinfo/civinfo.xml:(caption):32
+msgid "Civilization Selection"
+msgstr "Výběr civilizace"
+
+#: gui/civinfo/civinfo.xml:(caption):125
+#: gui/pregame/mainmenu.xml:(caption):181
+#: gui/reference/structree/structree.xml:(caption):19
+msgid "Structure Tree"
+msgstr "Strom staveb"
+
+#: gui/civinfo/civinfo.xml:(caption):137 gui/credits/credits.xml:(caption):32
+#: gui/options/options.xml:(caption):60
+#: gui/reference/structree/structree.xml:(caption):137
+#: gui/reference/viewer/viewer.xml:(caption):37
+msgid "Close"
+msgstr "Zavřít"
+
+#: gui/credits/credits.xml:(caption):19
+msgid "0 A.D. Credits"
+msgstr "Zásluhy o 0 A.D."
+
+#: gui/locale/locale.xml:(caption):14 gui/pregame/mainmenu.xml:(caption):382
+msgid "Language"
+msgstr "Jazyk"
+
+#: gui/locale/locale.xml:(caption):17
+msgid "Language:"
+msgstr "Jazyk:"
+
+#. A locale is a set of parameters that defines the user’s language, country
+#. and any special variant preferences that the user wants to see in their
+#. user interface. Here, “Locale” refers to the code that identifies those
+#. settings, such as ‘en_US’.
+#: gui/locale/locale.xml:(caption):31
+msgid "Locale:"
+msgstr "Jazyk:"
+
+#: gui/locale/locale.xml:(caption):36
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: gui/locale/locale.xml:(caption):41
+msgid "Advanced"
+msgstr "Pokročilé"
+
+#: gui/locale/locale.xml:(caption):46
+msgid "Accept"
+msgstr "Přijmout"
+
+#: gui/options/options.xml:(caption):15
+msgid "Game Options"
+msgstr "Herní možnosti"
+
+#: gui/options/options.xml:(caption):42
+msgid "Reset"
+msgstr "Nastavit znovu"
+
+#: gui/options/options.xml:(caption):48
+msgid "Revert"
+msgstr "Vrátit"
+
+#: gui/options/options.xml:(caption):54
+msgid "Save"
+msgstr "Uložit"
+
+#: gui/options/options.xml:(tooltip):43
+msgid "Resets user settings to their game default"
+msgstr "Nastavit znovu nastavení na výchozí herní hodnoty"
+
+#: gui/options/options.xml:(tooltip):49
+msgid "Reverts to previous saved settings"
+msgstr "Vrátí do předtím uloženého stavu nastavení"
+
+#: gui/options/options.xml:(tooltip):55
+msgid "Saves changes"
+msgstr "Uloží změny"
+
+#: gui/options/options.xml:(tooltip):61
+msgid "Unsaved changes affect this session only"
+msgstr "Neuložené změny ovlivní pouze toto sezení"
+
+#: gui/pregame/mainmenu.xml:58
+msgid "Help improve 0 A.D.!"
+msgstr "Pomozte zlepšit 0 A.D.!"
+
+#: gui/pregame/mainmenu.xml:60
+msgid ""
+"You can automatically send us anonymous feedback that will help us fix bugs,"
+" and improve performance and compatibility."
+msgstr "Můžete nám automaticky poslat anonymní zpětnou vazbu, která nám pomůže při opravě chyb a zlepšování výkonu a kompatibility."
+
+#: gui/pregame/mainmenu.xml:562
+msgid "Alpha XXIII: Ken Wood"
+msgstr "Alpha XXIII: Ken Wood"
+
+#: gui/pregame/mainmenu.xml:564
+msgid ""
+"WARNING: This is an early development version of the game. Many features "
+"have not been added yet."
+msgstr "VAROVÁNÍ: Toto je raná vývojová verze hry. Mnohé věci ještě nebyly udělány."
+
+#: gui/pregame/mainmenu.xml:(caption):64
+msgid "Enable Feedback"
+msgstr "Povolit zpětnou vazbu"
+
+#: gui/pregame/mainmenu.xml:(caption):91
+msgid "Disable Feedback"
+msgstr "Zakázat zpětnou vazbu"
+
+#: gui/pregame/mainmenu.xml:(caption):165
+msgid "Tutorial"
+msgstr "Výuka"
+
+#: gui/pregame/mainmenu.xml:(caption):197
+#: gui/reference/structree/structree.xml:(caption):126
+msgid "History"
+msgstr "Historie"
+
+#: gui/pregame/mainmenu.xml:(caption):219
+msgid "Matches"
+msgstr "Zápasy"
+
+#: gui/pregame/mainmenu.xml:(caption):233
+msgid "Campaigns"
+msgstr "Tažení"
+
+#: gui/pregame/mainmenu.xml:(caption):246
+msgid "Load Game"
+msgstr "Načíst  hru"
+
+#: gui/pregame/mainmenu.xml:(caption):260
+#: gui/pregame/mainmenu.xml:(caption):340
+msgid "Replays"
+msgstr "Záznamy"
+
+#. Join a game by specifying the host's IP address.
+#: gui/pregame/mainmenu.xml:(caption):288
+msgid "Join Game"
+msgstr "Připojit se ke hře"
+
+#: gui/pregame/mainmenu.xml:(caption):302
+msgid "Host Game"
+msgstr "Pořádat hru"
+
+#: gui/pregame/mainmenu.xml:(caption):318
+msgid "Game Lobby"
+msgstr "Herní skupina"
+
+#: gui/pregame/mainmenu.xml:(caption):368
+msgid "Options"
+msgstr "Možnosti"
+
+#: gui/pregame/mainmenu.xml:(caption):396
+msgid "Mod Selection"
+msgstr "Výběr pozměněné verze"
+
+#: gui/pregame/mainmenu.xml:(caption):408
+msgid "Welcome Screen"
+msgstr "Uvítací obrazovka"
+
+#: gui/pregame/mainmenu.xml:(caption):466
+msgid "Learn to Play"
+msgstr "Jak hrát"
+
+#: gui/pregame/mainmenu.xml:(caption):511
+msgid "Settings"
+msgstr "Nastavení"
+
+#: gui/pregame/mainmenu.xml:(caption):526
+msgid "Scenario Editor"
+msgstr "Editor scénářů"
+
+#: gui/pregame/mainmenu.xml:(caption):540
+msgid "Exit"
+msgstr "Ukončit"
+
+#: gui/pregame/mainmenu.xml:(caption):574
+msgid "Website"
+msgstr "Webové stránky"
+
+#: gui/pregame/mainmenu.xml:(caption):586
+msgid "Chat"
+msgstr "Rozhovor"
+
+#: gui/pregame/mainmenu.xml:(caption):598
+msgid "Report a Bug"
+msgstr "Nahlásit chybu"
+
+#: gui/pregame/mainmenu.xml:(caption):610
+msgid "Translate the Game"
+msgstr "Překládat hru"
+
+#: gui/pregame/mainmenu.xml:(caption):622
+msgid "Donate"
+msgstr "Darovat"
+
+#: gui/pregame/mainmenu.xml:(caption):634
+msgid "Credits"
+msgstr "Zásluhy"
+
+#: gui/pregame/mainmenu.xml:(caption):663
+msgid "WILDFIRE GAMES"
+msgstr "WILDFIRE GAMES"
+
+#: gui/pregame/mainmenu.xml:(tooltip):147
+msgid "Open the 0 A.D. Game Manual."
+msgstr "Otevřít příručku k 0 A.D."
+
+#: gui/pregame/mainmenu.xml:(tooltip):166
+msgid "Start the economic tutorial."
+msgstr "Spustit hospodářský návod."
+
+#: gui/pregame/mainmenu.xml:(tooltip):220
+msgid "Click here to start a new single player game."
+msgstr "Klepněte zde pro spuštění nové hry pro jednoho hráče."
+
+#: gui/pregame/mainmenu.xml:(tooltip):234
+msgid ""
+"Relive history through historical military campaigns. \\[NOT YET "
+"IMPLEMENTED]"
+msgstr "Zažijte znovu historii prostřednictvím historických vojenských tažení. \\[NEUDĚLÁNO]"
+
+#: gui/pregame/mainmenu.xml:(tooltip):247
+msgid "Click here to load a saved game."
+msgstr "Klepněte zde pro načtení uložené hry."
+
+#: gui/pregame/mainmenu.xml:(tooltip):261
+#: gui/pregame/mainmenu.xml:(tooltip):341
+msgid "Playback previous games."
+msgstr "Přehrát předchozí hry."
+
+#: gui/pregame/mainmenu.xml:(tooltip):289
+msgid "Joining an existing multiplayer game."
+msgstr "Připojení se ke hře pro více hráčů."
+
+#: gui/pregame/mainmenu.xml:(tooltip):303
+msgid "Host a multiplayer game.\\n\\nRequires UDP port 20595 to be open."
+msgstr "Pořádat hru pro více hráčů.\\n\\nVyžaduje otevření portu UDP 20595."
+
+#: gui/pregame/mainmenu.xml:(tooltip):369
+msgid "Adjust game settings."
+msgstr "Upravit nastavení hry."
+
+#: gui/pregame/mainmenu.xml:(tooltip):383
+msgid "Choose the language of the game."
+msgstr "Vyberte jazyk hry."
+
+#: gui/pregame/mainmenu.xml:(tooltip):397
+msgid "Select and download mods for the game."
+msgstr "Vybrat a stáhnout pozměněné verze pro hru."
+
+#: gui/pregame/mainmenu.xml:(tooltip):409
+msgid "Show the Welcome Screen. Useful if you hid it by mistake."
+msgstr "Ukázat uvítací obrazovku. Užitečné v případě, že jste jim skryl omylem."
+
+#: gui/pregame/mainmenu.xml:(tooltip):467
+msgid ""
+"Learn how to play, start the tutorial, discover the technology trees, and "
+"the history behind the civilizations"
+msgstr "Učte se, jak hrát, spusťte návod, zkoumejte stromy technologií a historii civilizací"
+
+#: gui/pregame/mainmenu.xml:(tooltip):482
+msgid "Challenge the computer player to a single player match."
+msgstr "Vyzvěte počítač jako soupeře ve hře pro jednoho hráče."
+
+#: gui/pregame/mainmenu.xml:(tooltip):497
+msgid "Fight against one or more human players in a multiplayer game."
+msgstr "Bojujte s jedním či více lidskými hráči ve hře pro více hráčů."
+
+#: gui/pregame/mainmenu.xml:(tooltip):512
+msgid "Game options and mod selection."
+msgstr "Herní volby a výběr pozměněných verzí."
+
+#: gui/pregame/mainmenu.xml:(tooltip):527
+msgid ""
+"Open the Atlas Scenario Editor in a new window. You can run this more "
+"reliably by starting the game with the command-line argument \"-editor\"."
+msgstr "Otevřít editor scénářů Atlas v novém okně. Spolehlivěji jej můžete provozovat spuštěním hry s argumentem příkazového řádku \"-editor\"."
+
+#: gui/pregame/mainmenu.xml:(tooltip):541
+msgid "Exits the game."
+msgstr "Ukončí hru."
+
+#: gui/pregame/mainmenu.xml:(tooltip):575
+msgid "Click to open play0ad.com in your web browser."
+msgstr "Klepněte pro otevření play0ad.com ve svém prohlížeči."
+
+#: gui/pregame/mainmenu.xml:(tooltip):587
+msgid ""
+"Click to open the 0 A.D. IRC chat in your browser. (#0ad on "
+"webchat.quakenet.org)"
+msgstr "Klepněte pro otevření rozhovoru IRC 0 A.D. ve svém prohlížeči. (#0ad on webchat.quakenet.org)"
+
+#: gui/pregame/mainmenu.xml:(tooltip):599
+msgid "Click to visit 0 A.D. Trac to report a bug, crash, or error."
+msgstr "Klepněte na 0 A.D. Trac pro nahlášení chyby, pádu nebo jiného problému."
+
+#: gui/pregame/mainmenu.xml:(tooltip):611
+msgid "Click to open the 0 A.D. translate page in your browser."
+msgstr "Klepněte pro otevření překladatelské stránky 0 A.D. ve svém prohlížeči."
+
+#: gui/pregame/mainmenu.xml:(tooltip):623
+msgid "Help with the project expenses by donating."
+msgstr "Pomozte s náklady projektu a darujte peníze."
+
+#: gui/pregame/mainmenu.xml:(tooltip):635
+msgid "Click to see the 0 A.D. credits."
+msgstr "Klepněte pro zobrazení zásluh o 0 A.D."
+
+#: gui/reference/structree/structree.xml:(caption):31
+msgid "Civilization:"
+msgstr "Civilizace:"
+
+#: gui/reference/structree/structree.xml:(caption):98
+msgid "Trainer Units"
+msgstr "Školitelské jednotky"
+
+#: gui/reference/viewer/viewer.xml:(caption):13
+msgid "Information"
+msgstr "Informace"
+
+#: gui/replaymenu/replay_menu.xml:(caption):13
+msgid "Replay Games"
+msgstr "Opakování záznamu hry"
+
+#: gui/replaymenu/replay_menu.xml:(caption):109
+msgid "Filter compatible replays"
+msgstr "Filtrovat slučitelná opakování záznamu hry"
+
+#: gui/replaymenu/replay_menu.xml:(caption):150
+msgid "Map Type:"
+msgstr "Typ mapy:"
+
+#: gui/replaymenu/replay_menu.xml:(caption):165
+msgid "Map Size:"
+msgstr "Velikost mapy:"
+
+#: gui/replaymenu/replay_menu.xml:(caption):180
+msgid "Victory:"
+msgstr "Vítězství:"
+
+#: gui/replaymenu/replay_menu.xml:(caption):213
+msgid "Spoiler"
+msgstr "Vyzrazení děje"
+
+#: gui/replaymenu/replay_menu.xml:(caption):225
+msgid "Main Menu"
+msgstr "Hlavní nabídka"
+
+#: gui/replaymenu/replay_menu.xml:(caption):231
+msgid "Delete"
+msgstr "Smazat"
+
+#: gui/replaymenu/replay_menu.xml:(caption):237
+msgid "Reload Cache"
+msgstr "Znovunahrát vyrovnávací paměť"
+
+#: gui/replaymenu/replay_menu.xml:(caption):244
+#: gui/summary/summary.xml:(caption):34
+msgid "Summary"
+msgstr "Shrnutí"
+
+#: gui/replaymenu/replay_menu.xml:(caption):250
+msgid "Start Replay"
+msgstr "Začít přehrávání záznamu"
+
+#: gui/replaymenu/replay_menu.xml:(heading):69
+msgctxt "replay"
+msgid "Date / Time"
+msgstr "Datum/Čas"
+
+#: gui/replaymenu/replay_menu.xml:(heading):73
+msgctxt "replay"
+msgid "Players"
+msgstr "Hráči"
+
+#: gui/replaymenu/replay_menu.xml:(heading):77
+msgctxt "replay"
+msgid "Map Name"
+msgstr "Název mapy"
+
+#: gui/replaymenu/replay_menu.xml:(heading):81
+msgctxt "replay"
+msgid "Size"
+msgstr "Velikost"
+
+#: gui/replaymenu/replay_menu.xml:(heading):85
+msgctxt "replay"
+msgid "Population"
+msgstr "Počet obyvatel"
+
+#: gui/replaymenu/replay_menu.xml:(heading):89
+msgctxt "replay"
+msgid "Duration"
+msgstr "Trvání"
+
+#: gui/replaymenu/replay_menu.xml:(tooltip):238
+msgid "Rebuild the replay cache from scratch. Potentially slow!"
+msgstr "Postavit vyrovnávací paměť pro opakované přehrání záznamu hry znovu od začátku. Může být pomalé!"
+
+#: gui/splashscreen/splashscreen.xml:(caption):13
+msgid "Welcome!"
+msgstr "Vítejte!"
+
+#: gui/splashscreen/splashscreen.xml:(caption):18
+msgid "Show this message in the future"
+msgstr "Zobrazit tuto zprávu i později"
+
+#: gui/splashscreen/splashscreen.xml:(caption):23
+msgid "Known Issues (web)"
+msgstr "Známé problémy (web)"
+
+#: gui/summary/summary.xml:(caption):116
+msgid "Charts"
+msgstr "Grafy"
+
+#: gui/summary/summary.xml:(caption):173
+msgctxt "summary chart"
+msgid "Category:"
+msgstr "Kategorie:"
+
+#: gui/summary/summary.xml:(caption):183
+msgctxt "summary chart"
+msgid "Value:"
+msgstr "Hodnota:"
+
+#: gui/summary/summary.xml:(caption):193
+msgctxt "summary chart"
+msgid "Type:"
+msgstr "Dosah aury"
+
+#: gui/summary/summary.xml:(caption):227
+msgid "Replay"
+msgstr "Záznam"
+
+#: gui/summary/summary.xml:(caption):232
+msgid "Continue"
+msgstr "Pokračovat"
+
+#: gui/summary/summary.xml:(tooltip):179
+msgctxt "summary chart"
+msgid "Category"
+msgstr "Kategorie"
+
+#: gui/summary/summary.xml:(tooltip):189
+msgctxt "summary chart"
+msgid "Value"
+msgstr "Hodnota"
+
+#: gui/summary/summary.xml:(tooltip):200
+msgctxt "summary chart"
+msgid "Type"
+msgstr "Typ"
+
+#: gui/credits/texts/art.jsonContent[0].Content[0].Subtitle
+msgid "Art lead"
+msgstr "Hlavní umělec"
+
+#: gui/credits/texts/art.jsonContent[0].Content[1].Subtitle
+msgid "Sound Manager"
+msgstr "Zvukař"
+
+#: gui/credits/texts/art.jsonContent[0].Content[2].Subtitle
+msgid "Composer"
+msgstr "Skladatel"
+
+#: gui/credits/texts/art.jsonContent[0].Title
+msgid "Artistic managers"
+msgstr "Umělečtí vedoucí"
+
+#: gui/credits/texts/art.jsonContent[1].Title
+msgid "Map Making"
+msgstr "Tvorba mapy"
+
+#: gui/credits/texts/art.jsonContent[2].Title
+msgid "Random Map Scripts"
+msgstr "Skripty náhodných map"
+
+#: gui/credits/texts/art.jsonContent[3].Title
+msgid "2D Art"
+msgstr "Dvojrozměrné umění"
+
+#: gui/credits/texts/art.jsonContent[4].Title
+msgid "3D Art"
+msgstr "Trojrozměrné umění"
+
+#: gui/credits/texts/art.jsonContent[5].Content[1].Subtitle
+msgid "Additional music, percussion, djembe, sampling"
+msgstr "Doplňková hudba, bicí hudební nástroje, djembe, vzorkování"
+
+#: gui/credits/texts/art.jsonContent[5].Content[2].Subtitle
+msgid "Additional music"
+msgstr "Doplňková hudba"
+
+#: gui/credits/texts/art.jsonContent[5].Content[3].Subtitle
+msgid "Flute"
+msgstr "Flétna"
+
+#: gui/credits/texts/art.jsonContent[5].Content[4].Subtitle
+msgid "Djembe"
+msgstr "Djembe - africké bubny"
+
+#: gui/credits/texts/art.jsonContent[5].Content[5].Subtitle
+msgid "Frame drum, darbuka, riq, toms"
+msgstr "Rámový buben, darbuka, tamburína rik, bubínky (tom)"
+
+#: gui/credits/texts/art.jsonContent[5].Content[6].Subtitle
+msgid "Didgeridoo"
+msgstr "Didgeridoo"
+
+#: gui/credits/texts/art.jsonContent[5].Content[7].Subtitle
+msgid "Trumpet"
+msgstr "Trumpeta"
+
+#: gui/credits/texts/art.jsonContent[5].Content[8].Subtitle
+msgid "Celtic harp"
+msgstr "Keltská harfa"
+
+#: gui/credits/texts/art.jsonContent[5].Content[9].Subtitle
+msgid "Tin whistles"
+msgstr "Irské píšťaly"
+
+#: gui/credits/texts/art.jsonContent[5].Content[10].Subtitle
+msgid "Viola, violin"
+msgstr "Housle"
+
+#: gui/credits/texts/art.jsonContent[5].Title
+msgid "Music"
+msgstr "Hudba"
+
+#: gui/credits/texts/art.jsonContent[6].Title
+#: gui/options/options.json[2].label
+msgid "Sound"
+msgstr "Zvuk"
+
+#: gui/credits/texts/art.jsonContent[7].Content[0].Subtitle
+msgid "Greek"
+msgstr "Řecky"
+
+#: gui/credits/texts/art.jsonContent[7].Content[1].Subtitle
+msgid "Latin"
+msgstr "Latinsky"
+
+#: gui/credits/texts/art.jsonContent[7].Title
+msgid "Voices"
+msgstr "Hlasy"
+
+#: gui/credits/texts/art.jsonTitle
+msgid "Art"
+msgstr "Umění"
+
+#: gui/credits/texts/donators.jsonContent[0].Title
+msgid "Pledgie Drive 1"
+msgstr "1. příslib - dobročinná akce"
+
+#: gui/credits/texts/donators.jsonContent[1].Title
+msgid "Pledgie Drive 2"
+msgstr "2. příslib - dobročinná akce"
+
+#: gui/credits/texts/donators.jsonContent[2].Title
+msgid ""
+"Indiegogo 2013 campaign\n"
+"More than 1000 donators (!), including:"
+msgstr "Kampaň na Indiegogo v roce 2013\nVíce než 1000 dárců (!), včetně:"
+
+#: gui/credits/texts/donators.jsonTitle
+msgid "Donors"
+msgstr "Dárci"
+
+#: gui/credits/texts/misc.jsonContent[0].Content[0].Subtitle
+msgid "Head"
+msgstr "Hlava"
+
+#: gui/credits/texts/misc.jsonContent[0].Title
+msgid "History References"
+msgstr "Dějepisné odkazy"
+
+#: gui/credits/texts/misc.jsonContent[1].Title
+msgid "Community and Management"
+msgstr "Společenství a správa"
+
+#: gui/credits/texts/programming.jsonContent[0].Title
+msgid "Programming managers"
+msgstr "Programátoři"
+
+#: gui/credits/texts/programming.jsonContent[1].Subtitle
+msgid "Special thanks to"
+msgstr "Zvláštní poděkování"
+
+#: gui/credits/texts/programming.jsonTitle
+msgid "Programming"
+msgstr "Programování"
+
+#: gui/credits/texts/special.jsonContent[0].Title
+msgid "In Memoriam"
+msgstr "Posmrtně"
+
+#: gui/credits/texts/special.jsonContent[1].Content[0].Subtitle
+msgid "0 A.D. Founder"
+msgstr "Zakladatel 0 A.D."
+
+#: gui/credits/texts/special.jsonContent[1].Content[1].Subtitle
+msgid "Project Leaders"
+msgstr "Projektoví vedoucí"
+
+#: gui/credits/texts/special.jsonContent[1].Content[2].Subtitle
+msgid "Co-Lead Designers"
+msgstr "Návrháři"
+
+#: gui/credits/texts/special.jsonContent[1].Title
+msgid "Special thanks to:"
+msgstr "Zvláštní poděkování:"
+
+#: gui/credits/texts/special.jsonContent[2].Title
+msgid "And thanks to the entire community for making 0 A.D. possible."
+msgstr "A poděkování celému společenství za umožnění 0 A.D."
+
+#: gui/credits/texts/special.jsonContent[3].Title
+msgid "No historians were harmed during the development of this project."
+msgstr "Během vývoje tohoto projektu nebyli napadeni žádní dějepisci."
+
+#: gui/credits/texts/special.jsonTitle
+msgid "Special Credits"
+msgstr "Zvláštní zásluhy"
+
+#: gui/credits/texts/translators.jsonTitle
+msgid "Translators"
+msgstr "Překladatelé"
+
+#: gui/options/options.json[0].options[0].tooltip
+msgid "How you want to be addressed in Single Player matches."
+msgstr "Jak máte být jmenován ve hrách pro jednoho hráče."
+
+#: gui/options/options.json[0].options[0].label
+msgid "Playername (Single Player)"
+msgstr "Jméno hráče (hra jednoho hráče)"
+
+#: gui/options/options.json[0].options[1].tooltip
+msgid "How you want to be addressed in Multiplayer matches (except lobby)."
+msgstr "Jak máte být jmenován ve hrách pro více hráčů (kromě herní skupiny)."
+
+#: gui/options/options.json[0].options[1].label
+msgid "Playername (Multiplayer)"
+msgstr "Jméno hráče (hra více hráčů)"
+
+#: gui/options/options.json[0].options[2].tooltip
+msgid "Pause single player games when window loses focus."
+msgstr "Pozastavit hru jednoho hráče, když okno ztratí zaměření."
+
+#: gui/options/options.json[0].options[2].label
+msgid "Background Pause"
+msgstr "Pozastavení pozadí"
+
+#: gui/options/options.json[0].options[3].tooltip
+msgid ""
+"If you disable it, the welcome screen will still appear once, each time a "
+"new version is available. You can always launch it from the main menu."
+msgstr "Když ji vypnete, uvítací obrazovka se znovu objeví, vždy když bude dostupná nová verze hry. Můžete ji vždy spustit z hlavní nabídky."
+
+#: gui/options/options.json[0].options[3].label
+msgid "Enable Welcome Screen"
+msgstr "Povolit uvítací obrazovku"
+
+#: gui/options/options.json[0].options[4].tooltip
+msgid "Show which player has a bad connection in multiplayer games."
+msgstr "Ukázat, který hráč má ve hrách pro více hráčů špatné spojení."
+
+#: gui/options/options.json[0].options[4].label
+msgid "Network Warnings"
+msgstr "Síťová varování"
+
+#: gui/options/options.json[0].options[5].tooltip
+msgid "Show frames per second in top right corner."
+msgstr "Ukázat počet snímků za sekundu v horním pravém rohu."
+
+#: gui/options/options.json[0].options[5].label
+msgid "FPS Overlay"
+msgstr "Překrytí FPS"
+
+#: gui/options/options.json[0].options[6].tooltip
+msgid "Show current system time in top right corner."
+msgstr "Ukázat nynější systémový čas v horním pravém rohu."
+
+#: gui/options/options.json[0].options[6].label
+msgid "Realtime Overlay"
+msgstr "Překrytí skutečným časem"
+
+#: gui/options/options.json[0].options[7].tooltip
+msgid "Show current simulation time in top right corner."
+msgstr "Ukázat nynější čas simulace v horním pravém rohu."
+
+#: gui/options/options.json[0].options[7].label
+msgid "Gametime Overlay"
+msgstr "Překrytí herním časem"
+
+#: gui/options/options.json[0].options[8].tooltip
+msgid "Always show the remaining ceasefire time."
+msgstr "Vždy ukázat zbývající čas klidu zbraní."
+
+#: gui/options/options.json[0].options[8].label
+msgid "Ceasefire Time Overlay"
+msgstr "Překrytí časem klidu zbraní"
+
+#: gui/options/options.json[0].options[9].list[0].label
+#: gui/options/options.json[3].options[5].list[0].label
+msgid "Everyone"
+msgstr "Každý"
+
+#: gui/options/options.json[0].options[9].list[1].label
+#: gui/options/options.json[3].options[5].list[1].label
+msgid "Buddies"
+msgstr "Kamarádi"
+
+#: gui/options/options.json[0].options[9].list[2].label
+#: gui/options/options.json[3].options[5].list[2].label
+msgid "Disabled"
+msgstr "Zakázáno"
+
+#: gui/options/options.json[0].options[9].tooltip
+msgid ""
+"Allow everybody or buddies only to join the game as observer after it "
+"started."
+msgstr "Dovolit každému nebo jen kamarádům připojení se ke hře po jejím začátku jako pozorovatelé."
+
+#: gui/options/options.json[0].options[9].label
+msgid "Late Observer Joins"
+msgstr "Přistoupení pozdního pozorovatele"
+
+#: gui/options/options.json[0].options[10].tooltip
+msgid "Prevent further observers from joining if the limit is reached."
+msgstr "Zabránit dalším pozorovatelům v připojení se, pokud je dosaženo hranice počtu pozorovatelů."
+
+#: gui/options/options.json[0].options[10].label
+msgid "Observer Limit"
+msgstr "Omezení počtu pozorovatelů"
+
+#: gui/options/options.json[0].options[11].tooltip
+msgid ""
+"Show time that messages are posted in the lobby, gamesetup and ingame chat."
+msgstr "Zobrazit čas, kdy jsou zprávy napsány v herní skupině, v nastavení hry a ve hře."
+
+#: gui/options/options.json[0].options[11].label
+msgid "Chat Timestamp"
+msgstr "Časové razítko rozhovoru"
+
+#: gui/options/options.json[0].label
+msgid "General"
+msgstr "Obecné"
+
+#: gui/options/options.json[1].options[0].tooltip
+msgid "Start 0 A.D. in a window."
+msgstr "Spustit hru v okně."
+
+#: gui/options/options.json[1].options[0].label
+msgid "Windowed Mode"
+msgstr "Okenní režim"
+
+#: gui/options/options.json[1].options[1].tooltip
+msgid "Use OpenGL 2.0 shaders (recommended)."
+msgstr "Použít OpenGL 2.0 shaders (doporučeno)."
+
+#: gui/options/options.json[1].options[1].label
+msgid "Prefer GLSL"
+msgstr "Upřednostňovat GLSL"
+
+#: gui/options/options.json[1].options[2].tooltip
+msgid "Enable Fog."
+msgstr "Povolit mlhu."
+
+#: gui/options/options.json[1].options[2].label
+msgid "Fog"
+msgstr "Mlha"
+
+#: gui/options/options.json[1].options[3].tooltip
+msgid "Use screen-space postprocessing filters (HDR, Bloom, DOF, etc)."
+msgstr "Použít filtry pro další zpracování plochy obrazovky (HDR, Bloom, DOF atd.)."
+
+#: gui/options/options.json[1].options[3].label
+msgid "Post Processing"
+msgstr "Následné zpracování"
+
+#: gui/options/options.json[1].options[4].tooltip
+msgid "Number of shader effects. REQUIRES GAME RESTART"
+msgstr "Počet stínovacích efektů. VYŽADUJE ZNOVUSPUŠTĚNÍ HRY"
+
+#: gui/options/options.json[1].options[4].label
+msgid "Shader Effects"
+msgstr "Stínovací efekty"
+
+#: gui/options/options.json[1].options[5].tooltip
+msgid "Enable shadows."
+msgstr "Povolit stíny."
+
+#: gui/options/options.json[1].options[5].label
+msgid "Shadows"
+msgstr "Stíny"
+
+#: gui/options/options.json[1].options[6].list[0].label
+msgid "Very Low"
+msgstr "Velmi nízké"
+
+#: gui/options/options.json[1].options[6].list[1].label
+msgid "Low"
+msgstr "Nízké "
+
+#: gui/options/options.json[1].options[6].list[2].label
+#: gui/options/options.json[3].options[3].list[3].label
+msgid "Medium"
+msgstr "Střední "
+
+#: gui/options/options.json[1].options[6].list[3].label
+msgid "High"
+msgstr "Vysoké"
+
+#: gui/options/options.json[1].options[6].list[4].label
+msgid "Very High"
+msgstr "Velmi vysoké"
+
+#: gui/options/options.json[1].options[6].tooltip
+msgid ""
+"Shadow map resolution. High values can crash the game when using a graphics "
+"card with low memory!"
+msgstr "Rozlišení mapy při stínování. Vysoké hodnoty mohou vést k pádu hry, jestliže se používá grafická karty s malou pamětí!"
+
+#: gui/options/options.json[1].options[6].label
+msgid "Shadow Quality"
+msgstr "Kvalita stínu"
+
+#: gui/options/options.json[1].options[7].tooltip
+msgid "Smooth shadows."
+msgstr "Jemné stíny."
+
+#: gui/options/options.json[1].options[7].label
+msgid "Shadow Filtering"
+msgstr "Filtrování stínů"
+
+#: gui/options/options.json[1].options[8].tooltip
+msgid "Show outlines of units behind buildings."
+msgstr "Ukázat obrysy jednotek za budovami."
+
+#: gui/options/options.json[1].options[8].label
+msgid "Unit Silhouettes"
+msgstr "Obrysy jednotek"
+
+#: gui/options/options.json[1].options[9].tooltip
+msgid "Enable particles."
+msgstr "Povolit částice."
+
+#: gui/options/options.json[1].options[9].label
+msgid "Particles"
+msgstr "Částice"
+
+#: gui/options/options.json[1].options[10].tooltip
+msgid ""
+"When OFF, use the lowest settings possible to render water. This makes other"
+" settings irrelevant."
+msgstr "Když je VYPNUTO, použít nejnižší možnou kvalitu nastavení pro kreslení vody. Toto udělá ostatní nastavení bezvýznamnými."
+
+#: gui/options/options.json[1].options[10].label
+msgid "Water Effects"
+msgstr "Efekty vody"
+
+#: gui/options/options.json[1].options[11].tooltip
+msgid ""
+"Use higher-quality effects for water, rendering coastal waves, shore foam, "
+"and ships trails."
+msgstr "Použít vysoce kvalitní efekty pro vodu, kreslení pobřežních vln, pěnu u pobřeží a stopu tvořící se ve vodě za plavidly."
+
+#: gui/options/options.json[1].options[11].label
+msgid "HQ Water Effects"
+msgstr "Vysoce kvalitní vodní efekty"
+
+#: gui/options/options.json[1].options[12].tooltip
+msgid "Use actual water depth in rendering calculations."
+msgstr "Použít opravdovou hloubku vody při výpočtech vykreslování."
+
+#: gui/options/options.json[1].options[12].label
+msgid "Real Water Depth"
+msgstr "Skutečná hloubka vody"
+
+#: gui/options/options.json[1].options[13].tooltip
+msgid "Allow water to reflect a mirror image."
+msgstr "Povolit, aby vody odrážela zrcadlový obraz."
+
+#: gui/options/options.json[1].options[13].label
+msgid "Water Reflections"
+msgstr "Zrcadlení vody"
+
+#: gui/options/options.json[1].options[14].tooltip
+msgid "Use a real water refraction map and not transparency."
+msgstr "Použít mapu s opravdovým lámáním světla ve vodě a ne průhlednost."
+
+#: gui/options/options.json[1].options[14].label
+msgid "Water Refraction"
+msgstr "Lom světla ve vodě"
+
+#: gui/options/options.json[1].options[15].tooltip
+msgid "Cast shadows on water."
+msgstr "Vrhat stíny na vodu."
+
+#: gui/options/options.json[1].options[15].label
+msgid "Shadows on Water"
+msgstr "Stíny na vodu"
+
+#: gui/options/options.json[1].options[16].tooltip
+msgid "Lift darkness and fog-of-war smoothly."
+msgstr "Jemně nadzvedne přechod mezi temnotou a válečnou mlhou."
+
+#: gui/options/options.json[1].options[16].label
+msgid "Smooth LOS"
+msgstr "Hladká hranice zorného pole (LOS)"
+
+#: gui/options/options.json[1].options[17].tooltip
+msgid "Render Sky."
+msgstr "Vykreslovat nebe."
+
+#: gui/options/options.json[1].options[17].label
+msgid "Show Sky"
+msgstr "Ukázat nebe"
+
+#: gui/options/options.json[1].options[18].tooltip
+msgid "Run vertical sync to fix screen tearing. REQUIRES GAME RESTART"
+msgstr "Použít svislou synchronizaci k opravení trhání obrazovky. VYŽADUJE ZNOVUSPUŠTĚNÍ HRY"
+
+#: gui/options/options.json[1].options[18].label
+msgid "VSync"
+msgstr "Vertikální synchronizace"
+
+#: gui/options/options.json[1].options[19].tooltip
+msgid ""
+"To save CPU workload, throttle render frequency in all menus. Set to maximum"
+" to disable throttling."
+msgstr "Pro šetření zatížení procesoru, přidusit častost vykreslování ve všech nabídkách. Pro zakázání přiškrcení nastavte na nejvyšší hodnotu."
+
+#: gui/options/options.json[1].options[19].label
+msgid "FPS Throttling in Menus"
+msgstr "Přidušení FPS v nabídkách"
+
+#: gui/options/options.json[1].options[20].tooltip
+msgid ""
+"To save CPU workload, throttle render frequency in running games. Set to "
+"maximum to disable throttling."
+msgstr "Pro šetření zatížení procesoru, přidusit častost vykreslování v běžících hrách. Pro zakázání přiškrcení nastavte na nejvyšší hodnotu."
+
+#: gui/options/options.json[1].options[20].label
+msgid "FPS Throttling in Games"
+msgstr "Přidušení FPS ve hrách"
+
+#: gui/options/options.json[1].tooltip
+msgid "Set the balance between performance and visual appearance."
+msgstr "Nastavit vyvážení mezi provedením (výkonem) a viditelným vzhledem."
+
+#: gui/options/options.json[1].label
+msgid "Graphics"
+msgstr "Grafika"
+
+#: gui/options/options.json[2].options[0].tooltip
+msgid "Master audio gain."
+msgstr "Hlavní hlasitost."
+
+#: gui/options/options.json[2].options[0].label
+msgid "Master Volume"
+msgstr "Celková hlasitost"
+
+#: gui/options/options.json[2].options[1].tooltip
+msgid "In game music gain."
+msgstr "Hudba na pozadí."
+
+#: gui/options/options.json[2].options[1].label
+msgid "Music Volume"
+msgstr "Hlasitost hudby"
+
+#: gui/options/options.json[2].options[2].tooltip
+msgid "In game ambient sound gain."
+msgstr "Hlasitost šumění okolí."
+
+#: gui/options/options.json[2].options[2].label
+msgid "Ambient Volume"
+msgstr "Zvuky prostředí"
+
+#: gui/options/options.json[2].options[3].tooltip
+msgid "In game unit action sound gain."
+msgstr "Hlasitost činností jednotek."
+
+#: gui/options/options.json[2].options[3].label
+msgid "Action Volume"
+msgstr "Hlasitost činností"
+
+#: gui/options/options.json[2].options[4].tooltip
+msgid "UI sound gain."
+msgstr "Hlasitost rozhraní."
+
+#: gui/options/options.json[2].options[4].label
+msgid "UI Volume"
+msgstr "Hlasitost rozhraní"
+
+#: gui/options/options.json[2].options[5].tooltip
+msgid "Receive audio notification when someone types your nick."
+msgstr "Zvukové upozornění pokud někdo napíše tvou přezdívku."
+
+#: gui/options/options.json[2].options[5].label
+msgid "Nick Notification"
+msgstr "Upozornění na přezdívku"
+
+#: gui/options/options.json[3].options[0].tooltip
+msgid "Show tips when setting up a game."
+msgstr "Při nastavování hry ukázat rady."
+
+#: gui/options/options.json[3].options[0].label
+msgid "Enable Game Setting Tips"
+msgstr "Povolit rady při nastavování hry"
+
+#: gui/options/options.json[3].options[1].tooltip
+msgid "Slide the settings panel when opening, closing or resizing."
+msgstr "Zasunout panel s nastavením při otevírání, zavírání nebo změně velikosti."
+
+#: gui/options/options.json[3].options[1].label
+msgid "Enable Settings Panel Slide"
+msgstr "Povolit zasunutí panelu s nastavením"
+
+#: gui/options/options.json[3].options[2].tooltip
+msgid ""
+"Save and restore match settings for quick reuse when hosting another game."
+msgstr "Uložit a obnovit nastavení hry pro rychlé opětovné užití při hostování jiné hry."
+
+#: gui/options/options.json[3].options[2].label
+msgid "Persist Match Settings"
+msgstr "Zapamatovat si nastavení hry"
+
+#: gui/options/options.json[3].options[3].list[0].label
+msgid "Sandbox"
+msgstr "Pískoviště"
+
+#: gui/options/options.json[3].options[3].list[1].label
+msgid "Very Easy"
+msgstr "Velmi lehká"
+
+#: gui/options/options.json[3].options[3].list[2].label
+msgid "Easy"
+msgstr "Lehká"
+
+#: gui/options/options.json[3].options[3].list[4].label
+msgid "Hard"
+msgstr "Těžká"
+
+#: gui/options/options.json[3].options[3].list[5].label
+msgid "Very Hard"
+msgstr "Velmi těžká"
+
+#: gui/options/options.json[3].options[3].tooltip
+msgid "Default difficulty of the AI."
+msgstr "Výchozí obtížnost umělé inteligence."
+
+#: gui/options/options.json[3].options[3].label
+msgid "Default AI Difficulty"
+msgstr "Výchozí obtížnost umělé inteligence"
+
+#: gui/options/options.json[3].options[4].list[0].label
+msgid "Random"
+msgstr "Náhodná"
+
+#: gui/options/options.json[3].options[4].list[1].label
+msgid "Balanced"
+msgstr "Vyváženo"
+
+#: gui/options/options.json[3].options[4].list[2].label
+msgid "Aggressive"
+msgstr "Útočný"
+
+#: gui/options/options.json[3].options[4].list[3].label
+msgid "Defensive"
+msgstr "Obranný"
+
+#: gui/options/options.json[3].options[4].tooltip
+msgid "Default behavior of the AI."
+msgstr "Výchozí chování umělé inteligence."
+
+#: gui/options/options.json[3].options[4].label
+msgid "Default AI Behavior"
+msgstr "Výchozí chování umělé inteligence"
+
+#: gui/options/options.json[3].options[5].tooltip
+msgid ""
+"Automatically assign joining clients to free player slots during the match "
+"setup."
+msgstr "Automaticky přiřadit připojující se klienty pro uvolnění hráčských míst během nastavení střetnutí."
+
+#: gui/options/options.json[3].options[5].label
+msgid "Assign Players"
+msgstr "Přiřadit hráče"
+
+#: gui/options/options.json[3].label
+msgid "Game Setup"
+msgstr "Nastavení hry"
+
+#: gui/options/options.json[4].options[0].tooltip
+msgid "Number of backlogged messages to load when joining the lobby."
+msgstr ""
+
+#: gui/options/options.json[4].options[0].label
+msgid "Chat Backlog"
+msgstr "Načtení zpráv rozhovoru"
+
+#: gui/options/options.json[4].options[1].tooltip
+msgid ""
+"Show the average rating of the participating players in a column of the "
+"gamelist."
+msgstr ""
+
+#: gui/options/options.json[4].options[1].label
+msgid "Game Rating Column"
+msgstr ""
+
+#: gui/options/options.json[4].tooltip
+msgid "These settings only affect the multiplayer."
+msgstr ""
+
+#: gui/options/options.json[4].label
+msgid "Lobby"
+msgstr "Herní skupina"
+
+#: gui/options/options.json[5].options[0].tooltip
+msgid ""
+"The wounded unit hotkey considers the selected units as wounded if their "
+"health percentage falls below this number."
+msgstr ""
+
+#: gui/options/options.json[5].options[0].label
+msgid "Wounded Unit Health"
+msgstr ""
+
+#: gui/options/options.json[5].options[1].tooltip
+msgid "Number of units trained per batch by default."
+msgstr ""
+
+#: gui/options/options.json[5].options[1].label
+msgid "Batch Training Size"
+msgstr "Velikost cvičené skupiny"
+
+#: gui/options/options.json[5].options[2].tooltip
+msgid ""
+"Number of times you have to scroll to increase/decrease the batchsize by 1."
+msgstr ""
+
+#: gui/options/options.json[5].options[2].label
+msgid "Scroll Batch Increment Ratio"
+msgstr ""
+
+#: gui/options/options.json[5].options[3].tooltip
+msgid "Show a chat notification if you are attacked by another player."
+msgstr ""
+
+#: gui/options/options.json[5].options[3].label
+msgid "Chat Notification Attack"
+msgstr ""
+
+#: gui/options/options.json[5].options[4].tooltip
+msgid ""
+"Show a chat notification if an ally tributes resources to another team "
+"member if teams are locked, and all tributes in observer mode."
+msgstr ""
+
+#: gui/options/options.json[5].options[4].label
+msgid "Chat Notification Tribute"
+msgstr ""
+
+#: gui/options/options.json[5].options[5].tooltip
+msgid ""
+"Show a chat notification to observers when a player bartered resources."
+msgstr ""
+
+#: gui/options/options.json[5].options[5].label
+msgid "Chat Notification Barter"
+msgstr ""
+
+#: gui/options/options.json[5].options[6].list[0].label
+msgid "Disable"
+msgstr "Vypnout"
+
+#: gui/options/options.json[5].options[6].list[1].label
+msgid "Completed"
+msgstr "Dokončeno"
+
+#: gui/options/options.json[5].options[6].list[2].label
+msgid "All displayed"
+msgstr "Vypnout vše"
+
+#: gui/options/options.json[5].options[6].tooltip
+msgid ""
+"Show a chat notification if you or an ally have started, aborted or "
+"completed a new phase, and phases of all players in observer mode."
+msgstr ""
+
+#: gui/options/options.json[5].options[6].label
+msgid "Chat Notification Phase"
+msgstr ""
+
+#: gui/options/options.json[5].options[7].tooltip
+msgid ""
+"Display the attack range of selected defensive structures (can also be "
+"toggled in-game with the hotkey)."
+msgstr ""
+
+#: gui/options/options.json[5].options[7].label
+msgid "Attack Range Visualization"
+msgstr ""
+
+#: gui/options/options.json[5].options[8].tooltip
+msgid ""
+"Display the range of auras of selected units and structures (can also be "
+"toggled in-game with the hotkey)."
+msgstr ""
+
+#: gui/options/options.json[5].options[8].label
+msgid "Aura Range Visualization"
+msgstr ""
+
+#: gui/options/options.json[5].options[9].tooltip
+msgid ""
+"Display the healing range of selected units (can also be toggled in-game "
+"with the hotkey)."
+msgstr ""
+
+#: gui/options/options.json[5].options[9].label
+msgid "Heal Range Visualization"
+msgstr ""
+
+#: gui/options/options.json[5].options[10].tooltip
+msgid "Show rank icons above status bars."
+msgstr ""
+
+#: gui/options/options.json[5].options[10].label
+msgid "Rank icon above status bar"
+msgstr ""
+
+#: gui/options/options.json[5].options[11].tooltip
+msgid ""
+"Show detailed tooltips for trainable units in unit-producing buildings."
+msgstr "Ukázat podrobné nástrojové rady pro jednotky vycvičitelné v budovách určených pro výcvik."
+
+#: gui/options/options.json[5].options[11].label
+msgid "Detailed Tooltips"
+msgstr "Podrobné nástrojové rady"
+
+#: gui/options/options.json[5].options[12].list[0].label
+msgid "Unordered"
+msgstr "Nezařazené"
+
+#: gui/options/options.json[5].options[12].list[1].label
+msgid "Ascending"
+msgstr ""
+
+#: gui/options/options.json[5].options[12].list[2].label
+msgid "Descending"
+msgstr "Sestupný"
+
+#: gui/options/options.json[5].options[12].tooltip
+msgid ""
+"Dynamically sort players in the resources and population tooltip by value."
+msgstr ""
+
+#: gui/options/options.json[5].options[12].label
+msgid "Sort resources and population tooltip"
+msgstr ""
+
+#: gui/options/options.json[5].options[13].tooltip
+msgid "Color of your units when diplomacy colors are enabled."
+msgstr "Barvy vašich jednotek, když jsou povoleny diplomatické barvy."
+
+#: gui/options/options.json[5].options[13].label
+msgid "Diplomacy Colors: Self"
+msgstr "Diplomatické barvy: Moje"
+
+#: gui/options/options.json[5].options[14].tooltip
+msgid "Color of allies when diplomacy colors are enabled."
+msgstr "Barvy přátel, když jsou povoleny diplomatické barvy."
+
+#: gui/options/options.json[5].options[14].label
+msgid "Diplomacy Colors: Ally"
+msgstr "Diplomatické barvy: Spojenec"
+
+#: gui/options/options.json[5].options[15].tooltip
+msgid "Color of neutral players when diplomacy colors are enabled."
+msgstr "Barvy neutrálních hráčů, když jsou povoleny diplomatické barvy."
+
+#: gui/options/options.json[5].options[15].label
+msgid "Diplomacy Colors: Neutral"
+msgstr "Diplomatické barvy: Neutrál"
+
+#: gui/options/options.json[5].options[16].tooltip
+msgid "Color of enemies when diplomacy colors are enabled."
+msgstr "Barvy nepřátel, když jsou povoleny diplomatické barvy."
+
+#: gui/options/options.json[5].options[16].label
+msgid "Diplomacy Colors: Enemy"
+msgstr "Diplomatické barvy: Nepřítel"
+
+#: gui/options/options.json[5].tooltip
+msgid "Change options regarding the in-game settings."
+msgstr "Změnit volby týkající se nastavení hry."
+
+#: gui/options/options.json[5].label
+msgid "In-Game"
+msgstr ""
+
+#: simulation/data/resources/food.jsondescription
+msgid "Harvest from animals, berry bushes, fish, or fields."
+msgstr ""
+
+#: simulation/data/resources/metal.jsondescription
+msgid "Mine from metal mines or quarries."
+msgstr ""
+
+#: simulation/data/resources/stone.jsondescription
+msgid "Mine from rocks, stone quarries or ruins."
+msgstr ""
+
+#: simulation/data/resources/wood.jsondescription
+msgid "Cut down from trees or groves."
+msgstr ""
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/food.jsonname
+msgctxt "firstWord"
+msgid "Food"
+msgstr "Jídlo"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/food.jsonname
+msgctxt "withinSentence"
+msgid "Food"
+msgstr "Jídlo"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/food.jsonsubtypes.fish
+msgctxt "firstWord"
+msgid "Fish"
+msgstr "Ryba"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/food.jsonsubtypes.fish
+msgctxt "withinSentence"
+msgid "Fish"
+msgstr "Ryba"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/food.jsonsubtypes.fruit
+msgctxt "firstWord"
+msgid "Fruit"
+msgstr "Ovoce"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/food.jsonsubtypes.fruit
+msgctxt "withinSentence"
+msgid "Fruit"
+msgstr "Ovoce"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/food.jsonsubtypes.grain
+msgctxt "firstWord"
+msgid "Grain"
+msgstr "Obilí"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/food.jsonsubtypes.grain
+msgctxt "withinSentence"
+msgid "Grain"
+msgstr "Obilí"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/food.jsonsubtypes.meat
+msgctxt "firstWord"
+msgid "Meat"
+msgstr "Maso"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/food.jsonsubtypes.meat
+msgctxt "withinSentence"
+msgid "Meat"
+msgstr "Maso"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/metal.jsonname
+msgctxt "firstWord"
+msgid "Metal"
+msgstr "Kov"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/metal.jsonname
+msgctxt "withinSentence"
+msgid "Metal"
+msgstr "Kov"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/metal.jsonsubtypes.ore
+msgctxt "firstWord"
+msgid "Ore"
+msgstr "Ruda"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/metal.jsonsubtypes.ore
+msgctxt "withinSentence"
+msgid "Ore"
+msgstr "Ruda"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/stone.jsonname
+msgctxt "firstWord"
+msgid "Stone"
+msgstr "Kámen"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/stone.jsonname
+msgctxt "withinSentence"
+msgid "Stone"
+msgstr "Kámen"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/stone.jsonsubtypes.ruins
+#: simulation/data/resources/wood.jsonsubtypes.ruins
+msgctxt "firstWord"
+msgid "Ruins"
+msgstr "Zříceniny"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/stone.jsonsubtypes.ruins
+#: simulation/data/resources/wood.jsonsubtypes.ruins
+msgctxt "withinSentence"
+msgid "Ruins"
+msgstr "Zříceniny"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/stone.jsonsubtypes.rock
+msgctxt "firstWord"
+msgid "Rock"
+msgstr "Skála"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/stone.jsonsubtypes.rock
+msgctxt "withinSentence"
+msgid "Rock"
+msgstr "Skála"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/wood.jsonname
+msgctxt "firstWord"
+msgid "Wood"
+msgstr "Dřevo"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/wood.jsonname
+msgctxt "withinSentence"
+msgid "Wood"
+msgstr "Dřevo"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/wood.jsonsubtypes.tree
+msgctxt "firstWord"
+msgid "Tree"
+msgstr "Strom"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/wood.jsonsubtypes.tree
+msgctxt "withinSentence"
+msgid "Tree"
+msgstr "Strom"
+
+#: gui/gamesetup/ai.txt:1
+msgid ""
+"Although reasonably easy for an experienced player, the default AI level is "
+"quite challenging for new players yet to master the basic mechanisms of the "
+"game. Beginners are advised to start by playing against a lower level AI "
+"(Sandbox or Very Easy). Change the AI level by clicking the gear icon next "
+"to the player you want to modify in the selection panel above."
+msgstr ""
+
+#: gui/splashscreen/splashscreen.txt:2
+msgid ""
+"[font=\"sans-bold-20\"]  Thank you for installing 0 A.D. Empires Ascendant!"
+msgstr "[font=\"sans-bold-20\"]  Děkujeme vám za nainstalování 0 A.D. Empires Ascendant!"
+
+#: gui/splashscreen/splashscreen.txt:3
+msgid "[font=\"sans-16\"]"
+msgstr "[font=\"sans-16\"]"
+
+#: gui/splashscreen/splashscreen.txt:4
+msgid ""
+"[imgleft=\"constructionIcon\"]This game is still in development. Features "
+"are missing and it contains bugs."
+msgstr "[imgleft=\"constructionIcon\"]Hra je stále ve vývoji. Chybí v ní různé funkce a obsahuje chyby."
+
+#: gui/splashscreen/splashscreen.txt:6
+msgid ""
+"[imgleft=\"iconLag\"]The game can have performance problems, especially with"
+" large maps and a great number of units."
+msgstr "[imgleft=\"iconLag\"]Tato hra může mít potíže s výkonem, zvláště u velkých map a větším počtu jednotek."
+
+#: gui/splashscreen/splashscreen.txt:8
+msgid ""
+"[imgleft=\"iconFormation\"]Formations are a work in progress, but you can "
+"toggle forming and disbanding formations as desired."
+msgstr "[imgleft=\"iconFormation\"]Na formacích se pracuje, ale vy už nyní můžete formace vytvářet a rozpouštět podle libosti."
+
+#: gui/text/tips/army_camp.txt:1
+msgid "ROMAN ARMY CAMP"
+msgstr "ŘÍMSKÝ VOJENSKÝ TÁBOR"
+
+#: gui/text/tips/army_camp.txt:2
+msgid ""
+"- Build anywhere on the map, even in enemy territory. Good for building a "
+"secret base behind enemy lines or to consolidate gains within enemy "
+"territory."
+msgstr "- Lze stavět kdekoli na mapě, dokonce i na nepřátelském území. Dobře se hodí na postavení tajné základny za nepřátelskými liniemi nebo jako zdroj příjmů na nepřátelském území."
+
+#: gui/text/tips/army_camp.txt:4
+msgid "- Decays to the territory owner when built in non-allied territory"
+msgstr "- Padne do rukou vládci nynějšího území, když je postaveno na území nepatřícím spojenci"
+
+#: gui/text/tips/army_camp.txt:6
+msgid "- Construct siege weapons and train citizen-soldiers."
+msgstr " - Stavte obléhací stroje a cvičte občanské vojáky."
+
+#: gui/text/tips/army_camp.txt:8
+msgid ""
+"- Garrison up to 40 units to slowly heal the units and protect the army camp"
+" from attacks and decay."
+msgstr "Shromážděte až 40 jednotek "
+
+#: gui/text/tips/barracks.txt:1
+msgid "BARRACKS"
+msgstr "KASÁRNA"
+
+#: gui/text/tips/barracks.txt:2
+msgid ""
+"- Train all citizen-soldiers. Some factions can unlock the training of "
+"champions as well."
+msgstr "- Provádějte výcvik všech občanských vojáků. Některé skupiny zde mohou odemknout i výcvik elitních vojáků."
+
+#: gui/text/tips/barracks.txt:4
+msgid "- Research military technologies unique to each faction."
+msgstr "- Vyzkoumejte vojenské technologie, jež jsou jedinečné pro každou ze stran."
+
+#: gui/text/tips/barracks.txt:6
+msgid ""
+"- Build one early to train citizen-soldiers while you phase up your "
+"settlement."
+msgstr "- Postavte jedny brzo pro vycvičení občanských vojáků, zatímco povyšujete vlastní osadu."
+
+#: gui/text/tips/barracks.txt:8
+msgid "- Build in a forward base to resupply your assault with fresh troops."
+msgstr "- Postavte předsunutou základu, abyste svůj útok mohli podpořit novými jednotkami."
+
+#: gui/text/tips/blacksmith.txt:1
+msgid "BLACKSMITH"
+msgstr "KOVÁŘ"
+
+#: gui/text/tips/blacksmith.txt:2
+msgid "- Research structure for all factions."
+msgstr "- Stavba pro výzkum pro všechny frakce."
+
+#: gui/text/tips/blacksmith.txt:4
+msgid "- Research weapon and armor upgrades for your units."
+msgstr "- Zkoumejte vylepšení zbraní a brnění svých jednotek."
+
+#: gui/text/tips/blacksmith.txt:6
+msgid ""
+"- Garrison a citizen-soldier inside to research faster (NOT IMPLEMENTED "
+"YET)."
+msgstr "- Umístěte dovnitř občana-vojáka pro zrychlení výzkumu (JEŠTĚ NEBYLO PŘIDÁNO)."
+
+#: gui/text/tips/carth_sacred_band.txt:1
+msgid "CARTHAGINIAN SACRED BAND"
+msgstr "KARTAGINSKÝ SVATÝ ODDÍL"
+
+#: gui/text/tips/carth_sacred_band.txt:2
+msgid "- Champion Spearmen and Champion Cavalry Spearmen for Carthage."
+msgstr "- Elitní bojovníci s oštěpem a jízdní bojovníci s oštěpem pro Kartágo."
+
+#: gui/text/tips/carth_sacred_band.txt:4
+msgid ""
+"- Both are trainable from the Temple, instead of the Fortress like most "
+"other champions."
+msgstr "- Oba můžou být cvičeni ve chrámu, na rozdíl od většiny ostatních šampionů."
+
+#: gui/text/tips/carth_sacred_band.txt:6
+msgid ""
+"- Use the Spearmen as heavy infantry against cavalry. Use the Cavalry as "
+"heavy shock against siege weapons and skirmishers."
+msgstr "- Použijte bojovníky s oštěpem jako těžkou pěchotu proti jízdě. Použijte jízdu pro těžký úder proti obléhacím strojům a harcovníkům."
+
+#: gui/text/tips/catapults.txt:1
+msgid "CATAPULTS"
+msgstr "KATAPULTY"
+
+#: gui/text/tips/catapults.txt:2
+msgid "- Ranged siege engines that are good against buildings."
+msgstr "- Dalekonosné obléhací stroje, které jsou účinné proti budovám."
+
+#: gui/text/tips/catapults.txt:4
+msgid ""
+"- May upgrade to flaming projectiles for extra effectiveness against "
+"buildings and units."
+msgstr "- Lze vylepšit na zápalné projektily pro větší účinnost proti budovám a jednotkám."
+
+#: gui/text/tips/catapults.txt:6
+msgid "- Expensive and slow."
+msgstr "- Drahé a pomalé."
+
+#: gui/text/tips/catapults.txt:8
+msgid ""
+"- Pack up into carts for movement, and unpack into stationary engines for "
+"attack!"
+msgstr "- Kvůli přesunu je uložte do vozů, a pro útok je rozložte do válečných strojů."
+
+#: gui/text/tips/celtic_war_barge.txt:1
+msgid "CELTIC WAR BARGE"
+msgstr "KELTSKÝ VÁLEČNÝ ŘÍČNÍ ČLUN"
+
+#: gui/text/tips/celtic_war_barge.txt:2
+msgid "- A medium \"trireme\"-class warship."
+msgstr "- Středně těžká válečná loď."
+
+#: gui/text/tips/celtic_war_barge.txt:4
+msgid "- Available to the Celtic Factions (Britons, Gauls)."
+msgstr "- Dostupné keltským frakcím (Britové, Galové)."
+
+#: gui/text/tips/celtic_war_barge.txt:6
+msgid "- Can transport up to 40 units across the waters."
+msgstr "- Může po vodě přepravovat až 40 jednotek."
+
+#: gui/text/tips/celtic_war_barge.txt:8
+msgid "- Increases firepower with garrisoned infantry."
+msgstr "- Zvýší sílu útoku, pokud je osazeno pěchotou."
+
+#: gui/text/tips/celtic_war_barge.txt:10
+msgid "- Cannot ram, like other triremes, but has greater health and armor."
+msgstr "- Nemůže provést čelní útok klounem, jako je to u jiných trojveslic, má ale větší zdraví a obrnění."
+
+#: gui/text/tips/civic_centres.txt:1
+msgid "CIVIC CENTERS"
+msgstr "SPRÁVNÍ STŘEDISKA"
+
+#: gui/text/tips/civic_centres.txt:2
+msgid "- The foundation of your new colony."
+msgstr ""
+
+#: gui/text/tips/civic_centres.txt:4
+msgid "- Claim large tracts of territory."
+msgstr "- Obsaďte rozsáhlá území."
+
+#: gui/text/tips/civic_centres.txt:6
+msgid "- Can be built in friendly and neutral territory."
+msgstr "- Může být postaveno na vlastním či neutrálním území."
+
+#: gui/text/tips/civic_centres.txt:8
+msgid ""
+"- Train citizens: female citizens, infantry citizen soldiers and cavalry "
+"citizen soldiers."
+msgstr ""
+
+#: gui/text/tips/embassies.txt:1
+msgid "EMBASSIES"
+msgstr "VYSLANECTVÍ"
+
+#: gui/text/tips/embassies.txt:2
+msgid "- Special \"Barracks\" available to the Carthage faction."
+msgstr "- Zvláštní kasárna pro frakci Kartaginců."
+
+#: gui/text/tips/embassies.txt:4
+msgid "- Train mercenaries from each of the ethnically-themed embassies."
+msgstr "- Cvičte žoldnéře z každého z národnostně zaměřených vyslanectví."
+
+#: gui/text/tips/embassies.txt:6
+msgid ""
+"- Mercenary \"citizen-soldiers\" have their normal Food cost converted to "
+"Metal cost."
+msgstr "- Žoldnéřští \"občanští vojáci\" mají vlastní cenu v jídle převedenu na cenu v kovu."
+
+#: gui/text/tips/fishing.txt:1
+msgid "FISHING"
+msgstr "RYBOLOV"
+
+#: gui/text/tips/fishing.txt:2
+msgid "- Fish the seas for a bountiful harvest."
+msgstr "- Lovte ryby na mořích pro bohatý úlovek."
+
+#: gui/text/tips/fishing.txt:4
+msgid "- Fishing boats carry a large amount of food per trip."
+msgstr "- Rybářské lodě přivážejí veliké množství jídla na jeden zátah."
+
+#: gui/text/tips/fishing.txt:6
+msgid "- Fishing is faster than gathering food on fields."
+msgstr "- Rybolov je rychlejší než získávání jídla na polích."
+
+#: gui/text/tips/fishing.txt:8
+msgid "- Careful! Fish are not an infinite resource!"
+msgstr "- Pozor! Rybolov není nevyčerpatelný zdroj!"
+
+#: gui/text/tips/fortress.txt:1
+msgid "FORTRESS"
+msgstr "PEVNOST"
+
+#: gui/text/tips/fortress.txt:2
+msgid "- The Fortress is usually each faction's strongest building."
+msgstr "- Pevnost je obvykle nejodolnější budovou každého národa."
+
+#: gui/text/tips/fortress.txt:4
+msgid "- Trains strong units like Champions, Heroes, and Siege Weapons."
+msgstr "- Cvičí elitní jednotky, hrdiny a obléhací stroje."
+
+#: gui/text/tips/fortress.txt:6
+msgid "- Gives a population boost."
+msgstr "- Umožňuje zvýšit populaci."
+
+#: gui/text/tips/fortress.txt:8
+msgid "- Garrison soldiers inside to add more firepower to its defense."
+msgstr "- Obsaďte posádkou vojáků pro zvýšení palebné síly pro posílení obrany."
+
+#: gui/text/tips/freehand_position.txt:1
+msgid "FREEHAND POSITION"
+msgstr ""
+
+#: gui/text/tips/freehand_position.txt:2
+msgid ""
+"- Gain an advantage on the battleground by tactically positioning your "
+"units!"
+msgstr ""
+
+#: gui/text/tips/freehand_position.txt:4
+msgid ""
+"- Therefore select some units, press and hold the right mouse button, draw "
+"any line, then release the button."
+msgstr ""
+
+#: gui/text/tips/freehand_position.txt:6
+msgid "- Your units will now spread out on this line."
+msgstr ""
+
+#: gui/text/tips/gathering.txt:1
+msgid "RESOURCE GATHERING"
+msgstr "SBÍRÁNÍ ZDROJŮ"
+
+#: gui/text/tips/gathering.txt:2
+msgid "- Use citizen soldiers and female citizens to gather resources."
+msgstr ""
+
+#: gui/text/tips/gathering.txt:4
+msgid "- Female citizens are faster gathering vegetable resources."
+msgstr ""
+
+#: gui/text/tips/gathering.txt:6
+msgid "- Infantry citizen soldiers are faster gathering minerals."
+msgstr ""
+
+#: gui/text/tips/gathering.txt:8
+msgid "- Cavalry citizen soldiers are faster gathering meat."
+msgstr ""
+
+#: gui/text/tips/gathering.txt:10
+msgid ""
+"- The higher the level of a citizen soldier (advanced, elite), the better he"
+" fights, but the less efficient he is at gathering resources."
+msgstr ""
+
+#: gui/text/tips/iphicrates.txt:1
+msgid "IPHICRATES"
+msgstr "IFIKRATÉS"
+
+#: gui/text/tips/iphicrates.txt:2
+msgid ""
+"- The Athenian general who reformed the Athenian army to be faster and more "
+"maneuverable."
+msgstr "- Athénský vojevůdce, který zreformoval athénské vojsko, takže se stalo rychlejším a schopnějším v provádění manévrů."
+
+#: gui/text/tips/iphicrates.txt:4
+msgid "- Units in his formation are faster and stronger."
+msgstr "- Jednotky v jeho útvaru jsou rychlejší a silnější."
+
+#: gui/text/tips/iphicrates.txt:6
+msgid "- Skirmishers move faster while he lives."
+msgstr "- Dokud žije, harcovníci (lehkooděnci) se pohybují rychleji."
+
+#: gui/text/tips/outposts.txt:1
+msgid "OUTPOSTS"
+msgstr "ROZHLEDNY"
+
+#: gui/text/tips/outposts.txt:2
+msgid "- Build in neutral territory for a large scouting range."
+msgstr "- Lze stavět v neutrálním území. Má velký dohled průzkum."
+
+#: gui/text/tips/outposts.txt:4
+msgid "- Cheap, at 80 Wood."
+msgstr "- Levné, za 80 dřeva."
+
+#: gui/text/tips/outposts.txt:6
+msgid "- They construct quickly, but are weak."
+msgstr "- Staví se rychle, ale jsou slabé."
+
+#: gui/text/tips/outposts.txt:8
+msgid ""
+"- Garrison a unit in it to stop them from decaying in neutral territory."
+msgstr "- Ubytovat jednotku, aby se nerozpadla na neutrálním území."
+
+#: gui/text/tips/palisades.txt:1
+msgid "PALISADE WALLS"
+msgstr "PALISÁDOVÉ HRADBY"
+
+#: gui/text/tips/palisades.txt:2
+msgid "- A quick, cheap wooden wall available to all factions."
+msgstr "- Levná, rychle postavitelná dřevěná ochranná zeď, dostupná všem stranám."
+
+#: gui/text/tips/palisades.txt:4
+msgid "- Most factions have access to them in Village Phase."
+msgstr "- Většina stran je může používat od vesnické fáze."
+
+#: gui/text/tips/palisades.txt:6
+msgid ""
+"- Attackable by enemy soldiers, unlike City Walls, which are only attackable"
+" by siege weapons."
+msgstr "- Mohou na ni zaútočit nepřátelští vojáci, v protikladu k městským zdem, na které mohou zaútočit pouze obléhací stroje."
+
+#: gui/text/tips/pericles.txt:1
+msgid "PERICLES"
+msgstr "PERIKLÉS"
+
+#: gui/text/tips/pericles.txt:2
+msgid "- The foremost Athenian politician of the 5th century BCE."
+msgstr "- Nejpřednější Athénský politik 5. století př. n. l."
+
+#: gui/text/tips/pericles.txt:4
+msgid "- Buildings construct faster within his range."
+msgstr "- V jeho dosahu jsou budovy stavěny rychleji."
+
+#: gui/text/tips/pericles.txt:6
+msgid "- Temples are cheaper while he lives."
+msgstr "- Dokud žije, jsou chrámy levnější."
+
+#: gui/text/tips/persian_architecture.txt:1
+msgid "PERSIAN ARCHITECTURE"
+msgstr "PERSKÁ ARCHITEKTURA"
+
+#: gui/text/tips/persian_architecture.txt:2
+msgid "- Special Technology for the Persians."
+msgstr "- Zvláštní technologie pro Peršany"
+
+#: gui/text/tips/persian_architecture.txt:4
+msgid "- All Persian buildings +25% stronger."
+msgstr "- Všechny perské budovy o +25% silnější."
+
+#: gui/text/tips/persian_architecture.txt:6
+msgid "- Build time lengthened by +20% as a consequence."
+msgstr "-  Následkem je o +20% delší čas stavby."
+
+#: gui/text/tips/persian_architecture.txt:8
+msgid ""
+"- Persians also have access to a great number of structural & defensive "
+"technologies."
+msgstr "- Peršané mají také přístup k velkému množství stavebních a obraných technologií."
+
+#: gui/text/tips/pikemen.txt:1
+msgid "PIKEMEN"
+msgstr "KOPINÍK"
+
+#: gui/text/tips/pikemen.txt:2
+msgid "- Heavily armored and slow. Low attack."
+msgstr "- Těžce vyzbrojený a pomalý. Pomalý útok."
+
+#: gui/text/tips/pikemen.txt:4
+msgid ""
+"- Used against cavalry or against other melee infantry to pin them in place."
+msgstr "- Používáno proti jízdě nebo proti jiné pěchotě pro boj na blízko k jejich přišpendlení na místě."
+
+#: gui/text/tips/pikemen.txt:6
+msgid "- Available to: Macedonians, Seleucids, and Ptolemies."
+msgstr "- Dostupné pro: Makedoňany, Seleukovce a Ptolemaiovce."
+
+#: gui/text/tips/quinquereme.txt:1
+msgid "HEAVY WARSHIP"
+msgstr "TĚŽKÁ VÁLEČNÁ LOĎ"
+
+#: gui/text/tips/quinquereme.txt:2
+msgid ""
+"- The heaviest standard warship. Available to: Rome, Carthage, Ptolemies, "
+"and Seleucids."
+msgstr " - Nejtěžší dostupná válečná loď. Dostupná pro: Řím, Karthágo, Ptolemaiovce a Seleukovce."
+
+#: gui/text/tips/quinquereme.txt:4
+msgid "- Transports up to 50 units."
+msgstr "- Přepravuje až 50 jednotek"
+
+#: gui/text/tips/quinquereme.txt:6
+msgid "- Increases firepower with garrisoned catapults."
+msgstr "- Zvyšuje sílu útoku, pokud je osazeno katapulty."
+
+#: gui/text/tips/quinquereme.txt:8
+msgid "- Has a ramming attack that sinks enemy ships (NOT IMPLEMENTED YET)."
+msgstr "- Může provádět útok klounem, kterým potopí nepřátelské lodě (JEŠTĚ NEBYLO PŘIDÁNO)."
+
+#: gui/text/tips/savanna_biome.txt:1
+msgid "SAVANNA BIOME"
+msgstr "BIOM SAVANA"
+
+#: gui/text/tips/savanna_biome.txt:2
+msgid "- Generally flat, with a few watering holes and rocky outcrops."
+msgstr "- Většinou rovinatý povrch, s několika výmoly s vodou a vyčnívajícími skalami."
+
+#: gui/text/tips/savanna_biome.txt:4
+msgid "- Chock full of herd animals for plentiful hunting."
+msgstr "- Velká stáda zvěře pro bohatý lov."
+
+#: gui/text/tips/savanna_biome.txt:6
+msgid "- Rich in all types of mining."
+msgstr "- Bohaté na veškeré druhy těžby."
+
+#: gui/text/tips/savanna_biome.txt:8
+msgid "- Wood tends to be sparse, but consists of high-yield Baobab trees."
+msgstr "- Les bývá řídký, ale sestává z vysoce výnosných stromů baobabu."
+
+#: gui/text/tips/scout_towers.txt:1
+msgid "DEFENSE TOWERS"
+msgstr "OBRANNÉ VĚŽE"
+
+#: gui/text/tips/scout_towers.txt:2
+msgid "- Free-standing towers good for defending large areas of countryside."
+msgstr "- Volně stojící věže vhodné k obraně rozlehlých oblastí krajiny."
+
+#: gui/text/tips/scout_towers.txt:4
+msgid ""
+"- They usually cost 100 Wood and 100 Stone. Iberian Defense Towers cost 300 "
+"Stone (because they're stronger)."
+msgstr "- Obvykle stojí 100 dřeva a 100 kamene, iberské obranné věže stojí 300 kamene (protože jsou silnější)."
+
+#: gui/text/tips/scout_towers.txt:6
+msgid "- Has a ranged attack that increases for each garrisoned unit."
+msgstr "- Má útok na dálku, který je silnější s každou ubytovanou jednotkou."
+
+#: gui/text/tips/spartan_hoplites.txt:1
+msgid "SPARTIATES"
+msgstr "SPARŤANÉ"
+
+#: gui/text/tips/spartan_hoplites.txt:2
+msgid "- Strongest infantry unit in the game."
+msgstr "- Nejsilnější pěchotní jednotka ve hře."
+
+#: gui/text/tips/spartan_hoplites.txt:4
+msgid "- Champion Infantry available to the Spartans faction."
+msgstr "- Elitní pěchota Sparťanů."
+
+#: gui/text/tips/spartan_hoplites.txt:6
+msgid ""
+"- Use them to slaughter enemy cavalry or as a shock force to support your "
+"regular infantry."
+msgstr "- Používejte je na zabíjení nepřátelské jízdy nebo jako údernou sílu k podpoření vaší pravidelné řadové pěchoty."
+
+#: gui/text/tips/spartan_hoplites.txt:8
+msgid "- Use the 'Phalanx' formation for extra armor bonuses."
+msgstr "- Použít formaci falanga pro výhodu k brnění navíc."
+
+#: gui/text/tips/spearmen.txt:1
+msgid "SPEARMEN"
+msgstr "BOJOVNÍK S OŠTĚPEM"
+
+#: gui/text/tips/spearmen.txt:2
+msgid "- The basic melee infantry for every faction in the game."
+msgstr "- Základní pěchota pro boj na blízko používaná každou ze stran ve hře."
+
+#: gui/text/tips/spearmen.txt:4
+msgid "- Used against cavalry for an attack bonus."
+msgstr "- Používáno proti jízdě pro zvýhodnění na útoku."
+
+#: gui/text/tips/spearmen.txt:6
+msgid "- Decent hack attack make them good front line troops."
+msgstr "- Slušný útok sekem z nich dělá dobré jednotky pro přední linii."
+
+#: gui/text/tips/spearmen.txt:8
+msgid ""
+"- They are countered by ranged units and swordsmen, so support your spearmen"
+" with slingers or cavalry."
+msgstr "- Jsou znevýhodněni při boji proti jednotkám bojujícím na dálku a proti bojovníkům s mečem, takže podporují vaše bojovníky s oštěpem společně s prakovníky nebo jízdou."
+
+#: gui/text/tips/stoa.txt:1
+msgid "STOA"
+msgstr "KRYTÁ KOLONÁDA"
+
+#: gui/text/tips/stoa.txt:2
+msgid "- A special structure for Greek factions."
+msgstr "- Zvláštní stavba pro řecké frakce."
+
+#: gui/text/tips/stoa.txt:4
+msgid "- Trains Heavy Skirmishers and Sword Infantry Champions."
+msgstr "- Cvičí těžké harcovníky a elitní pěchotu s mečem."
+
+#: gui/text/tips/stoa.txt:6
+msgid "- Grants +10 Population."
+msgstr "- Poskytuje +10 k populaci"
+
+#: gui/text/tips/storehouses.txt:1
+msgid "STOREHOUSES"
+msgstr "SKLADIŠTĚ"
+
+#: gui/text/tips/storehouses.txt:2
+msgid "- A cheap dropsite for non-food resources (wood, stone, metal)."
+msgstr "- Levné skladiště pro všechny zdroje vyjma potravy (dřevo, kámen, kov)."
+
+#: gui/text/tips/storehouses.txt:4
+msgid ""
+"- Research technologies to improve the gathering capabilities of your "
+"citizens."
+msgstr "- Zkoumejte technologie zlepšující schopnosti sběru surovin vašich občanů."
+
+#: gui/text/tips/syntagma.txt:1
+msgid "SYNTAGMA FORMATION"
+msgstr "FORMACE SYNTAGMA"
+
+#: gui/text/tips/syntagma.txt:2
+msgid "- A formation for 'pikeman' style infantry."
+msgstr "- Formace vhodná pro pěchotu s dlouhým kopím."
+
+#: gui/text/tips/syntagma.txt:4
+msgid "- Formation is slow and cumbersome."
+msgstr "- Formace je pomalá a těžkopádná."
+
+#: gui/text/tips/syntagma.txt:6
+msgid "- Nearly invulnerable from the front."
+msgstr "- Téměř nezranitelná zepředu."
+
+#: gui/text/tips/syntagma.txt:8
+msgid "- Vulnerable to attacks from the rear."
+msgstr "- Zranitelná vůči útokům zezadu."
+
+#: gui/text/tips/temples.txt:1
+msgid "TEMPLES"
+msgstr "CHRÁMY"
+
+#: gui/text/tips/temples.txt:2
+msgid "- Town Phase structure."
+msgstr "- Stavba městské fáze."
+
+#: gui/text/tips/temples.txt:4
+msgid "- Recruit Healers to heal your troops on the battlefield."
+msgstr "- Najměte léčitele k léčení vašich jednotek na bojišti."
+
+#: gui/text/tips/temples.txt:6
+msgid "- Research healing, religious devotion, and cultural technologies."
+msgstr "- Vynalezněte umění léčení, náboženské zanícení a kulturní technologie."
+
+#: gui/text/tips/temples.txt:8
+msgid "- Its \"aura\" heals nearby units."
+msgstr "- Jeho \"aura\" léči okolní jednotky."
+
+#: gui/text/tips/temples.txt:10
+msgid "- Garrison damaged units inside for quicker healing."
+msgstr "- Obsaďte zraněnými jednotkami pro zrychlení léčení."
+
+#: gui/text/tips/territory_decay.txt:1
+msgid "TERRITORY DECAY"
+msgstr "ÚZEMNÍ ROZPAD"
+
+#: gui/text/tips/territory_decay.txt:3
+msgid ""
+"- Decay happens when buildings are not connected to an allied Civil Center."
+msgstr "- Rozpad nastává, když budovy nejsou spojeny se spojeneckým správním střediskem."
+
+#: gui/text/tips/territory_decay.txt:5
+msgid ""
+"- The decay process can be slowed down or reversed by garrisoning some units"
+" in the structure."
+msgstr "- Rozkládací proces může být zpomalen nebo zvrácen umístěním několika jednotek do budovy."
+
+#: gui/text/tips/territory_decay.txt:7
+msgid ""
+"- When the decay is completed, the building will be given to the most "
+"influential neighbor."
+msgstr "- Když je rozpad dokončen, budova padne do rukou nejvlivnějšího souseda."
+
+#: gui/text/tips/themistocles.txt:1
+msgid "THEMISTOCLES"
+msgstr "THÉMISTOKLÉS"
+
+#: gui/text/tips/themistocles.txt:2
+msgid ""
+"- Athenian hero who commanded the Greeks at the great naval battles of "
+"Artemisium and Salamis."
+msgstr "- Athénský hrdina, který velel Řekům ve velkých námořních bitvách u Artemisionu a u Salaminy."
+
+#: gui/text/tips/themistocles.txt:4
+msgid "- All ships are built faster while he lives."
+msgstr "- Dokud žije, jsou všechny lodě stavěny rychleji."
+
+#: gui/text/tips/themistocles.txt:6
+msgid "- The ship he is garrisoned inside sails much faster."
+msgstr "- Loď, ve které je umístěn, pluje mnohem rychleji."
+
+#: gui/text/tips/triremes.txt:1
+msgid "TRIREME"
+msgstr "TRIREME"
+
+#: gui/text/tips/triremes.txt:2
+msgid "- The Medium Warship."
+msgstr "- Střední válečná loď."
+
+#: gui/text/tips/triremes.txt:4
+msgid ""
+"- Available to the Romans, Carthaginians, Hellenic factions, and Persians."
+msgstr "- Dostupné Římanům, Kartagincůms, Helénům a Peršanům."
+
+#: gui/text/tips/triremes.txt:6
+msgid "- Good for transporting or fighting."
+msgstr "- Dobrá pro přepravu nebo pro boj."
+
+#: gui/text/tips/triremes.txt:8
+msgid "- Garrison troops aboard to increase fire power."
+msgstr "- Naloďte jednotky pro zvýšení palebné síly."
+
+#: gui/text/tips/triremes.txt:10
+msgid ""
+"- Garrison a catapult aboard for a long-range siege attack (NOT IMPLEMENTED "
+"YET)."
+msgstr "- Naloďte katapult pro daleko-dosahový obléhací útok (JEŠTĚ NEBYLO PŘIDÁNO)."
+
+#: gui/text/tips/triremes.txt:12
+msgid ""
+"- Capable of a devastating ship-to-ship ramming attack that must recharge "
+"between each use (NOT IMPLEMENTED YET)."
+msgstr "- Schopna pustošivého útoku klounem. Tuto útočnou akci lze provést vždy pouze po určité době. (JEŠTĚ NEBYLO PŘIDÁNO)."
+
+#: gui/text/tips/viriato.txt:1
+msgid "VIRIATO"
+msgstr "VIRIATHUS"
+
+#: gui/text/tips/viriato.txt:2
+msgid "- Iberian hero of the Lusitani tribe."
+msgstr "- Iberský hrdina kmene Lusitánů."
+
+#: gui/text/tips/viriato.txt:4
+msgid ""
+"- At least 7 campaigns against the Romans during the 'Lusitani Wars' from "
+"147 to 139 B.C."
+msgstr "- Alespoň 7 vojenských tažení proti Římanům během Lusitánských válek od 147 do 139 př. n. l."
+
+#: gui/text/tips/viriato.txt:6
+msgid "- Fast moving and can switch between sword and flaming javelin."
+msgstr " - Rychle se pohybující a může měnit mezi mečem a hořícím oštěpem."
+
+#: gui/text/tips/viriato.txt:8
+msgid ""
+"- His \"aura\" is the \"Tactica Guerilla\" that allows nearby Iberian units "
+"to ambush their opponents."
+msgstr "- Jeho aura \"Tactica Guerilla\" (gerilová taktika) dovoluje Ibeřanům poblíž přepadat protivníky ze zálohy."
+
+#: gui/text/tips/war_elephants.txt:1
+msgid "WAR ELEPHANTS"
+msgstr "VÁLEČNÍ SLONI"
+
+#: gui/text/tips/war_elephants.txt:2
+msgid "- Huge beasts from Africa and India, trained for war."
+msgstr "- Obrovská zvířata z Afriky a Indie vycvičená pro boj."
+
+#: gui/text/tips/war_elephants.txt:4
+msgid ""
+"- High Food and Metal cost, but very powerful. Strongest against Structures "
+"and Cavalry."
+msgstr "- Mají vysoké náklady na výživu a kov, ale jsou velice silní. Nejsilnější jsou proti stavbám a jízdě."
+
+#: gui/text/tips/war_elephants.txt:6
+msgid "- Vulnerable to infantry skirmishers."
+msgstr "- Zranitelné pěšími harcovníky."
+
+#: gui/text/tips/war_elephants.txt:8
+msgid "- Available to: Mauryans, Ptolemies, Seleucids, and Carthaginians."
+msgstr "- Dostupné pro: Maurje, Ptolemaiovce, Seleukovce a Kartagince."
+
+#: gui/text/tips/whales.txt:1
+msgid "WHALES"
+msgstr "VELRYBY"
+
+#: gui/text/tips/whales.txt:2
+msgid "- An oceanic resource."
+msgstr "- Mořský zdroj."
+
+#: gui/text/tips/whales.txt:4
+msgid "- 2000 Food."
+msgstr "- 2000 jídla."
+
+#: gui/text/tips/whales.txt:6
+msgid "- Gatherable by Fishing Boats after the whale is killed."
+msgstr "- Lze sebrat pomocí rybářských člunů, poté co byla velryba zabita."
+
+#: gui/text/tips/whales.txt:8
+msgid "- Roam around the oceans of the game and flee when attacked."
+msgstr "- Touláte se po oceánech a prcháte, když na vás někdo zaútočí."

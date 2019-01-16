@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/heroes/iber_hero_caros_1
+    units/heroes/iber_hero_caros_2
+  </Auras>
+  <Identity>
+    <Civ>iber</Civ>
+    <SpecificName>Caros</SpecificName>
+    <Icon>units/iber_hero_caros.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/iberians/hero_infantry_swordsman_caros.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skeletons>
+  <standard_skeleton id="Elephant" title="Elephant">
+    <bone name="Elephant">
+      <bone name="body.1">
+        <bone name="body.2">
+          <bone name="butt">
+            <bone name="tail.1">
+              <bone name="tail.2">
+                <bone name="tail.3">
+                  <bone name="tail.4" />
+                  <bone name="tail.3.joint" />
+                </bone>
+                <bone name="tail.2.joint" />
+              </bone>
+              <bone name="tail.1.joint" />
+            </bone>
+          </bone>
+          <bone name="Bone.001">
+            <bone name="leg.right">
+              <bone name="shin.right">
+                <bone name="foot.right" />
+              </bone>
+              <bone name="leg.right.joint" />
+            </bone>
+          </bone>
+          <bone name="Bone.002">
+            <bone name="leg.left">
+              <bone name="shin.left">
+                <bone name="foot.left" />
+              </bone>
+              <bone name="leg.left.joint" />
+            </bone>
+          </bone>
+          <bone name="pelvis" />
+        </bone>
+        <bone name="belly" />
+      </bone>
+      <bone name="shoulder.left">
+        <bone name="arm.left">
+          <bone name="forearm.left">
+            <bone name="hand.left" />
+          </bone>
+          <bone name="arm.left.joint.front">
+            <bone name="arm.left.joint.back" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="shoulder.right">
+        <bone name="arm.right">
+          <bone name="forearm.right">
+            <bone name="hand.right" />
+          </bone>
+          <bone name="arm.right.joint.front">
+            <bone name="arm.right.joint.back" />
+          </bone>
+        </bone>
+      </bone>
+      <bone name="neck">
+        <bone name="head">
+          <bone name="ear.left" />
+          <bone name="ear.right" />
+        </bone>
+      </bone>
+      <bone name="armor.right" />
+      <bone name="armor.left" />
+    </bone>
+    <bone name="trunk.target" />
+    <bone name="arm.left.target" />
+    <bone name="arm.right.target" />
+    <bone name="leg.left.poletarget" />
+    <bone name="leg.right.poletarget" />
+    <bone name="leg.right.target" />
+    <bone name="leg.left.target" />
+    <bone name="arm.right.kneetarget" />
+    <bone name="arm.left.kneetarget" />
+    <bone name="tail.target" />
+  </standard_skeleton>
+  <skeleton target="Elephant" title="Elephant">
+    <identifier>
+      <root>Elephant</root>
+    </identifier>
+    <bone name="Elephant">
+      <target>Elephant</target>
+      <bone name="body.1">
+        <target>body.1</target>
+        <bone name="body.2">
+          <target>body.2</target>
+          <bone name="butt">
+            <target>butt</target>
+            <bone name="tail.1">
+              <target>tail.1</target>
+              <bone name="tail.2">
+                <target>tail.2</target>
+                <bone name="tail.3">
+                  <target>tail.3</target>
+                  <bone name="tail.4">
+                    <target>tail.4</target>
+                  </bone>
+                  <bone name="tail.3.joint">
+                    <target>tail.3.joint</target>
+                  </bone>
+                </bone>
+                <bone name="tail.2.joint">
+                  <target>tail.2.joint</target>
+                </bone>
+              </bone>
+              <bone name="tail.1.joint">
+                <target>tail.1.joint</target>
+              </bone>
+            </bone>
+          </bone>
+          <bone name="Bone.001">
+            <target>Bone.001</target>
+            <bone name="leg.right">
+              <target>leg.right</target>
+              <bone name="shin.right">
+                <target>shin.right</target>
+                <bone name="foot.right">
+                  <target>foot.right</target>
+                </bone>
+              </bone>
+              <bone name="leg.right.joint">
+                <target>leg.right.joint</target>
+              </bone>
+            </bone>
+          </bone>
+          <bone name="Bone.002">
+            <target>Bone.002</target>
+            <bone name="leg.left">
+              <target>leg.left</target>
+              <bone name="shin.left">
+                <target>shin.left</target>
+                <bone name="foot.left">
+                  <target>foot.left</target>
+                </bone>
+              </bone>
+              <bone name="leg.left.joint">
+                <target>leg.left.joint</target>
+              </bone>
+            </bone>
+          </bone>
+          <bone name="pelvis">
+            <target>pelvis</target>
+          </bone>
+        </bone>
+        <bone name="belly">
+          <target>belly</target>
+        </bone>
+      </bone>
+      <bone name="shoulder.left">
+        <target>shoulder.left</target>
+        <bone name="arm.left">
+          <target>arm.left</target>
+          <bone name="forearm.left">
+            <target>forearm.left</target>
+            <bone name="hand.left">
+              <target>hand.left</target>
+            </bone>
+          </bone>
+          <bone name="arm.left.joint.front">
+            <target>arm.left.joint.front</target>
+            <bone name="arm.left.joint.back">
+              <target>arm.left.joint.back</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="shoulder.right">
+        <target>shoulder.right</target>
+        <bone name="arm.right">
+          <target>arm.right</target>
+          <bone name="forearm.right">
+            <target>forearm.right</target>
+            <bone name="hand.right">
+              <target>hand.right</target>
+            </bone>
+          </bone>
+          <bone name="arm.right.joint.front">
+            <target>arm.right.joint.front</target>
+            <bone name="arm.right.joint.back">
+              <target>arm.right.joint.back</target>
+            </bone>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="neck">
+        <target>neck</target>
+        <bone name="head">
+          <target>head</target>
+          <bone name="ear.left">
+            <target>ear.left</target>
+          </bone>
+          <bone name="ear.right">
+            <target>ear.right</target>
+          </bone>
+        </bone>
+      </bone>
+      <bone name="armor.right">
+        <target>armor.right</target>
+      </bone>
+      <bone name="armor.left">
+        <target>armor.left</target>
+      </bone>
+    </bone>
+    <bone name="trunk.target">
+      <target>trunk.target</target>
+    </bone>
+    <bone name="arm.left.target">
+      <target>arm.left.target</target>
+    </bone>
+    <bone name="arm.right.target">
+      <target>arm.right.target</target>
+    </bone>
+    <bone name="leg.left.poletarget">
+      <target>leg.left.poletarget</target>
+    </bone>
+    <bone name="leg.right.poletarget">
+      <target>leg.right.poletarget</target>
+    </bone>
+    <bone name="leg.right.target">
+      <target>leg.right.target</target>
+    </bone>
+    <bone name="leg.left.target">
+      <target>leg.left.target</target>
+    </bone>
+    <bone name="arm.right.kneetarget">
+      <target>arm.right.kneetarget</target>
+    </bone>
+    <bone name="arm.left.kneetarget">
+      <target>arm.left.kneetarget</target>
+    </bone>
+    <bone name="tail.target">
+      <target>tail.target</target>
+    </bone>
+  </skeleton>
+</skeletons>

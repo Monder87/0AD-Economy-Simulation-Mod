@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <BuildRestrictions>
+    <Territory>own ally neutral</Territory>
+    <PlacementType>shore</PlacementType>
+    <Category>Lighthouse</Category>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="14.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ptol</Civ>
+    <GenericName>Lighthouse</GenericName>
+    <SpecificName>Pháros</SpecificName>
+    <Classes datatype="tokens">-ConquestCritical Lighthouse</Classes>
+    <VisibleClasses datatype="tokens">-City Town</VisibleClasses>
+    <Tooltip>Build along the shore to reveal the shorelines over the entire map. Very large vision range: 180 meters.</Tooltip>
+    <Icon>structures/lighthouse.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <wood>0</wood>
+    <stone>50</stone>
+    <metal>50</metal>
+  </Loot>
+  <Obstruction>
+    <Static width="20.0" depth="25.0"/>
+  </Obstruction>
+  <Position>
+    <Floating>true</Floating>
+    <FloatDepth>0.0</FloatDepth>
+  </Position>
+  <ProductionQueue disable=""/>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_temple.xml</select>
+      <constructed>interface/complete/building/complete_temple.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence>
+    <Radius>0</Radius>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>180</Range>
+    <RevealShore>true</RevealShore>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/ptolemies/lighthouse.xml</Actor>
+    <FoundationActor>structures/fndn_4x4_dock.xml</FoundationActor>
+  </VisualActor>
+</Entity>

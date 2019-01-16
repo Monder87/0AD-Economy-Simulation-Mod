@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/rome_temple">
+  <Auras datatype="tokens">
+    structures/loyalty_regen
+  </Auras>
+  <BuildRestrictions>
+    <Category>UniqueBuilding</Category>
+  </BuildRestrictions>
+  <Footprint replace="">
+    <Circle radius="11.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Temple of Vesta</GenericName>
+    <Icon>structures/temple_vesta.png</Icon>
+    <SpecificName>Aedes Vestae</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="19.0" depth="19.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/romans/temple_vesta.xml</Actor>
+    <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
+  </VisualActor>
+</Entity>

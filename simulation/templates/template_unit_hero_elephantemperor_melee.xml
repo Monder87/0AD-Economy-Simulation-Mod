@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero">
+  <Armour>
+    <Hack>30</Hack>
+    <Pierce>70</Pierce>
+    <Crush>70</Crush>
+  </Armour>
+  <Attack replace="">
+    <Melee>
+      <Hack>120000.0</Hack>
+      <Pierce>120000</Pierce>
+      <Crush>120000.0</Crush>
+      <MaxRange>30.0</MaxRange>
+      <PrepareTime>800</PrepareTime>
+      <RepeatTime>6000</RepeatTime>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Population>3</Population>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>5000</food>
+      <metal>5000</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="9.0"/>
+    <Height>19.0</Height>
+  </Footprint>
+  <Health>
+    <Max>300000</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Elephant Melee</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/elephant_select.xml</select>
+      <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
+      <order_attack>actor/fauna/animal/elephant_attack_order.xml</order_attack>
+      <order_gather>actor/fauna/animal/elephant_order.xml</order_gather>
+      <order_garrison>actor/fauna/animal/elephant_order.xml</order_garrison>
+      <attack_melee>actor/fauna/animal/elephant_attack.xml</attack_melee>
+      <walk>actor/mounted/movement/walk.xml</walk>
+      <run>actor/mounted/movement/walk.xml</run>
+      <death>actor/fauna/animal/elephant_death.xml</death>
+      <trained>actor/fauna/animal/elephant_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+    <WalkSpeed op="mul">7.95</WalkSpeed>
+    <Run>
+      <Speed op="mul">9.95</Speed>
+    </Run>
+  </UnitMotion>
+  <Vision>
+    <Range>250</Range>
+  </Vision>
+</Entity>

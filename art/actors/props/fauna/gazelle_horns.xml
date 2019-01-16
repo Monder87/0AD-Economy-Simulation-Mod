@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="gazelle horns">
+      <mesh>props/gazelle_horns.dae</mesh>
+      <textures><texture file="props/gazelle_horns.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+</actor>

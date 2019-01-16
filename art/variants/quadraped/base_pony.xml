@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="quadraped/pony_idle.dae" name="Idle" id="idle1" speed="60"/>
+    <animation file="quadraped/pony_idle_b.dae" name="Idle" id="idle2" speed="60"/>
+    <animation file="quadraped/pony_idle_c.dae" name="Idle" id="idle3" speed="60"/>
+    <animation file="quadraped/pony_idle.dae" name="attack_melee" speed="60"/>
+    <animation file="quadraped/pony_idle.dae" name="attack_ranged" speed="60"/>
+    <animation file="quadraped/pony_death.dae" id="death1" name="Death" speed="120"/>
+    <animation file="quadraped/pony_death.dae" id="death2" name="Death" speed="120"/>
+  </animations>
+</variant>

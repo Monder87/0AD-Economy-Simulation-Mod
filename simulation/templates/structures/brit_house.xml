@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_house">
+  <Footprint>
+    <Square disable=""/>
+    <Circle radius="6.0"/>
+  </Footprint>
+  <Identity>
+    <Civ>brit</Civ>
+    <SpecificName>Annedd</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="10.0" depth="10.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/britons/house.xml</Actor>
+  </VisualActor>
+</Entity>

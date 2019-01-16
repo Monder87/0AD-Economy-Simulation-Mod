@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="texture">
+      <textures>
+        <texture file="gaia/tree_palm_2_a.png" name="baseTex"/>
+        <texture file="gaia/tree_palm_2_a_norm.png" name="normTex"/>
+        <texture file="gaia/tree_palm_2_a_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="2" name="tropical palm straight">
+      <mesh>gaia/tree_palm_tropical_01.dae</mesh>
+    </variant>
+    <variant frequency="1" name="tropical palm bent">
+      <mesh>gaia/tree_palm_tropical_02.dae</mesh>
+    </variant>
+    <variant frequency="1" name="tropical palm dual swayed">
+      <mesh>gaia/tree_palm_tropical_03.dae</mesh>
+    </variant>
+    <variant frequency="1" name="tropical palm dual">
+      <mesh>gaia/tree_palm_tropical_04.dae</mesh>
+    </variant>
+    <variant frequency="1" name="tropical palm triple">
+      <mesh>gaia/tree_palm_tropical_05.dae</mesh>
+    </variant>
+  </group>
+  <material>trans_wind_parallax_spec.xml</material>
+</actor>

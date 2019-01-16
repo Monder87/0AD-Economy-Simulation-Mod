@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_trader">
+  <Footprint replace="">
+    <Square width="4.0" depth="8.0"/>
+    <Height>3.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>rome</Civ>
+    <Lang>latin</Lang>
+    <GenericName>Plebeian Merchant</GenericName>
+    <SpecificName>Mercator Plebeius</SpecificName>
+    <Icon>units/rome_support_trader.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/romans/trader.xml</Actor>
+  </VisualActor>
+</Entity>

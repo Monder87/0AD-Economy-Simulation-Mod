@@ -1,0 +1,4124 @@
+# Translation template for 0 A.D. — Empires Ascendant.
+# Copyright © 2014 Wildfire Games
+# This file is distributed under the same license as the 0 A.D. — Empires Ascendant project.
+# 
+# Translators:
+# Hammer Andrew <andrewhammer87@gmail.com>, 2017
+# Balázs Meskó <meskobalazs@gmail.com>, 2015-2018
+# Balázs Úr <urbalazs@gmail.com>, 2015-2017
+# Boross Péter <borosspet@web.de>, 2016
+# Gyuris Gellért <bubu@ujevangelizacio.hu>, 2015-2016
+# Gyuris Gellért <bubu@ujevangelizacio.hu>, 2018
+# Gyuris Gellért <bubu@ujevangelizacio.hu>, 2017
+# István Norbert Péter <peter.norbert.istvan@gmail.com>, 2015
+# Mátyás Demeter <mathias.demeter@gmail.com>, 2015
+# Mikola Péter <mikopet@gmail.com>, 2015
+# Stew Den <stewden55@hotmail.com>, 2014
+# Tamás Zolnai <zolnaitamas2000@gmail.com>, 2018
+# Tibor Buzási, 2014
+# Tibor Buzási, 2015-2017
+msgid ""
+msgstr ""
+"Project-Id-Version: 0 A.D.\n"
+"POT-Creation-Date: 2018-04-23 09:03+0200\n"
+"PO-Revision-Date: 2018-04-28 09:57+0000\n"
+"Last-Translator: Balázs Meskó <meskobalazs@gmail.com>\n"
+"Language-Team: Hungarian (http://www.transifex.com/wildfire-games/0ad/language/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: globalscripts/DamageTypes.js:6
+msgctxt "damage type"
+msgid "Hack"
+msgstr "Vágás"
+
+#: globalscripts/DamageTypes.js:7
+msgctxt "damage type"
+msgid "Pierce"
+msgstr "Szúrás"
+
+#: globalscripts/DamageTypes.js:8
+msgctxt "damage type"
+msgid "Crush"
+msgstr "Zúzás"
+
+#: gui/civinfo/civinfo.js:28
+#, javascript-format
+msgid "%(hotkey)s: Switch to Structure Tree."
+msgstr "%(hotkey)s: Váltás az épületfára."
+
+#: gui/civinfo/civinfo.js:29
+#, javascript-format
+msgid "%(hotkey)s: Close History."
+msgstr "%(hotkey)s: Történelem bezárása."
+
+#: gui/civinfo/civinfo.js:124
+#, javascript-format
+msgid "%(civilization)s Gameplay"
+msgstr "%(civilization)s játékmenet"
+
+#: gui/civinfo/civinfo.js:127
+msgid "Civilization Bonus"
+msgid_plural "Civilization Bonuses"
+msgstr[0] "Civilizáció bónusz"
+msgstr[1] "Civilizáció bónuszok"
+
+#: gui/civinfo/civinfo.js:132
+msgid "Team Bonus"
+msgid_plural "Team Bonuses"
+msgstr[0] "Csapat bónusz"
+msgstr[1] "Csapat bónuszok"
+
+#: gui/civinfo/civinfo.js:139
+msgid "Special Technologies"
+msgstr "Különleges technológiák"
+
+#: gui/civinfo/civinfo.js:145
+msgid "Special Building"
+msgid_plural "Special Buildings"
+msgstr[0] "Speciális épület"
+msgstr[1] "Speciális épületek"
+
+#: gui/civinfo/civinfo.js:152 gui/summary/layout.js:67
+msgid "Heroes"
+msgstr "Hős"
+
+#: gui/civinfo/civinfo.js:162
+#, javascript-format
+msgid "History of the %(civilization)s"
+msgstr "A %(civilization)s civilizáció történelme"
+
+#: gui/common/color.js:164
+#, javascript-format
+msgid "Unassigned hotkey: %(hotkeyName)s"
+msgstr "Nem kiosztott gyorsgomb: %(hotkeyName)s"
+
+#: gui/common/color.js:179
+#, javascript-format
+msgid "Press %(hotkey)s to autocomplete playernames."
+msgstr "Nyomd meg a játékosnevek automatikus kiegészítéséhez: %(hotkey)s"
+
+#: gui/common/color.js:181
+msgctxt "hotkey"
+msgid "Tab"
+msgstr "Tab"
+
+#: gui/common/functions_global_object.js:8
+#, javascript-format
+msgid ""
+"Opening %(url)s\n"
+" in default web browser. Please wait…"
+msgstr "%(url)s megnyitása\naz alapértelmezett böngészőben, várj…"
+
+#: gui/common/functions_global_object.js:11
+msgid "Opening page"
+msgstr "Nyitólap"
+
+#. dennis-ignore: *
+#: gui/common/functions_global_object.js:21
+#, javascript-format
+msgid "FPS: %(fps)4s"
+msgstr "Képkocka másodpercenként: %(fps)4s"
+
+#: gui/common/functions_global_object.js:90
+msgid "Loading Aborted"
+msgstr "Betöltés megszakítva"
+
+#: gui/common/functions_utility.js:29
+msgid "Gaia"
+msgstr "Gaia"
+
+#: gui/common/functions_utility.js:105
+msgctxt "map selection"
+msgid "Random"
+msgstr "Véletlenszerű"
+
+#: gui/common/functions_utility_loadsave.js:14
+msgid "yyyy-MM-dd HH:mm:ss"
+msgstr "yyyy-MM-dd HH:mm:ss"
+
+#: gui/common/functions_utility_loadsave.js:22
+#, javascript-format
+msgid "%(dateString)s %(map)s - %(description)s"
+msgstr "%(dateString)s %(map)s - %(description)s"
+
+#: gui/common/functions_utility_loadsave.js:23
+#, javascript-format
+msgid "%(dateString)s %(map)s"
+msgstr "%(dateString)s %(map)s"
+
+#: gui/common/functions_utility_loadsave.js:53
+#, javascript-format
+msgid "\"%(label)s\""
+msgstr "\"%(label)s\""
+
+#: gui/common/functions_utility_loadsave.js:55
+msgid "Saved game will be permanently deleted, are you sure?"
+msgstr "A mentett játék véglegesen törlődik. Biztos vagy benne?"
+
+#: gui/common/functions_utility_loadsave.js:56
+msgid "DELETE"
+msgstr "TÖRLÉS"
+
+#: gui/common/functions_utility_loadsave.js:57 gui/common/tooltips.js:325
+#: gui/options/options.js:301 gui/options/options.js:351
+#: gui/options/options.js:377 gui/pregame/mainmenu.js:261
+#: gui/pregame/mainmenu.js:275 gui/replaymenu/replay_actions.js:169
+msgid "No"
+msgstr "Nem"
+
+#: gui/common/functions_utility_loadsave.js:57 gui/common/tooltips.js:325
+#: gui/options/options.js:301 gui/options/options.js:351
+#: gui/options/options.js:377 gui/pregame/mainmenu.js:261
+#: gui/pregame/mainmenu.js:275 gui/replaymenu/replay_actions.js:169
+msgid "Yes"
+msgstr "Igen"
+
+#: gui/common/functions_utility_loadsave.js:74
+#, javascript-format
+msgid "Delete the selected entry using %(hotkey)s."
+msgstr "A kiválasztott bejegyzés törlése ezzel: %(hotkey)s."
+
+#: gui/common/functions_utility_loadsave.js:79
+#, javascript-format
+msgid "Hold %(hotkey)s to delete without confirmation."
+msgstr "Tartsd lenyomva a megerősítés nélküli törléshez: %(hotkey)s."
+
+#: gui/common/gamedescription.js:44
+msgid "A randomly selected map."
+msgstr "Véletlenszerűen választott térkép."
+
+#: gui/common/gamedescription.js:53 gui/common/gamedescription.js:337
+msgid "Sorry, no description available."
+msgstr "Sajnos nem érhető el leírás."
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:104
+#, javascript-format
+msgid "%(playerName)s (%(civ)s, %(AIdescription)s)"
+msgstr "%(playerName)s (%(civ)s, %(AIdescription)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:107
+#, javascript-format
+msgid "%(playerName)s (%(civ)s, %(AIdescription)s, %(state)s)"
+msgstr "%(playerName)s (%(civ)s, %(AIdescription)s, %(state)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:113
+#, javascript-format
+msgid "%(playerName)s (%(AIdescription)s)"
+msgstr "%(playerName)s (%(AIdescription)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:116
+#, javascript-format
+msgid "%(playerName)s (%(AIdescription)s, %(state)s)"
+msgstr "%(playerName)s (%(AIdescription)s, %(state)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:126
+#, javascript-format
+msgid "%(playerName)s (OFFLINE)"
+msgstr "%(playerName)s (Nem elérhető)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:129
+#, javascript-format
+msgid "%(playerName)s (OFFLINE, %(state)s)"
+msgstr "%(playerName)s (Nem elérhető, %(state)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:136
+#, javascript-format
+msgid "%(playerName)s (%(civ)s)"
+msgstr "%(playerName)s (%(civ)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:139
+#, javascript-format
+msgid "%(playerName)s (%(civ)s, %(state)s)"
+msgstr "%(playerName)s (%(civ)s, %(state)s)"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:143
+#, javascript-format
+msgid "%(playerName)s"
+msgstr "%(playerName)s"
+
+#. Translation: Describe a player in a selected game, f.e. in the replay- or
+#. savegame menu
+#: gui/common/gamedescription.js:146
+#, javascript-format
+msgid "%(playerName)s (%(state)s)"
+msgstr "%(playerName)s (%(state)s)"
+
+#: gui/common/gamedescription.js:166
+msgid "Unknown Civilization"
+msgstr "Ismeretlen civilizáció"
+
+#: gui/common/gamedescription.js:173
+msgctxt "playerstate"
+msgid "defeated"
+msgstr "legyőzve"
+
+#: gui/common/gamedescription.js:174
+msgctxt "playerstate"
+msgid "won"
+msgstr "győzött"
+
+#: gui/common/gamedescription.js:195
+msgid "No Team"
+msgstr "Nincs csapat"
+
+#: gui/common/gamedescription.js:196
+#, javascript-format
+msgid "Team %(team)s"
+msgstr "%(team)s csapat"
+
+#. Translation: Describe players of one team in a selected game, f.e. in the
+#. replay- or savegame menu or lobby
+#: gui/common/gamedescription.js:199 gui/common/gamedescription.js:206
+#, javascript-format
+msgid ""
+"%(team)s:\n"
+"%(playerDescriptions)s"
+msgstr "%(team)s:\n%(playerDescriptions)s"
+
+#: gui/common/gamedescription.js:207
+msgid "Observer"
+msgid_plural "Observers"
+msgstr[0] "Megfigyelő"
+msgstr[1] "Megfigyelők"
+
+#: gui/common/gamedescription.js:224
+msgctxt "victory condition"
+msgid "Endless Game"
+msgstr "Végtelen játék"
+
+#: gui/common/gamedescription.js:225
+msgid "No winner will be determined, even if everyone is defeated."
+msgstr "Nem lesz győztes kihirdetve, akkor sem ha mindenki veszít."
+
+#: gui/common/gamedescription.js:236
+#, javascript-format
+msgctxt "victory condition"
+msgid "Wonder (%(min)s minute)"
+msgid_plural "Wonder (%(min)s minutes)"
+msgstr[0] "Csoda (%(min)s perc)"
+msgstr[1] "Csoda (%(min)s perc)"
+
+#: gui/common/gamedescription.js:248
+#, javascript-format
+msgctxt "victory condition"
+msgid "Capture the Relic (%(min)s minute)"
+msgid_plural "Capture the Relic (%(min)s minutes)"
+msgstr[0] "Szerezd meg az ereklyéket (%(min)s perc)"
+msgstr[1] "Szerezd meg az ereklyéket (%(min)s perc)"
+
+#: gui/common/gamedescription.js:264
+msgid "Relic Count"
+msgstr "Ereklyék száma"
+
+#: gui/common/gamedescription.js:271
+msgid "Hero Garrison"
+msgstr "Hős beszállásolása"
+
+#: gui/common/gamedescription.js:272
+msgid "Heroes can be garrisoned."
+msgstr "A hősök beszállásolhatóak"
+
+#: gui/common/gamedescription.js:276
+msgid "Exposed Heroes"
+msgstr "Kitett hősök"
+
+#: gui/common/gamedescription.js:277
+msgid "Heroes cannot be garrisoned and they are vulnerable to raids."
+msgstr "A hősök nem szállásolhatóak be, és sebezhetőek a rajtaütésekkel szemben."
+
+#: gui/common/gamedescription.js:284
+msgid "Rated game"
+msgstr "Pontozott játék"
+
+#: gui/common/gamedescription.js:285
+msgid ""
+"When the winner of this match is determined, the lobby score will be "
+"adapted."
+msgstr "Amikor kiderül, hogy ki a meccs győztese, akkor a váró pontszám módosulni fog."
+
+#: gui/common/gamedescription.js:290
+msgid "Locked Teams"
+msgstr "Zárolt csapatok"
+
+#: gui/common/gamedescription.js:291
+msgid "Players can't change the initial teams."
+msgstr "A játékosok nem változtathatják meg a kezdeti csapatukat."
+
+#: gui/common/gamedescription.js:295
+msgid "Diplomacy"
+msgstr "Diplomácia"
+
+#: gui/common/gamedescription.js:296
+msgid "Players can make alliances and declare war on allies."
+msgstr "A játékosok szövetségre léphetnek, és hadat üzenhetnek szövetségeseiknek."
+
+#: gui/common/gamedescription.js:301
+msgid "Last Man Standing"
+msgstr "Utolsó emberig"
+
+#: gui/common/gamedescription.js:302
+msgid ""
+"Only one player can win the game. If the remaining players are allies, the "
+"game continues until only one remains."
+msgstr "Csak egy játékos nyerheti meg a játékot. Ha a megmaradt játékosok szövetségesek, akkor a játék addig folytatódik, amíg csak egy marad."
+
+#: gui/common/gamedescription.js:306
+msgid "Allied Victory"
+msgstr "Szövetséges győzelem"
+
+#: gui/common/gamedescription.js:307
+msgid ""
+"If one player wins, his or her allies win too. If one group of allies "
+"remains, they win."
+msgstr "Ha egy játékos nyer, akkor a szövetségesei is. Ha csak egy szövetség marad, akkor nyernek."
+
+#: gui/common/gamedescription.js:311
+msgid "Ceasefire"
+msgstr "Tűzszünet"
+
+#: gui/common/gamedescription.js:314 gui/pregame/mainmenu.js:95
+msgid "disabled"
+msgstr "letiltva"
+
+#: gui/common/gamedescription.js:315
+msgid "For the first minute, other players will stay neutral."
+msgid_plural "For the first %(min)s minutes, other players will stay neutral."
+msgstr[0] "Az első %(min)s percig a többi játékos semleges marad."
+msgstr[1] "Az első %(min)s percig a többi játékos semleges marad."
+
+#: gui/common/gamedescription.js:324
+msgctxt "Map Selection"
+msgid "Random Map"
+msgstr "Véletlenszerű térkép"
+
+#: gui/common/gamedescription.js:325
+msgid "Randomly select a map from the list."
+msgstr "Térkép véletlenszerű kiválasztása a listából."
+
+#: gui/common/gamedescription.js:330
+msgid "Map Name"
+msgstr "Térkép neve"
+
+#: gui/common/gamedescription.js:334
+msgid "Map Description"
+msgstr "Térkép leírása"
+
+#: gui/common/gamedescription.js:342
+msgid "Map Type"
+msgstr "Térkép típusa"
+
+#: gui/common/gamedescription.js:348
+msgid "Map Filter"
+msgstr "Térkép szűrő"
+
+#: gui/common/gamedescription.js:357
+msgid "Map Size"
+msgstr "Térkép mérete"
+
+#: gui/common/gamedescription.js:366
+msgctxt "biome"
+msgid "Random Biome"
+msgstr "Véletlenszerű biom"
+
+#: gui/common/gamedescription.js:367
+msgid "Randomly select a biome from the list."
+msgstr "Biom véletlenszerű kiválasztása a listából."
+
+#: gui/common/gamedescription.js:381
+msgid "Nomad Mode"
+msgstr "Nomád mód"
+
+#: gui/common/gamedescription.js:381
+msgid "Civic Centers"
+msgstr "Városházák"
+
+#: gui/common/gamedescription.js:384
+msgid ""
+"Players start with only few units and have to find a suitable place to build"
+" their city."
+msgstr "A játékosok csak néhány egységgel indulnak, és megfelelő helyet kell keresniük a városuk megépítéséhez."
+
+#: gui/common/gamedescription.js:385
+msgid "Players start with a Civic Center."
+msgstr "A játékosok egy városházával kezdenek."
+
+#: gui/common/gamedescription.js:389
+msgid "Starting Resources"
+msgstr "Kezdő nyersanyagok"
+
+#: gui/common/gamedescription.js:390
+#, javascript-format
+msgid "%(startingResourcesTitle)s (%(amount)s)"
+msgstr "%(startingResourcesTitle)s (%(amount)s)"
+
+#: gui/common/gamedescription.js:400
+msgid "Population Limit"
+msgstr "Népességhatár"
+
+#: gui/common/gamedescription.js:408
+msgid "Treasures"
+msgstr "Kincsek"
+
+#: gui/common/gamedescription.js:410
+msgctxt "treasures"
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: gui/common/gamedescription.js:411
+msgctxt "treasures"
+msgid "As defined by the map."
+msgstr "A térkép beállítása szerint."
+
+#: gui/common/gamedescription.js:415
+msgid "Revealed Map"
+msgstr "Felderített térkép"
+
+#: gui/common/gamedescription.js:420
+msgid "Explored Map"
+msgstr "Felfedezett térkép"
+
+#: gui/common/gamedescription.js:425
+msgid "Cheats"
+msgstr "Csalások"
+
+#: gui/common/gamedescription.js:429 gui/common/tooltips.js:164
+#: gui/common/tooltips.js:219 gui/common/tooltips.js:260
+#: gui/common/tooltips.js:395 gui/common/tooltips.js:417
+#: gui/common/tooltips.js:501 gui/common/tooltips.js:522
+#: gui/common/tooltips.js:820
+#, javascript-format
+msgid "%(label)s %(details)s"
+msgstr "%(label)s %(details)s"
+
+#: gui/common/gamedescription.js:432
+msgctxt "gamesetup option"
+msgid "enabled"
+msgstr "engedélyezve"
+
+#: gui/common/gamedescription.js:433
+msgctxt "gamesetup option"
+msgid "disabled"
+msgstr "letiltva"
+
+#: gui/common/gamedescription.js:449
+msgid "Victorious"
+msgstr "Győzedelmes"
+
+#: gui/common/gamedescription.js:454
+msgid "Defeated"
+msgstr "Legyőzve"
+
+#: gui/common/gamedescription.js:463
+#, javascript-format
+msgid "%(AIdifficulty)s %(AIbehavior)s %(AIname)s"
+msgstr "%(AIdifficulty)s %(AIbehavior)s %(AIname)s"
+
+#: gui/common/network.js:17
+#, javascript-format
+msgid "Losing connection to server (%(seconds)ss)"
+msgstr "Kapcsolat elvesztése a kiszolgálóhoz (%(seconds)s s)"
+
+#: gui/common/network.js:22
+#, javascript-format
+msgid "%(player)s losing connection (%(seconds)ss)"
+msgstr "%(player)s elveszti a kapcsolatot (%(seconds)s s)"
+
+#: gui/common/network.js:28
+#, javascript-format
+msgid "Bad connection to server (%(milliseconds)sms)"
+msgstr "Rossz kapcsolat a kiszolgálóhoz (%(milliseconds)s ms)"
+
+#: gui/common/network.js:33
+#, javascript-format
+msgid "Bad connection to %(player)s (%(milliseconds)sms)"
+msgstr "Rossz kapcsolat %(player)s játékoshoz (%(milliseconds)s ms)"
+
+#: gui/common/network.js:66
+msgctxt "network disconnect"
+msgid "Unknown reason"
+msgstr "Ismeretlen ok"
+
+#: gui/common/network.js:67
+msgid ""
+"This is often caused by UDP port 20595 not being forwarded on the host side,"
+" by a firewall, or anti-virus software"
+msgstr "Ezt gyakran az okozza, hogy a 20595-es UDP port nincs továbbítva a kiszolgáló oldalán, tűzfal vagy vírusirtó szoftver miatt."
+
+#: gui/common/network.js:68
+msgid "The host has ended the game"
+msgstr "A játékgazda befejezte a játékot"
+
+#: gui/common/network.js:69
+msgid "Incorrect network protocol version"
+msgstr "Helytelen hálózati protokoll verzió"
+
+#: gui/common/network.js:70
+msgid "Game is loading, please try again later"
+msgstr "A játék betöltődik, próbálkozz később"
+
+#: gui/common/network.js:71
+msgid "Game has already started, no observers allowed"
+msgstr "A játék már elkezdődött, megfigyelők nem engedélyezettek"
+
+#: gui/common/network.js:72
+msgid "You have been kicked"
+msgstr "Kirúgtak."
+
+#: gui/common/network.js:73
+msgid "You have been banned"
+msgstr "Kitiltottak."
+
+#: gui/common/network.js:74
+msgid "Playername in use. If you were disconnected, retry in few seconds"
+msgstr "A játékosnév használatban van. Ha szétkapcsolódtál, próbáld meg néhány másodperc múlva."
+
+#: gui/common/network.js:75
+msgid "Server full"
+msgstr "Kiszolgáló tele"
+
+#: gui/common/network.js:76
+msgid "Secure lobby authentication failed. Join via lobby"
+msgstr "A biztonságos váró hitelesítése meghiúsult. Csatlakozz a várón keresztül."
+
+#: gui/common/network.js:79
+#, javascript-format
+msgid "\\[Invalid value %(id)s]"
+msgstr "\\[érvénytelen érték: %(id)s]"
+
+#. Translation: States the reason why the client disconnected from the server.
+#: gui/common/network.js:91
+#, javascript-format
+msgid "Reason: %(reason)s."
+msgstr "Ez okból: %(reason)s."
+
+#: gui/common/network.js:96
+msgid "Lost connection to the server."
+msgstr "A szerverkapcsolat megszakadt."
+
+#: gui/common/network.js:97
+msgid "Failed to connect to the server."
+msgstr "A kiszolgálóhoz kapcsolódás sikertelen."
+
+#: gui/common/network.js:99
+msgid "Disconnected"
+msgstr "Lekapcsolódott"
+
+#: gui/common/network.js:107
+msgid "Only the host can kick clients!"
+msgstr "Csak a gazda rúghat ki ügyfeleket!"
+
+#. Translation: Number of currently connected players/observers and their
+#. names
+#: gui/common/network.js:161
+#, javascript-format
+msgid "Users (%(num)s): %(users)s"
+msgstr "Felhasználók (%(num)s): %(users)s"
+
+#: gui/common/network.js:162 gui/common/tooltips.js:83
+#: gui/common/tooltips.js:232 gui/common/tooltips.js:246
+#: gui/common/tooltips.js:324 gui/common/tooltips.js:357
+#: gui/common/tooltips.js:390 gui/common/tooltips.js:685
+#: gui/common/tooltips.js:719 gui/common/tooltips.js:785
+#: gui/reference/common/draw.js:51 gui/replaymenu/replay_menu.js:272
+msgid ", "
+msgstr ", "
+
+#: gui/common/settings.js:117
+msgctxt "aiDiff"
+msgid "Sandbox"
+msgstr "Homokozó"
+
+#: gui/common/settings.js:121
+msgctxt "aiDiff"
+msgid "Very Easy"
+msgstr "Nagyon könnyű"
+
+#: gui/common/settings.js:125
+msgctxt "aiDiff"
+msgid "Easy"
+msgstr "Könnyű"
+
+#: gui/common/settings.js:129
+msgctxt "aiDiff"
+msgid "Medium"
+msgstr "Közepes"
+
+#: gui/common/settings.js:134
+msgctxt "aiDiff"
+msgid "Hard"
+msgstr "Nehéz"
+
+#: gui/common/settings.js:138
+msgctxt "aiDiff"
+msgid "Very Hard"
+msgstr "Nagyon nehéz"
+
+#: gui/common/settings.js:148
+msgctxt "aiBehavior"
+msgid "Random"
+msgstr "Véletlenszerű"
+
+#: gui/common/settings.js:153
+msgctxt "aiBehavior"
+msgid "Balanced"
+msgstr "Kiegyensúlyozott"
+
+#: gui/common/settings.js:157
+msgctxt "aiBehavior"
+msgid "Defensive"
+msgstr "Védekező"
+
+#: gui/common/settings.js:161
+msgctxt "aiBehavior"
+msgid "Aggressive"
+msgstr "Agresszív"
+
+#: gui/common/settings.js:183
+#, javascript-format
+msgctxt "victory duration"
+msgid "%(min)s minute"
+msgid_plural "%(min)s minutes"
+msgstr[0] "%(min)s perc"
+msgstr[1] "%(min)s perc"
+
+#: gui/common/settings.js:205
+msgctxt "ceasefire"
+msgid "No ceasefire"
+msgstr "Nincs tűzszünet"
+
+#: gui/common/settings.js:206
+#, javascript-format
+msgctxt "ceasefire"
+msgid "%(minutes)s minute"
+msgid_plural "%(minutes)s minutes"
+msgstr[0] "%(minutes)s perc"
+msgstr[1] "%(minutes)s perc"
+
+#: gui/common/settings.js:220
+msgctxt "map"
+msgid "Skirmish"
+msgstr "Csata"
+
+#: gui/common/settings.js:221
+msgid ""
+"A map with a predefined landscape and number of players. Freely select the "
+"other gamesettings."
+msgstr "Térkép, előre meghatározott tájjal és játékosszámmal. Más játékbeállítások szabadon válaszhatóak."
+
+#: gui/common/settings.js:226
+msgctxt "map"
+msgid "Random"
+msgstr "Véletlenszerű"
+
+#: gui/common/settings.js:227
+msgid ""
+"Create a unique map with a different resource distribution each time. Freely"
+" select the number of players and teams."
+msgstr "Ez egyedi térképet hoz létre, mindig különböző nyersanyageloszlással. A játékosok és csapatok száma szabadon választható."
+
+#: gui/common/settings.js:231
+msgctxt "map"
+msgid "Scenario"
+msgstr "Küldetés"
+
+#: gui/common/settings.js:232
+msgid "A map with a predefined landscape and matchsettings."
+msgstr "Térkép, előre meghatározott tájjal és meccsbeállításokkal."
+
+#: gui/common/settings.js:306
+msgid "Unlimited"
+msgstr "Korlátlan"
+
+#: gui/common/settings.js:359
+msgctxt "AI name"
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: gui/common/settings.js:370
+msgctxt "AI difficulty"
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: gui/common/settings.js:381
+msgctxt "AI behavior"
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: gui/common/settings.js:393
+msgctxt "map type"
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: gui/common/settings.js:405
+msgctxt "map size"
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: gui/common/settings.js:417
+msgctxt "population capacity"
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: gui/common/settings.js:429
+msgid "Unknown Victory Condition"
+msgstr "Ismeretlen győzelmi feltétel"
+
+#: gui/common/tooltips.js:12
+msgid "Melee Attack:"
+msgstr "Közelharci támadás:"
+
+#: gui/common/tooltips.js:13
+msgid "Ranged Attack:"
+msgstr "Távolsági támadás:"
+
+#: gui/common/tooltips.js:14
+msgid "Capture Attack:"
+msgstr "Elfoglalási támadás:"
+
+#: gui/common/tooltips.js:20
+msgid "Circular Splash Damage"
+msgstr "Kör alakú területi sebzés"
+
+#: gui/common/tooltips.js:21
+msgid "Linear Splash Damage"
+msgstr "Lineáris területi sebzés"
+
+#. Translation: For example: Ranged Attack: 12.0 Pierce, Range: 2 to 10 (+2)
+#. meters, Interval: 3 arrows / 2 seconds
+#: gui/common/tooltips.js:27
+#, javascript-format
+msgid ""
+"%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(minRange)s to %(maxRange)s"
+" (%(relativeRange)s) %(rangeUnit)s, %(rate)s"
+msgstr "%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(minRange)s to %(maxRange)s (%(relativeRange)s) %(rangeUnit)s, %(rate)s"
+
+#. Translation: For example: Ranged Attack: 12.0 Pierce, Range: 10 (+2)
+#. meters, Interval: 3 arrows / 2 seconds
+#: gui/common/tooltips.js:29
+#, javascript-format
+msgid ""
+"%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(maxRange)s "
+"(%(relativeRange)s) %(rangeUnit)s, %(rate)s"
+msgstr "%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(maxRange)s (%(relativeRange)s) %(rangeUnit)s, %(rate)s"
+
+#. Translation: For example: Ranged Attack: 12.0 Pierce, Range: 2 to 10
+#. meters, Interval: 3 arrows / 2 seconds
+#: gui/common/tooltips.js:33
+#, javascript-format
+msgid ""
+"%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(minRange)s to %(maxRange)s"
+" %(rangeUnit)s, %(rate)s"
+msgstr "%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(minRange)s – %(maxRange)s %(rangeUnit)s, %(rate)s"
+
+#. Translation: For example: Ranged Attack: 12.0 Pierce, Range: 10 meters,
+#. Interval: 3 arrows / 2 seconds
+#: gui/common/tooltips.js:35
+#, javascript-format
+msgid ""
+"%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(maxRange)s %(rangeUnit)s, "
+"%(rate)s"
+msgstr "%(attackLabel)s %(damageTypes)s, %(rangeLabel)s %(maxRange)s %(rangeUnit)s, %(rate)s"
+
+#: gui/common/tooltips.js:72
+#, javascript-format
+msgid "%(amount)s %(resourceType)s"
+msgstr "%(amount)s %(resourceType)s"
+
+#: gui/common/tooltips.js:81
+#, javascript-format
+msgid "%(previousAmounts)s and %(lastAmount)s"
+msgstr "%(previousAmounts)s és %(lastAmount)s"
+
+#: gui/common/tooltips.js:110
+#, javascript-format
+msgid "%(time)s %(second)s"
+msgid_plural "%(time)s %(second)s"
+msgstr[0] "%(time)s %(second)s"
+msgstr[1] "%(time)s %(second)s"
+
+#: gui/common/tooltips.js:112 gui/common/tooltips.js:353
+#: gui/common/tooltips.js:717
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "másodperc"
+msgstr[1] "másodperc"
+
+#: gui/common/tooltips.js:165 gui/common/tooltips.js:176
+msgid "Health:"
+msgstr "Életerő:"
+
+#: gui/common/tooltips.js:175
+#, javascript-format
+msgid "%(healthLabel)s %(current)s / %(max)s"
+msgstr "%(healthLabel)s %(current)s / %(max)s"
+
+#: gui/common/tooltips.js:193
+#, javascript-format
+msgid "%(arrowcount)s %(arrows)s"
+msgid_plural "%(arrowcount)s %(arrows)s"
+msgstr[0] "%(arrowcount)s %(arrows)s"
+msgstr[1] "%(arrowcount)s %(arrows)s"
+
+#: gui/common/tooltips.js:195
+msgid "arrow"
+msgid_plural "arrows"
+msgstr[0] "nyíl"
+msgstr[1] "nyíl"
+
+#: gui/common/tooltips.js:198
+#, javascript-format
+msgid "%(arrowString)s / %(timeString)s"
+msgstr "%(arrowString)s / %(timeString)s"
+
+#: gui/common/tooltips.js:209
+#, javascript-format
+msgid "%(percentage)s%%"
+msgstr "%(percentage)s%%"
+
+#: gui/common/tooltips.js:220
+msgid "Armor:"
+msgstr "Páncél:"
+
+#: gui/common/tooltips.js:223
+#, javascript-format
+msgid "%(damage)s %(damageType)s %(armorPercentage)s"
+msgstr "%(damage)s %(damageType)s %(armorPercentage)s"
+
+#: gui/common/tooltips.js:228
+#, javascript-format
+msgid "(%(armorPercentage)s)"
+msgstr "(%(armorPercentage)s)"
+
+#: gui/common/tooltips.js:239
+msgid "(None)"
+msgstr "(Nincs)"
+
+#: gui/common/tooltips.js:243
+#, javascript-format
+msgid "%(damage)s %(damageType)s"
+msgstr "%(damage)s %(damageType)s"
+
+#: gui/common/tooltips.js:264
+msgid "Interval:"
+msgstr "Időtartam:"
+
+#: gui/common/tooltips.js:265 gui/common/tooltips.js:715
+msgid "Rate:"
+msgstr "Sebesség:"
+
+#: gui/common/tooltips.js:272
+#, javascript-format
+msgid "%(attackLabel)s %(details)s, %(rate)s"
+msgstr "%(attackLabel)s %(details)s, %(rate)s"
+
+#: gui/common/tooltips.js:291 gui/common/tooltips.js:710
+msgid "Range:"
+msgstr "Hatótáv:"
+
+#: gui/common/tooltips.js:294
+#, javascript-format
+msgid "+%(number)s"
+msgstr "+%(number)s"
+
+#. Translation: For example "0.5 to 1 meters", "1 (+1) meters" or "1 to 2 (+3)
+#. meters"
+#: gui/common/tooltips.js:298
+msgid "meters"
+msgstr "méter"
+
+#: gui/common/tooltips.js:299 gui/common/tooltips.js:712
+#: gui/common/tooltips.js:742
+msgid "meter"
+msgid_plural "meters"
+msgstr[0] "méter"
+msgstr[1] "méter"
+
+#: gui/common/tooltips.js:318 gui/common/tooltips.js:376
+#: gui/common/tooltips.js:381 gui/common/tooltips.js:386
+#, javascript-format
+msgid "%(label)s: %(value)s"
+msgstr "%(label)s: %(value)s"
+
+#: gui/common/tooltips.js:324
+#, javascript-format
+msgid "Friendly Fire: %(enabled)s"
+msgstr "Baráti tűz: %(enabled)s"
+
+#: gui/common/tooltips.js:341
+#, javascript-format
+msgid "%(label)s: %(garrisonLimit)s"
+msgstr "%(label)s: %(garrisonLimit)s"
+
+#: gui/common/tooltips.js:342
+msgid "Garrison Limit"
+msgstr "Beszállásolási korlát"
+
+#: gui/common/tooltips.js:349
+#, javascript-format
+msgid "%(healRateLabel)s %(value)s %(health)s / %(second)s"
+msgstr "%(healRateLabel)s %(value)s %(health)s / %(second)s"
+
+#: gui/common/tooltips.js:350 gui/common/tooltips.js:704
+msgid "Heal:"
+msgstr "Gyógyulás:"
+
+#: gui/common/tooltips.js:352
+msgid "Health"
+msgstr "Életerő"
+
+#: gui/common/tooltips.js:377
+msgid "Projectile Limit"
+msgstr "Lövedék korlát"
+
+#: gui/common/tooltips.js:382
+msgctxt "projectiles"
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: gui/common/tooltips.js:387
+msgctxt "projectiles"
+msgid "Per Unit"
+msgstr "Egységenként"
+
+#: gui/common/tooltips.js:396
+msgid "Number of repairers:"
+msgstr "Javítók száma:"
+
+#: gui/common/tooltips.js:402
+#, javascript-format
+msgid "Add another worker to speed up the repairs by %(second)s second."
+msgid_plural ""
+"Add another worker to speed up the repairs by %(second)s seconds."
+msgstr[0] "Adj hozzá még egy munkást, és gyorsítsd fel a javításokat  másodperccel."
+msgstr[1] "Adj hozzá még egy munkást, és gyorsítsd fel a javításokat %(second)s másodperccel."
+
+#: gui/common/tooltips.js:409
+#, javascript-format
+msgid "Add a worker to finish the repairs in %(second)s second."
+msgid_plural "Add a worker to finish the repairs in %(second)s seconds."
+msgstr[0] "Adj hozzá még egy munkást, hogy másodperc befejezd a javítást."
+msgstr[1] "Adj hozzá még egy munkást, hogy %(second)s másodperc befejezd a javítást."
+
+#: gui/common/tooltips.js:418
+msgid "Number of builders:"
+msgstr "Építők száma:"
+
+#: gui/common/tooltips.js:424
+#, javascript-format
+msgid "Add another worker to speed up the construction by %(second)s second."
+msgid_plural ""
+"Add another worker to speed up the construction by %(second)s seconds."
+msgstr[0] "Adj hozzá még egy munkást, és gyorsítsd fel az építkezést másodperccel."
+msgstr[1] "Adj hozzá még egy munkást, és gyorsítsd fel az építkezést %(second)s másodperccel."
+
+#: gui/common/tooltips.js:431
+#, javascript-format
+msgid "Add a worker to finish the construction in %(second)s second."
+msgid_plural "Add a worker to finish the construction in %(second)s seconds."
+msgstr[0] "Adj hozzá még egy munkást, hogy másodperc befejezd az építkezést."
+msgstr[1] "Adj hozzá még egy munkást, hogy %(second)s másodperc befejezd az építkezést."
+
+#: gui/common/tooltips.js:466 gui/common/tooltips.js:657
+#, javascript-format
+msgid "%(component)s %(cost)s"
+msgstr "%(component)s %(cost)s"
+
+#: gui/common/tooltips.js:502
+msgid "Gather Rates:"
+msgstr "Gyűjtési sebesség:"
+
+#: gui/common/tooltips.js:505 gui/common/tooltips.js:527
+#, javascript-format
+msgid "%(resourceIcon)s %(rate)s"
+msgstr "%(resourceIcon)s %(rate)s"
+
+#: gui/common/tooltips.js:523
+msgid "Resource Trickle:"
+msgstr "Folyamatosan érkező nyersanyag:"
+
+#: gui/common/tooltips.js:524
+#, javascript-format
+msgid "%(resources)s / %(time)s"
+msgstr "%(resources)s / %(time)s"
+
+#. Translation: This string is part of the resources cost string on
+#. the tooltip for wall structures.
+#: gui/common/tooltips.js:576
+#, javascript-format
+msgid "%(resourceIcon)s %(minimum)s to %(resourceIcon)s %(maximum)s"
+msgstr "%(resourceIcon)s %(minimum)s - %(resourceIcon)s %(maximum)s"
+
+#: gui/common/tooltips.js:605
+#, javascript-format
+msgid "Walls:  %(costs)s"
+msgstr "Fal: %(costs)s"
+
+#: gui/common/tooltips.js:606
+#, javascript-format
+msgid "Towers:  %(costs)s"
+msgstr "Tornyok: %(costs)s"
+
+#. Translation: Label in tooltip showing cost of a unit, structure or
+#. technology.
+#: gui/common/tooltips.js:614
+#, javascript-format
+msgid "%(label)s %(costs)s"
+msgstr "%(label)s %(costs)s"
+
+#: gui/common/tooltips.js:615
+msgid "Cost:"
+msgstr "Költség:"
+
+#: gui/common/tooltips.js:628
+#, javascript-format
+msgid "Requires %(technology)s"
+msgstr "Szükséges hozzá: %(technology)s"
+
+#: gui/common/tooltips.js:640
+#, javascript-format
+msgid "%(label)s %(populationBonus)s"
+msgstr "%(label)s %(populationBonus)s"
+
+#: gui/common/tooltips.js:641
+msgid "Population Bonus:"
+msgstr "Népességbónusz:"
+
+#: gui/common/tooltips.js:662
+msgid "Insufficient resources:"
+msgstr "Hiányzó nyersanyagok:"
+
+#: gui/common/tooltips.js:678
+#, javascript-format
+msgid "%(label)s %(speeds)s"
+msgstr "%(label)s %(speeds)s"
+
+#: gui/common/tooltips.js:679
+msgid "Speed:"
+msgstr "Sebesség:"
+
+#: gui/common/tooltips.js:681 gui/common/tooltips.js:686
+#, javascript-format
+msgid "%(speed)s %(movementType)s"
+msgstr "%(speed)s %(movementType)s"
+
+#: gui/common/tooltips.js:683
+msgid "Walk"
+msgstr "Séta"
+
+#: gui/common/tooltips.js:688
+msgid "Run"
+msgstr "Futás"
+
+#: gui/common/tooltips.js:703 gui/common/tooltips.js:709
+#: gui/common/tooltips.js:714 gui/common/tooltips.js:739
+#, javascript-format
+msgid "%(label)s %(val)s %(unit)s"
+msgid_plural "%(label)s %(val)s %(unit)s"
+msgstr[0] "%(label)s %(val)s %(unit)s"
+msgstr[1] "%(label)s %(val)s %(unit)s"
+
+#. Translation: Short for hit points (or health points) that are healed in one
+#. healing action
+#: gui/common/tooltips.js:707
+msgid "HP"
+msgid_plural "HP"
+msgstr[0] "ÉP"
+msgstr[1] "ÉP"
+
+#: gui/common/tooltips.js:731
+#, javascript-format
+msgid "%(auralabel)s %(aurainfo)s"
+msgstr "%(auralabel)s %(aurainfo)s"
+
+#: gui/common/tooltips.js:732
+#, javascript-format
+msgid "%(auraname)s:"
+msgstr "%(auraname)s:"
+
+#: gui/common/tooltips.js:740
+msgctxt "aura"
+msgid "Range:"
+msgstr "Hatótáv:"
+
+#: gui/common/tooltips.js:757
+#, javascript-format
+msgid "%(specificName)s (%(genericName)s)"
+msgstr "%(specificName)s (%(genericName)s)"
+
+#. Translation: Example: "Epibátēs Athēnaîos [font="sans-bold-16"](Athenian
+#. Marine)[/font]"
+#: gui/common/tooltips.js:769
+#, javascript-format
+msgid "%(specificName)s %(fontStart)s(%(genericName)s)%(fontEnd)s"
+msgstr "%(specificName)s %(fontStart)s(%(genericName)s)%(fontEnd)s"
+
+#: gui/common/tooltips.js:784
+msgid "Classes:"
+msgstr "Osztályok:"
+
+#. Translation: %(component) will be the icon for the loot type and %(loot)
+#. will be the value.
+#: gui/common/tooltips.js:811
+#, javascript-format
+msgid "%(component)s %(loot)s"
+msgstr "%(component)s %(loot)s"
+
+#: gui/common/tooltips.js:821
+msgid "Loot:"
+msgstr "Zsákmány:"
+
+#. Translation: Appears in a tooltip to indicate that right-clicking the
+#. corresponding GUI element will open the Template Details GUI page.
+#: gui/common/tooltips.js:829
+msgid "Right-click to view more information."
+msgstr "Jobb kattintás több információ megtekintéséhez."
+
+#. Translation: Appears in a tooltip to indicate that clicking the
+#. corresponding GUI element will open the Template Details GUI page.
+#: gui/common/tooltips.js:835
+msgid "Click to view more information."
+msgstr "Kattintás több információ megtekintéséhez."
+
+#: gui/credits/credits.js:69
+#, javascript-format
+msgid "%(nick)s - %(name)s"
+msgstr "%(nick)s - %(name)s"
+
+#: gui/options/options.js:100
+#, javascript-format
+msgid "Default: %(value)s"
+msgstr "Alapértelmezett: %(value)s"
+
+#: gui/options/options.js:126
+#, javascript-format
+msgctxt "option number"
+msgid "Min: %(min)s, Max: %(max)s"
+msgstr "Min.: %(min)s, Max.: %(max)s"
+
+#: gui/options/options.js:128
+#, javascript-format
+msgctxt "option number"
+msgid "Min: %(min)s"
+msgstr "Min.: %(min)s"
+
+#: gui/options/options.js:130
+#, javascript-format
+msgctxt "option number"
+msgid "Max: %(max)s"
+msgstr "Max.: %(max)s"
+
+#: gui/options/options.js:163
+#, javascript-format
+msgctxt "slider number"
+msgid "Value: %(val)s (min: %(min)s, max: %(max)s)"
+msgstr "Érték: %(val)s (legalább: %(min)s, legfeljebb: %(max)s)"
+
+#: gui/options/options.js:299
+msgid ""
+"Resetting the options will erase your saved settings. Do you want to "
+"continue?"
+msgstr "A beállítások helyreállítása törli a mentett beállításaid. Folytatni szeretnéd?"
+
+#: gui/options/options.js:300 gui/options/options.js:350
+#: gui/options/options.js:376
+msgid "Warning"
+msgstr "Figyelmeztetés"
+
+#: gui/options/options.js:349
+msgid "Some setting values are invalid! Are you sure to save them?"
+msgstr "Néhány beállítási érték érvénytelen! Biztosan menthetőek?"
+
+#: gui/options/options.js:375
+msgid "You have unsaved changes, do you want to close this window?"
+msgstr "Mentetlen módosításaid vannak, szeretnéd bezárni ezt az ablakot?"
+
+#: gui/pregame/mainmenu.js:42
+#, javascript-format
+msgid ""
+"%(hotkey)s: View the structure tree of civilizations featured in 0 A.D."
+msgstr "%(hotkey)s: A játékban szereplő civilizációk épületfájának megtekintése"
+
+#: gui/pregame/mainmenu.js:45
+#, javascript-format
+msgid "%(hotkey)s: Learn about the many civilizations featured in 0 A.D."
+msgstr "%(hotkey)s: A játékban szereplő számos nép megismerése"
+
+#: gui/pregame/mainmenu.js:48
+#, javascript-format
+msgid ""
+"%(hotkey)s: Launch the multiplayer lobby to join and host publicly visible "
+"games and chat with other players."
+msgstr "%(hotkey)s: A többjátékos váró elindítása, nyilvánosan elérhető játékok készítéséhez és a hozzájuk csatlakozáshoz, valamint a csevegéshez a többi játékossal."
+
+#: gui/pregame/mainmenu.js:98
+msgid "connecting to server"
+msgstr "csatlakozás a kiszolgálóhoz"
+
+#: gui/pregame/mainmenu.js:101
+#, javascript-format
+msgid "uploading (%f%%)"
+msgstr "feltöltés (%f%%)"
+
+#: gui/pregame/mainmenu.js:107
+msgid "upload succeeded"
+msgstr "feltöltés sikeres"
+
+#: gui/pregame/mainmenu.js:108
+#, javascript-format
+msgid "upload failed (%(errorCode)s)"
+msgstr "nem sikerült a feltöltés (%(errorCode)s)"
+
+#: gui/pregame/mainmenu.js:112
+#, javascript-format
+msgid "upload failed (%(errorMessage)s)"
+msgstr "nem sikerült a feltöltés (%(errorMessage)s)"
+
+#: gui/pregame/mainmenu.js:114
+msgid "unknown"
+msgstr "ismeretlen"
+
+#: gui/pregame/mainmenu.js:129
+msgid "Thank you for helping improve 0 A.D.!"
+msgstr "Köszönjük, hogy segítesz a 0 A.D. tökéletesítésében!"
+
+#: gui/pregame/mainmenu.js:130
+msgid "Anonymous feedback is currently enabled."
+msgstr "A névtelen visszajelzés engedélyezve van."
+
+#: gui/pregame/mainmenu.js:131
+#, javascript-format
+msgid "Status: %(status)s."
+msgstr "Állapot: %(status)s."
+
+#: gui/pregame/mainmenu.js:155
+#, javascript-format
+msgid ""
+"%(warning)s You appear to be using non-shader (fixed function) graphics. "
+"This option will be removed in a future 0 A.D. release, to allow for more "
+"advanced graphics features. We advise upgrading your graphics card to a more"
+" recent, shader-compatible model."
+msgstr "%(warning)s Úgy tűnik, hogy árnyaló nélküli (fix funkciós) grafikát használsz. Ez a beállítás egy későbbi 0 A.D. kiadásban el lesz távolítva, fejlettebb grafikai jellegzetességek engedélyezéséhez. Javasoljuk, hogy korszerűsítsd a grafikus kártyádat egy újabb, árnyalókkal kompatibilis változatra."
+
+#. Translation: This is the second paragraph of a warning. The
+#. warning explains that the user is using “non-shader“ graphics,
+#. and that in the future this will not be supported by the game, so
+#. the user will need a better graphics card.
+#: gui/pregame/mainmenu.js:163
+msgid "Please press \"Read More\" for more information or \"OK\" to continue."
+msgstr "Kattints a \"További információk\" lehetőségre vagy az \"OK\"-ra a folytatáshoz."
+
+#: gui/pregame/mainmenu.js:164
+msgid "WARNING!"
+msgstr "FIGYELEM!"
+
+#: gui/pregame/mainmenu.js:165 gui/splashscreen/splashscreen.xml:(caption):29
+msgid "OK"
+msgstr "OK"
+
+#: gui/pregame/mainmenu.js:165
+msgid "Read More"
+msgstr "További információk"
+
+#: gui/pregame/mainmenu.js:247
+#, javascript-format
+msgid "Build: %(buildDate)s (%(revision)s)"
+msgstr "Verzió: %(buildDate)s (%(revision)s)"
+
+#: gui/pregame/mainmenu.js:259
+msgid "Are you sure you want to quit 0 A.D.?"
+msgstr "Biztosan kilépsz a 0 A.D. játékból?"
+
+#: gui/pregame/mainmenu.js:260 gui/pregame/mainmenu.js:274
+msgid "Confirmation"
+msgstr "Megerősítés"
+
+#: gui/pregame/mainmenu.js:273
+msgid "Are you sure you want to quit 0 A.D. and open the Scenario Editor?"
+msgstr "Biztosan kilépsz a 0 A.D. játékból, és megnyitod a küldetésszerkesztőt?"
+
+#: gui/pregame/mainmenu.js:281
+msgid ""
+"The scenario editor is not available or failed to load. See the game logs "
+"for additional information."
+msgstr "A küldetésszerkesztő nem érhető el vagy nem sikerült betölteni. További információkért tekintsd meg a játéknaplókat."
+
+#: gui/pregame/mainmenu.js:282 gui/replaymenu/replay_actions.js:117
+msgid "Error"
+msgstr "Hiba"
+
+#: gui/pregame/mainmenu.js:288
+msgid ""
+"Launch the multiplayer lobby to join and host publicly visible games and "
+"chat with other players. \\[DISABLED BY BUILD]"
+msgstr "A többjátékos váró elindítása, nyilvánosan elérhető játékok készítéséhez és a hozzájuk csatlakozáshoz, valamint a csevegéshez a többi játékossal. \\[ÖSSZEÁLLÍTÁSKOR LETILTVA]"
+
+#: gui/pregame/mainmenu.js:293 gui/pregame/mainmenu.xml:(caption):68
+#: gui/pregame/mainmenu.xml:(caption):95
+msgid "Technical Details"
+msgstr "Technikai részletek"
+
+#: gui/pregame/mainmenu.js:298 gui/pregame/mainmenu.xml:(caption):146
+msgid "Manual"
+msgstr "Kézikönyv"
+
+#. Translation: Label followed by a list of values.
+#: gui/reference/common/draw.js:48
+#, javascript-format
+msgid "%(listHeader)s %(listOfValues)s"
+msgstr "%(listHeader)s %(listOfValues)s"
+
+#. Translation: Label in tooltip showing the resource type and quantity of a
+#. given resource supply.
+#: gui/reference/common/draw.js:67
+#, javascript-format
+msgid "%(label)s %(component)s %(amount)s"
+msgstr "%(label)s %(component)s %(amount)s"
+
+#: gui/reference/common/draw.js:68
+msgid "Resource Supply:"
+msgstr "Nyersanyagkészlet:"
+
+#. Translation: Marks that a resource supply entity has an unending, infinite,
+#. supply of its resource.
+#: gui/reference/common/draw.js:71 gui/summary/summary.js:111
+msgid "∞"
+msgstr "∞"
+
+#: gui/reference/common/load.js:193
+#, javascript-format
+msgid "%(health_min)s to %(health_max)s"
+msgstr "%(health_min)s – %(health_max)s"
+
+#: gui/reference/structree/structree.js:49
+#, javascript-format
+msgid "%(hotkey)s: Switch to History."
+msgstr "%(hotkey)s: Váltás a történelemre."
+
+#: gui/reference/structree/structree.js:50
+#, javascript-format
+msgid "%(hotkey)s: Close Structure Tree."
+msgstr "%(hotkey)s: Épületfa bezárása."
+
+#. Translation: Label before a list of the names of units that build the
+#. structure selected.
+#: gui/reference/viewer/viewer.js:139
+msgid "Built by:"
+msgstr "Építette:"
+
+#. Translation: Label before a list of the names of structures or units that
+#. train the unit selected.
+#: gui/reference/viewer/viewer.js:152
+msgid "Trained by:"
+msgstr "Kiképezte:"
+
+#. Translation: Label before a list of names of structures or units that
+#. research the technology selected.
+#: gui/reference/viewer/viewer.js:165
+msgid "Researched at:"
+msgstr "Kutatta:"
+
+#. Translation: Label before a list of the names of structures the selected
+#. unit can construct or build.
+#: gui/reference/viewer/viewer.js:177
+msgid "Builds:"
+msgstr "Épít:"
+
+#. Translation: Label before a list of the names of technologies the selected
+#. unit or structure can research.
+#: gui/reference/viewer/viewer.js:198
+msgid "Researches:"
+msgstr "Kutat:"
+
+#. Translation: Label before a list of the names of units the selected unit or
+#. structure can train.
+#: gui/reference/viewer/viewer.js:210
+msgid "Trains:"
+msgstr "Kiképez:"
+
+#. Translation: Label before a list of the names of units or structures the
+#. selected unit or structure can be upgradable to.
+#: gui/reference/viewer/viewer.js:223
+msgid "Upgradable to:"
+msgstr "Fejleszthető erre:"
+
+#: gui/replaymenu/replay_actions.js:90
+msgid "This replay needs a different sequence of mods:"
+msgstr "Ez a visszajátszás más módosítás-sorrendet igényel:"
+
+#: gui/replaymenu/replay_actions.js:95
+msgid "This replay is not compatible with your version of the game!"
+msgstr "Ez a visszajátszás nem kompatibilis a játék verziójával!"
+
+#: gui/replaymenu/replay_actions.js:96
+#, javascript-format
+msgid "Your version: %(version)s"
+msgstr "Futtatott verzió: %(version)s"
+
+#: gui/replaymenu/replay_actions.js:97
+#, javascript-format
+msgid "Required version: %(version)s"
+msgstr "Szükséges verzió: %(version)s"
+
+#: gui/replaymenu/replay_actions.js:100
+msgid "Incompatible replay"
+msgstr "Nem kompatibilis visszajátszás"
+
+#: gui/replaymenu/replay_actions.js:117
+msgid "No summary data available."
+msgstr "Nincsenek összefoglaló adatok."
+
+#: gui/replaymenu/replay_actions.js:166
+msgid "Are you sure you want to delete this replay permanently?"
+msgstr "Biztosan véglegesen törölni akarod ezt a visszajátszást?"
+
+#: gui/replaymenu/replay_actions.js:168
+msgid "Delete replay"
+msgstr "Visszajátszás törlése"
+
+#: gui/replaymenu/replay_filters.js:50
+msgctxt "datetime"
+msgid "Any"
+msgstr "Bármilyen"
+
+#: gui/replaymenu/replay_filters.js:66
+msgctxt "map size"
+msgid "Any"
+msgstr "Bármilyen"
+
+#: gui/replaymenu/replay_filters.js:82
+msgctxt "map name"
+msgid "Any"
+msgstr "Bármilyen"
+
+#: gui/replaymenu/replay_filters.js:98
+msgctxt "population capacity"
+msgid "Any"
+msgstr "Bármilyen"
+
+#: gui/replaymenu/replay_filters.js:117
+msgctxt "duration"
+msgid "Any"
+msgstr "Bármilyen"
+
+#. Translation: Shorter duration than max minutes.
+#: gui/replaymenu/replay_filters.js:121
+#, javascript-format
+msgctxt "duration filter"
+msgid "< %(max)s min"
+msgid_plural "< %(max)s min"
+msgstr[0] "< %(max)s min."
+msgstr[1] "< %(max)s min."
+
+#. Translation: Longer duration than min minutes.
+#: gui/replaymenu/replay_filters.js:125
+#, javascript-format
+msgctxt "duration filter"
+msgid "> %(min)s min"
+msgid_plural "> %(min)s min"
+msgstr[0] "> %(min)s min."
+msgstr[1] "> %(min)s min."
+
+#. Translation: Duration between min and max minutes.
+#: gui/replaymenu/replay_filters.js:128
+#, javascript-format
+msgctxt "duration filter"
+msgid "%(min)s - %(max)s min"
+msgstr "%(min)s - %(max)s min."
+
+#: gui/replaymenu/replay_filters.js:142
+msgid "Single- and multiplayer"
+msgstr "Egy- és többjátékos mód"
+
+#: gui/replaymenu/replay_filters.js:142 gui/pregame/mainmenu.xml:(caption):481
+msgid "Single Player"
+msgstr "Egyjátékos mód"
+
+#: gui/replaymenu/replay_filters.js:142 gui/pregame/mainmenu.xml:(caption):496
+msgid "Multiplayer"
+msgstr "Többjátékos mód"
+
+#: gui/replaymenu/replay_filters.js:155
+msgid "Any Victory Condition"
+msgstr "Bármely győzelmi feltétel"
+
+#: gui/replaymenu/replay_filters.js:168
+msgid "Rated and unrated games"
+msgstr "Pontozott és nem pontozott játékok"
+
+#: gui/replaymenu/replay_filters.js:168
+msgid "Rated games"
+msgstr "Pontozott játékok"
+
+#: gui/replaymenu/replay_filters.js:168
+msgid "Unrated games"
+msgstr "Nem pontozott játékok"
+
+#: gui/replaymenu/replay_menu.js:193
+msgid "Filter replays by typing one or more, partial or complete playernames."
+msgstr "A visszajátszások szűrése egy vagy több részleges vagy teljes játékosnév beírásával."
+
+#: gui/replaymenu/replay_menu.js:273
+#, javascript-format
+msgid "Players: %(numberOfPlayers)s"
+msgstr "Játékosok: %(numberOfPlayers)s"
+
+#: gui/replaymenu/replay_menu.js:300
+msgid "yyyy-MM-dd HH:mm"
+msgstr "yyyy-MM-dd HH:mm"
+
+#: gui/replaymenu/replay_menu.js:330
+msgid "yyyy-MM"
+msgstr "yyyy-MM"
+
+#: gui/summary/layout.js:3 gui/summary/summary.xml:(caption):74
+msgid "Score"
+msgstr "Pont"
+
+#: gui/summary/layout.js:5 gui/summary/layout.js:23 gui/summary/layout.js:61
+#: gui/summary/layout.js:101 gui/summary/layout.js:152
+#: gui/summary/layout.js:184 gui/summary/summary.xml:(caption):123
+msgid "Player name"
+msgstr "Játékosnév"
+
+#: gui/summary/layout.js:6
+msgid "Total score"
+msgstr "Összes pont"
+
+#: gui/summary/layout.js:7
+msgid "Economy score"
+msgstr "Gazdasági pont"
+
+#: gui/summary/layout.js:8
+msgid "Military score"
+msgstr "Hadi pontok"
+
+#: gui/summary/layout.js:9
+msgid "Exploration score"
+msgstr "Felfedezési pontok"
+
+#: gui/summary/layout.js:21 gui/summary/summary.xml:(caption):81
+msgid "Buildings"
+msgstr "Épületek"
+
+#: gui/summary/layout.js:24 gui/summary/layout.js:62 gui/summary/layout.js:102
+msgid "Total"
+msgstr "Összes"
+
+#: gui/summary/layout.js:25
+msgid "Houses"
+msgstr "Házak"
+
+#: gui/summary/layout.js:26
+msgid "Economic"
+msgstr "Gazdasági"
+
+#: gui/summary/layout.js:27
+msgid "Outposts"
+msgstr "Előőrsök"
+
+#: gui/summary/layout.js:28
+msgid "Military"
+msgstr "Hadi"
+
+#: gui/summary/layout.js:29
+msgid "Fortresses"
+msgstr "Erődök"
+
+#: gui/summary/layout.js:30
+msgid "Civ centers"
+msgstr "Városközpontok"
+
+#: gui/summary/layout.js:31
+msgid "Wonders"
+msgstr "Csodák"
+
+#: gui/summary/layout.js:35
+#, javascript-format
+msgid ""
+"Buildings Statistics (%(constructed)s / %(destroyed)s / %(captured)s / "
+"%(lost)s)"
+msgstr "Épület statisztikák (%(constructed)s / %(destroyed)s / %(captured)s / %(lost)s)"
+
+#: gui/summary/layout.js:59 gui/summary/summary.xml:(caption):88
+msgid "Units"
+msgstr "Egységek"
+
+#: gui/summary/layout.js:63
+msgid "Infantry"
+msgstr "Gyalogság"
+
+#: gui/summary/layout.js:64
+msgid "Worker"
+msgstr "Dolgozó"
+
+#: gui/summary/layout.js:65
+msgid "Cavalry"
+msgstr "Lovas"
+
+#: gui/summary/layout.js:66
+msgid "Champion"
+msgstr "Bajnok"
+
+#: gui/summary/layout.js:68
+msgid "Siege"
+msgstr "Ostrom"
+
+#: gui/summary/layout.js:69
+msgid "Navy"
+msgstr "Tengeri"
+
+#: gui/summary/layout.js:70
+msgid "Traders"
+msgstr "Kereskedők"
+
+#: gui/summary/layout.js:74
+#, javascript-format
+msgid "Units Statistics (%(trained)s / %(killed)s / %(captured)s / %(lost)s)"
+msgstr "Egység statisztikák (%(trained)s / %(killed)s / %(captured)s / %(lost)s)"
+
+#: gui/summary/layout.js:99 gui/summary/summary.xml:(caption):95
+msgid "Resources"
+msgstr "Nyersanyagok"
+
+#: gui/summary/layout.js:111
+msgid "Tributes"
+msgstr "Sarcok"
+
+#: gui/summary/layout.js:112
+#, javascript-format
+msgid ""
+"Tributes \n"
+"(%(sent)s / %(received)s)"
+msgstr "Sarcok\n(%(sent)s / %(received)s)"
+
+#: gui/summary/layout.js:120
+msgid "Treasures collected"
+msgstr "Összegyűjtött kincsek"
+
+#: gui/summary/layout.js:121
+msgid "Loot"
+msgstr "Zsákmány"
+
+#: gui/summary/layout.js:122
+msgid "Livestock bred"
+msgstr "Tenyésztett haszonállat"
+
+#: gui/summary/layout.js:126
+#, javascript-format
+msgid "Resource Statistics (%(gathered)s / %(used)s)"
+msgstr "Nyersanyag statisztikák (%(gathered)s / %(used)s)"
+
+#: gui/summary/layout.js:150 gui/summary/summary.xml:(caption):102
+msgid "Market"
+msgstr "Piac"
+
+#: gui/summary/layout.js:153
+msgid "Trade income"
+msgstr "Kereskedelmi bevétel"
+
+#: gui/summary/layout.js:154
+msgid "Barter efficiency"
+msgstr "Csere hatékonysága"
+
+#. Translation: use %(resourceWithinSentence)s if needed
+#: gui/summary/layout.js:160
+#, javascript-format
+msgid "%(resourceFirstWord)s exchanged"
+msgstr "%(resourceFirstWord)s cserélve"
+
+#: gui/summary/layout.js:182 gui/summary/summary.xml:(caption):109
+#: gui/credits/texts/misc.jsonTitle
+msgid "Miscellaneous"
+msgstr "Egyéb"
+
+#: gui/summary/layout.js:185
+msgid "Kill / Death ratio"
+msgstr "Ölés / halálozás\narány"
+
+#: gui/summary/layout.js:186
+msgid "Map control (peak)"
+msgstr "Térképbirtoklás (csúcsérték)"
+
+#: gui/summary/layout.js:187
+msgid "Map control (finish)"
+msgstr "Térképbirtoklás (végérték)"
+
+#: gui/summary/layout.js:188
+msgid "Map exploration"
+msgstr "Térkép\nfelfedezése"
+
+#: gui/summary/layout.js:189
+msgid "Vegetarian ratio"
+msgstr "Vegetáriánus\narány"
+
+#: gui/summary/layout.js:190
+msgid "Feminization"
+msgstr "Feminizáció"
+
+#: gui/summary/layout.js:193
+msgid "Bribes"
+msgstr "Megvesztegetések"
+
+#: gui/summary/layout.js:194
+#, javascript-format
+msgid ""
+"Bribes\n"
+"(%(succeeded)s / %(failed)s)"
+msgstr "Megvesztegetések\n(%(succeeded)s / %(failed)s)"
+
+#: gui/summary/layout.js:357
+msgid "Team total"
+msgstr "Összes csapat"
+
+#: gui/summary/summary.js:30
+msgid "Trained"
+msgstr "Kiképzett"
+
+#: gui/summary/summary.js:35
+msgid "Constructed"
+msgstr "Épített"
+
+#: gui/summary/summary.js:40
+msgid "Gathered"
+msgstr "Begyűjtött"
+
+#: gui/summary/summary.js:45
+msgid "Sent"
+msgstr "Adott"
+
+#: gui/summary/summary.js:50
+msgid "Bought"
+msgstr "Vásárlás"
+
+#: gui/summary/summary.js:55
+msgid "Income"
+msgstr "Bejövetel"
+
+#: gui/summary/summary.js:60
+msgid "Captured"
+msgstr "Elfoglalt"
+
+#: gui/summary/summary.js:65
+msgid "Succeeded"
+msgstr "Sikeres"
+
+#: gui/summary/summary.js:70
+msgid "Destroyed"
+msgstr "Lerombolt"
+
+#: gui/summary/summary.js:75
+msgid "Killed"
+msgstr "Megölt"
+
+#: gui/summary/summary.js:80
+msgid "Lost"
+msgstr "Elvesztett"
+
+#: gui/summary/summary.js:85
+msgid "Used"
+msgstr "Felhasznált"
+
+#: gui/summary/summary.js:90
+msgid "Received"
+msgstr "Kapott"
+
+#: gui/summary/summary.js:95
+msgid "Sold"
+msgstr "Eladott"
+
+#: gui/summary/summary.js:100
+msgid "Outcome"
+msgstr "Kimenetel"
+
+#: gui/summary/summary.js:105
+msgid "Failed"
+msgstr "Meghiúsult"
+
+#: gui/summary/summary.js:335
+msgid "Time elapsed"
+msgstr "Eltelt idő"
+
+#: gui/summary/summary.js:491
+msgid "Current Scores"
+msgstr "Jelenlegi pontok"
+
+#: gui/summary/summary.js:493
+msgid "Scores at the end of the game."
+msgstr "Pontok a játék végén."
+
+#: gui/summary/summary.js:495
+msgid "You have been disconnected."
+msgstr "Lekapcsolódtál."
+
+#: gui/summary/summary.js:497
+msgid "You have left the game."
+msgstr "Elhagytad a játékot."
+
+#: gui/summary/summary.js:499
+msgid "You have won the battle!"
+msgstr "Megnyerted a csatát!"
+
+#: gui/summary/summary.js:501
+msgid "You have been defeated…"
+msgstr "Legyőztek…"
+
+#: gui/summary/summary.js:502
+msgid "You have abandoned the game."
+msgstr "Otthagytad a játékot."
+
+#: gui/summary/summary.js:505
+#, javascript-format
+msgid "Game time elapsed: %(time)s"
+msgstr "Eltelt játékidő: %(time)s"
+
+#: gui/summary/summary.js:513
+#, javascript-format
+msgid "%(mapName)s - %(mapType)s"
+msgstr "%(mapName)s - %(mapType)s"
+
+#: gui/summary/summary.js:525
+#, javascript-format
+msgid "%(hotkey)s: Toggle the multiplayer lobby in a dialog window."
+msgstr "%(hotkey)s: A többjátékos váró párbeszédablak be/ki."
+
+#: gui/civinfo/civinfo.xml:(caption):20
+msgid "Civilizations"
+msgstr "Civilizációk"
+
+#: gui/civinfo/civinfo.xml:(caption):32
+msgid "Civilization Selection"
+msgstr "Civilizáció választása"
+
+#: gui/civinfo/civinfo.xml:(caption):125
+#: gui/pregame/mainmenu.xml:(caption):181
+#: gui/reference/structree/structree.xml:(caption):19
+msgid "Structure Tree"
+msgstr "Struktúrafa"
+
+#: gui/civinfo/civinfo.xml:(caption):137 gui/credits/credits.xml:(caption):32
+#: gui/options/options.xml:(caption):60
+#: gui/reference/structree/structree.xml:(caption):137
+#: gui/reference/viewer/viewer.xml:(caption):37
+msgid "Close"
+msgstr "Bezárás"
+
+#: gui/credits/credits.xml:(caption):19
+msgid "0 A.D. Credits"
+msgstr "0 A.D. stáblista"
+
+#: gui/locale/locale.xml:(caption):14 gui/pregame/mainmenu.xml:(caption):382
+msgid "Language"
+msgstr "Nyelv"
+
+#: gui/locale/locale.xml:(caption):17
+msgid "Language:"
+msgstr "Nyelv:"
+
+#. A locale is a set of parameters that defines the user’s language, country
+#. and any special variant preferences that the user wants to see in their
+#. user interface. Here, “Locale” refers to the code that identifies those
+#. settings, such as ‘en_US’.
+#: gui/locale/locale.xml:(caption):31
+msgid "Locale:"
+msgstr "Területi beállítás:"
+
+#: gui/locale/locale.xml:(caption):36
+msgid "Cancel"
+msgstr "Mégse"
+
+#: gui/locale/locale.xml:(caption):41
+msgid "Advanced"
+msgstr "Speciális"
+
+#: gui/locale/locale.xml:(caption):46
+msgid "Accept"
+msgstr "Elfogadás"
+
+#: gui/options/options.xml:(caption):15
+msgid "Game Options"
+msgstr "Játékbeállítások"
+
+#: gui/options/options.xml:(caption):42
+msgid "Reset"
+msgstr "Helyreállítás"
+
+#: gui/options/options.xml:(caption):48
+msgid "Revert"
+msgstr "Visszaállítás"
+
+#: gui/options/options.xml:(caption):54
+msgid "Save"
+msgstr "Mentés"
+
+#: gui/options/options.xml:(tooltip):43
+msgid "Resets user settings to their game default"
+msgstr "Visszaállítja a felhasználói beállításokat a játék alapértékeire"
+
+#: gui/options/options.xml:(tooltip):49
+msgid "Reverts to previous saved settings"
+msgstr "Visszaállítja az előző mentett beállításokra"
+
+#: gui/options/options.xml:(tooltip):55
+msgid "Saves changes"
+msgstr "Menti a változtatásokat"
+
+#: gui/options/options.xml:(tooltip):61
+msgid "Unsaved changes affect this session only"
+msgstr "A mentetlen változtatások csak ezt a munkamenetet érintik"
+
+#: gui/pregame/mainmenu.xml:58
+msgid "Help improve 0 A.D.!"
+msgstr "Segíts a 0 A.D. tökéletesítésében!"
+
+#: gui/pregame/mainmenu.xml:60
+msgid ""
+"You can automatically send us anonymous feedback that will help us fix bugs,"
+" and improve performance and compatibility."
+msgstr "Küldhetsz nekünk névtelen visszajelzést, ami segít a hibák kijavításában, és a játék teljesítményének, kompatibilitásának javításában."
+
+#: gui/pregame/mainmenu.xml:562
+msgid "Alpha XXIII: Ken Wood"
+msgstr "Alfa XXIII : Ken Wood"
+
+#: gui/pregame/mainmenu.xml:564
+msgid ""
+"WARNING: This is an early development version of the game. Many features "
+"have not been added yet."
+msgstr "FIGYELMEZTETÉS: Ez egy korai fejlesztői változata a játéknak. Sok funkció még nem készült el."
+
+#: gui/pregame/mainmenu.xml:(caption):64
+msgid "Enable Feedback"
+msgstr "Visszajelzés engedélyezése"
+
+#: gui/pregame/mainmenu.xml:(caption):91
+msgid "Disable Feedback"
+msgstr "Visszajelzés tiltása"
+
+#: gui/pregame/mainmenu.xml:(caption):165
+msgid "Tutorial"
+msgstr "Oktatójáték "
+
+#: gui/pregame/mainmenu.xml:(caption):197
+#: gui/reference/structree/structree.xml:(caption):126
+msgid "History"
+msgstr "Történelem"
+
+#: gui/pregame/mainmenu.xml:(caption):219
+msgid "Matches"
+msgstr "Játszmák"
+
+#: gui/pregame/mainmenu.xml:(caption):233
+msgid "Campaigns"
+msgstr "Hadjáratok"
+
+#: gui/pregame/mainmenu.xml:(caption):246
+msgid "Load Game"
+msgstr "Játék betöltése"
+
+#: gui/pregame/mainmenu.xml:(caption):260
+#: gui/pregame/mainmenu.xml:(caption):340
+msgid "Replays"
+msgstr "Visszajátszások"
+
+#. Join a game by specifying the host's IP address.
+#: gui/pregame/mainmenu.xml:(caption):288
+msgid "Join Game"
+msgstr "Csatlakozás játékhoz"
+
+#: gui/pregame/mainmenu.xml:(caption):302
+msgid "Host Game"
+msgstr "Játék létrehozása"
+
+#: gui/pregame/mainmenu.xml:(caption):318
+msgid "Game Lobby"
+msgstr "Játékváró"
+
+#: gui/pregame/mainmenu.xml:(caption):368
+msgid "Options"
+msgstr "Beállítások"
+
+#: gui/pregame/mainmenu.xml:(caption):396
+msgid "Mod Selection"
+msgstr "Módosítások választása"
+
+#: gui/pregame/mainmenu.xml:(caption):408
+msgid "Welcome Screen"
+msgstr "Üdvözlőképernyő"
+
+#: gui/pregame/mainmenu.xml:(caption):466
+msgid "Learn to Play"
+msgstr "Hogyan kell játszani?"
+
+#: gui/pregame/mainmenu.xml:(caption):511
+msgid "Settings"
+msgstr "Beállítások"
+
+#: gui/pregame/mainmenu.xml:(caption):526
+msgid "Scenario Editor"
+msgstr "Küldetésszerkesztő"
+
+#: gui/pregame/mainmenu.xml:(caption):540
+msgid "Exit"
+msgstr "Kilépés"
+
+#: gui/pregame/mainmenu.xml:(caption):574
+msgid "Website"
+msgstr "Weboldal"
+
+#: gui/pregame/mainmenu.xml:(caption):586
+msgid "Chat"
+msgstr "Csevegés"
+
+#: gui/pregame/mainmenu.xml:(caption):598
+msgid "Report a Bug"
+msgstr "Hiba bejelentése"
+
+#: gui/pregame/mainmenu.xml:(caption):610
+msgid "Translate the Game"
+msgstr "A játék fordítása"
+
+#: gui/pregame/mainmenu.xml:(caption):622
+msgid "Donate"
+msgstr "Hozzájárulás"
+
+#: gui/pregame/mainmenu.xml:(caption):634
+msgid "Credits"
+msgstr "Stáblista"
+
+#: gui/pregame/mainmenu.xml:(caption):663
+msgid "WILDFIRE GAMES"
+msgstr "WILDFIRE GAMES"
+
+#: gui/pregame/mainmenu.xml:(tooltip):147
+msgid "Open the 0 A.D. Game Manual."
+msgstr "A 0 A.D. kézikönyv megnyitása."
+
+#: gui/pregame/mainmenu.xml:(tooltip):166
+msgid "Start the economic tutorial."
+msgstr "A gazdasági oktatójáték elkezdése."
+
+#: gui/pregame/mainmenu.xml:(tooltip):220
+msgid "Click here to start a new single player game."
+msgstr "Kattints ide új egyjátékos módú játék indításához."
+
+#: gui/pregame/mainmenu.xml:(tooltip):234
+msgid ""
+"Relive history through historical military campaigns. \\[NOT YET "
+"IMPLEMENTED]"
+msgstr "Éld újra a történelmet történelmi hadjáratok újrajátszásával! \\[MÉG NEM ELÉRHETŐ]"
+
+#: gui/pregame/mainmenu.xml:(tooltip):247
+msgid "Click here to load a saved game."
+msgstr "Kattints ide egy korábbi játékmentés betöltséhez"
+
+#: gui/pregame/mainmenu.xml:(tooltip):261
+#: gui/pregame/mainmenu.xml:(tooltip):341
+msgid "Playback previous games."
+msgstr "Korábbi játékok visszajátszása."
+
+#: gui/pregame/mainmenu.xml:(tooltip):289
+msgid "Joining an existing multiplayer game."
+msgstr "Csatlakozás meglévő többjátékos módú játékhoz"
+
+#: gui/pregame/mainmenu.xml:(tooltip):303
+msgid "Host a multiplayer game.\\n\\nRequires UDP port 20595 to be open."
+msgstr "Többjátékos módú játék létrehozása.\\n\\nA 20595-ös UDP portnak nyitva kell lennie."
+
+#: gui/pregame/mainmenu.xml:(tooltip):369
+msgid "Adjust game settings."
+msgstr "Játékbeállítások módosítása"
+
+#: gui/pregame/mainmenu.xml:(tooltip):383
+msgid "Choose the language of the game."
+msgstr "Válaszd ki a játék nyelvét!"
+
+#: gui/pregame/mainmenu.xml:(tooltip):397
+msgid "Select and download mods for the game."
+msgstr "Módosítások kiválasztása és letöltése a játékhoz."
+
+#: gui/pregame/mainmenu.xml:(tooltip):409
+msgid "Show the Welcome Screen. Useful if you hid it by mistake."
+msgstr "Megmutatja az üdvözlőképernyőt. Hasznos, ha csak véletlenül rejtetted el."
+
+#: gui/pregame/mainmenu.xml:(tooltip):467
+msgid ""
+"Learn how to play, start the tutorial, discover the technology trees, and "
+"the history behind the civilizations"
+msgstr "Tanulj meg játszani, indítsd el az oktatójátékot, fedezd fel a technológiafákat és a civilizációk történelmét"
+
+#: gui/pregame/mainmenu.xml:(tooltip):482
+msgid "Challenge the computer player to a single player match."
+msgstr "Egyjátékos kihívás a számítógép ellen"
+
+#: gui/pregame/mainmenu.xml:(tooltip):497
+msgid "Fight against one or more human players in a multiplayer game."
+msgstr "Játék egy vagy több emberi ellenféllel."
+
+#: gui/pregame/mainmenu.xml:(tooltip):512
+msgid "Game options and mod selection."
+msgstr "Játékbeállítások és mod választás."
+
+#: gui/pregame/mainmenu.xml:(tooltip):527
+msgid ""
+"Open the Atlas Scenario Editor in a new window. You can run this more "
+"reliably by starting the game with the command-line argument \"-editor\"."
+msgstr "Új ablakban nyisd meg az Atlasz küldetésszerkesztőt! Megbízhatóbban futtathatod, ha a játékot a „-editor” parancssori kapcsolóval indítod."
+
+#: gui/pregame/mainmenu.xml:(tooltip):541
+msgid "Exits the game."
+msgstr "Kilép a játékból."
+
+#: gui/pregame/mainmenu.xml:(tooltip):575
+msgid "Click to open play0ad.com in your web browser."
+msgstr "Kattints a play0ad.com weboldal böngészőben való megnyitásához"
+
+#: gui/pregame/mainmenu.xml:(tooltip):587
+msgid ""
+"Click to open the 0 A.D. IRC chat in your browser. (#0ad on "
+"webchat.quakenet.org)"
+msgstr "Kattints a 0 A.D. IRC csevegés böngészőben való megnyitásához. (#0ad csatorna a webchat.quakenet.org címen)"
+
+#: gui/pregame/mainmenu.xml:(tooltip):599
+msgid "Click to visit 0 A.D. Trac to report a bug, crash, or error."
+msgstr "Kattints a 0 A.D. Trac oldalának meglátogatásához, ahol bejelentheted az előforduló hibákat."
+
+#: gui/pregame/mainmenu.xml:(tooltip):611
+msgid "Click to open the 0 A.D. translate page in your browser."
+msgstr "Kattints a 0 A.D. fordítási oldal böngészőben való megnyitásához."
+
+#: gui/pregame/mainmenu.xml:(tooltip):623
+msgid "Help with the project expenses by donating."
+msgstr "Segíts adományozással a projekt kiadásainak fedezésében."
+
+#: gui/pregame/mainmenu.xml:(tooltip):635
+msgid "Click to see the 0 A.D. credits."
+msgstr "Kattints a 0 A.D. stáblistájának megtekintéséhez."
+
+#: gui/reference/structree/structree.xml:(caption):31
+msgid "Civilization:"
+msgstr "Civilizáció:"
+
+#: gui/reference/structree/structree.xml:(caption):98
+msgid "Trainer Units"
+msgstr "Kiképző egységek"
+
+#: gui/reference/viewer/viewer.xml:(caption):13
+msgid "Information"
+msgstr "Információ"
+
+#: gui/replaymenu/replay_menu.xml:(caption):13
+msgid "Replay Games"
+msgstr "Játékok visszajátszása"
+
+#: gui/replaymenu/replay_menu.xml:(caption):109
+msgid "Filter compatible replays"
+msgstr "Kompatibilis visszajátszások szűrése"
+
+#: gui/replaymenu/replay_menu.xml:(caption):150
+msgid "Map Type:"
+msgstr "Térkép típusa:"
+
+#: gui/replaymenu/replay_menu.xml:(caption):165
+msgid "Map Size:"
+msgstr "Térkép mérete:"
+
+#: gui/replaymenu/replay_menu.xml:(caption):180
+msgid "Victory:"
+msgstr "Győzelem:"
+
+#: gui/replaymenu/replay_menu.xml:(caption):213
+msgid "Spoiler"
+msgstr "Végkifejlet"
+
+#: gui/replaymenu/replay_menu.xml:(caption):225
+msgid "Main Menu"
+msgstr "Főmenü"
+
+#: gui/replaymenu/replay_menu.xml:(caption):231
+msgid "Delete"
+msgstr "Törlés"
+
+#: gui/replaymenu/replay_menu.xml:(caption):237
+msgid "Reload Cache"
+msgstr "Gyorsítótár újratöltése"
+
+#: gui/replaymenu/replay_menu.xml:(caption):244
+#: gui/summary/summary.xml:(caption):34
+msgid "Summary"
+msgstr "Összefoglaló"
+
+#: gui/replaymenu/replay_menu.xml:(caption):250
+msgid "Start Replay"
+msgstr "Visszajátszás kezdése"
+
+#: gui/replaymenu/replay_menu.xml:(heading):69
+msgctxt "replay"
+msgid "Date / Time"
+msgstr "Dátum / idő"
+
+#: gui/replaymenu/replay_menu.xml:(heading):73
+msgctxt "replay"
+msgid "Players"
+msgstr "Játékosok"
+
+#: gui/replaymenu/replay_menu.xml:(heading):77
+msgctxt "replay"
+msgid "Map Name"
+msgstr "Térkép neve"
+
+#: gui/replaymenu/replay_menu.xml:(heading):81
+msgctxt "replay"
+msgid "Size"
+msgstr "Méret"
+
+#: gui/replaymenu/replay_menu.xml:(heading):85
+msgctxt "replay"
+msgid "Population"
+msgstr "Lakosság"
+
+#: gui/replaymenu/replay_menu.xml:(heading):89
+msgctxt "replay"
+msgid "Duration"
+msgstr "Időtartam"
+
+#: gui/replaymenu/replay_menu.xml:(tooltip):238
+msgid "Rebuild the replay cache from scratch. Potentially slow!"
+msgstr "A visszajátszási gyorsítótár újraépítése. Lehet, hogy lassú!"
+
+#: gui/splashscreen/splashscreen.xml:(caption):13
+msgid "Welcome!"
+msgstr "Üdvözlet!"
+
+#: gui/splashscreen/splashscreen.xml:(caption):18
+msgid "Show this message in the future"
+msgstr "Jelenítse meg ezt az üzenetet a jövőben"
+
+#: gui/splashscreen/splashscreen.xml:(caption):23
+msgid "Known Issues (web)"
+msgstr "Ismert problémák (web)"
+
+#: gui/summary/summary.xml:(caption):116
+msgid "Charts"
+msgstr "Diagrammok"
+
+#: gui/summary/summary.xml:(caption):173
+msgctxt "summary chart"
+msgid "Category:"
+msgstr "Kategória:"
+
+#: gui/summary/summary.xml:(caption):183
+msgctxt "summary chart"
+msgid "Value:"
+msgstr "Érték:"
+
+#: gui/summary/summary.xml:(caption):193
+msgctxt "summary chart"
+msgid "Type:"
+msgstr "Típus:"
+
+#: gui/summary/summary.xml:(caption):227
+msgid "Replay"
+msgstr "Visszajátszás"
+
+#: gui/summary/summary.xml:(caption):232
+msgid "Continue"
+msgstr "Tovább"
+
+#: gui/summary/summary.xml:(tooltip):179
+msgctxt "summary chart"
+msgid "Category"
+msgstr "Kategória"
+
+#: gui/summary/summary.xml:(tooltip):189
+msgctxt "summary chart"
+msgid "Value"
+msgstr "Érték"
+
+#: gui/summary/summary.xml:(tooltip):200
+msgctxt "summary chart"
+msgid "Type"
+msgstr "Típus"
+
+#: gui/credits/texts/art.jsonContent[0].Content[0].Subtitle
+msgid "Art lead"
+msgstr "Művészeti vezető"
+
+#: gui/credits/texts/art.jsonContent[0].Content[1].Subtitle
+msgid "Sound Manager"
+msgstr "Hangmenedzser"
+
+#: gui/credits/texts/art.jsonContent[0].Content[2].Subtitle
+msgid "Composer"
+msgstr "Zeneszerző"
+
+#: gui/credits/texts/art.jsonContent[0].Title
+msgid "Artistic managers"
+msgstr "Művészeti menedzserek"
+
+#: gui/credits/texts/art.jsonContent[1].Title
+msgid "Map Making"
+msgstr "Térképkészítés"
+
+#: gui/credits/texts/art.jsonContent[2].Title
+msgid "Random Map Scripts"
+msgstr "Véletlenszerű térkép parancsfájlok"
+
+#: gui/credits/texts/art.jsonContent[3].Title
+msgid "2D Art"
+msgstr "2D művészet"
+
+#: gui/credits/texts/art.jsonContent[4].Title
+msgid "3D Art"
+msgstr "3D művészet"
+
+#: gui/credits/texts/art.jsonContent[5].Content[1].Subtitle
+msgid "Additional music, percussion, djembe, sampling"
+msgstr "További zene, ütősök, dzsembé, sampling"
+
+#: gui/credits/texts/art.jsonContent[5].Content[2].Subtitle
+msgid "Additional music"
+msgstr "További zene"
+
+#: gui/credits/texts/art.jsonContent[5].Content[3].Subtitle
+msgid "Flute"
+msgstr "Fuvola"
+
+#: gui/credits/texts/art.jsonContent[5].Content[4].Subtitle
+msgid "Djembe"
+msgstr "Dzsembé"
+
+#: gui/credits/texts/art.jsonContent[5].Content[5].Subtitle
+msgid "Frame drum, darbuka, riq, toms"
+msgstr "Dob, darbuka, riq, tom-tom"
+
+#: gui/credits/texts/art.jsonContent[5].Content[6].Subtitle
+msgid "Didgeridoo"
+msgstr "Didzseridu"
+
+#: gui/credits/texts/art.jsonContent[5].Content[7].Subtitle
+msgid "Trumpet"
+msgstr "Trombita"
+
+#: gui/credits/texts/art.jsonContent[5].Content[8].Subtitle
+msgid "Celtic harp"
+msgstr "Kelta hárfa"
+
+#: gui/credits/texts/art.jsonContent[5].Content[9].Subtitle
+msgid "Tin whistles"
+msgstr "Bádogsíp"
+
+#: gui/credits/texts/art.jsonContent[5].Content[10].Subtitle
+msgid "Viola, violin"
+msgstr "Brácsa, hegedű"
+
+#: gui/credits/texts/art.jsonContent[5].Title
+msgid "Music"
+msgstr "Zene"
+
+#: gui/credits/texts/art.jsonContent[6].Title
+#: gui/options/options.json[2].label
+msgid "Sound"
+msgstr "Hang"
+
+#: gui/credits/texts/art.jsonContent[7].Content[0].Subtitle
+msgid "Greek"
+msgstr "Görög"
+
+#: gui/credits/texts/art.jsonContent[7].Content[1].Subtitle
+msgid "Latin"
+msgstr "Latin"
+
+#: gui/credits/texts/art.jsonContent[7].Title
+msgid "Voices"
+msgstr "Beszédhangok"
+
+#: gui/credits/texts/art.jsonTitle
+msgid "Art"
+msgstr "Művészet"
+
+#: gui/credits/texts/donators.jsonContent[0].Title
+msgid "Pledgie Drive 1"
+msgstr "1. adománygyűjtés"
+
+#: gui/credits/texts/donators.jsonContent[1].Title
+msgid "Pledgie Drive 2"
+msgstr "2. adománygyűjtés"
+
+#: gui/credits/texts/donators.jsonContent[2].Title
+msgid ""
+"Indiegogo 2013 campaign\n"
+"More than 1000 donators (!), including:"
+msgstr "2013-as Indiegogo kampány\nTöbb mint 1000 adományozó (!), beleértve:"
+
+#: gui/credits/texts/donators.jsonTitle
+msgid "Donors"
+msgstr "Adományozók"
+
+#: gui/credits/texts/misc.jsonContent[0].Content[0].Subtitle
+msgid "Head"
+msgstr "Vezető"
+
+#: gui/credits/texts/misc.jsonContent[0].Title
+msgid "History References"
+msgstr "Történelmi hivatkozások"
+
+#: gui/credits/texts/misc.jsonContent[1].Title
+msgid "Community and Management"
+msgstr "Közösség és vezetőség"
+
+#: gui/credits/texts/programming.jsonContent[0].Title
+msgid "Programming managers"
+msgstr "Programozói menedzserek"
+
+#: gui/credits/texts/programming.jsonContent[1].Subtitle
+msgid "Special thanks to"
+msgstr "Különleges köszönet"
+
+#: gui/credits/texts/programming.jsonTitle
+msgid "Programming"
+msgstr "Programozás"
+
+#: gui/credits/texts/special.jsonContent[0].Title
+msgid "In Memoriam"
+msgstr "In Memoriam"
+
+#: gui/credits/texts/special.jsonContent[1].Content[0].Subtitle
+msgid "0 A.D. Founder"
+msgstr "0 A.D. alapító"
+
+#: gui/credits/texts/special.jsonContent[1].Content[1].Subtitle
+msgid "Project Leaders"
+msgstr "Projektvezetők"
+
+#: gui/credits/texts/special.jsonContent[1].Content[2].Subtitle
+msgid "Co-Lead Designers"
+msgstr "Társvezető dizájnerek"
+
+#: gui/credits/texts/special.jsonContent[1].Title
+msgid "Special thanks to:"
+msgstr "Különleges köszönet:"
+
+#: gui/credits/texts/special.jsonContent[2].Title
+msgid "And thanks to the entire community for making 0 A.D. possible."
+msgstr "És köszönet az egész közösségnek, a 0 A.D. lehetővé tételéhez."
+
+#: gui/credits/texts/special.jsonContent[3].Title
+msgid "No historians were harmed during the development of this project."
+msgstr "Egyetlen történésznek sem esett bántódása a projekt fejlesztése során."
+
+#: gui/credits/texts/special.jsonTitle
+msgid "Special Credits"
+msgstr "Különleges köszönet"
+
+#: gui/credits/texts/translators.jsonTitle
+msgid "Translators"
+msgstr "Fordítók"
+
+#: gui/options/options.json[0].options[0].tooltip
+msgid "How you want to be addressed in Single Player matches."
+msgstr "Hogyan legyél megnevezve az egyjátékos meccsekben."
+
+#: gui/options/options.json[0].options[0].label
+msgid "Playername (Single Player)"
+msgstr "Játékosnév (Egyjátékos)"
+
+#: gui/options/options.json[0].options[1].tooltip
+msgid "How you want to be addressed in Multiplayer matches (except lobby)."
+msgstr "Hogyan legyél megnevezve a többjátékos meccsekben (kivéve a váróban)."
+
+#: gui/options/options.json[0].options[1].label
+msgid "Playername (Multiplayer)"
+msgstr "Játékosnév (Többjátékos)"
+
+#: gui/options/options.json[0].options[2].tooltip
+msgid "Pause single player games when window loses focus."
+msgstr "Egyjátékos játszmák szüneteltetése, ha az ablak elveszti a fókuszt."
+
+#: gui/options/options.json[0].options[2].label
+msgid "Background Pause"
+msgstr "Mozgóháttér leállítása"
+
+#: gui/options/options.json[0].options[3].tooltip
+msgid ""
+"If you disable it, the welcome screen will still appear once, each time a "
+"new version is available. You can always launch it from the main menu."
+msgstr "Ha ki van kapcsolva, akkor is megjelenik egyszer az üdvözlőképernyő, ha egy új kiadás érhető el. Bármikor elindítható a főmenüből."
+
+#: gui/options/options.json[0].options[3].label
+msgid "Enable Welcome Screen"
+msgstr "Üdvözlőképernyő engedélyezése"
+
+#: gui/options/options.json[0].options[4].tooltip
+msgid "Show which player has a bad connection in multiplayer games."
+msgstr "Jelenítse meg melyik játékosnak van rossz kapcsolata a többjátékos játékokban."
+
+#: gui/options/options.json[0].options[4].label
+msgid "Network Warnings"
+msgstr "Hálózati figyelmeztetések"
+
+#: gui/options/options.json[0].options[5].tooltip
+msgid "Show frames per second in top right corner."
+msgstr "Képkocka per másodperc (FPS) megjelenítése a jobb felső sarokban."
+
+#: gui/options/options.json[0].options[5].label
+msgid "FPS Overlay"
+msgstr "FPS felület"
+
+#: gui/options/options.json[0].options[6].tooltip
+msgid "Show current system time in top right corner."
+msgstr "Tényleges rendszeridő megjelenítése a jobb felső sarokban."
+
+#: gui/options/options.json[0].options[6].label
+msgid "Realtime Overlay"
+msgstr "Tényleges idő felület"
+
+#: gui/options/options.json[0].options[7].tooltip
+msgid "Show current simulation time in top right corner."
+msgstr "Jelelegi szimulációs idő megjelenítése a jobb felső sarokban."
+
+#: gui/options/options.json[0].options[7].label
+msgid "Gametime Overlay"
+msgstr "Játékidő felület"
+
+#: gui/options/options.json[0].options[8].tooltip
+msgid "Always show the remaining ceasefire time."
+msgstr "Mindig mutassa a tűzszünet hátralévő idejét."
+
+#: gui/options/options.json[0].options[8].label
+msgid "Ceasefire Time Overlay"
+msgstr "Tűzszünet idő felület"
+
+#: gui/options/options.json[0].options[9].list[0].label
+#: gui/options/options.json[3].options[5].list[0].label
+msgid "Everyone"
+msgstr "Mindenk"
+
+#: gui/options/options.json[0].options[9].list[1].label
+#: gui/options/options.json[3].options[5].list[1].label
+msgid "Buddies"
+msgstr "Barátok"
+
+#: gui/options/options.json[0].options[9].list[2].label
+#: gui/options/options.json[3].options[5].list[2].label
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: gui/options/options.json[0].options[9].tooltip
+msgid ""
+"Allow everybody or buddies only to join the game as observer after it "
+"started."
+msgstr "Bárki, vagy csak a barátok, csatlakozásának engedélyezése megfigyelőként a játék megkezdése után."
+
+#: gui/options/options.json[0].options[9].label
+msgid "Late Observer Joins"
+msgstr "Késő megfigyelő csatlakozások"
+
+#: gui/options/options.json[0].options[10].tooltip
+msgid "Prevent further observers from joining if the limit is reached."
+msgstr "További megfigyelők csatlakozásának megelőzése a korlát elérésekor."
+
+#: gui/options/options.json[0].options[10].label
+msgid "Observer Limit"
+msgstr "Megfigyelő korlát"
+
+#: gui/options/options.json[0].options[11].tooltip
+msgid ""
+"Show time that messages are posted in the lobby, gamesetup and ingame chat."
+msgstr "Üzenetküldések időpontjának megjelenítése a váróban, a játékbeállításokban és a játékon belüli csevegőben"
+
+#: gui/options/options.json[0].options[11].label
+msgid "Chat Timestamp"
+msgstr "Csevegés időbélyeg"
+
+#: gui/options/options.json[0].label
+msgid "General"
+msgstr "Általános"
+
+#: gui/options/options.json[1].options[0].tooltip
+msgid "Start 0 A.D. in a window."
+msgstr "0 A.D. indítása ablakos módban."
+
+#: gui/options/options.json[1].options[0].label
+msgid "Windowed Mode"
+msgstr "Ablakos mód"
+
+#: gui/options/options.json[1].options[1].tooltip
+msgid "Use OpenGL 2.0 shaders (recommended)."
+msgstr "OpenGL 2.0 árnyalók használata (ajánlott)."
+
+#: gui/options/options.json[1].options[1].label
+msgid "Prefer GLSL"
+msgstr "GLSL előnyben részesítése"
+
+#: gui/options/options.json[1].options[2].tooltip
+msgid "Enable Fog."
+msgstr "Köd engedélyezése."
+
+#: gui/options/options.json[1].options[2].label
+msgid "Fog"
+msgstr "Köd"
+
+#: gui/options/options.json[1].options[3].tooltip
+msgid "Use screen-space postprocessing filters (HDR, Bloom, DOF, etc)."
+msgstr "Képernyőszintű utófeldolgozó szűrők használata (HDR, ragyogás, mélységélesség, stb.)."
+
+#: gui/options/options.json[1].options[3].label
+msgid "Post Processing"
+msgstr "Utófeldolgozás"
+
+#: gui/options/options.json[1].options[4].tooltip
+msgid "Number of shader effects. REQUIRES GAME RESTART"
+msgstr "Árnyaló hatások száma. A JÁTÉK ÚJRAINDÍTÁSÁT IGÉNYLI"
+
+#: gui/options/options.json[1].options[4].label
+msgid "Shader Effects"
+msgstr "Árnyaló hatások"
+
+#: gui/options/options.json[1].options[5].tooltip
+msgid "Enable shadows."
+msgstr "Árnyékok engedélyezése."
+
+#: gui/options/options.json[1].options[5].label
+msgid "Shadows"
+msgstr "Árnyékok"
+
+#: gui/options/options.json[1].options[6].list[0].label
+msgid "Very Low"
+msgstr "Nagyon alacsony"
+
+#: gui/options/options.json[1].options[6].list[1].label
+msgid "Low"
+msgstr "Alacsony"
+
+#: gui/options/options.json[1].options[6].list[2].label
+#: gui/options/options.json[3].options[3].list[3].label
+msgid "Medium"
+msgstr "Közepes"
+
+#: gui/options/options.json[1].options[6].list[3].label
+msgid "High"
+msgstr "Magas"
+
+#: gui/options/options.json[1].options[6].list[4].label
+msgid "Very High"
+msgstr "Nagyon magas"
+
+#: gui/options/options.json[1].options[6].tooltip
+msgid ""
+"Shadow map resolution. High values can crash the game when using a graphics "
+"card with low memory!"
+msgstr "Árnyéktérkép felbontása. A magas értékek a játék összeomlását okozhatják egy kevés memóriával rendelkező videokártyán!"
+
+#: gui/options/options.json[1].options[6].label
+msgid "Shadow Quality"
+msgstr "Árnyékok minősége"
+
+#: gui/options/options.json[1].options[7].tooltip
+msgid "Smooth shadows."
+msgstr "Finom árnyékok."
+
+#: gui/options/options.json[1].options[7].label
+msgid "Shadow Filtering"
+msgstr "Árnyékok szűrése"
+
+#: gui/options/options.json[1].options[8].tooltip
+msgid "Show outlines of units behind buildings."
+msgstr "Épületek mögött lévő egységek körvonalának megjelenítése."
+
+#: gui/options/options.json[1].options[8].label
+msgid "Unit Silhouettes"
+msgstr "Egység sziluettek"
+
+#: gui/options/options.json[1].options[9].tooltip
+msgid "Enable particles."
+msgstr "Részecskék engedélyezése."
+
+#: gui/options/options.json[1].options[9].label
+msgid "Particles"
+msgstr "Részecskék"
+
+#: gui/options/options.json[1].options[10].tooltip
+msgid ""
+"When OFF, use the lowest settings possible to render water. This makes other"
+" settings irrelevant."
+msgstr "Ha kikapcsolt, akkor a legalacsonyabb beállítások kerülnek használatra a víz rendereléséhez. Ez a többi beállítást hatástalanná teszi."
+
+#: gui/options/options.json[1].options[10].label
+msgid "Water Effects"
+msgstr "Vízeffektek"
+
+#: gui/options/options.json[1].options[11].tooltip
+msgid ""
+"Use higher-quality effects for water, rendering coastal waves, shore foam, "
+"and ships trails."
+msgstr "Magasabb minőségű effektek használata a víz, a tengerparti hullámok, a partmenti hab és a hajók nyomvonalának rendereléséhez."
+
+#: gui/options/options.json[1].options[11].label
+msgid "HQ Water Effects"
+msgstr "Jó minőségű vízeffektek"
+
+#: gui/options/options.json[1].options[12].tooltip
+msgid "Use actual water depth in rendering calculations."
+msgstr "Tényleges vízmélység használata renderelési számításoknál."
+
+#: gui/options/options.json[1].options[12].label
+msgid "Real Water Depth"
+msgstr "Tényleges vízmélység"
+
+#: gui/options/options.json[1].options[13].tooltip
+msgid "Allow water to reflect a mirror image."
+msgstr "A víz tükörként verheti vissza a képet."
+
+#: gui/options/options.json[1].options[13].label
+msgid "Water Reflections"
+msgstr "Víz tükröződése"
+
+#: gui/options/options.json[1].options[14].tooltip
+msgid "Use a real water refraction map and not transparency."
+msgstr "Tényleges fénytörés használata víznél a átlátszóság helyett."
+
+#: gui/options/options.json[1].options[14].label
+msgid "Water Refraction"
+msgstr "Víz fénytörése"
+
+#: gui/options/options.json[1].options[15].tooltip
+msgid "Cast shadows on water."
+msgstr "Árnyékok vetése a vízre."
+
+#: gui/options/options.json[1].options[15].label
+msgid "Shadows on Water"
+msgstr "Árnyékok a vízen"
+
+#: gui/options/options.json[1].options[16].tooltip
+msgid "Lift darkness and fog-of-war smoothly."
+msgstr " A sötétség és a háború ködének finom feltárása."
+
+#: gui/options/options.json[1].options[16].label
+msgid "Smooth LOS"
+msgstr "Finom látóhatár"
+
+#: gui/options/options.json[1].options[17].tooltip
+msgid "Render Sky."
+msgstr "Ég megjelenítése."
+
+#: gui/options/options.json[1].options[17].label
+msgid "Show Sky"
+msgstr "Ég megjelenítése"
+
+#: gui/options/options.json[1].options[18].tooltip
+msgid "Run vertical sync to fix screen tearing. REQUIRES GAME RESTART"
+msgstr "Függőleges szinkronizáció futtatása a képtörés javítására. A JÁTÉK ÚJRAINDÍTÁSÁT IGÉNYLI"
+
+#: gui/options/options.json[1].options[18].label
+msgid "VSync"
+msgstr "Függőleges szinkron"
+
+#: gui/options/options.json[1].options[19].tooltip
+msgid ""
+"To save CPU workload, throttle render frequency in all menus. Set to maximum"
+" to disable throttling."
+msgstr "A CPU terhelés csökkentése érdekében, a renderelés gyakoriságának korlátozása a menükben. Állítsd maximumra a kikapcsoláshoz."
+
+#: gui/options/options.json[1].options[19].label
+msgid "FPS Throttling in Menus"
+msgstr "FPS korlátozás a menükben"
+
+#: gui/options/options.json[1].options[20].tooltip
+msgid ""
+"To save CPU workload, throttle render frequency in running games. Set to "
+"maximum to disable throttling."
+msgstr "A CPU terhelés csökkentése érdekében, a renderelés gyakoriságának korlátozása a játékban. Állítsd maximumra a kikapcsoláshoz."
+
+#: gui/options/options.json[1].options[20].label
+msgid "FPS Throttling in Games"
+msgstr "FPS korlátozás a játékokban"
+
+#: gui/options/options.json[1].tooltip
+msgid "Set the balance between performance and visual appearance."
+msgstr "Az egyensúly beállítása a teljesítmény és a vizuális megjelenés között."
+
+#: gui/options/options.json[1].label
+msgid "Graphics"
+msgstr "Grafika"
+
+#: gui/options/options.json[2].options[0].tooltip
+msgid "Master audio gain."
+msgstr "Fő hangerősítés."
+
+#: gui/options/options.json[2].options[0].label
+msgid "Master Volume"
+msgstr "Fő hangerő"
+
+#: gui/options/options.json[2].options[1].tooltip
+msgid "In game music gain."
+msgstr "Játékbeli zene erősítése."
+
+#: gui/options/options.json[2].options[1].label
+msgid "Music Volume"
+msgstr "Zene hangereje"
+
+#: gui/options/options.json[2].options[2].tooltip
+msgid "In game ambient sound gain."
+msgstr "Játékbeli környezet hangjainak erősítése."
+
+#: gui/options/options.json[2].options[2].label
+msgid "Ambient Volume"
+msgstr "Környezet hangereje"
+
+#: gui/options/options.json[2].options[3].tooltip
+msgid "In game unit action sound gain."
+msgstr "Játékbeli akciók hangjainak erősítése."
+
+#: gui/options/options.json[2].options[3].label
+msgid "Action Volume"
+msgstr "Akció hangereje"
+
+#: gui/options/options.json[2].options[4].tooltip
+msgid "UI sound gain."
+msgstr "Kezelőfelület hangjainak erősítése"
+
+#: gui/options/options.json[2].options[4].label
+msgid "UI Volume"
+msgstr "Felület hangereje"
+
+#: gui/options/options.json[2].options[5].tooltip
+msgid "Receive audio notification when someone types your nick."
+msgstr "Értesítő hang lejátszása, ha valaki beírja a beceneved."
+
+#: gui/options/options.json[2].options[5].label
+msgid "Nick Notification"
+msgstr "Becenév értesítés"
+
+#: gui/options/options.json[3].options[0].tooltip
+msgid "Show tips when setting up a game."
+msgstr "Tippek megjelenítése a játék beállításakor."
+
+#: gui/options/options.json[3].options[0].label
+msgid "Enable Game Setting Tips"
+msgstr "Játékbeállítási tippek engedélyezése"
+
+#: gui/options/options.json[3].options[1].tooltip
+msgid "Slide the settings panel when opening, closing or resizing."
+msgstr "A beállításpanel csúsztatása megnyitáskor, bezáráskor vagy átméretezéskor."
+
+#: gui/options/options.json[3].options[1].label
+msgid "Enable Settings Panel Slide"
+msgstr "Beállításpanel csúsztatásának engedélyezése"
+
+#: gui/options/options.json[3].options[2].tooltip
+msgid ""
+"Save and restore match settings for quick reuse when hosting another game."
+msgstr "A mérkőzés beállításainak mentése és visszaállítása a gyors újrafelhasználáshoz egy másik hálózati játék indításakor."
+
+#: gui/options/options.json[3].options[2].label
+msgid "Persist Match Settings"
+msgstr "Állandó játszma beállítások"
+
+#: gui/options/options.json[3].options[3].list[0].label
+msgid "Sandbox"
+msgstr "Homokozó"
+
+#: gui/options/options.json[3].options[3].list[1].label
+msgid "Very Easy"
+msgstr "Nagyon könnyű"
+
+#: gui/options/options.json[3].options[3].list[2].label
+msgid "Easy"
+msgstr "Könnyű"
+
+#: gui/options/options.json[3].options[3].list[4].label
+msgid "Hard"
+msgstr "Nehéz"
+
+#: gui/options/options.json[3].options[3].list[5].label
+msgid "Very Hard"
+msgstr "Nagyon nehéz"
+
+#: gui/options/options.json[3].options[3].tooltip
+msgid "Default difficulty of the AI."
+msgstr "Az MI alapértelmezett nehézségi szintje."
+
+#: gui/options/options.json[3].options[3].label
+msgid "Default AI Difficulty"
+msgstr "Alapértelmezett MI nehézség"
+
+#: gui/options/options.json[3].options[4].list[0].label
+msgid "Random"
+msgstr "Véletlenszerű"
+
+#: gui/options/options.json[3].options[4].list[1].label
+msgid "Balanced"
+msgstr "Kiegyensúlyozott"
+
+#: gui/options/options.json[3].options[4].list[2].label
+msgid "Aggressive"
+msgstr "Agresszív"
+
+#: gui/options/options.json[3].options[4].list[3].label
+msgid "Defensive"
+msgstr "Védekező"
+
+#: gui/options/options.json[3].options[4].tooltip
+msgid "Default behavior of the AI."
+msgstr "Az MI alapértelmezett viselkedése."
+
+#: gui/options/options.json[3].options[4].label
+msgid "Default AI Behavior"
+msgstr "Alapértelmezett MI viselkedés."
+
+#: gui/options/options.json[3].options[5].tooltip
+msgid ""
+"Automatically assign joining clients to free player slots during the match "
+"setup."
+msgstr "Ossza-e be automatikusan a csatlakozó ügyfeleket a szabad játékoshelyekre."
+
+#: gui/options/options.json[3].options[5].label
+msgid "Assign Players"
+msgstr "Játékosok beosztása"
+
+#: gui/options/options.json[3].label
+msgid "Game Setup"
+msgstr "Játékbeállítások"
+
+#: gui/options/options.json[4].options[0].tooltip
+msgid "Number of backlogged messages to load when joining the lobby."
+msgstr "Betöltendő naplózott üzenetek száma a váróhoz csatlakozáskor."
+
+#: gui/options/options.json[4].options[0].label
+msgid "Chat Backlog"
+msgstr "Csevegésnapló"
+
+#: gui/options/options.json[4].options[1].tooltip
+msgid ""
+"Show the average rating of the participating players in a column of the "
+"gamelist."
+msgstr "A résztvevő játékosok átlagos értékelésének megjelenítése külön oszlopban a játéklistában."
+
+#: gui/options/options.json[4].options[1].label
+msgid "Game Rating Column"
+msgstr "Játék értékelési oszlop"
+
+#: gui/options/options.json[4].tooltip
+msgid "These settings only affect the multiplayer."
+msgstr "Ezek a beállítások csak a többjátékos módot érintik."
+
+#: gui/options/options.json[4].label
+msgid "Lobby"
+msgstr "Váró"
+
+#: gui/options/options.json[5].options[0].tooltip
+msgid ""
+"The wounded unit hotkey considers the selected units as wounded if their "
+"health percentage falls below this number."
+msgstr "A sebesült egység gyorsbillentyű akkor tekinti sérültnek a kiválasztott egységet, ha az életereje százalékosan ez alá esik."
+
+#: gui/options/options.json[5].options[0].label
+msgid "Wounded Unit Health"
+msgstr "Sebesült egység életereje"
+
+#: gui/options/options.json[5].options[1].tooltip
+msgid "Number of units trained per batch by default."
+msgstr "Csoportonként kiképzett egységek alapértelmezett száma."
+
+#: gui/options/options.json[5].options[1].label
+msgid "Batch Training Size"
+msgstr "Csoportos kiképzés nagysága"
+
+#: gui/options/options.json[5].options[2].tooltip
+msgid ""
+"Number of times you have to scroll to increase/decrease the batchsize by 1."
+msgstr "Hányszor kell görgetni a csoportméret 1-el csökkentéséhez/növeléséhez."
+
+#: gui/options/options.json[5].options[2].label
+msgid "Scroll Batch Increment Ratio"
+msgstr "Csoportméret növelés görgetési arány"
+
+#: gui/options/options.json[5].options[3].tooltip
+msgid "Show a chat notification if you are attacked by another player."
+msgstr "Csevegésértesítés megjelenítése, ha egy másik játékos megtámadott."
+
+#: gui/options/options.json[5].options[3].label
+msgid "Chat Notification Attack"
+msgstr "Csevegésértesítés támadáskor"
+
+#: gui/options/options.json[5].options[4].tooltip
+msgid ""
+"Show a chat notification if an ally tributes resources to another team "
+"member if teams are locked, and all tributes in observer mode."
+msgstr "Csevegésértesítés megjelenítése, ha egy szövetséges nyersanyag sarcot fizet egy másik csapattagnak és a csapatok rögzítve vannak, illetve minden sarcfizetést megfigyelő módban."
+
+#: gui/options/options.json[5].options[4].label
+msgid "Chat Notification Tribute"
+msgstr "Csevegésértesítés sarckor"
+
+#: gui/options/options.json[5].options[5].tooltip
+msgid ""
+"Show a chat notification to observers when a player bartered resources."
+msgstr "Csevegésértesítés megjelenítése, ha egy játékos nyersanyagokkal csereüzletel."
+
+#: gui/options/options.json[5].options[5].label
+msgid "Chat Notification Barter"
+msgstr "Csevegésértesítés csereüzletkor"
+
+#: gui/options/options.json[5].options[6].list[0].label
+msgid "Disable"
+msgstr "Letiltás"
+
+#: gui/options/options.json[5].options[6].list[1].label
+msgid "Completed"
+msgstr "Befejezve"
+
+#: gui/options/options.json[5].options[6].list[2].label
+msgid "All displayed"
+msgstr "Összes megjelenítve"
+
+#: gui/options/options.json[5].options[6].tooltip
+msgid ""
+"Show a chat notification if you or an ally have started, aborted or "
+"completed a new phase, and phases of all players in observer mode."
+msgstr "Csevegésértesítés megjelenítése, ha te vagy egy szövetséges elkezdett, félbeszakított vagy befejezett egy szakaszt; vagy megfigyelő módban az összes játékos szakasza esetén."
+
+#: gui/options/options.json[5].options[6].label
+msgid "Chat Notification Phase"
+msgstr "Csevegésértesítés szakaszváltáskor"
+
+#: gui/options/options.json[5].options[7].tooltip
+msgid ""
+"Display the attack range of selected defensive structures (can also be "
+"toggled in-game with the hotkey)."
+msgstr "A kiválasztott védelmi épületek támadási hatótávolságának megjelenítése (a játékon belül is kapcsolható gyorsbillentyűvel)."
+
+#: gui/options/options.json[5].options[7].label
+msgid "Attack Range Visualization"
+msgstr "Támadási hatótávolság megjelenítése"
+
+#: gui/options/options.json[5].options[8].tooltip
+msgid ""
+"Display the range of auras of selected units and structures (can also be "
+"toggled in-game with the hotkey)."
+msgstr "A kiválasztott egységek és épületek aurájának hatótávolságának megjelenítése (a játékon belül is kapcsolható gyorsbillentyűvel)."
+
+#: gui/options/options.json[5].options[8].label
+msgid "Aura Range Visualization"
+msgstr "Aura hatótávolság megjelenítése"
+
+#: gui/options/options.json[5].options[9].tooltip
+msgid ""
+"Display the healing range of selected units (can also be toggled in-game "
+"with the hotkey)."
+msgstr "A kiválasztott egységek gyógyítási hatótávolságának megjelenítése (a játékon belül is kapcsolható gyorsbillentyűvel)."
+
+#: gui/options/options.json[5].options[9].label
+msgid "Heal Range Visualization"
+msgstr "Gyógyítási hatótávolság megjelenítése"
+
+#: gui/options/options.json[5].options[10].tooltip
+msgid "Show rank icons above status bars."
+msgstr "Rang ikonok megjelenítése az állapotsávok felett."
+
+#: gui/options/options.json[5].options[10].label
+msgid "Rank icon above status bar"
+msgstr "Rang ikon az állapotsáv felett"
+
+#: gui/options/options.json[5].options[11].tooltip
+msgid ""
+"Show detailed tooltips for trainable units in unit-producing buildings."
+msgstr "Részletes eszköztippek megjelenítése a képezhető egységekhez az egységtermelő épületekben."
+
+#: gui/options/options.json[5].options[11].label
+msgid "Detailed Tooltips"
+msgstr "Részletes eszköztippek"
+
+#: gui/options/options.json[5].options[12].list[0].label
+msgid "Unordered"
+msgstr "Rendezetlen"
+
+#: gui/options/options.json[5].options[12].list[1].label
+msgid "Ascending"
+msgstr "Növekvő"
+
+#: gui/options/options.json[5].options[12].list[2].label
+msgid "Descending"
+msgstr "Csökkenő"
+
+#: gui/options/options.json[5].options[12].tooltip
+msgid ""
+"Dynamically sort players in the resources and population tooltip by value."
+msgstr "A játékosok dinamikus rendezése a nyersanyagok és lakosságszám értéke szerint."
+
+#: gui/options/options.json[5].options[12].label
+msgid "Sort resources and population tooltip"
+msgstr "Nyersanyag és lakosságszám eszköztipp rendezése"
+
+#: gui/options/options.json[5].options[13].tooltip
+msgid "Color of your units when diplomacy colors are enabled."
+msgstr "A saját egységek színe, ha a diplomáciai színek engedélyezettek."
+
+#: gui/options/options.json[5].options[13].label
+msgid "Diplomacy Colors: Self"
+msgstr "Diplomáciai színek: Saját"
+
+#: gui/options/options.json[5].options[14].tooltip
+msgid "Color of allies when diplomacy colors are enabled."
+msgstr "A szövetségesek színe, ha a diplomáciai színek engedélyezettek."
+
+#: gui/options/options.json[5].options[14].label
+msgid "Diplomacy Colors: Ally"
+msgstr "Diplomáciai színek: Szövetséges"
+
+#: gui/options/options.json[5].options[15].tooltip
+msgid "Color of neutral players when diplomacy colors are enabled."
+msgstr "A semleges játékosok színe, ha a diplomáciai színek engedélyezettek."
+
+#: gui/options/options.json[5].options[15].label
+msgid "Diplomacy Colors: Neutral"
+msgstr "Diplomáciai színek: Semleges"
+
+#: gui/options/options.json[5].options[16].tooltip
+msgid "Color of enemies when diplomacy colors are enabled."
+msgstr "Az ellenségek színe, ha a diplomáciai színek engedélyezettek."
+
+#: gui/options/options.json[5].options[16].label
+msgid "Diplomacy Colors: Enemy"
+msgstr "Diplomáciai színek: Ellenség"
+
+#: gui/options/options.json[5].tooltip
+msgid "Change options regarding the in-game settings."
+msgstr "A játékon belüli beállítások módosítása."
+
+#: gui/options/options.json[5].label
+msgid "In-Game"
+msgstr "Játékon belül"
+
+#: simulation/data/resources/food.jsondescription
+msgid "Harvest from animals, berry bushes, fish, or fields."
+msgstr "Gyűjtsd be állatokból, bogyóbokrokból, halakból, vagy a szántókról."
+
+#: simulation/data/resources/metal.jsondescription
+msgid "Mine from metal mines or quarries."
+msgstr "Bányássz fémbányákból vagy kőfejtőkből."
+
+#: simulation/data/resources/stone.jsondescription
+msgid "Mine from rocks, stone quarries or ruins."
+msgstr "Bányássz kövekből, kőbányákból vagy romokból."
+
+#: simulation/data/resources/wood.jsondescription
+msgid "Cut down from trees or groves."
+msgstr "Vágd le fákból vagy ligetekből."
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/food.jsonname
+msgctxt "firstWord"
+msgid "Food"
+msgstr "Élelem"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/food.jsonname
+msgctxt "withinSentence"
+msgid "Food"
+msgstr "Élelem"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/food.jsonsubtypes.fish
+msgctxt "firstWord"
+msgid "Fish"
+msgstr "Hal"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/food.jsonsubtypes.fish
+msgctxt "withinSentence"
+msgid "Fish"
+msgstr "Hal"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/food.jsonsubtypes.fruit
+msgctxt "firstWord"
+msgid "Fruit"
+msgstr "Gyümölcs"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/food.jsonsubtypes.fruit
+msgctxt "withinSentence"
+msgid "Fruit"
+msgstr "Gyümölcs"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/food.jsonsubtypes.grain
+msgctxt "firstWord"
+msgid "Grain"
+msgstr "Gabona"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/food.jsonsubtypes.grain
+msgctxt "withinSentence"
+msgid "Grain"
+msgstr "Gabona"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/food.jsonsubtypes.meat
+msgctxt "firstWord"
+msgid "Meat"
+msgstr "Hús"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/food.jsonsubtypes.meat
+msgctxt "withinSentence"
+msgid "Meat"
+msgstr "Hús"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/metal.jsonname
+msgctxt "firstWord"
+msgid "Metal"
+msgstr "Fém"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/metal.jsonname
+msgctxt "withinSentence"
+msgid "Metal"
+msgstr "Fém"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/metal.jsonsubtypes.ore
+msgctxt "firstWord"
+msgid "Ore"
+msgstr "Érc"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/metal.jsonsubtypes.ore
+msgctxt "withinSentence"
+msgid "Ore"
+msgstr "Érc"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/stone.jsonname
+msgctxt "firstWord"
+msgid "Stone"
+msgstr "Kő"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/stone.jsonname
+msgctxt "withinSentence"
+msgid "Stone"
+msgstr "Kő"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/stone.jsonsubtypes.ruins
+#: simulation/data/resources/wood.jsonsubtypes.ruins
+msgctxt "firstWord"
+msgid "Ruins"
+msgstr "Romok"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/stone.jsonsubtypes.ruins
+#: simulation/data/resources/wood.jsonsubtypes.ruins
+msgctxt "withinSentence"
+msgid "Ruins"
+msgstr "Romok"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/stone.jsonsubtypes.rock
+msgctxt "firstWord"
+msgid "Rock"
+msgstr "Szikla"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/stone.jsonsubtypes.rock
+msgctxt "withinSentence"
+msgid "Rock"
+msgstr "Szikla"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/wood.jsonname
+msgctxt "firstWord"
+msgid "Wood"
+msgstr "Faanyag"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/wood.jsonname
+msgctxt "withinSentence"
+msgid "Wood"
+msgstr "Faanyag"
+
+#. Translation: Word as used at the beginning of a sentence or as a single-
+#. word sentence.
+#: simulation/data/resources/wood.jsonsubtypes.tree
+msgctxt "firstWord"
+msgid "Tree"
+msgstr "Fa"
+
+#. Translation: Word as used in the middle of a sentence (which may require
+#. using lowercase for your language).
+#: simulation/data/resources/wood.jsonsubtypes.tree
+msgctxt "withinSentence"
+msgid "Tree"
+msgstr "Fa"
+
+#: gui/gamesetup/ai.txt:1
+msgid ""
+"Although reasonably easy for an experienced player, the default AI level is "
+"quite challenging for new players yet to master the basic mechanisms of the "
+"game. Beginners are advised to start by playing against a lower level AI "
+"(Sandbox or Very Easy). Change the AI level by clicking the gear icon next "
+"to the player you want to modify in the selection panel above."
+msgstr "Bár egy tapasztalt játékos számára meglehetősen könnyű, az alapértelmezett MI szintje kihívást nyújt az új játékosoknak, mielőtt azok elsajátítanák a játék alapvető mechanizmusait. Az elején ajánlott alacsonyabb szinten elkezdeni a játékot (homokozó vagy nagyon könnyű). Az MI szintjének állítása a fogaskerék ikonnal történik az egyes MI játékosok mellett, a fenti játékosválasztó panelen."
+
+#: gui/splashscreen/splashscreen.txt:2
+msgid ""
+"[font=\"sans-bold-20\"]  Thank you for installing 0 A.D. Empires Ascendant!"
+msgstr "[font=\"sans-bold-20\"] Köszönjük, hogy telepítetted a 0 A.D. Felemelkedő birodalmak játékot!"
+
+#: gui/splashscreen/splashscreen.txt:3
+msgid "[font=\"sans-16\"]"
+msgstr "[font=\"sans-16\"]"
+
+#: gui/splashscreen/splashscreen.txt:4
+msgid ""
+"[imgleft=\"constructionIcon\"]This game is still in development. Features "
+"are missing and it contains bugs."
+msgstr "[icon=\"constructionIcon\"] Ez a játék még fejlesztés alatt áll. Egyes jellegzetességek hiányoznak és hibákat tartalmaz."
+
+#: gui/splashscreen/splashscreen.txt:6
+msgid ""
+"[imgleft=\"iconLag\"]The game can have performance problems, especially with"
+" large maps and a great number of units."
+msgstr "[imgleft=\"iconLag\"]A játékban előfordulhatnak teljesítményproblémák, főként nagy térképeknél és nagyszámú egységeknél."
+
+#: gui/splashscreen/splashscreen.txt:8
+msgid ""
+"[imgleft=\"iconFormation\"]Formations are a work in progress, but you can "
+"toggle forming and disbanding formations as desired."
+msgstr "[imgleft=\"iconFormation\"]A formációk fejlesztés alatt állnak, de tetszés szerint be-/kikapcsolhatóak a formációk létrehozása és felosztása funkciók."
+
+#: gui/text/tips/army_camp.txt:1
+msgid "ROMAN ARMY CAMP"
+msgstr "RÓMAI HADSEREG TÁBORA"
+
+#: gui/text/tips/army_camp.txt:2
+msgid ""
+"- Build anywhere on the map, even in enemy territory. Good for building a "
+"secret base behind enemy lines or to consolidate gains within enemy "
+"territory."
+msgstr "- Bárhova építhető a térképen, akár ellenséges területre is! Jól használható titkos bázisnak az ellenséges frontvonal mögött, vagy a növekedés megerősítésére az ellenséges területen."
+
+#: gui/text/tips/army_camp.txt:4
+msgid "- Decays to the territory owner when built in non-allied territory"
+msgstr "- A terület tulajdonosa számára pusztul, ha nem szövetséges területre épült."
+
+#: gui/text/tips/army_camp.txt:6
+msgid "- Construct siege weapons and train citizen-soldiers."
+msgstr "- Ostromgépek építhetőek és polgári katonák képezhetők ki."
+
+#: gui/text/tips/army_camp.txt:8
+msgid ""
+"- Garrison up to 40 units to slowly heal the units and protect the army camp"
+" from attacks and decay."
+msgstr "- 40 egységet tud beszállásolni, hogy lassan gyógyuljanak az egységek, valamint megvédi a hadi tábort a támadásoktól és a pusztulástól."
+
+#: gui/text/tips/barracks.txt:1
+msgid "BARRACKS"
+msgstr "LAKTANYÁK"
+
+#: gui/text/tips/barracks.txt:2
+msgid ""
+"- Train all citizen-soldiers. Some factions can unlock the training of "
+"champions as well."
+msgstr "- Minden polgári katona képzése. Egyes nemzetek a bajnokok képzését is feloldhatják."
+
+#: gui/text/tips/barracks.txt:4
+msgid "- Research military technologies unique to each faction."
+msgstr "- Egyedi katonai technológiák kutatása minden csoportnak."
+
+#: gui/text/tips/barracks.txt:6
+msgid ""
+"- Build one early to train citizen-soldiers while you phase up your "
+"settlement."
+msgstr "- Építs egyet korán, hogy polgár-katonákat toborozz, míg felépíted a településed."
+
+#: gui/text/tips/barracks.txt:8
+msgid "- Build in a forward base to resupply your assault with fresh troops."
+msgstr "- Építsd egy előretölt bázisra, hogy friss csapatutánpótlással támogasd a támadást."
+
+#: gui/text/tips/blacksmith.txt:1
+msgid "BLACKSMITH"
+msgstr "KOVÁCSMŰHELY"
+
+#: gui/text/tips/blacksmith.txt:2
+msgid "- Research structure for all factions."
+msgstr "- Kutatóépítmény minden nemzet számára."
+
+#: gui/text/tips/blacksmith.txt:4
+msgid "- Research weapon and armor upgrades for your units."
+msgstr "- Fegyver- és páncélfejlesztések kutatása az egységeid számára."
+
+#: gui/text/tips/blacksmith.txt:6
+msgid ""
+"- Garrison a citizen-soldier inside to research faster (NOT IMPLEMENTED "
+"YET)."
+msgstr "- Szállásolj be egy polgári katonát a gyorsabb kutatáshoz (MÉG NINCS MEGVALÓSÍTVA)."
+
+#: gui/text/tips/carth_sacred_band.txt:1
+msgid "CARTHAGINIAN SACRED BAND"
+msgstr "KARTHÁGÓI SZENT CSAPAT"
+
+#: gui/text/tips/carth_sacred_band.txt:2
+msgid "- Champion Spearmen and Champion Cavalry Spearmen for Carthage."
+msgstr "- Karthágói bajnok lándzsás és bajnok lovas lándzsás."
+
+#: gui/text/tips/carth_sacred_band.txt:4
+msgid ""
+"- Both are trainable from the Temple, instead of the Fortress like most "
+"other champions."
+msgstr "- A többi bajnoktól eltérően mindkettő a templomban képződik az erőd helyett."
+
+#: gui/text/tips/carth_sacred_band.txt:6
+msgid ""
+"- Use the Spearmen as heavy infantry against cavalry. Use the Cavalry as "
+"heavy shock against siege weapons and skirmishers."
+msgstr "- A lándzsás nehéz-gyalogságként használható a lovasság ellen. A lovassággal az ostromgépek és a csatárok helyezhetők sokkoló nyomás alá."
+
+#: gui/text/tips/catapults.txt:1
+msgid "CATAPULTS"
+msgstr "KATAPULTOK"
+
+#: gui/text/tips/catapults.txt:2
+msgid "- Ranged siege engines that are good against buildings."
+msgstr "- Távolsági ostromgépek, amely kiválóak épületek ellen."
+
+#: gui/text/tips/catapults.txt:4
+msgid ""
+"- May upgrade to flaming projectiles for extra effectiveness against "
+"buildings and units."
+msgstr "- Fejleszthetők, hogy lángoló lövedékeket is tudjanak hajítani és így extra hatékonyságot nyerjenek épületek és egységek ellen."
+
+#: gui/text/tips/catapults.txt:6
+msgid "- Expensive and slow."
+msgstr "- Drága és lassú."
+
+#: gui/text/tips/catapults.txt:8
+msgid ""
+"- Pack up into carts for movement, and unpack into stationary engines for "
+"attack!"
+msgstr "- Szekérré kell összecsomagolni a mozgatásukhoz, támadáshoz pedig álló gépekké kell kicsomagolni."
+
+#: gui/text/tips/celtic_war_barge.txt:1
+msgid "CELTIC WAR BARGE"
+msgstr "KELTA HARCI BÁRKA"
+
+#: gui/text/tips/celtic_war_barge.txt:2
+msgid "- A medium \"trireme\"-class warship."
+msgstr "- Közepes triérész-osztályú hadihajó."
+
+#: gui/text/tips/celtic_war_barge.txt:4
+msgid "- Available to the Celtic Factions (Britons, Gauls)."
+msgstr "- Elérhető a kelta népeknek (britonok, gallok)."
+
+#: gui/text/tips/celtic_war_barge.txt:6
+msgid "- Can transport up to 40 units across the waters."
+msgstr "- 40 egységet tud szállítani vízen."
+
+#: gui/text/tips/celtic_war_barge.txt:8
+msgid "- Increases firepower with garrisoned infantry."
+msgstr "- Növeli a tűzerejét a beszállásolt gyalogsággal."
+
+#: gui/text/tips/celtic_war_barge.txt:10
+msgid "- Cannot ram, like other triremes, but has greater health and armor."
+msgstr "- A többi triérésztől eltérően nem tud döfni de nagyobb az életereje és a páncélzata."
+
+#: gui/text/tips/civic_centres.txt:1
+msgid "CIVIC CENTERS"
+msgstr "VÁROSHÁZÁK"
+
+#: gui/text/tips/civic_centres.txt:2
+msgid "- The foundation of your new colony."
+msgstr "- Az új kolóniád alapja."
+
+#: gui/text/tips/civic_centres.txt:4
+msgid "- Claim large tracts of territory."
+msgstr "- Nagy területek elfoglalása."
+
+#: gui/text/tips/civic_centres.txt:6
+msgid "- Can be built in friendly and neutral territory."
+msgstr "- Barátságos vagy semleges területre építhető."
+
+#: gui/text/tips/civic_centres.txt:8
+msgid ""
+"- Train citizens: female citizens, infantry citizen soldiers and cavalry "
+"citizen soldiers."
+msgstr "– Polgárok képzése: női polgárok, gyalogos polgári katonák és lovas polgári katonák."
+
+#: gui/text/tips/embassies.txt:1
+msgid "EMBASSIES"
+msgstr "KÖVETSÉGEK"
+
+#: gui/text/tips/embassies.txt:2
+msgid "- Special \"Barracks\" available to the Carthage faction."
+msgstr "- Különleges „laktanyák” érhetőek el a karthágóiaknak."
+
+#: gui/text/tips/embassies.txt:4
+msgid "- Train mercenaries from each of the ethnically-themed embassies."
+msgstr "- Zsoldosok képezhetők minden etnikai témájú követségen."
+
+#: gui/text/tips/embassies.txt:6
+msgid ""
+"- Mercenary \"citizen-soldiers\" have their normal Food cost converted to "
+"Metal cost."
+msgstr "- A zsoldos „polgári katona” normál élelmezési költségét fém költségen kell megtéríteni."
+
+#: gui/text/tips/fishing.txt:1
+msgid "FISHING"
+msgstr "HALÁSZAT"
+
+#: gui/text/tips/fishing.txt:2
+msgid "- Fish the seas for a bountiful harvest."
+msgstr "- Halássz a tengereken a remek zsákmányért."
+
+#: gui/text/tips/fishing.txt:4
+msgid "- Fishing boats carry a large amount of food per trip."
+msgstr "- A halászhajók nagy mennyiségű élelmet képesek magukkal vinni."
+
+#: gui/text/tips/fishing.txt:6
+msgid "- Fishing is faster than gathering food on fields."
+msgstr "- A halászat gyorsabb, mint az élelem gyűjtése a mezőkről."
+
+#: gui/text/tips/fishing.txt:8
+msgid "- Careful! Fish are not an infinite resource!"
+msgstr "- Vigyázz! A halak nem tartanak ki örökké!"
+
+#: gui/text/tips/fortress.txt:1
+msgid "FORTRESS"
+msgstr "ERŐD"
+
+#: gui/text/tips/fortress.txt:2
+msgid "- The Fortress is usually each faction's strongest building."
+msgstr "- Az Erőd általában a népek legerősebb építménye."
+
+#: gui/text/tips/fortress.txt:4
+msgid "- Trains strong units like Champions, Heroes, and Siege Weapons."
+msgstr "- Erős egységeket tud kiképezni. mint a bajnokon, hősök és az ostromgépek."
+
+#: gui/text/tips/fortress.txt:6
+msgid "- Gives a population boost."
+msgstr "- Népességnövekedést okoz."
+
+#: gui/text/tips/fortress.txt:8
+msgid "- Garrison soldiers inside to add more firepower to its defense."
+msgstr "- Katonák elszállásolása a tűzerő növeléséért a védelemhez."
+
+#: gui/text/tips/freehand_position.txt:1
+msgid "FREEHAND POSITION"
+msgstr "SZABADKÉZI POZÍCIÓ"
+
+#: gui/text/tips/freehand_position.txt:2
+msgid ""
+"- Gain an advantage on the battleground by tactically positioning your "
+"units!"
+msgstr "- Szerezz előnyt a harcmezőn, az egységeid taktikus elhelyezésével."
+
+#: gui/text/tips/freehand_position.txt:4
+msgid ""
+"- Therefore select some units, press and hold the right mouse button, draw "
+"any line, then release the button."
+msgstr "- Ezért válassz ki néhány egységet, nyomd le és tartsd a jobb egérgombot, húzz egy vonalat, és engedd el a gombot."
+
+#: gui/text/tips/freehand_position.txt:6
+msgid "- Your units will now spread out on this line."
+msgstr "- Az egységeid a vonalon fognak felállni."
+
+#: gui/text/tips/gathering.txt:1
+msgid "RESOURCE GATHERING"
+msgstr "NYERSANYAGGYŰJTÉS"
+
+#: gui/text/tips/gathering.txt:2
+msgid "- Use citizen soldiers and female citizens to gather resources."
+msgstr "– Használj polgári katonákat és női polgárokat a nyersanyagok begyűjtéséhez."
+
+#: gui/text/tips/gathering.txt:4
+msgid "- Female citizens are faster gathering vegetable resources."
+msgstr "– A női polgárok gyorsabban gyűjtik a növényi nyersanyagokat."
+
+#: gui/text/tips/gathering.txt:6
+msgid "- Infantry citizen soldiers are faster gathering minerals."
+msgstr "– A gyalogos polgári katonák gyorsabban gyűjtik az érceket."
+
+#: gui/text/tips/gathering.txt:8
+msgid "- Cavalry citizen soldiers are faster gathering meat."
+msgstr "– A lovas polgári katonák gyorsabban gyűjtik a húst."
+
+#: gui/text/tips/gathering.txt:10
+msgid ""
+"- The higher the level of a citizen soldier (advanced, elite), the better he"
+" fights, but the less efficient he is at gathering resources."
+msgstr "– A magasabb szintű polgári katonák (fejlett, elit) jobbak az ütközetekben, de kevésbé hatékonyak a gyűjtésben."
+
+#: gui/text/tips/iphicrates.txt:1
+msgid "IPHICRATES"
+msgstr "IPHIKRATÉSZ"
+
+#: gui/text/tips/iphicrates.txt:2
+msgid ""
+"- The Athenian general who reformed the Athenian army to be faster and more "
+"maneuverable."
+msgstr "- Az athéni tábornok, aki megreformálta az athéni hadsereget, hogy az gyorsabb legyen és jobban tudjon manőverezni."
+
+#: gui/text/tips/iphicrates.txt:4
+msgid "- Units in his formation are faster and stronger."
+msgstr "- Az egységek ebben az alakzatban gyorsabbak és erősebbek."
+
+#: gui/text/tips/iphicrates.txt:6
+msgid "- Skirmishers move faster while he lives."
+msgstr "- A csatárok gyorsabban mozognak, amíg ő él."
+
+#: gui/text/tips/outposts.txt:1
+msgid "OUTPOSTS"
+msgstr "ELŐŐRSÖK"
+
+#: gui/text/tips/outposts.txt:2
+msgid "- Build in neutral territory for a large scouting range."
+msgstr "- Semleges területre építhető nagy felderítési hatókör érdekében."
+
+#: gui/text/tips/outposts.txt:4
+msgid "- Cheap, at 80 Wood."
+msgstr "- Olcsó, 80 fát igényel."
+
+#: gui/text/tips/outposts.txt:6
+msgid "- They construct quickly, but are weak."
+msgstr "- Gyorsan felépülnek, de gyengék."
+
+#: gui/text/tips/outposts.txt:8
+msgid ""
+"- Garrison a unit in it to stop them from decaying in neutral territory."
+msgstr "- Semleges területen egy egység beszállásolásával megállítható a pusztulása."
+
+#: gui/text/tips/palisades.txt:1
+msgid "PALISADE WALLS"
+msgstr "PALÁNKFALAK"
+
+#: gui/text/tips/palisades.txt:2
+msgid "- A quick, cheap wooden wall available to all factions."
+msgstr "- Gyors, olcsó fából készült fal minden nép számára."
+
+#: gui/text/tips/palisades.txt:4
+msgid "- Most factions have access to them in Village Phase."
+msgstr "- A legtöbb nép számára elérhető a falusi szakaszban."
+
+#: gui/text/tips/palisades.txt:6
+msgid ""
+"- Attackable by enemy soldiers, unlike City Walls, which are only attackable"
+" by siege weapons."
+msgstr "- A városfallal ellentétben, mely csak ostromgépekkel támadható, ez támadható az ellenséges katonák számára is."
+
+#: gui/text/tips/pericles.txt:1
+msgid "PERICLES"
+msgstr "PERIKLÉSZ"
+
+#: gui/text/tips/pericles.txt:2
+msgid "- The foremost Athenian politician of the 5th century BCE."
+msgstr "- A legkiválóbb athéni politikus az i. e. 5 században."
+
+#: gui/text/tips/pericles.txt:4
+msgid "- Buildings construct faster within his range."
+msgstr "- Az épületek gyorsabban épülnek a környezetében."
+
+#: gui/text/tips/pericles.txt:6
+msgid "- Temples are cheaper while he lives."
+msgstr "- A templomok olcsóbbak, amíg ő él."
+
+#: gui/text/tips/persian_architecture.txt:1
+msgid "PERSIAN ARCHITECTURE"
+msgstr "PERZSA ÉPÍTÉSZET"
+
+#: gui/text/tips/persian_architecture.txt:2
+msgid "- Special Technology for the Persians."
+msgstr "- Különleges technológia a perzsáknak."
+
+#: gui/text/tips/persian_architecture.txt:4
+msgid "- All Persian buildings +25% stronger."
+msgstr "- Minden perzsa épület +25%-kal erősebb."
+
+#: gui/text/tips/persian_architecture.txt:6
+msgid "- Build time lengthened by +20% as a consequence."
+msgstr "- Ennek következtében az építési idő +20%-kal meghosszabbodik."
+
+#: gui/text/tips/persian_architecture.txt:8
+msgid ""
+"- Persians also have access to a great number of structural & defensive "
+"technologies."
+msgstr "- A perzsák számos védelmi és strukturális technológiát érhetnek el."
+
+#: gui/text/tips/pikemen.txt:1
+msgid "PIKEMEN"
+msgstr "PIKÁSOK"
+
+#: gui/text/tips/pikemen.txt:2
+msgid "- Heavily armored and slow. Low attack."
+msgstr "- Lassúak, nehéz-páncélzatban. Gyengén támadnak."
+
+#: gui/text/tips/pikemen.txt:4
+msgid ""
+"- Used against cavalry or against other melee infantry to pin them in place."
+msgstr "- Alkalmazhatók lovasság ellen vagy más közelharcos gyalogság ellen, hogy helyhez kössük azokat."
+
+#: gui/text/tips/pikemen.txt:6
+msgid "- Available to: Macedonians, Seleucids, and Ptolemies."
+msgstr "- Elérhető a makedónok, szeleukidák és ptolemaioszok számára."
+
+#: gui/text/tips/quinquereme.txt:1
+msgid "HEAVY WARSHIP"
+msgstr "NEHÉZ HADIHAJÓ"
+
+#: gui/text/tips/quinquereme.txt:2
+msgid ""
+"- The heaviest standard warship. Available to: Rome, Carthage, Ptolemies, "
+"and Seleucids."
+msgstr "- A legkeményebb szabványos hadihajó. Elérhető Róma, Karthágó, a ptolemaioszok és a szeleukidák számára."
+
+#: gui/text/tips/quinquereme.txt:4
+msgid "- Transports up to 50 units."
+msgstr "- 50 egységet tud szállítani."
+
+#: gui/text/tips/quinquereme.txt:6
+msgid "- Increases firepower with garrisoned catapults."
+msgstr "- Növeli a tűzerejét a beszállásolt katapultokkal."
+
+#: gui/text/tips/quinquereme.txt:8
+msgid "- Has a ramming attack that sinks enemy ships (NOT IMPLEMENTED YET)."
+msgstr "- Faltörő kosával el tudja süllyeszteni az ellenséges hajókat (NINCS MÉG IMPLEMENTÁLVA)."
+
+#: gui/text/tips/savanna_biome.txt:1
+msgid "SAVANNA BIOME"
+msgstr "SZAVANNA ÉLETKÖZÖSSÉG"
+
+#: gui/text/tips/savanna_biome.txt:2
+msgid "- Generally flat, with a few watering holes and rocky outcrops."
+msgstr "- Általában sík néhány vízlelelőhellyel és szikla előbukkanásával."
+
+#: gui/text/tips/savanna_biome.txt:4
+msgid "- Chock full of herd animals for plentiful hunting."
+msgstr "- Csordultig van állatcsordákkal a bőséges vadászathoz."
+
+#: gui/text/tips/savanna_biome.txt:6
+msgid "- Rich in all types of mining."
+msgstr "- Minden bányászati forrásban gazdag."
+
+#: gui/text/tips/savanna_biome.txt:8
+msgid "- Wood tends to be sparse, but consists of high-yield Baobab trees."
+msgstr "- Fa ritkán fordul elő, de a majomkenyérfa hozama bőséges."
+
+#: gui/text/tips/scout_towers.txt:1
+msgid "DEFENSE TOWERS"
+msgstr "VÉDŐTORNYOK"
+
+#: gui/text/tips/scout_towers.txt:2
+msgid "- Free-standing towers good for defending large areas of countryside."
+msgstr "- A szabadon álló tornyok ideálisak a nagyobb területek megvédésére a vidéken."
+
+#: gui/text/tips/scout_towers.txt:4
+msgid ""
+"- They usually cost 100 Wood and 100 Stone. Iberian Defense Towers cost 300 "
+"Stone (because they're stronger)."
+msgstr "- Általában 100 fát és 100 követ igényelnek. Az ibériai védőtornyok 300 követ igényelnek (mivel azok erősebbek)."
+
+#: gui/text/tips/scout_towers.txt:6
+msgid "- Has a ranged attack that increases for each garrisoned unit."
+msgstr "- Képes távolsági támadásra, mely minden elszállásolt katona után növekszik."
+
+#: gui/text/tips/spartan_hoplites.txt:1
+msgid "SPARTIATES"
+msgstr "HOMOIOSZ"
+
+#: gui/text/tips/spartan_hoplites.txt:2
+msgid "- Strongest infantry unit in the game."
+msgstr "- A legerősebb gyalogos egység a játékban."
+
+#: gui/text/tips/spartan_hoplites.txt:4
+msgid "- Champion Infantry available to the Spartans faction."
+msgstr "- A bajnok gyalogos a Spártaiak számára érthető el."
+
+#: gui/text/tips/spartan_hoplites.txt:6
+msgid ""
+"- Use them to slaughter enemy cavalry or as a shock force to support your "
+"regular infantry."
+msgstr "- Alkalmazhatóak az ellenséges lovasság lemészárlására vagy sokkoló erőként a rendes gyalogság támogatására."
+
+#: gui/text/tips/spartan_hoplites.txt:8
+msgid "- Use the 'Phalanx' formation for extra armor bonuses."
+msgstr "- Használd a „Falanx” alakzatot extra páncélbónuszokért."
+
+#: gui/text/tips/spearmen.txt:1
+msgid "SPEARMEN"
+msgstr "LÁNDZSÁS"
+
+#: gui/text/tips/spearmen.txt:2
+msgid "- The basic melee infantry for every faction in the game."
+msgstr "- Egyszerű közelharcos gyalogság minden nemzet számára."
+
+#: gui/text/tips/spearmen.txt:4
+msgid "- Used against cavalry for an attack bonus."
+msgstr "- Támadóbónusszal alkalmazható lovasság ellen."
+
+#: gui/text/tips/spearmen.txt:6
+msgid "- Decent hack attack make them good front line troops."
+msgstr "- A megfelelő vágó támadás jó első vonalbeli harcossá teszi őket."
+
+#: gui/text/tips/spearmen.txt:8
+msgid ""
+"- They are countered by ranged units and swordsmen, so support your spearmen"
+" with slingers or cavalry."
+msgstr "- Képesek ellensúlyozni a távolsági egységeket és a kardforgatókat, ezért érdemes a lándzsásokat parittyásokkal vagy lovassággal támogatni."
+
+#: gui/text/tips/stoa.txt:1
+msgid "STOA"
+msgstr "OSZLOPCSARNOK"
+
+#: gui/text/tips/stoa.txt:2
+msgid "- A special structure for Greek factions."
+msgstr "- Egy különleges épület a görög népeknél."
+
+#: gui/text/tips/stoa.txt:4
+msgid "- Trains Heavy Skirmishers and Sword Infantry Champions."
+msgstr "- Nehéz csatárokat és kardforgató gyalogsági bajnokokat képez ki."
+
+#: gui/text/tips/stoa.txt:6
+msgid "- Grants +10 Population."
+msgstr "- +10 népességet ad."
+
+#: gui/text/tips/storehouses.txt:1
+msgid "STOREHOUSES"
+msgstr "RAKTÁRAK"
+
+#: gui/text/tips/storehouses.txt:2
+msgid "- A cheap dropsite for non-food resources (wood, stone, metal)."
+msgstr "- Olcsó lerakóhely a nem-élelmiszer jellegű nyersanyagoknak (fa, kő, érc)."
+
+#: gui/text/tips/storehouses.txt:4
+msgid ""
+"- Research technologies to improve the gathering capabilities of your "
+"citizens."
+msgstr "- A technológiák kutatásával fejleszthető a lakosság gyűjtése hatékonysága."
+
+#: gui/text/tips/syntagma.txt:1
+msgid "SYNTAGMA FORMATION"
+msgstr "SZÜNTAGMA FORMÁCIÓ"
+
+#: gui/text/tips/syntagma.txt:2
+msgid "- A formation for 'pikeman' style infantry."
+msgstr "- „Pikás” stílusú gyalogsági alakzat."
+
+#: gui/text/tips/syntagma.txt:4
+msgid "- Formation is slow and cumbersome."
+msgstr "- Lassú, nehéz alakzat."
+
+#: gui/text/tips/syntagma.txt:6
+msgid "- Nearly invulnerable from the front."
+msgstr "- Majdnem sebezhetetlen szemből."
+
+#: gui/text/tips/syntagma.txt:8
+msgid "- Vulnerable to attacks from the rear."
+msgstr "- Hátulról sebezhető."
+
+#: gui/text/tips/temples.txt:1
+msgid "TEMPLES"
+msgstr "TEMPLOMOK"
+
+#: gui/text/tips/temples.txt:2
+msgid "- Town Phase structure."
+msgstr "- Városi szakaszhoz tartozó épület."
+
+#: gui/text/tips/temples.txt:4
+msgid "- Recruit Healers to heal your troops on the battlefield."
+msgstr "- Gyógyítók kiképzése, akik a harcmezőn képesek a csapatok  gyógyítására."
+
+#: gui/text/tips/temples.txt:6
+msgid "- Research healing, religious devotion, and cultural technologies."
+msgstr "- Kutatási területük a gyógyítás, vallásos odaadás és a kulturális technológiák."
+
+#: gui/text/tips/temples.txt:8
+msgid "- Its \"aura\" heals nearby units."
+msgstr "- Az „aurája” gyógyítja a közeli egységeket."
+
+#: gui/text/tips/temples.txt:10
+msgid "- Garrison damaged units inside for quicker healing."
+msgstr "- Az egységeket beszállásolva gyorsabban gyógyít."
+
+#: gui/text/tips/territory_decay.txt:1
+msgid "TERRITORY DECAY"
+msgstr "TERÜLET HANYATLÁSA"
+
+#: gui/text/tips/territory_decay.txt:3
+msgid ""
+"- Decay happens when buildings are not connected to an allied Civil Center."
+msgstr "- Valami akkor indul pusztulásnak, ha az épületek nem csatlakoznak egy szövetséges városközponthoz."
+
+#: gui/text/tips/territory_decay.txt:5
+msgid ""
+"- The decay process can be slowed down or reversed by garrisoning some units"
+" in the structure."
+msgstr "- Az épület pusztulása megállítható vagy visszafordítható néhány egység beszállásolásával."
+
+#: gui/text/tips/territory_decay.txt:7
+msgid ""
+"- When the decay is completed, the building will be given to the most "
+"influential neighbor."
+msgstr "- A pusztulás végén az épület átadódik a legbefolyásosabb szomszédnak."
+
+#: gui/text/tips/themistocles.txt:1
+msgid "THEMISTOCLES"
+msgstr "THEMISZTOKLÉSZ"
+
+#: gui/text/tips/themistocles.txt:2
+msgid ""
+"- Athenian hero who commanded the Greeks at the great naval battles of "
+"Artemisium and Salamis."
+msgstr "- Athéni hős, aki a görögöket vezette a nagy artemiszioni és szalamiszi tengeri csatákban."
+
+#: gui/text/tips/themistocles.txt:4
+msgid "- All ships are built faster while he lives."
+msgstr "- Minden hajó gyorsabban épül, amíg ő él."
+
+#: gui/text/tips/themistocles.txt:6
+msgid "- The ship he is garrisoned inside sails much faster."
+msgstr "- A hajó, melybe be lett hajózva, sokkal gyorsabban vitorlázik."
+
+#: gui/text/tips/triremes.txt:1
+msgid "TRIREME"
+msgstr "TRIÉRÉSZ"
+
+#: gui/text/tips/triremes.txt:2
+msgid "- The Medium Warship."
+msgstr "- A közepes csatahajó."
+
+#: gui/text/tips/triremes.txt:4
+msgid ""
+"- Available to the Romans, Carthaginians, Hellenic factions, and Persians."
+msgstr "- Elérhető a rómaiak, karthágóiak, hellén népeknek és a perzsáknak."
+
+#: gui/text/tips/triremes.txt:6
+msgid "- Good for transporting or fighting."
+msgstr "- Jó szállításra és küzdelemre is."
+
+#: gui/text/tips/triremes.txt:8
+msgid "- Garrison troops aboard to increase fire power."
+msgstr "- Csapatokat behajózva növekszik a tűzrezejre."
+
+#: gui/text/tips/triremes.txt:10
+msgid ""
+"- Garrison a catapult aboard for a long-range siege attack (NOT IMPLEMENTED "
+"YET)."
+msgstr "- Katapultot behajózva képes nagy távolságú ostromló támadásra is (NINCS MÉG IMPLEMENTÁLVA)."
+
+#: gui/text/tips/triremes.txt:12
+msgid ""
+"- Capable of a devastating ship-to-ship ramming attack that must recharge "
+"between each use (NOT IMPLEMENTED YET)."
+msgstr "- Faltörő kosával képes pusztító támadást intézni egy másik hajó ellen, de minden alkalmazás után fel kell tölteni (NINCS MÉG IMPLEMENTÁLVA)."
+
+#: gui/text/tips/viriato.txt:1
+msgid "VIRIATO"
+msgstr "VIRIATO"
+
+#: gui/text/tips/viriato.txt:2
+msgid "- Iberian hero of the Lusitani tribe."
+msgstr " - Ibériai hős a luzitán törzsből."
+
+#: gui/text/tips/viriato.txt:4
+msgid ""
+"- At least 7 campaigns against the Romans during the 'Lusitani Wars' from "
+"147 to 139 B.C."
+msgstr "- Legalább 7 hadjárat a Rómaiak ellen az Ibériai háborúk alatt i. e. 147-től 139-ig."
+
+#: gui/text/tips/viriato.txt:6
+msgid "- Fast moving and can switch between sword and flaming javelin."
+msgstr "- Gyorsan mozog, és válthat kard vagy égő dárdák között."
+
+#: gui/text/tips/viriato.txt:8
+msgid ""
+"- His \"aura\" is the \"Tactica Guerilla\" that allows nearby Iberian units "
+"to ambush their opponents."
+msgstr "- Az ő „aurája” a „gerilla taktika”, amely lehetővé teszi a közelben lévő ibériai egységeknek, hogy csapdát állítsanak az ellenfeleiknek."
+
+#: gui/text/tips/war_elephants.txt:1
+msgid "WAR ELEPHANTS"
+msgstr "HARCI ELEFÁNTOK"
+
+#: gui/text/tips/war_elephants.txt:2
+msgid "- Huge beasts from Africa and India, trained for war."
+msgstr "- Hatalmas afrikai vagy indiai vadállatok, melyek harci kiképzést kaptak."
+
+#: gui/text/tips/war_elephants.txt:4
+msgid ""
+"- High Food and Metal cost, but very powerful. Strongest against Structures "
+"and Cavalry."
+msgstr "- Magas élelmezési és fém költséget igényelnek, de nagyon erőteljesek. Legerősebbek épületek és lovasság ellen."
+
+#: gui/text/tips/war_elephants.txt:6
+msgid "- Vulnerable to infantry skirmishers."
+msgstr "- Sebezhetőek a gyalogos csatárok számára."
+
+#: gui/text/tips/war_elephants.txt:8
+msgid "- Available to: Mauryans, Ptolemies, Seleucids, and Carthaginians."
+msgstr "- Elérhető a maurják, ptolemaioszok, szeleukidák és karthágóiak számára."
+
+#: gui/text/tips/whales.txt:1
+msgid "WHALES"
+msgstr "BÁLNÁK"
+
+#: gui/text/tips/whales.txt:2
+msgid "- An oceanic resource."
+msgstr "- Óceáni nyersanyag."
+
+#: gui/text/tips/whales.txt:4
+msgid "- 2000 Food."
+msgstr "-  2000 élelem."
+
+#: gui/text/tips/whales.txt:6
+msgid "- Gatherable by Fishing Boats after the whale is killed."
+msgstr "- Halászhajókból gyűjthető be a bálna megölése után."
+
+#: gui/text/tips/whales.txt:8
+msgid "- Roam around the oceans of the game and flee when attacked."
+msgstr "- Az óceánban kóborol és támadás esetén menekül."

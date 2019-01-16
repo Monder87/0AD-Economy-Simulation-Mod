@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="siege wall tower">
+      <animations>
+        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+      </animations>
+      <mesh>structural/siege_walltwr_wood.dae</mesh>
+      <props>
+        <prop actor="props/structures/romans/siege_walls_turf_tower.xml" attachpoint="root"/>
+        <prop actor="props/structures/romans/siege_walls_tower_banners.xml" attachpoint="root"/>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="loaded-projectile"/>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+      </props>
+      <textures>
+        <texture file="structural/siege_walls_wood.png" name="baseTex"/>
+        <texture file="structural/siege_walls_wood_norm.png" name="normTex"/>
+        <texture file="structural/siege_walls_wood_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_parallax_spec.xml</material>
+</actor>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Mesh">
+      <mesh>skeletal/kingdragon.dae</mesh>
+      <animations>
+        <animation file="quadraped/kingdragon_idle.dae" name="idle" speed="30"/>
+
+      </animations>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="fur-brown">
+      <textures><texture file="skeletal/animal_wolf.png" name="baseTex"/></textures>
+    </variant>
+  </group>
+
+  <material>basic_trans.xml</material>
+</actor>

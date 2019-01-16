@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="base">
+      <mesh>props/shield/gerron_a_f.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/gerron_a_back.xml" attachpoint="back"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="shield-gerron-f">
+      <textures><texture file="props/shield/pers_gerron_f.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="shield-gerron-g">
+      <textures><texture file="props/shield/pers_gerron_g.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skeletons>
+  <standard_skeleton id="Wolf_Skeleton" title="Wolf Skeleton">
+    <bone name="root">
+      <bone name="Becken">
+        <bone name="Bauch">
+          <bone name="Bauch.001">
+            <bone name="Brust">
+              <bone name="Hals">
+                <bone name="Kopf.002">
+                  <bone name="Kopf">
+                    <bone name="Unterkiefer">
+                      <bone name="Hals_fett" />
+                      <bone name="Maulunten" />
+                    </bone>
+                    <bone name="Mauloben" />
+                    <bone name="MundW_L" />
+                    <bone name="MundW_R" />
+                    <bone name="Ohr_L" />
+                    <bone name="Ohr_R" />
+                    <bone name="Braun_O_L" />
+                    <bone name="Braun_O_R" />
+                    <bone name="aug_lied_O_L" />
+                    <bone name="aug_lied_O_R" />
+                    <bone name="aug_lied_U_L" />
+                    <bone name="aug_lied_U_R" />
+                  </bone>
+                </bone>
+              </bone>
+              <bone name="Bauch.003">
+                <bone name="Schalterplatte_L">
+                  <bone name="Oberarm_L">
+                    <bone name="Unterarm_L">
+                      <bone name="Vorderpfote_L" />
+                    </bone>
+                  </bone>
+                </bone>
+                <bone name="Schalterplatte_R">
+                  <bone name="Oberarm_R">
+                    <bone name="Unterarm_R">
+                      <bone name="Vorderpfote_R" />
+                    </bone>
+                  </bone>
+                </bone>
+              </bone>
+            </bone>
+          </bone>
+        </bone>
+        <bone name="Schwanz">
+          <bone name="Schwanz.001">
+            <bone name="Schwanz.002">
+              <bone name="Schwanz.003" />
+            </bone>
+          </bone>
+        </bone>
+        <bone name="Oberschenkel_L">
+          <bone name="Unterschenkel_L">
+            <bone name="Pfote1_L">
+              <bone name="Pfote2_L" />
+            </bone>
+          </bone>
+        </bone>
+        <bone name="Oberschenkel_R">
+          <bone name="Unterschenkel_R">
+            <bone name="Pfote1_R">
+              <bone name="Pfote2_R" />
+            </bone>
+          </bone>
+        </bone>
+        <bone name="Becken.001" />
+      </bone>
+      <bone name="root.001" />
+    </bone>
+  </standard_skeleton>
+  <skeleton target="Wolf_Skeleton" title="Wolf Skeleton">
+    <identifier>
+      <root>root</root>
+    </identifier>
+    <bone name="root">
+      <target>root</target>
+      <bone name="Becken">
+        <target>Becken</target>
+        <bone name="Bauch">
+          <target>Bauch</target>
+          <bone name="Bauch.001">
+            <target>Bauch.001</target>
+            <bone name="Brust">
+              <target>Brust</target>
+              <bone name="Hals">
+                <target>Hals</target>
+                <bone name="Kopf.002">
+                  <target>Kopf.002</target>
+                  <bone name="Kopf">
+                    <target>Kopf</target>
+                    <bone name="Unterkiefer">
+                      <target>Unterkiefer</target>
+                      <bone name="Hals_fett">
+                        <target>Hals_fett</target>
+                      </bone>
+                      <bone name="Maulunten">
+                        <target>Maulunten</target>
+                      </bone>
+                    </bone>
+                    <bone name="Mauloben">
+                      <target>Mauloben</target>
+                    </bone>
+                    <bone name="MundW_L">
+                      <target>MundW_L</target>
+                    </bone>
+                    <bone name="MundW_R">
+                      <target>MundW_R</target>
+                    </bone>
+                    <bone name="Ohr_L">
+                      <target>Ohr_L</target>
+                    </bone>
+                    <bone name="Ohr_R">
+                      <target>Ohr_R</target>
+                    </bone>
+                    <bone name="Braun_O_L">
+                      <target>Braun_O_L</target>
+                    </bone>
+                    <bone name="Braun_O_R">
+                      <target>Braun_O_R</target>
+                    </bone>
+                    <bone name="aug_lied_O_L">
+                      <target>aug_lied_O_L</target>
+                    </bone>
+                    <bone name="aug_lied_O_R">
+                      <target>aug_lied_O_R</target>
+                    </bone>
+                    <bone name="aug_lied_U_L">
+                      <target>aug_lied_U_L</target>
+                    </bone>
+                    <bone name="aug_lied_U_R">
+                      <target>aug_lied_U_R</target>
+                    </bone>
+                  </bone>
+                </bone>
+              </bone>
+              <bone name="Bauch.003">
+                <target>Bauch.003</target>
+                <bone name="Schalterplatte_L">
+                  <target>Schalterplatte_L</target>
+                  <bone name="Oberarm_L">
+                    <target>Oberarm_L</target>
+                    <bone name="Unterarm_L">
+                      <target>Unterarm_L</target>
+                      <bone name="Vorderpfote_L">
+                        <target>Vorderpfote_L</target>
+                      </bone>
+                    </bone>
+                  </bone>
+                </bone>
+                <bone name="Schalterplatte_R">
+                  <target>Schalterplatte_R</target>
+                  <bone name="Oberarm_R">
+                    <target>Oberarm_R</target>
+                    <bone name="Unterarm_R">
+                      <target>Unterarm_R</target>
+                      <bone name="Vorderpfote_R">
+                        <target>Vorderpfote_R</target>
+                      </bone>
+                    </bone>
+                  </bone>
+                </bone>
+              </bone>
+            </bone>
+          </bone>
+        </bone>
+        <bone name="Schwanz">
+          <target>Schwanz</target>
+          <bone name="Schwanz.001">
+            <target>Schwanz.001</target>
+            <bone name="Schwanz.002">
+              <target>Schwanz.002</target>
+              <bone name="Schwanz.003">
+                <target>Schwanz.003</target>
+              </bone>
+            </bone>
+          </bone>
+        </bone>
+        <bone name="Oberschenkel_L">
+          <target>Oberschenkel_L</target>
+          <bone name="Unterschenkel_L">
+            <target>Unterschenkel_L</target>
+            <bone name="Pfote1_L">
+              <target>Pfote1_L</target>
+              <bone name="Pfote2_L">
+                <target>Pfote2_L</target>
+              </bone>
+            </bone>
+          </bone>
+        </bone>
+        <bone name="Oberschenkel_R">
+          <target>Oberschenkel_R</target>
+          <bone name="Unterschenkel_R">
+            <target>Unterschenkel_R</target>
+            <bone name="Pfote1_R">
+              <target>Pfote1_R</target>
+              <bone name="Pfote2_R">
+                <target>Pfote2_R</target>
+              </bone>
+            </bone>
+          </bone>
+        </bone>
+        <bone name="Becken.001">
+          <target>Becken.001</target>
+        </bone>
+      </bone>
+      <bone name="root.001">
+        <target>root.001</target>
+      </bone>
+    </bone>
+  </skeleton>
+</skeletons>

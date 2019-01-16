@@ -1,0 +1,5 @@
+<variant name="shopping">
+  <animations>
+    <animation file="biped/new/fem_shopping.dae" name="shopping" speed="100"/>
+  </animations>
+</variant>

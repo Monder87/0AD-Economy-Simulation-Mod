@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_skittish">
+  <Footprint>
+    <Square width="3.3" depth="6.6"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <SpecificName>Giraffe (Adult)</SpecificName>
+    <Icon>gaia/fauna_giraffe.png</Icon>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Amount>350</Amount>
+    <Type>food.meat</Type>
+  </ResourceSupply>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>circle/256x256.png</MainTexture>
+        <MainTextureMask>circle/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.6</WalkSpeed>
+    <Run>
+      <Speed op="mul">0.6</Speed>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>fauna/giraffe_adult.xml</Actor>
+  </VisualActor>
+</Entity>

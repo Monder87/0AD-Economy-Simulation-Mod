@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100">
+      <mesh>props/pers_quiver_hip.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="quiver light">
+      <textures><texture file="props/pers_quiver_light.png" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="2" name="quiver dark">
+      <textures><texture file="props/pers_quiver_dark.png" name="baseTex"/></textures>
+    </variant>
+  </group>
+</actor>

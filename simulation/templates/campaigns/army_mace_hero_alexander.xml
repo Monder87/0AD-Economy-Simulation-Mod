@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Armour>
+    <Crush>20.0</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <MaxRange>7.0</MaxRange>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Resources>
+      <metal>300</metal>
+    </Resources>
+  </Cost>
+  <Decay>
+    <DelayTime>0.0</DelayTime>
+    <SinkRate>3.0</SinkRate>
+    <SinkAccel>9.8</SinkAccel>
+  </Decay>
+  <Footprint>
+    <Circle radius="12.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>mace</Civ>
+    <GenericName>Army of Alexander the Great.</GenericName>
+    <SpecificName>Army of Alexander the Great</SpecificName>
+    <Tooltip>This is what an army would look like on the Strat Map.</Tooltip>
+    <Icon>units/hele_hero_alexander.png</Icon>
+  </Identity>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>12.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+  </UnitMotion>
+  <Vision>
+    <Range>60</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>campaigns/units/army_mace_hero_alexander.xml</Actor>
+  </VisualActor>
+</Entity>

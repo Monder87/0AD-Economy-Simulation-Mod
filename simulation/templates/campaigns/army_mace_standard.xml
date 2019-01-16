@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <MaxRange>7.0</MaxRange>
+    </Melee>
+  </Attack>
+  <Decay>
+    <DelayTime>0.0</DelayTime>
+    <SinkRate>3.0</SinkRate>
+    <SinkAccel>9.8</SinkAccel>
+  </Decay>
+  <Footprint>
+    <Circle radius="8.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>mace</Civ>
+    <GenericName>Army of Macedonia</GenericName>
+    <SpecificName>Army of Macedon</SpecificName>
+    <Tooltip>This is what an army would look like on the Strat Map.</Tooltip>
+    <Icon>units/hele_hero_demetrius.png</Icon>
+  </Identity>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>12.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+  </UnitMotion>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>campaigns/units/army_mace_soldier.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>props/shield/pelta_a_b.dae</mesh>
+    </variant>
+  </group>
+
+  <group>
+    <variant frequency="1" name="back-i">
+      <textures><texture file="props/shield/hele_pelta_i.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="back-d">
+      <textures><texture file="props/shield/hele_pelta_d.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+
+</actor>

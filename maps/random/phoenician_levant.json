@@ -1,0 +1,9 @@
+{
+	"settings" : {
+		"Name" : "Phoenician Levant",
+		"Script" : "phoenician_levant.js",
+		"Description" : "Players start in the eastern part of the map while a great sea is located to the west.",
+		"Preview" : "phoenician_levant.png",
+		"CircularMap" : false
+	}
+}

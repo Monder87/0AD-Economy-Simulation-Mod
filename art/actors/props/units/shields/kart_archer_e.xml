@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="base">
+      <mesh>props/shield/archer_front.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/round_archer_back.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Shield-Leather-Palm">
+      <textures><texture file="props/shield/kart_leather_a.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="Shield-Leather-B">
+      <textures><texture file="props/shield/kart_leather_b.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="Shield-Leather-C">
+      <textures><texture file="props/shield/kart_leather_c.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="Shield-Leather-Tant">
+      <textures><texture file="props/shield/kart_leather_d.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="Shield-Leather-E">
+      <textures><texture file="props/shield/kart_leather_e.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

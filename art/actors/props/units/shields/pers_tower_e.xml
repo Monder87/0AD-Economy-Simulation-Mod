@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Mesh">
+      <mesh>props/shield/spara_a_f.dae</mesh>
+      <props>
+        <prop actor="props/units/shields/pers_tower_back.xml" attachpoint="back"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="spara-texture-a">
+      <textures><texture file="props/shield/pers_rect_a.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="spara-texture-g">
+      <textures><texture file="props/shield/pers_rect_g.png" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

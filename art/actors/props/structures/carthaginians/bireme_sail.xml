@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>props/kart_bireme_sail.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Tree">
+      <textures>
+        <texture file="props/kart_sail_1.dds" name="baseTex"/>
+        <texture file="props/sail_norm_1.png" name="normTex"/>
+        <texture file="props/sail_spec_1.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="tanit">
+      <textures>
+        <texture file="props/kart_sail_2.dds" name="baseTex"/>
+        <texture file="props/sail_norm_1.png" name="normTex"/>
+        <texture file="props/sail_spec_1.png" name="specTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="other">
+      <textures>
+        <texture file="props/kart_sail_3.dds" name="baseTex"/>
+        <texture file="props/sail_norm_1.png" name="normTex"/>
+        <texture file="props/sail_spec_1.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_parallax_spec.xml</material>
+</actor>

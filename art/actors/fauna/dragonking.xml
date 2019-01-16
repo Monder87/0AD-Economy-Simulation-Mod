@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Mesh">
+      <mesh>skeletal/dragonking.dae</mesh>
+
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="fur-brown">
+      <textures><texture file="skeletal/animal_wolf.png" name="baseTex"/></textures>
+    </variant>
+  </group>
+  
+  <material>basic_trans.xml</material>
+</actor>
