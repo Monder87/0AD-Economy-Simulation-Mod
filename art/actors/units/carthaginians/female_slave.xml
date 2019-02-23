@@ -12,7 +12,7 @@
     <variant frequency="1" name="Peplos-DarkBrown">
       <mesh>skeletal/new/f_naked.dae</mesh>
       <textures>
-        <texture file="skeletal/kart_fem_01.dds" name="baseTex"/>
+        <texture file="skeletal/slave.png" name="baseTex"/>
       </textures>
     </variant>
   </group>

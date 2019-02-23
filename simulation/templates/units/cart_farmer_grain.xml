@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_farmer">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/cart_super_dock
+      structures/cart_embassy_celtic
+      structures/cart_embassy_iberian
+      structures/cart_embassy_italiote
+    </Entities>
+  </Builder>
+
+
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Slave</SpecificName>
+    <GenericName>Farmer</GenericName>
+    <SpecificName>Grain Farmer</SpecificName>
+    <Icon>units/cart_support_female_citizen.png</Icon>
+    <SelectionGroupName>units/cart_support_female_citizen</SelectionGroupName>
+  </Identity>
+
+  <VisualActor>
+    <Actor>units/carthaginians/farmer_grain.xml</Actor>
+  </VisualActor>
+</Entity>
