@@ -1,7 +1,0 @@
-STOA
-- A special structure for Greek factions.
-
-- Trains Heavy Skirmishers and Sword Infantry Champions.
-
-- Grants +10 Population.
-
