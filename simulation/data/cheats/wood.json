@@ -1,9 +1,0 @@
-{
-	"Name": "bring me my axe",
-	"Data": {
-		"Action": "addresource",
-		"Type": "wood",
-		"DefaultParameter": 1000,
-		"isNumeric": true
-	}
-}

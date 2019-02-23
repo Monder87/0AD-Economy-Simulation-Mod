@@ -1,5 +1,0 @@
-<variant name="promotion">
-  <animations>
-    <animation file="biped/rider/cavalry/promotion.dae" name="promotion" speed="120"/>
-  </animations>
-</variant>

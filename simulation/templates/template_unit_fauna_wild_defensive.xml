@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_fauna_wild">
-  <Loot>
-    <xp>15</xp>
-  </Loot>
-  <UnitAI>
-    <NaturalBehaviour>defensive</NaturalBehaviour>
-  </UnitAI>
-</Entity>

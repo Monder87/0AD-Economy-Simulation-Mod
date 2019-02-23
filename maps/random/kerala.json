@@ -1,9 +1,0 @@
-{
-	"settings" : {
-		"Name" : "Kerala",
-		"Script" : "kerala.js",
-		"Description" : "Players start in the southwestern shores of India between a sea and mountains.",
-		"Preview" : "kerala.png",
-		"CircularMap" : true
-	}
-}
