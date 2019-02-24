@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object name="unitSlavePanel"
 	type="image"
-
-	size="10 -112 100% 100%"
+	size="10 -20 100% 100%"
 	tooltip_style="sessionToolTip">
+
 	<object name="tabButton"
 		size="-8 0 86 26"
 		type="button"
@@ -12,6 +12,7 @@
 		text_valign="center"
 	>
 	<translatableAttribute id="caption">Slave</translatableAttribute>
+	<action on="Press">toggleSlave();</action>
 	</object>
 
 	<object name="panelContainer"

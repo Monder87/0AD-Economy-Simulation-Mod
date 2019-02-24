@@ -309,7 +309,7 @@
 	</sprite>
 
 	<sprite name="panelContainer">
-		<image texture="session/panel_right.png"
+		<image texture="session/panel_slave_container.png"
 			real_texture_placement="0 0 398 170"
 			texture_size="0 0 100% 100%"
 			size="4 4 100%-4 100%-4"
