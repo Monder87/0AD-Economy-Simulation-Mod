@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Economy Entities Right Panels -->
+
+<object name="economyRightPanel"
+	type="image"
+	size="10 -20 100% 100%"
+	tooltip_style="sessionToolTip">
+
+<!-- Command Panel -->
+
+	<object name="tabButtonCommand"
+		size="-8 0 86 26"
+		type="button"
+		sprite="tabButtonSprite"
+		style="ModernLabelText"
+		text_valign="center"
+	>
+	<translatableAttribute id="caption">Command</translatableAttribute>
+	<action on="Press">openCommand();</action>
+	</object>
+
+	<object name="panelContainerCommand"
+		size="-11 22 100% 100%"
+		type="image"
+		sprite="panelContainerCommand"
+	/>
+
+	<!-- Consume Panel -->
+
+		<object name="tabButtonConsume"
+			size="86 0 180 26"
+			type="button"
+			sprite="tabButtonSprite"
+			style="ModernLabelText"
+			text_valign="center"
+		>
+		<translatableAttribute id="caption">Consume</translatableAttribute>
+		<action on="Press">openConsume();</action>
+		</object>
+
+		<object name="panelContainerConsume"
+			size="-11 22 100% 100%"
+			type="image"
+			sprite="panelContainerConsume"
+		/>
+
+		<!-- Produce Panel -->
+
+			<object name="tabButtonProduce"
+				size="180 0 274 26"
+				type="button"
+				sprite="tabButtonSprite"
+				style="ModernLabelText"
+				text_valign="center"
+			>
+			<translatableAttribute id="caption">Produce</translatableAttribute>
+			<action on="Press">openProduce();</action>
+			</object>
+
+			<object name="panelContainerProduce"
+				size="-11 22 100% 100%"
+				type="image"
+				sprite="panelContainerProduce"
+			/>
+	<!-- Command Panel -->
+
+</object>
