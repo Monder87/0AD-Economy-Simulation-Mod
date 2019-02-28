@@ -48,7 +48,56 @@
     <VisibleClasses datatype="tokens">Grain Farmer</VisibleClasses>
     <Formations disable=""/>
   </Identity>
-  
+  <EntityFinance>
+    <WalletCapacities>
+      1000
+    </WalletCapacities>
+    <EarningRate>1.0</EarningRate>
+  </EntityFinance>
+  <EntityConsumer>
+    <ProductCapacities>
+      <sausage>100</sausage>
+      <bread>100</bread>
+      <steak>10</steak>
+      <wine>10</wine>
+      <clothes>30</clothes>
+      <entertainment>3</entertainment>
+      <jewelry>0</jewelry>
+      <slave>0</slave>
+    </ProductCapacities>
+    <ConsumingRate>
+      <sausage>5</sausage>
+      <bread>6</bread>
+      <steak>0.1</steak>
+      <wine>1</wine>
+      <clothes>0.3</clothes>
+      <entertainment>0.05</entertainment>
+      <jewelry>0</jewelry>
+      <slave>0</slave>
+    </ConsumingRate>
+  </EntityConsumer>
+  <EntityProducer>
+    <ProductCapacities>
+      <sausage>100</sausage>
+      <bread>100</bread>
+      <steak>10</steak>
+      <wine>10</wine>
+      <clothes>10</clothes>
+      <entertainment>5</entertainment>
+      <jewelry>0</jewelry>
+      <slave>0</slave>
+    </ProductCapacities>
+    <ProducingRate>
+      <sausage>0.5</sausage>
+      <bread>1</bread>
+      <steak>0.1</steak>
+      <wine>1</wine>
+      <clothes>0.3</clothes>
+      <entertainment>0.05</entertainment>
+      <jewelry>0</jewelry>
+      <slave>0</slave>
+    </ProducingRate>
+  </EntityProducer>
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>

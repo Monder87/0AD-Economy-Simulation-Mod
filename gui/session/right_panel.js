@@ -13,19 +13,32 @@
 //}
 
 function openCommand() {
-  Engine.GetGUIObjectByName("panelContainerCommand").hidden = false;
-  Engine.GetGUIObjectByName("panelContainerConsume").hidden = true;
-  Engine.GetGUIObjectByName("panelContainerProduce").hidden = true;
+  Engine.GetGUIObjectByName("unitCommandvvPanel").hidden = false;
+  Engine.GetGUIObjectByName("unitConsumePanel").hidden = true;
+  Engine.GetGUIObjectByName("unitProducePanel").hidden = true;
+  Engine.GetGUIObjectByName("unitConstructionPanel").hidden = true;
+  Engine.GuiInterfaceCall("RightPanelFocused", "Command");
 }
 
 function openConsume() {
-  Engine.GetGUIObjectByName("panelContainerCommand").hidden = true;
-  Engine.GetGUIObjectByName("panelContainerConsume").hidden = false;
-  Engine.GetGUIObjectByName("panelContainerProduce").hidden = true;
+  Engine.GetGUIObjectByName("unitCommandvvPanel").hidden = true;
+  Engine.GetGUIObjectByName("unitConsumePanel").hidden = false;
+  Engine.GetGUIObjectByName("unitProducePanel").hidden = true;
+  Engine.GetGUIObjectByName("unitConstructionPanel").hidden = true;
+  Engine.GuiInterfaceCall("RightPanelFocused", "Consume");
 }
 
 function openProduce() {
-  Engine.GetGUIObjectByName("panelContainerCommand").hidden = true;
-  Engine.GetGUIObjectByName("panelContainerConsume").hidden = true;
-  Engine.GetGUIObjectByName("panelContainerProduce").hidden = false;
+  Engine.GetGUIObjectByName("unitCommandvvPanel").hidden = true;
+  Engine.GetGUIObjectByName("unitConsumePanel").hidden = true;
+  Engine.GetGUIObjectByName("unitProducePanel").hidden = false;
+  Engine.GetGUIObjectByName("unitConstructionPanel").hidden = true;
+  Engine.GuiInterfaceCall("RightPanelFocused", "Produce");
+}
+function openConstruction() {
+  Engine.GetGUIObjectByName("unitCommandvvPanel").hidden = true;
+  Engine.GetGUIObjectByName("unitConsumePanel").hidden = true;
+  Engine.GetGUIObjectByName("unitProducePanel").hidden = true;
+  Engine.GetGUIObjectByName("unitConstructionPanel").hidden = false;
+  Engine.GuiInterfaceCall("RightPanelFocused", "Construction");
 }

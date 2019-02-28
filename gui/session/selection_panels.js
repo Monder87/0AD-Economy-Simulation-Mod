@@ -204,8 +204,18 @@ g_SelectionPanels.Construction = {
     return 24 - getNumberOfRightPanelButtons();
   },
   getItems: function() {
-    return getAllBuildableEntitiesFromSelection();
+    if (Engine.GuiInterfaceCall("RightPanelEnabled", "Construction")) {
+      return getAllBuildableEntitiesFromSelection();
+    } else {
+      return null;
+    }
   },
+  //hideItem: function(
+  //  i,
+  //  rowLength // Called when no item is found
+  //) {
+  //  Engine.GetGUIObjectByName("unitConstructionPanel").hidden = true;
+  //},
   setupButton: function(data) {
     let template = GetTemplateData(data.item);
     if (!template) return false;
@@ -269,6 +279,33 @@ g_SelectionPanels.Construction = {
     if (template.icon)
       data.icon.sprite =
         modifier + "stretched:session/portraits/" + template.icon;
+
+    setPanelObjectPosition(
+      data.button,
+      data.i + getNumberOfRightPanelButtons(),
+      data.rowLength
+    );
+    return true;
+  }
+};
+
+g_SelectionPanels.Consume = {
+  getMaxNumberOfItems: function() {
+    return 24 - getNumberOfRightPanelButtons();
+  },
+  getItems: function() {
+    if (Engine.GuiInterfaceCall("RightPanelEnabled", "Consume")) {
+      return getAllConsumingProductsFromSelection();
+    } else {
+      return null;
+    }
+  },
+  setupButton: function(data) {
+    data.button.onPress = function() {};
+
+    data.button.tooltip = "test";
+
+    data.button.enabled = controlsPlayer(data.player);
 
     setPanelObjectPosition(
       data.button,
@@ -1297,6 +1334,11 @@ let g_PanelsOrder = [
   "Training",
   "Construction",
   "Research", // Normal together with training
+
+  // === Economy Panels == \\
+  //"Command",
+  "Consume",
+  //"Produce"
 
   // UNIQUE PANES (importance doesn't matter)
   "Command",
