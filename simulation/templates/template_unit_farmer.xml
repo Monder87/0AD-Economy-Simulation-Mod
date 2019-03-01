@@ -49,10 +49,10 @@
         <Formations disable="" />
     </Identity>
     <!-- corners -->
-    <!--<EntityFinance>-->
-        <!--<WalletCapacities>1000</WalletCapacities>-->
-        <!--<EarningRate>1.0</EarningRate>-->
-    <!--</EntityFinance>-->
+    <EntityFinance>
+        <WalletCapacities>1000</WalletCapacities>
+        <EarningRate>1.0</EarningRate>
+    </EntityFinance>
     <EntityConsumer>
         <ProductCapacities>
             <sausage>100</sausage>

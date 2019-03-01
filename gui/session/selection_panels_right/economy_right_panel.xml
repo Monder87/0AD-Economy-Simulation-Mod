@@ -15,8 +15,28 @@
         <action on="Press">openConsume();</action>
     </object>
     <object name="unitConsumePanel" size="-11 22 100% 100%" >
+			  <!-- Consume Panel Background-->
 			  <object size="0 0 100% 100%" type="image" sprite="panelContainerConsume"/>
-        <object size="10 10 100% 100%">
+
+				<!-- Titles1 -->
+				<object name="title1" size="29% 6% 42% 15%"  type="button"  style="ModernLabelText" text_valign="center">
+		        <translatableAttribute id="caption">Products</translatableAttribute>
+		    </object>
+        <!-- Titles2 -->
+				<object name="title2" size="79% 6% 92% 15%"  type="button"  style="ModernLabelText" text_valign="center">
+		        <translatableAttribute id="caption">Happiness</translatableAttribute>
+		    </object>
+
+				<!-- Smile face-->
+				<object size="74% 17% 87% 49%" type="image" sprite="faceHappy"/>
+				<!-- Percent -->
+				<object name="happyPercent" size="84% 17% 97% 49%"  type="button"  style="ModernLabelText" text_valign="center">
+		        <translatableAttribute id="caption">75%</translatableAttribute>
+		    </object>
+
+
+				<!-- Buttons -->
+        <object size="10 32 100% 100%">
             <repeat count="24">
                 <object name="unitConsumeButton[n]" hidden="true" style="iconButton" type="button" size="0 0 46 46" tooltip_style="sessionToolTipBottom">
                     <object name="unitConsumeIcon[n]" type="image" ghost="true" size="3 3 43 43" />

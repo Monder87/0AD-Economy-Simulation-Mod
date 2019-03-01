@@ -1,0 +1,10 @@
+{
+  "code": "money",
+  "name": "Money",
+  "order": 5,
+  "subtypes": {
+    "well": "Well Money"
+  },
+  "truePrice": 50,
+  "aiAnalysisInfluenceGroup": "ignore"
+}
