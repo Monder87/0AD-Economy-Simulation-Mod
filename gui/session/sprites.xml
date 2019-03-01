@@ -258,6 +258,14 @@
 
 	<!-- Economy Entities Right Panel -->
 
+	<sprite name="wealthForeground">
+		<image backcolor="204	172	0"/>
+	</sprite>
+
+	<sprite name="wealthBackground">
+		<image backcolor="darkgray"/>
+	</sprite>
+
 	<sprite name="unitSlaveSprite">
 		<image texture="global/modern/background.png"
 			texture_size="0 0 100% 100%"
@@ -308,7 +316,7 @@
 
 	</sprite>
 
-
+  <!-- Command -->
 
 	<sprite name="panelContainerCommand">
 		<image texture="session/command_container.png"
@@ -317,6 +325,9 @@
 			size="4 4 100%-4 100%-4"
 		/>
 	</sprite>
+
+	<!-- Consume -->
+
 	<sprite name="panelContainerConsume">
 		<image texture="session/consume_container.png"
 			real_texture_placement="0 0 398 170"
@@ -324,6 +335,15 @@
 			size="4 4 100%-4 100%-4"
 		/>
 	</sprite>
+
+	<sprite name="faceHappy">
+		<image texture="session/happy.png"
+			size="4 4 100%-4 100%-4"
+		/>
+	</sprite>
+
+	<!-- Produce -->
+
 	<sprite name="panelContainerProduce">
 		<image texture="session/produce_container.png"
 			real_texture_placement="0 0 398 170"
@@ -331,6 +351,8 @@
 			size="4 4 100%-4 100%-4"
 		/>
 	</sprite>
+
+	<!-- end -->
 
 	<sprite name="unitCommandsPanel">
 
@@ -535,14 +557,6 @@
 
 	<sprite name="healthBackground">
 		<image backcolor="red"/>
-	</sprite>
-
-	<sprite name="wealthForeground">
-		<image backcolor="204	172	0"/>
-	</sprite>
-
-	<sprite name="wealthBackground">
-		<image backcolor="darkgray"/>
 	</sprite>
 
 	<sprite name="healthForeground">

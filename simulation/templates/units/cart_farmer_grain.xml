@@ -15,7 +15,7 @@
     <SpecificName>Slave</SpecificName>
     <GenericName>Farmer</GenericName>
     <SpecificName>Grain Farmer</SpecificName>
-    <Icon>units/cart_support_female_citizen.png</Icon>
+    <Icon>units/cart_grain_farmer.png</Icon>
     <SelectionGroupName>units/cart_support_female_citizen</SelectionGroupName>
   </Identity>
 

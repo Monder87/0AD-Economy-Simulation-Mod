@@ -77,9 +77,9 @@ g_SelectionPanels.Alert = {
 
 g_SelectionPanels.Barter = {
   getMaxNumberOfItems: function() {
-    return 4;
+    return 5;
   },
-  rowLength: 4,
+  rowLength: 5,
   conflictsWith: ["Garrison"],
   getItems: function(unitEntStates) {
     // If more than `rowLength` resources, don't display icons.
@@ -291,8 +291,9 @@ g_SelectionPanels.Construction = {
 
 g_SelectionPanels.Consume = {
   getMaxNumberOfItems: function() {
-    return 24 - getNumberOfRightPanelButtons();
+    return 18;
   },
+  rowLength: 6,
   getItems: function() {
     if (Engine.GuiInterfaceCall("RightPanelEnabled", "Consume")) {
       return getAllConsumingProductsFromSelection();
