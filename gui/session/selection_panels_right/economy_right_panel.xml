@@ -6,13 +6,16 @@
         <translatableAttribute id="caption">Command</translatableAttribute>
         <action on="Press">openCommand();</action>
     </object>
-    <object name="unitCommandvvPanel" size="-11 22 100% 100%" type="image" sprite="panelContainerCommand" />
+    <object name="unitCommandvvPanel" size="-11 22 100% 100%" >
+		<object size="0 0 100% 100%" type="image" sprite="panelContainerCommand"/>
+		</object>
     <!-- Consume Panel -->
     <object name="tabButtonConsume" size="86 0 180 26" type="button" sprite="tabButtonSprite" style="ModernLabelText" text_valign="center">
         <translatableAttribute id="caption">Consume</translatableAttribute>
         <action on="Press">openConsume();</action>
     </object>
-    <object name="unitConsumePanel" size="-11 22 100% 100%" type="image" sprite="panelContainerConsume">
+    <object name="unitConsumePanel" size="-11 22 100% 100%" >
+			  <object size="0 0 100% 100%" type="image" sprite="panelContainerConsume"/>
         <object size="10 10 100% 100%">
             <repeat count="24">
                 <object name="unitConsumeButton[n]" hidden="true" style="iconButton" type="button" size="0 0 46 46" tooltip_style="sessionToolTipBottom">
@@ -26,7 +29,11 @@
         <translatableAttribute id="caption">Produce</translatableAttribute>
         <action on="Press">openProduce();</action>
     </object>
-    <object name="unitProducePanel" size="-11 22 100% 100%" type="image" sprite="panelContainerProduce" />
+
+		<object name="unitProducePanel" size="-11 22 100% 100%" >
+		<object size="0 0 100% 100%" type="image" sprite="panelContainerProduce"/>
+		</object>
+
     <!-- Build Panel -->
 		<object name="tabButtonConstruction" size="274 0 370 26" type="button" sprite="tabButtonSprite" style="ModernLabelText" text_valign="center">
         <translatableAttribute id="caption">Build</translatableAttribute>
