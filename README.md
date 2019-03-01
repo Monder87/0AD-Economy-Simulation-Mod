@@ -1,18 +1,23 @@
 # 0AD-Economy-Simulation-Mod
+
+
+
 Create a Economy System for 0Ad to give more Realism and add Strategy to the Game.
 
 
-Goal 
+# Goal 
 
-Create a Economy System for 0Ad to give more Realism and add Strategy to the Game.
-
- 
+Create a Economy System for 0Ad to give more Realism and add Strategy to the Game. 
 
 3 Main Concepts of the Economy System :
 
  
-
-1 Economy Entities
+  - Economy Entities
+  - Money
+  - Products
+  
+  
+### 1) Economy Entities
 
 Dividing the Military Unit from the Civilian , we focus just in the latter for our Economy.
 
@@ -40,7 +45,7 @@ Nobles  instead they can own Slave and earn a percent for all the Lifecycles of 
 
 
 
-2) Money
+### 2) Money
 
 Of course all is about money, so the first thing i did is to create the Money Resource.
 
@@ -48,7 +53,7 @@ The Player represent the State in my Economy System, perceive a Tax for every tr
 
  
 
-3) Products
+### 3) Products
 
 So far i created 8 products that can be sold: 
 
@@ -65,3 +70,18 @@ bread, wine, steak, sausage
 - Slave
 
 Each Product has a price that change based on the Supply and Demand, they are being calculated by a PriceManager Component, which will calculate the demand and offer every tot amount of time, to give realism of the Economy Model.
+
+
+### Todos
+
+ - The software is still under heavy developement... i will need some time before finishing.
+ 
+ 
+
+License
+----
+
+MIT
+
+
+**Free Software, Hell Yeah!**
