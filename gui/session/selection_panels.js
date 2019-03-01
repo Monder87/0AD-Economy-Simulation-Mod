@@ -301,7 +301,9 @@ g_SelectionPanels.Consume = {
     }
   },
   setupButton: function(data) {
-    data.button.onPress = function() {};
+    data.button.onPress = function() {
+      error("ciao");
+    };
 
     data.button.tooltip = "test";
 
