@@ -360,6 +360,20 @@ g_SelectionPanels.Consume = {
     data.button.onPress = function() {
       error("i will go to buy!");
     };
+
+    // bars
+    let showStock = actualCarried;
+    //let stockSection = Engine.GetGUIObjectByName("stockSection");
+    //stockSection.hidden = !showStock;
+    let unitStockBar = data.bar;
+    let stockSize = unitStockBar.size;
+    if (showStock > 0) {
+      stockSize.rright = 100 * Math.max(0, Math.min(1, showStock / maxCap)); //entState.walletMaxCapacity));
+      unitStockBar.size = stockSize;
+    } else {
+      stockSize.rright = 0;
+      unitStockBar.size = stockSize;
+    }
     //
     setPanelObjectPosition(data.button, data.i, data.rowLength);
 
