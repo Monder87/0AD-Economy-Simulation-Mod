@@ -314,8 +314,10 @@ g_SelectionPanels.Consume = {
             g_AvailableStock2.set(type, state.entityConsumer.carring2[type]);
             g_AvailableStock3.set(type, state.entityConsumer.maxCapac[type]);
           }
+          return availableStock;
+        } else {
+          return null;
         }
-        return availableStock;
       }
     } else {
       return null;
