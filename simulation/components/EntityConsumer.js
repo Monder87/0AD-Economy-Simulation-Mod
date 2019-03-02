@@ -172,7 +172,9 @@ EntityConsumer.prototype.GetProductTypes = function() {
   for (let type in this.template.ProductCapacities) {
     if (this.template.ProductCapacities[type] != 0) {
       // we construct the productsCarring Object
-      obj.push(type);
+      let product = "products/cart_" + type;
+
+      obj.push(product);
     }
   }
   return obj;
