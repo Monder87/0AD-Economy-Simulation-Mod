@@ -263,7 +263,7 @@ Player.prototype.SetEarningRateMultiplier = function(value) {
 };
 
 Player.prototype.AddMoneyResource = function(amount) {
-  this.resourceCount["money"] += +amount;
+  this.resourceCount["money"] += amount;
 };
 ///----- END FINANCE ----- \\\
 
