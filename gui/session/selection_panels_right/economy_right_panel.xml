@@ -40,6 +40,15 @@
             <repeat count="24">
                 <object name="unitConsumeButton[n]" hidden="true" style="iconButton" type="button" size="0 0 46 46" tooltip_style="sessionToolTipBottom">
                     <object name="unitConsumeIcon[n]" type="image" ghost="true" size="3 3 43 43" />
+										<!-- Buttons Stock Bar name="stockSection" -->
+										<object >
+											<object size="3 45 95% 49"   type="image" tooltip_style="sessionToolTip">
+												<object type="image" sprite="barBorder" ghost="true" size="-1 -1 100%+1 100%+1"/>
+												<object type="image" sprite="healthBackground" ghost="true"/>
+												<object type="image" sprite="healthForeground" ghost="true" name="stockConsumeBar[n]"/>
+												<object type="image" sprite="statsBarShaderHorizontal" ghost="true"/>
+											</object>
+										</object>
                 </object>
             </repeat>
         </object>
