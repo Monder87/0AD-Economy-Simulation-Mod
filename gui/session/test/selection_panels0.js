@@ -30,7 +30,6 @@
 // Available formations per player
 let g_AvailableFormations = new Map();
 let g_FormationsInfo = new Map();
-let g_ProductsInfo = new Map();
 let g_AvailableStock = new Map();
 let g_AvailableStock2 = new Map();
 let g_AvailableStock3 = new Map();
@@ -209,18 +208,8 @@ g_SelectionPanels.Construction = {
     return 24 - getNumberOfRightPanelButtons();
   },
   getItems: function() {
-    if (Engine.GuiInterfaceCall("RightPanelEnabled", "Construction")) {
-      return getAllBuildableEntitiesFromSelection();
-    } else {
-      return null;
-    }
+    return getAllBuildableEntitiesFromSelection();
   },
-  //hideItem: function(
-  //  i,
-  //  rowLength // Called when no item is found
-  //) {
-  //  Engine.GetGUIObjectByName("unitConstructionPanel").hidden = true;
-  //},
   setupButton: function(data) {
     let template = GetTemplateData(data.item);
     if (!template) return false;
@@ -294,103 +283,6 @@ g_SelectionPanels.Construction = {
   }
 };
 
-g_SelectionPanels.Consume = {
-  getMaxNumberOfItems: function() {
-    return 18;
-  },
-  rowLength: 6,
-  getItems: function(unitEntStates) {
-    if (Engine.GuiInterfaceCall("RightPanelEnabled", "Consume")) {
-      //return getAllConsumingProductsFromSelection();
-      if (!g_AvailableStock.has(unitEntStates[0].player))
-        g_AvailableStock.set(
-          unitEntStates[0].player,
-          Engine.GuiInterfaceCall("GetAvailableStock", unitEntStates[0].player)
-        );
-      let availableStock = g_AvailableStock.get(unitEntStates[0].player);
-      for (let state of unitEntStates) {
-        if (state.entityConsumer) {
-          for (let type in state.entityConsumer.carring2) {
-            g_AvailableStock2.set(type, state.entityConsumer.carring2[type]);
-            g_AvailableStock3.set(type, state.entityConsumer.maxCapac[type]);
-          }
-        }
-        return availableStock;
-      }
-    } else {
-      return null;
-    }
-  },
-  setupButton: function(data) {
-    if (!g_StockInfo.has(data.item))
-      g_StockInfo.set(
-        data.item,
-        Engine.GuiInterfaceCall("GetStockInfoFromTemplate", {
-          templateName: data.item
-        })
-      );
-
-    let stockInfo = g_StockInfo.get(data.item);
-    let formationOk = false;
-    let actualCarried = 0;
-    let maxCap = 0;
-    let dataclean = data.item.replace("special/stock/", "");
-    function logMapElements(value, key, map) {
-      if (key == dataclean) {
-        //error(`m[${key}] = ${value}`);
-        formationOk = true;
-        actualCarried = value;
-        maxCap = g_AvailableStock3.get(key);
-      }
-    }
-    g_AvailableStock2.forEach(logMapElements);
-    let tooltip = translate(stockInfo.name);
-    //if (!formationOk && formationInfo.tooltip)
-    //  tooltip += "\n" + coloredText(translate(formationInfo.tooltip), "red");
-    data.button.tooltip = tooltip + " " + actualCarried + " / " + maxCap;
-
-    data.button.enabled = formationOk && controlsPlayer(data.player);
-    let grayscale = formationOk ? "" : "grayscale:";
-    //let grayscale = "";
-    //data.guiSelection.hidden = !formationSelected;
-    data.totAmount = 10;
-    data.icon.sprite =
-      "stretched:" + grayscale + "session/icons/" + stockInfo.icon;
-
-    data.button.onPress = function() {
-      error("i will go to buy!");
-    };
-    //
-    setPanelObjectPosition(data.button, data.i, data.rowLength);
-
-    return true;
-
-    /*=========*/
-    /*
-
-
-    let template = GetTemplateData(data.item);
-    error(template.icon);
-
-    data.button.onPress = function() {
-      error("ciao");
-    };
-
-    data.button.tooltip = "ciao";
-
-
-    data.button.enabled = controlsPlayer(data.player);
-
-    setPanelObjectPosition(
-      data.button,
-      data.i + getNumberOfRightPanelButtons(),
-      data.rowLength
-    );
-    return true;
-    */
-  }
-};
-
 g_SelectionPanels.Formation = {
   getMaxNumberOfItems: function() {
     return 16;
@@ -398,6 +290,10 @@ g_SelectionPanels.Formation = {
   rowLength: 4,
   conflictsWith: ["Garrison"],
   getItems: function(unitEntStates) {
+    //  for (let state in unitEntStates) {
+    //    error(state.player);
+    //  }
+    //error(unitEntStates[0].player);
     if (unitEntStates.some(state => !hasClass(state, "Unit"))) return [];
 
     if (!g_AvailableFormations.has(unitEntStates[0].player))
@@ -424,7 +320,6 @@ g_SelectionPanels.Formation = {
     return [];
   },
   setupButton: function(data) {
-    //error(data.item);
     if (!g_FormationsInfo.has(data.item))
       g_FormationsInfo.set(
         data.item,
@@ -434,7 +329,7 @@ g_SelectionPanels.Formation = {
       );
 
     let formationInfo = g_FormationsInfo.get(data.item);
-    //error(formationInfo.icon);
+
     let formationOk = canMoveSelectionIntoFormation(data.item);
     let unitIds = data.unitEntStates.map(state => state.id);
     let formationSelected = Engine.GuiInterfaceCall("IsFormationSelected", {
@@ -454,9 +349,89 @@ g_SelectionPanels.Formation = {
     data.button.enabled = formationOk && controlsPlayer(data.player);
     let grayscale = formationOk ? "" : "grayscale:";
     data.guiSelection.hidden = !formationSelected;
+
     data.icon.sprite =
       "stretched:" + grayscale + "session/icons/" + formationInfo.icon;
 
+    setPanelObjectPosition(data.button, data.i, data.rowLength);
+    return true;
+  }
+};
+
+g_SelectionPanels.Stock = {
+  getMaxNumberOfItems: function() {
+    return 8;
+  },
+  rowLength: 4,
+  conflictsWith: ["Formation"],
+  getItems: function(unitEntStates) {
+    if (!g_AvailableStock.has(unitEntStates[0].player))
+      g_AvailableStock.set(
+        unitEntStates[0].player,
+        Engine.GuiInterfaceCall("GetAvailableStock", unitEntStates[0].player)
+      );
+    let availableStock = g_AvailableStock.get(unitEntStates[0].player);
+    for (let state of unitEntStates) {
+      if (state.entityConsumer) {
+        for (let type in state.entityConsumer.carring2) {
+          g_AvailableStock2.set(type, state.entityConsumer.carring2[type]);
+          g_AvailableStock3.set(type, state.entityConsumer.maxCapac[type]);
+        }
+      }
+    }
+    return availableStock;
+  },
+  setupButton: function(data) {
+    //error(data.item);
+    if (!g_StockInfo.has(data.item))
+      g_StockInfo.set(
+        data.item,
+        Engine.GuiInterfaceCall("GetStockInfoFromTemplate", {
+          templateName: data.item
+        })
+      );
+
+    let stockInfo = g_StockInfo.get(data.item);
+    let formationOk = false;
+    let actualCarried = 0;
+    let maxCap = 0;
+    let dataclean = data.item.replace("special/stock/", "");
+    function logMapElements(value, key, map) {
+      if (key == dataclean) {
+        //error(`m[${key}] = ${value}`);
+        formationOk = true;
+        actualCarried = value;
+        maxCap = g_AvailableStock3.get(key);
+      }
+    }
+    g_AvailableStock2.forEach(logMapElements);
+
+    //let iterator = g_AvailableStock2.keys();
+
+    //canMoveSelectionIntoFormation(data.item);
+    //let unitIds = data.unitEntStates.map(state => state.id);
+    //let formationSelected = Engine.GuiInterfaceCall("IsFormationSelected", {
+    //  ents: unitIds,
+    //  formationTemplate: data.item
+    //});
+
+    //data.button.onPress = function() {
+    //  performFormation(unitIds, data.item);
+    //};
+
+    let tooltip = translate(stockInfo.name);
+    //if (!formationOk && formationInfo.tooltip)
+    //  tooltip += "\n" + coloredText(translate(formationInfo.tooltip), "red");
+    data.button.tooltip = tooltip + " " + actualCarried + " / " + maxCap;
+
+    data.button.enabled = formationOk && controlsPlayer(data.player);
+    let grayscale = formationOk ? "" : "grayscale:";
+    //let grayscale = "";
+    //data.guiSelection.hidden = !formationSelected;
+    data.totAmount = 10;
+    data.icon.sprite =
+      "stretched:" + grayscale + "session/icons/" + stockInfo.icon;
+    //
     setPanelObjectPosition(data.button, data.i, data.rowLength);
     return true;
   }
@@ -1402,6 +1377,7 @@ let g_PanelsOrder = [
   "Garrison", // More important than Formation, as you want to see the garrisoned units in ships
   "Alert",
   "Formation",
+  "Stock",
   "Stance", // Normal together with formation
 
   // RIGHT PANE
@@ -1411,11 +1387,6 @@ let g_PanelsOrder = [
   "Training",
   "Construction",
   "Research", // Normal together with training
-
-  // === Economy Panels == \\
-  //"Command",
-  "Consume",
-  //"Produce"
 
   // UNIQUE PANES (importance doesn't matter)
   "Command",

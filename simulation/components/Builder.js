@@ -46,6 +46,7 @@ Builder.prototype.GetEntitiesList = function() {
       for (var i = entities.length - 1; i >= 0; --i)
         if (disabledEntities[entities[i]]) entities.splice(i, 1);
     }
+    //error(entities);
     return entities;
   }
 };
