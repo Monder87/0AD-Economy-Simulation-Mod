@@ -124,7 +124,7 @@ StatusBars.prototype.AddBar = function(
   // Size of health bar (in world-space units)
   let width = +this.template.BarWidth;
   let height = +this.template.BarHeight;
-
+  error("ciao");
   // World-space offset from the unit's position
   let offset = { x: 0, y: +this.template.HeightOffset, z: 0 };
 

@@ -38,6 +38,7 @@ let g_StockInfo = new Map();
 // used for the happiness calculation
 let totProducts = null;
 let g_productStockLeveles = [];
+let entity = null;
 
 let g_SelectionPanels = {};
 
@@ -303,6 +304,7 @@ g_SelectionPanels.Consume = {
   },
   rowLength: 6,
   getItems: function(unitEntStates) {
+    entity = unitEntStates;
     if (Engine.GuiInterfaceCall("RightPanelEnabled", "Consume")) {
       //return getAllConsumingProductsFromSelection();
       if (!g_AvailableStock.has(unitEntStates[0].player))
@@ -419,6 +421,13 @@ g_SelectionPanels.Consume = {
       } else if (happiness > 0 && happiness <= 0.2) {
         face.sprite = "faceHappy2";
       }
+      for (let state of entity) {
+        if (state.entityConsumer) {
+          //error(state.entityConsumer.ent);
+          Engine.GuiInterfaceCall("AddHappinessUnit", state.entityConsumer.ent);
+        }
+      }
+      //
     }
 
     setPanelObjectPosition(data.button, data.i, data.rowLength);
