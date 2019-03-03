@@ -85,6 +85,7 @@ function setupUnitPanel(guiName, unitEntStates, playerState) {
       button: Engine.GetGUIObjectByName("unit" + guiName + "Button[" + i + "]"),
       icon: Engine.GetGUIObjectByName("unit" + guiName + "Icon[" + i + "]"),
       bar: Engine.GetGUIObjectByName("stock" + guiName + "Bar[" + i + "]"),
+
       guiSelection: Engine.GetGUIObjectByName(
         "unit" + guiName + "Selection[" + i + "]"
       ),

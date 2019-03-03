@@ -337,7 +337,27 @@
 	</sprite>
 
 	<sprite name="faceHappy">
-		<image texture="session/happy.png"
+		<image texture="session/icons/happy.png"
+			size="4 4 100%-4 100%-4"
+		/>
+	</sprite>
+	<sprite name="faceHappy8">
+		<image texture="session/icons/happy8.png"
+			size="4 4 100%-4 100%-4"
+		/>
+	</sprite>
+	<sprite name="faceHappy6">
+		<image texture="session/icons/happy6.png"
+			size="4 4 100%-4 100%-4"
+		/>
+	</sprite>
+	<sprite name="faceHappy4">
+		<image texture="session/icons/happy4.png"
+			size="4 4 100%-4 100%-4"
+		/>
+	</sprite>
+	<sprite name="faceHappy2">
+		<image texture="session/icons/happy2.png"
 			size="4 4 100%-4 100%-4"
 		/>
 	</sprite>

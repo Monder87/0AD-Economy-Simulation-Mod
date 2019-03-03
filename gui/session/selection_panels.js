@@ -35,6 +35,9 @@ let g_AvailableStock = new Map();
 let g_AvailableStock2 = new Map();
 let g_AvailableStock3 = new Map();
 let g_StockInfo = new Map();
+// used for the happiness calculation
+let totProducts = null;
+let g_productStockLeveles = [];
 
 let g_SelectionPanels = {};
 
@@ -314,6 +317,16 @@ g_SelectionPanels.Consume = {
             g_AvailableStock2.set(type, state.entityConsumer.carring2[type]);
             g_AvailableStock3.set(type, state.entityConsumer.maxCapac[type]);
           }
+          // we use this for happiness calculation
+          totProducts = availableStock.length;
+          g_productStockLeveles = [];
+          // we create an array with N zeros, where we will store all stock levels amount
+          /*for (var i = 0; i < totProducts; i++) {
+            g_productStockLeveles.pop();
+          }
+          for (var i = 0; i < totProducts; i++) {
+            g_productStockLeveles.push(0);
+          }*/
           return availableStock;
         } else {
           return null;
@@ -333,14 +346,13 @@ g_SelectionPanels.Consume = {
       );
 
     let stockInfo = g_StockInfo.get(data.item);
-    let formationOk = false;
+    let productActive = false;
     let actualCarried = 0;
     let maxCap = 0;
     let dataclean = data.item.replace("special/stock/", "");
     function logMapElements(value, key, map) {
       if (key == dataclean) {
-        //error(`m[${key}] = ${value}`);
-        formationOk = true;
+        productActive = true;
         actualCarried = value;
         maxCap = g_AvailableStock3.get(key);
       }
@@ -351,8 +363,8 @@ g_SelectionPanels.Consume = {
     //  tooltip += "\n" + coloredText(translate(formationInfo.tooltip), "red");
     data.button.tooltip = tooltip + " " + actualCarried + " / " + maxCap;
 
-    data.button.enabled = formationOk && controlsPlayer(data.player);
-    let grayscale = formationOk ? "" : "grayscale:";
+    data.button.enabled = productActive && controlsPlayer(data.player);
+    let grayscale = productActive ? "" : "grayscale:";
     //let grayscale = "";
     //data.guiSelection.hidden = !formationSelected;
     data.totAmount = 10;
@@ -363,10 +375,8 @@ g_SelectionPanels.Consume = {
       error("i will go to buy!");
     };
 
-    // bars
+    // stock  bars
     let showStock = actualCarried;
-    //let stockSection = Engine.GetGUIObjectByName("stockSection");
-    //stockSection.hidden = !showStock;
     let unitStockBar = data.bar;
     let stockSize = unitStockBar.size;
     if (showStock > 0) {
@@ -376,7 +386,41 @@ g_SelectionPanels.Consume = {
       stockSize.rright = 0;
       unitStockBar.size = stockSize;
     }
-    //
+
+    // Happiness Level
+
+    let happiness = 0;
+
+    if (productActive) {
+      g_productStockLeveles.push(stockSize.rright);
+    } else {
+      totProducts -= 1;
+    }
+    if (g_productStockLeveles.length == totProducts) {
+      //error(g_productStockLeveles);
+      let sum = g_productStockLeveles.reduce(
+        (previous, current) => (current += previous)
+      );
+      happiness = sum / g_productStockLeveles.length / 100;
+      happiness = Math.floor(happiness * 100) / 100;
+      Engine.GetGUIObjectByName("happyPercent").caption = sprintf(
+        translate(`${happiness}/1`)
+      );
+
+      let face = Engine.GetGUIObjectByName("faceIcon");
+      if (happiness > 0.8) {
+        face.sprite = "faceHappy";
+      } else if (happiness > 0.6 && happiness <= 0.8) {
+        face.sprite = "faceHappy8";
+      } else if (happiness > 0.4 && happiness <= 0.6) {
+        face.sprite = "faceHappy6";
+      } else if (happiness > 0.2 && happiness <= 0.4) {
+        face.sprite = "faceHappy4";
+      } else if (happiness > 0 && happiness <= 0.2) {
+        face.sprite = "faceHappy2";
+      }
+    }
+
     setPanelObjectPosition(data.button, data.i, data.rowLength);
 
     return true;
