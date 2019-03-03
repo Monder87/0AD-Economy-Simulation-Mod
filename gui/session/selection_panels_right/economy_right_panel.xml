@@ -28,9 +28,9 @@
 		    </object>
 
 				<!-- Smile face-->
-				<object size="74% 17% 87% 49%" type="image" sprite="faceHappy"/>
+				<object name="faceIcon" size="74% 17% 87% 49%" type="image" />
 				<!-- Percent -->
-				<object name="happyPercent" size="84% 17% 97% 49%"  type="button"  style="ModernLabelText" text_valign="center">
+				<object name="happyPercent" size="88% 17% 97% 49%"  type="button"  style="ModernLabelText" text_valign="center">
 		        <translatableAttribute id="caption">75%</translatableAttribute>
 		    </object>
 
