@@ -9,6 +9,7 @@ Timer.prototype.Init = function() {
   this.turnLength = 0;
   this.day = 0;
   this.lastTimeSec = 0;
+  this.happinessUpdate = 0;
 };
 
 /**
@@ -16,6 +17,7 @@ Timer.prototype.Init = function() {
  */
 Timer.prototype.GetTime = function() {
   this.GetDay();
+  this.UpdateTimeEntityHappiness();
   return this.time;
 };
 
@@ -32,6 +34,14 @@ Timer.prototype.GetDay = function() {
   return this.day;
 };
 
+Timer.prototype.UpdateTimeEntityHappiness = function() {
+  let timeInSec = this.time / 1000;
+  let updateInSec = 1;
+
+  if (timeInSec % updateInSec == 0) {
+    Engine.BroadcastMessage(MT_TimerEntityHappinessUpdate, null);
+  }
+};
 /**
  * Returns the duration of the latest turn in milliseconds.
  */

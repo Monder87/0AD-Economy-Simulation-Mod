@@ -317,6 +317,7 @@ g_SelectionPanels.Consume = {
         if (state.entityConsumer) {
           for (let type in state.entityConsumer.carring2) {
             g_AvailableStock2.set(type, state.entityConsumer.carring2[type]);
+
             g_AvailableStock3.set(type, state.entityConsumer.maxCapac[type]);
           }
           // we use this for happiness calculation
@@ -364,7 +365,6 @@ g_SelectionPanels.Consume = {
     //if (!formationOk && formationInfo.tooltip)
     //  tooltip += "\n" + coloredText(translate(formationInfo.tooltip), "red");
     data.button.tooltip = tooltip + " " + actualCarried + " / " + maxCap;
-
     data.button.enabled = productActive && controlsPlayer(data.player);
     let grayscale = productActive ? "" : "grayscale:";
     //let grayscale = "";
@@ -410,23 +410,32 @@ g_SelectionPanels.Consume = {
       );
 
       let face = Engine.GetGUIObjectByName("faceIcon");
+      let iconName = "happy";
       if (happiness > 0.8) {
         face.sprite = "faceHappy";
+        iconName = "happy";
       } else if (happiness > 0.6 && happiness <= 0.8) {
         face.sprite = "faceHappy8";
+        iconName = "happy8";
       } else if (happiness > 0.4 && happiness <= 0.6) {
         face.sprite = "faceHappy6";
+        iconName = "happy6";
       } else if (happiness > 0.2 && happiness <= 0.4) {
         face.sprite = "faceHappy4";
+        iconName = "happy4";
       } else if (happiness > 0 && happiness <= 0.2) {
         face.sprite = "faceHappy2";
+        iconName = "happy2";
       }
-      for (let state of entity) {
-        if (state.entityConsumer) {
-          //error(state.entityConsumer.ent);
-          Engine.GuiInterfaceCall("AddHappinessUnit", state.entityConsumer.ent);
-        }
-      }
+      //for (let state of entity) {
+      //  if (state.entityConsumer) {
+      //    //error(state.entityConsumer.ent);
+      //    Engine.GuiInterfaceCall("AddHappinessUnit", {
+      //      ent: state.entityConsumer.ent,
+      //      value: iconName
+      //    });
+      //  }
+      //}
       //
     }
 
