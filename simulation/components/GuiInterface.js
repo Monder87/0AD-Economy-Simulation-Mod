@@ -892,27 +892,10 @@ GuiInterface.prototype.GetAvailableStock = function(ent) {
   ];
 };
 
-GuiInterface.prototype.AddHappinessUnit = function(player, ent) {
-  //error(ent);
-  const g_NaturalColor = "255 255 255 255";
-  let cmpOverlayRenderer = Engine.QueryInterface(ent, IID_OverlayRenderer);
-  cmpOverlayRenderer.Reset();
-  let width = 1;
-  let height = 1;
-  let offset = { x: 0, y: 5, z: 0 };
-  let yoffset = 0.1;
-  cmpOverlayRenderer.AddSprite(
-    "art/textures/ui/session/icons/happy.png",
-    { x: -width / 2, y: yoffset },
-    { x: width / 2, y: height + yoffset },
-    offset,
-
-    //  "art/textures/ui/session/icons/happy.png",
-    //  { x: -3 / 2, y: yoffset },
-    //  { x: -3 / 2, y: -3 + yoffset },
-    //  { x: 3, y: 10, z: 0 },
-    g_NaturalColor
-  );
+GuiInterface.prototype.AddHappinessUnit = function(player, data) {
+  let cmpEntityHappiness = QueryMiragedInterface(data.ent, IID_EntityHappiness);
+  error(data.value);
+  cmpEntityHappiness.RecordValue(data.value);
 };
 
 // === Economy Functions End == \\

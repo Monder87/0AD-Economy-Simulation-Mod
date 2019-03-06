@@ -49,6 +49,11 @@
         <Formations disable="" />
     </Identity>
     <!-- corners -->
+
+
+    <EntityHappiness>
+        <HappinessIcon>1</HappinessIcon>
+    </EntityHappiness>
     <EntityFinance>
         <WalletCapacities>1000</WalletCapacities>
         <EarningRate>1.0</EarningRate>

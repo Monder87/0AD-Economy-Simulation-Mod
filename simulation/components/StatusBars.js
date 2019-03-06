@@ -27,12 +27,19 @@ StatusBars.prototype.Sprites = [
   "HealthBar",
   "WalletBar",
   "AuraIcons",
-  "RankIcon"
+  "RankIcon",
+  "HappyIcon"
 ];
 
 StatusBars.prototype.Init = function() {
   this.enabled = false;
   this.showRank = false;
+
+  let cmpEntityHappiness = Engine.QueryInterface(
+    this.entity,
+    IID_EntityHappiness
+  );
+  this.happinessIcon = cmpEntityHappiness.GetIconName();
 
   // Whether the status bars used the player colors anywhere (e.g. in the capture bar)
   this.usedPlayerColors = false;
@@ -83,6 +90,10 @@ StatusBars.prototype.OnEntityFinanceChanged = function(msg) {
   if (this.enabled) this.RegenerateSprites();
 };
 
+StatusBars.prototype.OnEntityHappinessValueChanged = function(msg) {
+  if (this.enabled) this.RegenerateSprites();
+};
+
 StatusBars.prototype.OnCapturePointsChanged = function(msg) {
   if (this.enabled) this.RegenerateSprites();
 };
@@ -124,7 +135,7 @@ StatusBars.prototype.AddBar = function(
   // Size of health bar (in world-space units)
   let width = +this.template.BarWidth;
   let height = +this.template.BarHeight;
-  error("ciao");
+
   // World-space offset from the unit's position
   let offset = { x: 0, y: +this.template.HeightOffset, z: 0 };
 
@@ -188,6 +199,30 @@ StatusBars.prototype.AddWalletBar = function(cmpOverlayRenderer, yoffset) {
     yoffset,
     "wallet",
     cmpWallet.GetFinancialStatus().balance / cmpWallet.GetWalletCapacity()
+  );
+};
+
+StatusBars.prototype.AddHappyIcon = function(cmpOverlayRenderer, yoffset) {
+  if (!this.enabled) return 0;
+
+  let cmpEntityHappiness = QueryMiragedInterface(
+    this.entity,
+    IID_EntityHappiness
+  );
+  this.happinessIcon = cmpEntityHappiness.GetIconName();
+
+  let width = 1;
+  let height = 1;
+  let offset = { x: 0, y: 5, z: 0 };
+  yoffset = 1;
+  //this.happinessIcon
+  cmpOverlayRenderer.AddSprite(
+    `art/textures/ui/session/icons/${this.happinessIcon}.png`,
+    //"art/textures/ui/session/icons/happy.png",
+    { x: -width / 2, y: yoffset },
+    { x: width / 2, y: height + yoffset },
+    offset,
+    g_NaturalColor
   );
 };
 

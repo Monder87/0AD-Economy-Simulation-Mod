@@ -162,7 +162,7 @@ EntityConsumer.prototype.GetProductNeededTypes = function() {
   for (let type in this.template.ProductCapacities) {
     if (this.template.ProductCapacities[type] != 0) {
       // we construct the productsCarring Object
-      this.productsCarring[type] = 1;
+      this.productsCarring[type] = Math.floor(Math.random() * 10) + 0.1;
     }
   }
 };
