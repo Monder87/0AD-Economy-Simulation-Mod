@@ -33,7 +33,7 @@ Builder.prototype.GetEntitiesList = function() {
 
     // ---  Slave and Farmer Can build
 
-    if (cmpIdentity.HasClass("Slave") || cmpIdentity.HasClass("Farmer")) {
+    if (cmpIdentity.HasClass("Builder")) {
       //error("Schiava");
       if (cmpIdentity)
         string = string.replace(/\{civ\}/g, cmpIdentity.GetCiv());
@@ -46,6 +46,33 @@ Builder.prototype.GetEntitiesList = function() {
       for (var i = entities.length - 1; i >= 0; --i)
         if (disabledEntities[entities[i]]) entities.splice(i, 1);
     }
+    //error(entities);
+    return entities;
+  }
+};
+
+Builder.prototype.GetEntitiesListSpecial = function() {
+  var entities = [];
+  var string = this.template.Entities._string;
+  if (string) {
+    // Replace the "{civ}" codes with this entity's civ ID
+    var cmpIdentity = Engine.QueryInterface(this.entity, IID_Identity);
+
+    // we select who can build structures
+
+    // ---  Slave and Farmer Can build
+
+    //error("Schiava");
+    if (cmpIdentity) string = string.replace(/\{civ\}/g, cmpIdentity.GetCiv());
+    entities = string.split(/\s+/);
+
+    // Remove disabled entities
+    var cmpPlayer = QueryOwnerInterface(this.entity, IID_Player);
+    var disabledEntities = cmpPlayer.GetDisabledTemplates();
+
+    for (var i = entities.length - 1; i >= 0; --i)
+      if (disabledEntities[entities[i]]) entities.splice(i, 1);
+
     //error(entities);
     return entities;
   }

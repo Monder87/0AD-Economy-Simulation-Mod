@@ -303,7 +303,14 @@ GuiInterface.prototype.GetEntityState = function(player, ent) {
   }
 
   let cmpBuilder = Engine.QueryInterface(ent, IID_Builder);
-  if (cmpBuilder) ret.builder = true;
+
+  if (cmpBuilder) {
+    ret.builder = true;
+    // we check if is a builder and we send this info as a state of the entity
+
+    let listentbldg = cmpBuilder.GetEntitiesList();
+    if (listentbldg.length > 0) ret.builder2 = true;
+  }
 
   let cmpMarket = QueryMiragedInterface(ent, IID_Market);
   if (cmpMarket)
@@ -373,6 +380,8 @@ GuiInterface.prototype.GetEntityState = function(player, ent) {
       garrisonedEntitiesCount: cmpGarrisonHolder.GetGarrisonedEntitiesCount()
     };
 
+  // Economy
+
   let cmpEntityConsumer = Engine.QueryInterface(ent, IID_EntityConsumer);
   if (cmpEntityConsumer)
     ret.entityConsumer = {
@@ -381,6 +390,7 @@ GuiInterface.prototype.GetEntityState = function(player, ent) {
       ent: ent
     };
 
+  // end
   ret.canGarrison = !!Engine.QueryInterface(ent, IID_Garrisonable);
 
   let cmpUnitAI = Engine.QueryInterface(ent, IID_UnitAI);
@@ -846,7 +856,42 @@ GuiInterface.prototype.GetAllBuildableEntities = function(player, cmd) {
   return buildableEnts;
 };
 
+GuiInterface.prototype.GetAllBuildableEntitiesFromOneEnt = function(
+  player,
+  ent
+) {
+  let buildableEnts = [];
+
+  let cmpBuilder = Engine.QueryInterface(ent, IID_Builder);
+  if (cmpBuilder) {
+    for (let building of cmpBuilder.GetEntitiesListSpecial())
+      if (buildableEnts.indexOf(building) == -1) buildableEnts.push(building);
+  }
+
+  return buildableEnts;
+};
+
 // === Economy Functions == \\
+
+// Activate Services Panel
+
+GuiInterface.prototype.PlaySound = function(player, data) {
+  if (!data.entity) return;
+  //error("selected");
+  PlaySound(data.name, data.entity);
+};
+
+// check the template if is of one economy entity
+
+GuiInterface.prototype.isEconomyEntity = function(player, ent) {
+  ent = parseInt(ent, 10);
+  let cmpEntityConsumer = Engine.QueryInterface(ent, IID_EntityConsumer);
+  if (cmpEntityConsumer) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 // Panel Visibility Tracker
 
@@ -1815,12 +1860,6 @@ GuiInterface.prototype.GetFoundationSnapData = function(player, data) {
   return false;
 };
 
-GuiInterface.prototype.PlaySound = function(player, data) {
-  if (!data.entity) return;
-
-  PlaySound(data.name, data.entity);
-};
-
 /**
  * Find any idle units.
  *
@@ -2148,8 +2187,10 @@ let exposedFunctions = {
   UpdateDisplayedPlayerColors: 1,
   SetSelectionHighlight: 1,
   GetAllBuildableEntities: 1,
+  GetAllBuildableEntitiesFromOneEnt: 1,
   // === Economy Functions == \\
   GetAllConsumingProducts: 1,
+  isEconomyEntity: 1,
   RightPanelEnabled: 1,
   RightPanelFocused: 1,
   AddHappinessUnit: 1,

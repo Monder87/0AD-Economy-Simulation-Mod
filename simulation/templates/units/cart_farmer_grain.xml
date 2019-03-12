@@ -2,10 +2,7 @@
 <Entity parent="template_unit_farmer">
   <Builder>
     <Entities datatype="tokens">
-      structures/cart_super_dock
-      structures/cart_embassy_celtic
-      structures/cart_embassy_iberian
-      structures/cart_embassy_italiote
+      
     </Entities>
   </Builder>
 
@@ -16,7 +13,7 @@
     <GenericName>Farmer</GenericName>
     <SpecificName>Grain Farmer</SpecificName>
     <Icon>units/cart_grain_farmer.png</Icon>
-    <SelectionGroupName>units/cart_support_female_citizen</SelectionGroupName>
+    <SelectionGroupName>units/cart_farmer_grain</SelectionGroupName>
   </Identity>
 
   <VisualActor>

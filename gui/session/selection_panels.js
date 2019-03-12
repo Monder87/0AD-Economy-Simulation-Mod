@@ -212,11 +212,22 @@ g_SelectionPanels.Construction = {
   getMaxNumberOfItems: function() {
     return 24 - getNumberOfRightPanelButtons();
   },
-  getItems: function() {
-    if (Engine.GuiInterfaceCall("RightPanelEnabled", "Construction")) {
-      return getAllBuildableEntitiesFromSelection();
-    } else {
-      return null;
+  getItems: function(unitEntStates) {
+    Engine.GetGUIObjectByName("tabButtonConstruction").enabled = false;
+
+    for (let state of unitEntStates) {
+      if (state.builder2) {
+        let selection = g_Selection.groups.getEntsGrouped();
+        if (selection.length < 2) {
+          Engine.GetGUIObjectByName("tabButtonConstruction").enabled = true;
+          if (Engine.GuiInterfaceCall("RightPanelEnabled", "Construction")) {
+            return getAllBuildableEntitiesFromSelection();
+          }
+        }
+      } else {
+        Engine.GetGUIObjectByName("tabButtonConstruction").enabled = false;
+        Engine.GetGUIObjectByName("unitConstructionPanel").hidden = true;
+      }
     }
   },
   //hideItem: function(
@@ -298,6 +309,153 @@ g_SelectionPanels.Construction = {
   }
 };
 
+g_SelectionPanels.Order = {
+  getMaxNumberOfItems: function() {
+    return 16;
+  },
+  rowLength: 8,
+  getItems: function(unitEntStates) {
+    Engine.GetGUIObjectByName("tabButtonOrder").enabled = false;
+    if (unitEntStates.length < 2) return [];
+    let couple = g_Selection.groups.getEntsGrouped();
+    if (couple.length == 2) {
+      let provider;
+      let client;
+      let items = [];
+      couple.forEach(function(type, i) {
+        if (type.template == "units/cart_builder_a") {
+          provider = couple[i].ents;
+          i == 0 ? (client = couple[1].ents) : (client = couple[0].ents);
+          if (Engine.GuiInterfaceCall("isEconomyEntity", client)) {
+            Engine.GetGUIObjectByName("tabButtonOrder").enabled = true;
+            if (Engine.GuiInterfaceCall("RightPanelEnabled", "Command")) {
+              let buildings = Engine.GuiInterfaceCall(
+                "GetAllBuildableEntitiesFromOneEnt",
+                parseInt(client, 10)
+              );
+              for (let bld of buildings) {
+                items.push({
+                  client: parseInt(client, 10),
+                  provider: parseInt(provider, 10),
+                  provider_service: "build",
+                  building: bld
+                });
+              }
+            }
+          }
+        } else if (type.template == "units/cart_trader_a") {
+          provider = couple[i].ents;
+          i == 0 ? (client = couple[1].ents) : (client = couple[0].ents);
+          if (Engine.GuiInterfaceCall("isEconomyEntity", client)) {
+            Engine.GetGUIObjectByName("tabButtonOrder").enabled = true;
+            if (Engine.GuiInterfaceCall("RightPanelEnabled", "Command")) {
+              items.push({
+                client: parseInt(client, 10),
+                provider: parseInt(provider, 10),
+                provider_service: "delivery"
+              });
+            }
+          }
+        } else if (type.template == "units/cart_artist_a") {
+          provider = couple[i].ents;
+          i == 0 ? (client = couple[1].ents) : (client = couple[0].ents);
+          if (Engine.GuiInterfaceCall("isEconomyEntity", client)) {
+            Engine.GetGUIObjectByName("tabButtonOrder").enabled = true;
+            if (Engine.GuiInterfaceCall("RightPanelEnabled", "Command")) {
+              items.push({
+                client: parseInt(client, 10),
+                provider: parseInt(provider, 10),
+                provider_service: "art"
+              });
+            }
+          }
+        }
+      });
+      return items;
+    }
+    return null;
+  },
+  setupButton: function(data) {
+    //error(data.item.building);
+    //data.button.enabled = true;
+    //data.button.tooltip = "halo";
+    //data.button.onPress = function() {
+    //  error("i will go to order!");
+    //};
+    //setPanelObjectPosition(data.button, data.i, data.rowLength);
+    //return true;
+    let template = GetTemplateData(data.item.building);
+    if (!template) return false;
+
+    let technologyEnabled = Engine.GuiInterfaceCall("IsTechnologyResearched", {
+      tech: template.requiredTechnology,
+      player: data.player
+    });
+
+    let neededResources;
+    if (template.cost)
+      neededResources = Engine.GuiInterfaceCall("GetNeededResources", {
+        cost: multiplyEntityCosts(template, 1),
+        player: data.player
+      });
+
+    data.button.onPress = function() {
+      startBuildingPlacement(data.item.building, data.playerState);
+    };
+    data.button.onPressRight = function() {
+      showTemplateDetails(data.item.building);
+    };
+
+    let tooltips = [
+      getEntityNamesFormatted,
+      getVisibleEntityClassesFormatted,
+      getAurasTooltip,
+      getEntityTooltip,
+      getEntityCostTooltip,
+      getGarrisonTooltip,
+      getPopulationBonusTooltip,
+      showTemplateViewerOnRightClickTooltip
+    ].map(func => func(template));
+
+    let limits = getEntityLimitAndCount(data.playerState, data.item.building);
+    tooltips.push(
+      formatLimitString(
+        limits.entLimit,
+        limits.entCount,
+        limits.entLimitChangers
+      ),
+      getRequiredTechnologyTooltip(
+        technologyEnabled,
+        template.requiredTechnology,
+        GetSimState().players[data.player].civ
+      ),
+      getNeededResourcesTooltip(neededResources)
+    );
+
+    data.button.tooltip = tooltips.filter(tip => tip).join("\n");
+
+    let modifier = "";
+    if (!technologyEnabled || limits.canBeAddedCount == 0) {
+      data.button.enabled = false;
+      modifier += "color:0 0 0 127:grayscale:";
+    } else if (neededResources) {
+      data.button.enabled = false;
+      modifier += resourcesToAlphaMask(neededResources) + ":";
+    } else data.button.enabled = controlsPlayer(data.player);
+
+    if (template.icon)
+      data.icon.sprite =
+        modifier + "stretched:session/portraits/" + template.icon;
+
+    setPanelObjectPosition(
+      data.button,
+      data.i + getNumberOfRightPanelButtons(),
+      data.rowLength
+    );
+    return true;
+  }
+};
+
 g_SelectionPanels.Consume = {
   getMaxNumberOfItems: function() {
     return 18;
@@ -305,38 +463,36 @@ g_SelectionPanels.Consume = {
   rowLength: 6,
   getItems: function(unitEntStates) {
     entity = unitEntStates;
-    if (Engine.GuiInterfaceCall("RightPanelEnabled", "Consume")) {
-      //return getAllConsumingProductsFromSelection();
-      if (!g_AvailableStock.has(unitEntStates[0].player))
-        g_AvailableStock.set(
-          unitEntStates[0].player,
-          Engine.GuiInterfaceCall("GetAvailableStock", unitEntStates[0].player)
-        );
-      let availableStock = g_AvailableStock.get(unitEntStates[0].player);
-      for (let state of unitEntStates) {
-        if (state.entityConsumer) {
-          for (let type in state.entityConsumer.carring2) {
-            g_AvailableStock2.set(type, state.entityConsumer.carring2[type]);
+    Engine.GetGUIObjectByName("tabButtonConsume").enabled = false;
 
-            g_AvailableStock3.set(type, state.entityConsumer.maxCapac[type]);
-          }
-          // we use this for happiness calculation
-          totProducts = availableStock.length;
-          g_productStockLeveles = [];
-          // we create an array with N zeros, where we will store all stock levels amount
-          /*for (var i = 0; i < totProducts; i++) {
-            g_productStockLeveles.pop();
-          }
-          for (var i = 0; i < totProducts; i++) {
-            g_productStockLeveles.push(0);
-          }*/
-          return availableStock;
-        } else {
-          return null;
+    //return getAllConsumingProductsFromSelection();
+    if (!g_AvailableStock.has(unitEntStates[0].player))
+      g_AvailableStock.set(
+        unitEntStates[0].player,
+        Engine.GuiInterfaceCall("GetAvailableStock", unitEntStates[0].player)
+      );
+    let availableStock = g_AvailableStock.get(unitEntStates[0].player);
+    for (let state of unitEntStates) {
+      if (state.entityConsumer) {
+        for (let type in state.entityConsumer.carring2) {
+          g_AvailableStock2.set(type, state.entityConsumer.carring2[type]);
+
+          g_AvailableStock3.set(type, state.entityConsumer.maxCapac[type]);
         }
+        // we use this for happiness calculation
+        totProducts = availableStock.length;
+        g_productStockLeveles = [];
+        let selection = g_Selection.groups.getEntsGrouped();
+        if (selection.length < 2) {
+          Engine.GetGUIObjectByName("tabButtonConsume").enabled = true;
+          if (Engine.GuiInterfaceCall("RightPanelEnabled", "Consume")) {
+            return availableStock;
+          }
+        }
+      } else {
+        Engine.GetGUIObjectByName("tabButtonConsume").enabled = false;
+        Engine.GetGUIObjectByName("unitConsumePanel").hidden = true;
       }
-    } else {
-      return null;
     }
   },
   setupButton: function(data) {
@@ -1080,6 +1236,7 @@ g_SelectionPanels.Selection = {
   rowLength: 4,
   getItems: function(unitEntStates) {
     if (unitEntStates.length < 2) return [];
+
     return g_Selection.groups.getEntsGrouped();
   },
   setupButton: function(data) {
@@ -1491,7 +1648,7 @@ let g_PanelsOrder = [
   "Research", // Normal together with training
 
   // === Economy Panels == \\
-  //"Command",
+  "Order",
   "Consume",
   //"Produce"
 
