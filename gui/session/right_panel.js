@@ -13,7 +13,7 @@
 //}
 
 function openCommand() {
-  Engine.GetGUIObjectByName("unitCommandvvPanel").hidden = false;
+  Engine.GetGUIObjectByName("unitOrderPanel").hidden = false;
   Engine.GetGUIObjectByName("unitConsumePanel").hidden = true;
   Engine.GetGUIObjectByName("unitProducePanel").hidden = true;
   Engine.GetGUIObjectByName("unitConstructionPanel").hidden = true;
@@ -21,7 +21,7 @@ function openCommand() {
 }
 
 function openConsume() {
-  Engine.GetGUIObjectByName("unitCommandvvPanel").hidden = true;
+  Engine.GetGUIObjectByName("unitOrderPanel").hidden = true;
   Engine.GetGUIObjectByName("unitConsumePanel").hidden = false;
   Engine.GetGUIObjectByName("unitProducePanel").hidden = true;
   Engine.GetGUIObjectByName("unitConstructionPanel").hidden = true;
@@ -29,14 +29,14 @@ function openConsume() {
 }
 
 function openProduce() {
-  Engine.GetGUIObjectByName("unitCommandvvPanel").hidden = true;
+  Engine.GetGUIObjectByName("unitOrderPanel").hidden = true;
   Engine.GetGUIObjectByName("unitConsumePanel").hidden = true;
   Engine.GetGUIObjectByName("unitProducePanel").hidden = false;
   Engine.GetGUIObjectByName("unitConstructionPanel").hidden = true;
   Engine.GuiInterfaceCall("RightPanelFocused", "Produce");
 }
 function openConstruction() {
-  Engine.GetGUIObjectByName("unitCommandvvPanel").hidden = true;
+  Engine.GetGUIObjectByName("unitOrderPanel").hidden = true;
   Engine.GetGUIObjectByName("unitConsumePanel").hidden = true;
   Engine.GetGUIObjectByName("unitProducePanel").hidden = true;
   Engine.GetGUIObjectByName("unitConstructionPanel").hidden = false;

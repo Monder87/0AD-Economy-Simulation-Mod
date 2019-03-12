@@ -39,7 +39,9 @@ StatusBars.prototype.Init = function() {
     this.entity,
     IID_EntityHappiness
   );
-  this.happinessIcon = cmpEntityHappiness.GetIconName();
+  if (cmpEntityHappiness) {
+    this.happinessIcon = cmpEntityHappiness.GetIconName();
+  }
 
   // Whether the status bars used the player colors anywhere (e.g. in the capture bar)
   this.usedPlayerColors = false;
@@ -209,21 +211,23 @@ StatusBars.prototype.AddHappyIcon = function(cmpOverlayRenderer, yoffset) {
     this.entity,
     IID_EntityHappiness
   );
-  this.happinessIcon = cmpEntityHappiness.GetIconName();
+  if (cmpEntityHappiness) {
+    this.happinessIcon = cmpEntityHappiness.GetIconName();
 
-  let width = 1;
-  let height = 1;
-  let offset = { x: 0, y: 5, z: 0 };
-  yoffset = 1;
-  //this.happinessIcon
-  cmpOverlayRenderer.AddSprite(
-    `art/textures/ui/session/icons/${this.happinessIcon}.png`,
-    //"art/textures/ui/session/icons/happy.png",
-    { x: -width / 2, y: yoffset },
-    { x: width / 2, y: height + yoffset },
-    offset,
-    g_NaturalColor
-  );
+    let width = 1;
+    let height = 1;
+    let offset = { x: 0, y: 5, z: 0 };
+    yoffset = 1;
+    //this.happinessIcon
+    cmpOverlayRenderer.AddSprite(
+      `art/textures/ui/session/icons/${this.happinessIcon}.png`,
+      //"art/textures/ui/session/icons/happy.png",
+      { x: -width / 2, y: yoffset },
+      { x: width / 2, y: height + yoffset },
+      offset,
+      g_NaturalColor
+    );
+  }
 };
 
 StatusBars.prototype.AddResourceSupplyBar = function(

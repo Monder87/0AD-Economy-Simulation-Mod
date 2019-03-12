@@ -9,6 +9,7 @@ var g_unitPanelButtons = {
   Alert: 0,
   Barter: 0,
   Construction: 0,
+  Order: 0,
   Consume: 0,
   Command: 0,
   AllyCommand: 0,

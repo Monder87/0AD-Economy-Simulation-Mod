@@ -2,53 +2,61 @@
 <!-- Economy Entities Right Panels -->
 <object name="economyRightPanel" type="image" size="10 -20 100% 100%" tooltip_style="sessionToolTip">
     <!-- Command Panel -->
-    <object name="tabButtonCommand" size="-8 0 86 26" type="button" sprite="tabButtonSprite" style="ModernLabelText" text_valign="center">
-        <translatableAttribute id="caption">Command</translatableAttribute>
+    <object name="tabButtonOrder" size="-8 0 86 26" type="button" sprite="tabButtonSprite" style="ModernLabelText" text_valign="center">
+        <translatableAttribute id="caption">Order</translatableAttribute>
         <action on="Press">openCommand();</action>
     </object>
-    <object name="unitCommandvvPanel" size="-11 22 100% 100%" >
-		<object size="0 0 100% 100%" type="image" sprite="panelContainerCommand"/>
-		</object>
+    <object name="unitOrderPanel" size="-11 22 100% 100%">
+        <!-- Consume Panel Background-->
+        <object size="0 0 100% 100%" type="image" sprite="panelContainerCommand" />
+        <!-- Titles1 -->
+        <object name="title0" size="29% 6% 42% 15%" type="button" style="ModernLabelText" text_valign="center">
+            <translatableAttribute id="caption">Services</translatableAttribute>
+        </object>
+        <object size="10 32 100% 100%">
+            <repeat count="24">
+                <object name="unitOrderButton[n]" hidden="true" style="iconButton" type="button" size="0 0 46 46" tooltip_style="sessionToolTipBottom">
+                    <object name="unitOrderIcon[n]" type="image" ghost="true" size="3 3 43 43" />
+                </object>
+            </repeat>
+        </object>
+    </object>
     <!-- Consume Panel -->
     <object name="tabButtonConsume" size="86 0 180 26" type="button" sprite="tabButtonSprite" style="ModernLabelText" text_valign="center">
         <translatableAttribute id="caption">Consume</translatableAttribute>
         <action on="Press">openConsume();</action>
     </object>
-    <object name="unitConsumePanel" size="-11 22 100% 100%" >
-			  <!-- Consume Panel Background-->
-			  <object size="0 0 100% 100%" type="image" sprite="panelContainerConsume"/>
-
-				<!-- Titles1 -->
-				<object name="title1" size="29% 6% 42% 15%"  type="button"  style="ModernLabelText" text_valign="center">
-		        <translatableAttribute id="caption">Products</translatableAttribute>
-		    </object>
+    <object name="unitConsumePanel" size="-11 22 100% 100%">
+        <!-- Consume Panel Background-->
+        <object size="0 0 100% 100%" type="image" sprite="panelContainerConsume" />
+        <!-- Titles1 -->
+        <object name="title1" size="29% 6% 42% 15%" type="button" style="ModernLabelText" text_valign="center">
+            <translatableAttribute id="caption">Products</translatableAttribute>
+        </object>
         <!-- Titles2 -->
-				<object name="title2" size="79% 6% 92% 15%"  type="button"  style="ModernLabelText" text_valign="center">
-		        <translatableAttribute id="caption">Happiness</translatableAttribute>
-		    </object>
-
-				<!-- Smile face-->
-				<object name="faceIcon" size="74% 17% 87% 49%" type="image" />
-				<!-- Percent -->
-				<object name="happyPercent" size="88% 17% 97% 49%"  type="button"  style="ModernLabelText" text_valign="center">
-		        <translatableAttribute id="caption">75%</translatableAttribute>
-		    </object>
-
-
-				<!-- Buttons -->
+        <object name="title2" size="79% 6% 92% 15%" type="button" style="ModernLabelText" text_valign="center">
+            <translatableAttribute id="caption">Happiness</translatableAttribute>
+        </object>
+        <!-- Smile face-->
+        <object name="faceIcon" size="74% 17% 87% 49%" type="image" />
+        <!-- Percent -->
+        <object name="happyPercent" size="88% 17% 97% 49%" type="button" style="ModernLabelText" text_valign="center">
+            <translatableAttribute id="caption">75%</translatableAttribute>
+        </object>
+        <!-- Buttons -->
         <object size="10 32 100% 100%">
             <repeat count="24">
                 <object name="unitConsumeButton[n]" hidden="true" style="iconButton" type="button" size="0 0 46 46" tooltip_style="sessionToolTipBottom">
                     <object name="unitConsumeIcon[n]" type="image" ghost="true" size="3 3 43 43" />
-										<!-- Buttons Stock Bar name="stockSection" -->
-										<object >
-											<object size="3 45 95% 49"   type="image" tooltip_style="sessionToolTip">
-												<object type="image" sprite="barBorder" ghost="true" size="-1 -1 100%+1 100%+1"/>
-												<object type="image" sprite="healthBackground" ghost="true"/>
-												<object type="image" sprite="healthForeground" ghost="true" name="stockConsumeBar[n]"/>
-												<object type="image" sprite="statsBarShaderHorizontal" ghost="true"/>
-											</object>
-										</object>
+                    <!-- Buttons Stock Bar name="stockSection" -->
+                    <object>
+                        <object size="3 45 95% 49" type="image" tooltip_style="sessionToolTip">
+                            <object type="image" sprite="barBorder" ghost="true" size="-1 -1 100%+1 100%+1" />
+                            <object type="image" sprite="healthBackground" ghost="true" />
+                            <object type="image" sprite="healthForeground" ghost="true" name="stockConsumeBar[n]" />
+                            <object type="image" sprite="statsBarShaderHorizontal" ghost="true" />
+                        </object>
+                    </object>
                 </object>
             </repeat>
         </object>
@@ -58,13 +66,11 @@
         <translatableAttribute id="caption">Produce</translatableAttribute>
         <action on="Press">openProduce();</action>
     </object>
-
-		<object name="unitProducePanel" size="-11 22 100% 100%" >
-		<object size="0 0 100% 100%" type="image" sprite="panelContainerProduce"/>
-		</object>
-
+    <object name="unitProducePanel" size="-11 22 100% 100%">
+        <object size="0 0 100% 100%" type="image" sprite="panelContainerProduce" />
+    </object>
     <!-- Build Panel -->
-		<object name="tabButtonConstruction" size="274 0 370 26" type="button" sprite="tabButtonSprite" style="ModernLabelText" text_valign="center">
+    <object name="tabButtonConstruction" size="274 0 370 26" type="button" sprite="tabButtonSprite" style="ModernLabelText" text_valign="center">
         <translatableAttribute id="caption">Build</translatableAttribute>
         <action on="Press">openConstruction();</action>
     </object>
