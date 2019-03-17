@@ -376,14 +376,6 @@ g_SelectionPanels.Order = {
     return null;
   },
   setupButton: function(data) {
-    //error(data.item.building);
-    //data.button.enabled = true;
-    //data.button.tooltip = "halo";
-    //data.button.onPress = function() {
-    //  error("i will go to order!");
-    //};
-    //setPanelObjectPosition(data.button, data.i, data.rowLength);
-    //return true;
     let template = GetTemplateData(data.item.building);
     if (!template) return false;
 
@@ -393,12 +385,14 @@ g_SelectionPanels.Order = {
     });
 
     let neededResources;
-    if (template.cost)
-      neededResources = Engine.GuiInterfaceCall("GetNeededResources", {
-        cost: multiplyEntityCosts(template, 1),
+    let servicePrice;
+    if (template.cost) {
+      servicePrice = Engine.GuiInterfaceCall("GetBuilderQuotation", {
+        rawMaterials: multiplyEntityCosts(template, 1),
         player: data.player
       });
-
+    }
+    servicePrice = 100;
     data.button.onPress = function() {
       startBuildingPlacement(data.item.building, data.playerState);
     };
@@ -411,7 +405,6 @@ g_SelectionPanels.Order = {
       getVisibleEntityClassesFormatted,
       getAurasTooltip,
       getEntityTooltip,
-      getEntityCostTooltip,
       getGarrisonTooltip,
       getPopulationBonusTooltip,
       showTemplateViewerOnRightClickTooltip
@@ -429,7 +422,7 @@ g_SelectionPanels.Order = {
         template.requiredTechnology,
         GetSimState().players[data.player].civ
       ),
-      getNeededResourcesTooltip(neededResources)
+      getPrice(servicePrice)
     );
 
     data.button.tooltip = tooltips.filter(tip => tip).join("\n");

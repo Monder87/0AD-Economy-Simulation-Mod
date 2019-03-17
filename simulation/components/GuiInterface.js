@@ -873,6 +873,16 @@ GuiInterface.prototype.GetAllBuildableEntitiesFromOneEnt = function(
 
 // === Economy Functions == \\
 
+// builder methods
+
+GuiInterface.prototype.GetBuilderQuotation = function(player, data) {
+  //return
+  let rawMaterial = QueryPlayerIDInterface(
+    data.player || player
+  ).GetNeededResources(data.rawMaterials);
+  //serror(rawMaterial);
+};
+
 // Activate Services Panel
 
 GuiInterface.prototype.PlaySound = function(player, data) {
@@ -2189,6 +2199,7 @@ let exposedFunctions = {
   GetAllBuildableEntities: 1,
   GetAllBuildableEntitiesFromOneEnt: 1,
   // === Economy Functions == \\
+  GetBuilderQuotation: 1,
   GetAllConsumingProducts: 1,
   isEconomyEntity: 1,
   RightPanelEnabled: 1,

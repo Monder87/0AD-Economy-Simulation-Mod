@@ -16,7 +16,7 @@ EntityFinance.prototype.Schema =
   "</element>";
 
 EntityFinance.prototype.Init = function() {
-  this.balance = 10; // the Actual Amount of money the entity has
+  this.balance = Math.floor(Math.random() * 1000) + 100; // the Actual Amount of money the entity has
   this.walletCapacity = 0;
   this.RecalculateEarningRate(); // Recalculate the Earning Rate
   this.RecalculateWalletCapacities(); // Recalculate the Wallet Capacity
