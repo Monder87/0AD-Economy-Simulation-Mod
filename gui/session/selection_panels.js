@@ -389,7 +389,8 @@ g_SelectionPanels.Order = {
     if (template.cost) {
       servicePrice = Engine.GuiInterfaceCall("GetBuilderQuotation", {
         rawMaterials: multiplyEntityCosts(template, 1),
-        player: data.player
+        player: data.player,
+        provider: data.item.provider
       });
     }
     servicePrice = 100;
