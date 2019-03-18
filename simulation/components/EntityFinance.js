@@ -42,6 +42,10 @@ EntityFinance.prototype.RecalculateWalletCapacities = function() {
   // once added financing tool in tech, right now yet
 };
 
+EntityFinance.prototype.GetEarningRate = function() {
+  return this.template.EarningRate;
+};
+
 EntityFinance.prototype.RecalculateEarningRate = function() {
   // if Player get some change in earning rate is being update to the entity
   let cmpPlayer = QueryOwnerInterface(this.entity, IID_Player);

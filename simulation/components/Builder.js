@@ -78,6 +78,22 @@ Builder.prototype.GetEntitiesListSpecial = function() {
   }
 };
 
+Builder.prototype.GetBuilderQuotation = function(rawMaterials) {
+  //we get the earning rate
+  var cmpEntityFinance = Engine.QueryInterface(this.entity, IID_EntityFinance);
+  let earningRate = cmpEntityFinance.GetEarningRate();
+  // we calculate cost of product and hourPay
+  let cmpProductsManager = Engine.QueryInterface(
+    SYSTEM_ENTITY,
+    IID_ProductsManager
+  );
+  for (let material in rawMaterials) {
+    // first we get market price for each product
+
+    cmpProductsManager.InitMarket();
+  }
+};
+
 Builder.prototype.GetRange = function() {
   var cmpObstruction = Engine.QueryInterface(this.entity, IID_Obstruction);
   var max = 2;

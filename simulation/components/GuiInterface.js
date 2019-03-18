@@ -873,13 +873,17 @@ GuiInterface.prototype.GetAllBuildableEntitiesFromOneEnt = function(
 
 // === Economy Functions == \\
 
-// builder methods
+// Builder methods
 
 GuiInterface.prototype.GetBuilderQuotation = function(player, data) {
-  //return
-  let rawMaterial = QueryPlayerIDInterface(
-    data.player || player
-  ).GetNeededResources(data.rawMaterials);
+  // we ask for the prices to build the construction
+  let cmpBuilder = Engine.QueryInterface(
+    parseInt(data.provider, 10),
+    IID_Builder
+  );
+  if (cmpBuilder) {
+    cmpBuilder.GetBuilderQuotation(data.rawMaterials);
+  }
   //serror(rawMaterial);
 };
 
