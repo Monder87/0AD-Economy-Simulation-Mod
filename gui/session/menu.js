@@ -844,99 +844,54 @@ function openEconomy() {
 
   g_IsEconomyOpen = true;
 
-  let proba = Engine.GuiInterfaceCall("GetTradingGoods", g_ViewedPlayer);
   let button = {};
-  let resCodes = g_ResourceData.GetCodes();
 
   let market = Engine.GuiInterfaceCall("GetMarket", {});
+  market.unshift(0);
+  let currTradeSelection = null;
+
+  let updateTradeButtons = function() {
+    for (let city in button) {
+      button[city].sel.hidden = city != currTradeSelection;
+    }
+  };
 
   for (let i = 0; i < market.length; ++i) {
-    let id = 1;
-    Engine.GetGUIObjectByName("tradeResourceText[" + i + "]").caption = sprintf(
-      translate("%(cityName)s"),
-      {
-        cityName: market[i].cityCenter
-      }
-    );
-
-    let resCode = resCodes[i];
-
-    // Trade:
-    let tradeResource = Engine.GetGUIObjectByName("tradeResource[" + i + "]");
-    if (!tradeResource) {
-      warn(
-        "Current GUI limits prevent displaying more than " +
-          i +
-          " resources in the trading goods selection dialog!"
-      );
-      break;
-    }
-
-    setPanelObjectPosition(tradeResource, i, i + 1);
-
-    let icon = Engine.GetGUIObjectByName("tradeResourceIcon[" + i + "]");
-    icon.sprite = "stretched:session/icons/resources/" + resCode + ".png";
-
-    let buttonUp = Engine.GetGUIObjectByName("tradeArrowUp[" + i + "]");
-    let buttonDn = Engine.GetGUIObjectByName("tradeArrowDn[" + i + "]");
-
-    button[resCode] = {
-      up: buttonUp,
-      dn: buttonDn,
-      label: Engine.GetGUIObjectByName("tradeResourceText[" + i + "]"),
+    let city = market[i].cityCenter;
+    // we set the selection
+    button[city] = {
       sel: Engine.GetGUIObjectByName("tradeResourceSelection[" + i + "]")
     };
-
-    proba[resCode] = proba[resCode] || 0;
-
+    let tradeResource = Engine.GetGUIObjectByName("tradeResource[" + i + "]");
+    setPanelObjectPosition(tradeResource, i, i + 1);
     let buttonResource = Engine.GetGUIObjectByName(
       "tradeResourceButton[" + i + "]"
     );
+
+    if (i == 0) {
+      continue;
+      //tradeResource.hidden = true;
+      //buttonResource.hidden = true;
+      //buttonResource.enabled = false;
+    }
+    Engine.GetGUIObjectByName(
+      "tradeResourceButton[" + i + "]"
+    ).caption = sprintf(translate("%(cityName)s"), {
+      cityName: market[i].cityCenter
+    });
+
     buttonResource.enabled = controlsPlayer(g_ViewedPlayer);
     buttonResource.onPress = (resource => {
       return () => {
-        if (Engine.HotkeyIsPressed("session.fulltradeswap")) {
-          for (let res of resCodes) proba[res] = 0;
-          proba[resource] = 100;
-          Engine.PostNetworkCommand({
-            type: "set-trading-goods",
-            tradingGoods: proba
-          });
-        }
-        currTradeSelection = resource;
-        updateTradeButtons();
-      };
-    })(resCode);
+        error("ccc");
 
-    buttonUp.enabled = controlsPlayer(g_ViewedPlayer);
-    buttonUp.onPress = (resource => {
-      return () => {
-        proba[resource] += Math.min(STEP, proba[currTradeSelection]);
-        proba[currTradeSelection] -= Math.min(STEP, proba[currTradeSelection]);
-        Engine.PostNetworkCommand({
-          type: "set-trading-goods",
-          tradingGoods: proba
-        });
+        currTradeSelection = city;
         updateTradeButtons();
       };
-    })(resCode);
-
-    buttonDn.enabled = controlsPlayer(g_ViewedPlayer);
-    buttonDn.onPress = (resource => {
-      return () => {
-        proba[currTradeSelection] += Math.min(STEP, proba[resource]);
-        proba[resource] -= Math.min(STEP, proba[resource]);
-        Engine.PostNetworkCommand({
-          type: "set-trading-goods",
-          tradingGoods: proba
-        });
-        updateTradeButtons();
-      };
-    })(resCode);
+    })(city);
   }
 
-  //updateTradeButtons();
-  //updateTraderTexts();
+  updateTradeButtons();
 
   Engine.GetGUIObjectByName("tradeDialogPanel").hidden = false;
 }

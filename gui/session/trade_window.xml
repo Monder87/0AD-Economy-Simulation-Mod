@@ -19,27 +19,20 @@
 
 		<object name="tradeGoods" size="0 38 100% 70">
 
-			<object type="text" size="0 0 60 100%" style="ModernRightLabelText">
-				<!-- Translation: Used in the Trade Dialog -->
-				<translatableAttribute id="caption">Empire:</translatableAttribute>
+			<object type="text" size="0 0 60 100%" style="ModernRightLabelText" text_valign="center">
+				<!-- Translation: Used in the Trade Dialog <object name="tradeResourceText[n]" type="text" size="0% 0 100% 100%" style="ModernLabelText" text_valign="center"/>-->
+				<translatableAttribute id="caption">Cities Owned:</translatableAttribute>
 			</object>
 
 			<object name="tradeResources" size="72 0 100% 100%">
 				<repeat count="8">
-					<object name="tradeResource[n]" size="0 0 58 32">
-
-						<object name="tradeResourceButton[n]" type="button" size="4 0 100 100%" style="StoneButton">
-							<object name="tradeResourceIcon[n]" type="image" ghost="true"/>
+					<object name="tradeResource[n]" size="0 0 100 32">
+						<object name="tradeResourceButton[n]" type="button" size="4 0 80 100%" style="StoneButton" >
+							<translatableAttribute id="caption"></translatableAttribute>
+							<object name="tradeResourceIcon[n]" type="image" ghost="true" />
 							<object name="tradeResourceSelection[n]" type="image" sprite="stretched:session/icons/corners.png" ghost="true"/>
-							<object name="tradeResourceText[n]" type="text" size="0% 0 55% 100%" style="ModernRightLabelText" text_valign="center"/>
 						</object>
-						<object name="tradeArrowUp[n]" type="button" size="36 0 52 50%" style="iconButton">
-						</object>
-						<object name="tradeArrowDn[n]" type="button" size="36 50% 52 100%" style="iconButton">
-						</object>
-
 					</object>
-
 				</repeat>
 			</object>
 

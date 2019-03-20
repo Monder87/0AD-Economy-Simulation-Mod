@@ -7,6 +7,7 @@ CityNameGenerator.prototype.Init = function() {
   this.Cities = {};
   this.cartCities = [
     "Carthage",
+    "Carthage",
     "Utique",
     "Hippo Regius",
     "Gades",
