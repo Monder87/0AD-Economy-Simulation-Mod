@@ -89,8 +89,7 @@ Builder.prototype.GetBuilderQuotation = function(rawMaterials) {
   );
   for (let material in rawMaterials) {
     // first we get market price for each product
-
-    cmpProductsManager.InitMarket();
+    //cmpProductsManager.InitMarket();
   }
 };
 
