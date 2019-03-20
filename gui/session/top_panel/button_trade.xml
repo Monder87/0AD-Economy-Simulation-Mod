@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="button"
+	name="economyButton"
+	size="100%-224 4 100%-196 32"
+	style="iconButton"
+	tooltip_style="sessionToolTip"
+>
+	<object size="0 0 100% 100%" name="economyButtonImage" type="image" sprite="stretched:session/icons/economics.png" ghost="true"/>
+	<translatableAttribute id="tooltip">Economy</translatableAttribute>
+	<action on="Press">
+		toggleEconomy();
+	</action>
+</object>

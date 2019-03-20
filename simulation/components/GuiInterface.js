@@ -138,10 +138,7 @@ GuiInterface.prototype.GetSimulationState = function() {
       canBarter: Engine.QueryInterface(
         SYSTEM_ENTITY,
         IID_Barter
-      ).PlayerHasMarket(i),
-      barterPrices: Engine.QueryInterface(SYSTEM_ENTITY, IID_Barter).GetPrices(
-        i
-      )
+      ).PlayerHasMarket(i)
     });
   }
 
@@ -872,6 +869,18 @@ GuiInterface.prototype.GetAllBuildableEntitiesFromOneEnt = function(
 };
 
 // === Economy Functions == \\
+
+// ProductsManager
+
+GuiInterface.prototype.GetMarket = function(player, data) {
+  // we ask for the prices to build the construction
+  let cmpProductsManager = Engine.QueryInterface(
+    SYSTEM_ENTITY,
+    IID_ProductsManager
+  );
+
+  return cmpProductsManager.GetMarket();
+};
 
 // Builder methods
 
@@ -2203,6 +2212,7 @@ let exposedFunctions = {
   GetAllBuildableEntities: 1,
   GetAllBuildableEntitiesFromOneEnt: 1,
   // === Economy Functions == \\
+  GetMarket: 1,
   GetBuilderQuotation: 1,
   GetAllConsumingProducts: 1,
   isEconomyEntity: 1,

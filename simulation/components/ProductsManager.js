@@ -100,9 +100,14 @@ ProductsManager.prototype.GetAllProducts = function(center) {
     IID_EntityProducer
   );
 
-  // we find all product sold for each producer
+  // we find all product sold for each producer and the city name
+
+  let cmpIdentity = Engine.QueryInterface(center, IID_Identity);
+  let cityName = cmpIdentity.GetCityName();
+
   let cityMarket = {
-    cityCenter: center,
+    cityCenter: cityName,
+    cityEntId: center,
     producers: [],
     products: []
   };
@@ -128,6 +133,7 @@ ProductsManager.prototype.GetAllProducts = function(center) {
 };
 
 ProductsManager.prototype.InitMarket = function() {
+  error("market initiated");
   let _this = this;
   // first we got all city centers
   let civCenters = this.GetAllCivCenters();
@@ -146,6 +152,7 @@ ProductsManager.prototype.UpdateMarket = function() {
   let _this = this;
   // we save old data
   this.marketOld = this.marketNew;
+  this.marketNew = [];
   // first we got all city centers
   let civCenters = this.GetAllCivCenters();
   // for each we take all product sold and producer data
@@ -158,6 +165,10 @@ ProductsManager.prototype.UpdateMarket = function() {
 
 ProductsManager.prototype.GetMarketPrice = function(product, trade_type) {};
 
+ProductsManager.prototype.GetMarket = function() {
+  this.UpdateMarket();
+  return this.marketNew;
+};
 // Listener \\
 
 ProductsManager.prototype.OnTimerDayChanged = function(msg) {
