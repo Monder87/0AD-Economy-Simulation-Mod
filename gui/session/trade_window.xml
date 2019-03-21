@@ -30,7 +30,7 @@
 						<object name="tradeResourceButton[n]" type="button" size="4 0 80 100%" style="StoneButton" >
 							<translatableAttribute id="caption"></translatableAttribute>
 							<object name="tradeResourceIcon[n]" type="image" ghost="true" />
-							<object name="tradeResourceSelection[n]" type="image" sprite="stretched:session/icons/corners.png" ghost="true"/>
+							<object name="tradeResourceSelection[n]" type="image"  ghost="true"/>
 						</object>
 					</object>
 				</repeat>
