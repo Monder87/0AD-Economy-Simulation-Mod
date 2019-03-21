@@ -858,6 +858,7 @@ function openEconomy() {
 
   for (let i = 0; i < market.length; ++i) {
     let city = market[i].cityCenter;
+
     // we set the selection
     button[city] = {
       sel: Engine.GetGUIObjectByName("tradeResourceSelection[" + i + "]")
@@ -868,12 +869,16 @@ function openEconomy() {
       "tradeResourceButton[" + i + "]"
     );
 
+    let iconSelect = Engine.GetGUIObjectByName(
+      "tradeResourceSelection[" + i + "]"
+    );
     if (i == 0) {
       continue;
       //tradeResource.hidden = true;
       //buttonResource.hidden = true;
       //buttonResource.enabled = false;
     }
+    iconSelect.sprite = "stretched:session/icons/corners.png";
     Engine.GetGUIObjectByName(
       "tradeResourceButton[" + i + "]"
     ).caption = sprintf(translate("%(cityName)s"), {
