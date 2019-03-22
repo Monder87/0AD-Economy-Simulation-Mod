@@ -845,20 +845,32 @@ function openEconomy() {
   g_IsEconomyOpen = true;
 
   let button = {};
-
+  // we get all the cities economies
   let market = Engine.GuiInterfaceCall("GetMarket", {});
+
   market.unshift(0);
   let currTradeSelection = null;
-
+  // we define the function to update the selection on the cities selected
   let updateTradeButtons = function() {
     for (let city in button) {
       button[city].sel.hidden = city != currTradeSelection;
     }
   };
+  // we define each city button
 
   for (let i = 0; i < market.length; ++i) {
+    // we get the city name
     let city = market[i].cityCenter;
-
+    // we get the city Id
+    let cityID = market[i].cityEntId;
+    // we get the city color
+    let playerColor = Engine.GuiInterfaceCall("GetPlayerColor", {
+      entity: cityID
+    });
+    // we apply the color to the cityBar
+    let playercolorBar = Engine.GetGUIObjectByName("playerBar[" + i + "]");
+    playercolorBar.sprite = "playerBlue";
+    //error(playerColor);
     // we set the selection
     button[city] = {
       sel: Engine.GetGUIObjectByName("tradeResourceSelection[" + i + "]")
@@ -874,9 +886,6 @@ function openEconomy() {
     );
     if (i == 0) {
       continue;
-      //tradeResource.hidden = true;
-      //buttonResource.hidden = true;
-      //buttonResource.enabled = false;
     }
     iconSelect.sprite = "stretched:session/icons/corners.png";
     Engine.GetGUIObjectByName(

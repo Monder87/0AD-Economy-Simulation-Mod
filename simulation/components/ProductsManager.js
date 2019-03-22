@@ -2,7 +2,8 @@
 /*
 this.market = [
   {
-    cityCenter: idCityCenter,
+    cityCenter: Cityname,
+    cityEntId: idCityCenter,
     producers: [
       {
         id:11,
@@ -23,7 +24,8 @@ this.market = [
     products: [{ sausage: 2 }, { bread: 4 }, { leather_clothe: 2 }]
   },
   {
-    cityCenter: idCityCenter2,
+  cityCenter: Cityname,
+  cityEntId: idCityCenter,
     producers: [
       {
         id:1,

@@ -31,8 +31,10 @@
 							<translatableAttribute id="caption"></translatableAttribute>
 							<object name="tradeResourceIcon[n]" type="image" ghost="true" />
 							<object name="tradeResourceSelection[n]" type="image"  ghost="true"/>
+							<object name="playerBar[n]" type="image" size="0 33 100% 29" sprite="ModernGoldLine"/>
 						</object>
 					</object>
+
 				</repeat>
 			</object>
 

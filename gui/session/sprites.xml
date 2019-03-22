@@ -372,6 +372,58 @@
 		/>
 	</sprite>
 
+	<!-- Economy  Panel -->
+
+	<!-- Economy  Panel City layer Color -->
+
+	<sprite name="playerBlue">
+		<image texture="session/blueColor.png"
+			size="0 0 100% 100%-5"
+		/>
+	</sprite>
+
+	<sprite name="playerRed">
+		<image texture="session/redColor.png"
+			size="0 0 100% 100%-5"
+		/>
+	</sprite>
+
+	<sprite name="playerYellow">
+		<image texture="session/yellowColor.png"
+			size="0 0 100% 100%-5"
+		/>
+	</sprite>
+
+	<sprite name="playerGreen">
+		<image texture="session/greenColor.png"
+			size="0 0 100% 100%-5"
+		/>
+	</sprite>
+
+	<sprite name="playerPurple">
+		<image texture="session/purpleColor.png"
+			size="0 0 100% 100%-5"
+		/>
+	</sprite>
+
+	<sprite name="playerBlack">
+		<image texture="session/blackColor.png"
+			size="0 0 100% 100%-5"
+		/>
+	</sprite>
+
+	<sprite name="playerOrange">
+		<image texture="session/orangeColor.png"
+			size="0 0 100% 100%-5"
+		/>
+	</sprite>
+
+	<sprite name="playerTurquoise">
+		<image texture="session/turquoiseColor.png"
+			size="0 0 100% 100%-5"
+		/>
+	</sprite>
+
 	<!-- end -->
 
 	<sprite name="unitCommandsPanel">
@@ -689,5 +741,7 @@
 		<effect grayscale=""/>
 		<image texture="session/icons/bkg/portrait_black.dds" size="0 0 100% 100%"/>
 	</sprite>
+
+
 
 </sprites>

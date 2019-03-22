@@ -962,8 +962,21 @@ GuiInterface.prototype.GetAvailableStock = function(ent) {
 
 GuiInterface.prototype.AddHappinessUnit = function(player, data) {
   let cmpEntityHappiness = QueryMiragedInterface(data.ent, IID_EntityHappiness);
-  error(data.value);
+
   cmpEntityHappiness.RecordValue(data.value);
+};
+
+GuiInterface.prototype.GetPlayerColor = function(player, data) {
+  if (typeof data.entity !== "undefined") {
+    let cmpOwnership = Engine.QueryInterface(data.entity, IID_Ownership);
+    if (cmpOwnership) {
+      let player = cmpOwnership.GetOwner();
+      let cmpPlayer = QueryPlayerIDInterface(player, IID_Player);
+      let color = cmpPlayer.GetColor();
+      error(color.r);
+      return color;
+    }
+  }
 };
 
 // === Economy Functions End == \\
@@ -2218,7 +2231,9 @@ let exposedFunctions = {
   isEconomyEntity: 1,
   RightPanelEnabled: 1,
   RightPanelFocused: 1,
+  GetPlayerColor: 1,
   AddHappinessUnit: 1,
+
   // === End == \\
   SetStatusBars: 1,
   GetPlayerEntities: 1,
