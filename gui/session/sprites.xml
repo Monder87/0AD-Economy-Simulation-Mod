@@ -419,7 +419,7 @@
 	</sprite>
 
 	<sprite name="playerTurquoise">
-		<image texture="session/turquoiseColor.png"
+		<image texture="session/turqoiseColor.png"
 			size="0 0 100% 100%-5"
 		/>
 	</sprite>

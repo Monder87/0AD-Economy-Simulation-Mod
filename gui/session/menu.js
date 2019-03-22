@@ -856,9 +856,18 @@ function openEconomy() {
       button[city].sel.hidden = city != currTradeSelection;
     }
   };
+
+  let trimNumber = (number, length) => {
+    let numberST = number.toString();
+    let trimmedString = numberST.substring(0, length);
+    return trimmedString;
+  };
   // we define each city button
 
   for (let i = 0; i < market.length; ++i) {
+    if (i == 0) {
+      continue;
+    }
     // we get the city name
     let city = market[i].cityCenter;
     // we get the city Id
@@ -869,14 +878,73 @@ function openEconomy() {
     });
     // we apply the color to the cityBar
     let playercolorBar = Engine.GetGUIObjectByName("playerBar[" + i + "]");
-    playercolorBar.sprite = "playerBlue";
+
+    if (
+      trimNumber(playerColor.r, 5) == 0.082 &&
+      trimNumber(playerColor.g, 5) == 0.215 &&
+      trimNumber(playerColor.b, 5) == 0.584
+    ) {
+      playercolorBar.sprite = "playerBlue";
+    } else if (
+      trimNumber(playerColor.r, 5) == 0.588 &&
+      trimNumber(playerColor.g, 5) == 0.078 &&
+      trimNumber(playerColor.b, 5) == 0.078
+    ) {
+      playercolorBar.sprite = "playerRed";
+    } else if (
+      trimNumber(playerColor.r, 5) == 0.337 &&
+      trimNumber(playerColor.g, 5) == 0.705 &&
+      trimNumber(playerColor.b, 5) == 0.121
+    ) {
+      playercolorBar.sprite = "playerGreen";
+    } else if (
+      trimNumber(playerColor.r, 5) == 0.905 &&
+      trimNumber(playerColor.g, 5) == 0.784 &&
+      trimNumber(playerColor.b, 5) == 0.019
+    ) {
+      playercolorBar.sprite = "playerYellow";
+    } else if (
+      trimNumber(playerColor.r, 5) == 0.196 &&
+      trimNumber(playerColor.g, 5) == 0.666 &&
+      trimNumber(playerColor.b, 5) == 0.666
+    ) {
+      playercolorBar.sprite = "playerTurquoise";
+    } else if (
+      trimNumber(playerColor.r, 5) == 0.627 &&
+      trimNumber(playerColor.g, 5) == 0.313 &&
+      trimNumber(playerColor.b, 5) == 0.784
+    ) {
+      playercolorBar.sprite = "playerPurple";
+    } else if (
+      trimNumber(playerColor.r, 5) == 0.862 &&
+      trimNumber(playerColor.g, 5) == 0.45 &&
+      trimNumber(playerColor.b, 5) == 0.062
+    ) {
+      playercolorBar.sprite = "playerOrange";
+    } else if (
+      trimNumber(playerColor.r, 5) == 0.25 &&
+      trimNumber(playerColor.g, 5) == 0.25 &&
+      trimNumber(playerColor.b, 5) == 0.25
+    ) {
+      playercolorBar.sprite = "playerBlack";
+    }
+
     //error(playerColor);
     // we set the selection
     button[city] = {
       sel: Engine.GetGUIObjectByName("tradeResourceSelection[" + i + "]")
     };
     let tradeResource = Engine.GetGUIObjectByName("tradeResource[" + i + "]");
-    setPanelObjectPosition(tradeResource, i, i + 1);
+    if (i < 9) {
+      setPanelObjectPosition(tradeResource, i, i + 1);
+    } else if (i >= 9 && i < 18) {
+      setPanelObjectPosition(tradeResource, i, 9, 1, 30);
+    } else if (i >= 18 && i < 27) {
+      setPanelObjectPosition(tradeResource, i, 9, 1, 30);
+    } else if (i >= 27 && i < 36) {
+      setPanelObjectPosition(tradeResource, i, 9, 1, 30);
+    }
+
     let buttonResource = Engine.GetGUIObjectByName(
       "tradeResourceButton[" + i + "]"
     );
@@ -884,9 +952,7 @@ function openEconomy() {
     let iconSelect = Engine.GetGUIObjectByName(
       "tradeResourceSelection[" + i + "]"
     );
-    if (i == 0) {
-      continue;
-    }
+
     iconSelect.sprite = "stretched:session/icons/corners.png";
     Engine.GetGUIObjectByName(
       "tradeResourceButton[" + i + "]"

@@ -973,7 +973,6 @@ GuiInterface.prototype.GetPlayerColor = function(player, data) {
       let player = cmpOwnership.GetOwner();
       let cmpPlayer = QueryPlayerIDInterface(player, IID_Player);
       let color = cmpPlayer.GetColor();
-      error(color.r);
       return color;
     }
   }
