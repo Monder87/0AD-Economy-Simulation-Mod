@@ -59,6 +59,8 @@ var g_IsMenuOpen = false;
 var g_IsDiplomacyOpen = false;
 var g_IsTradeOpen = false;
 var g_IsEconomyOpen = false;
+var g_IsEconomyCities = false;
+var g_IsEconomyCityOpen = false;
 var g_IsObjectivesOpen = false;
 
 /**
@@ -837,17 +839,19 @@ function openTrade() {
   Engine.GetGUIObjectByName("tradeDialogPanel").hidden = false;
 }
 */
+
 function openEconomy() {
   closeOpenDialogs();
 
   if (g_ViewedPlayer < 1) return;
-
+  Engine.GetGUIObjectByName("economyCity").hidden = true;
+  Engine.GetGUIObjectByName("closeEconomyCityButton").hidden = true;
   g_IsEconomyOpen = true;
-
+  g_IsEconomyCities = true;
   let button = {};
   // we get all the cities economies
   let market = Engine.GuiInterfaceCall("GetMarket", {});
-
+  //let entState = Engine.GuiInterfaceCall("GetSimulationState", {});
   market.unshift(0);
   let currTradeSelection = null;
   // we define the function to update the selection on the cities selected
@@ -862,6 +866,7 @@ function openEconomy() {
     let trimmedString = numberST.substring(0, length);
     return trimmedString;
   };
+
   // we define each city button
 
   for (let i = 0; i < market.length; ++i) {
@@ -962,9 +967,61 @@ function openEconomy() {
 
     buttonResource.enabled = controlsPlayer(g_ViewedPlayer);
     buttonResource.onPress = (resource => {
-      return () => {
-        error("ccc");
+      let citynamePressed = market[i].cityCenter;
+      let CityPanelCityID = cityID;
+      let CityPanelMarket = market;
 
+      return () => {
+        // we open the city panel
+        g_IsEconomyCities = false;
+        Engine.GetGUIObjectByName("economyCities").hidden = true;
+        Engine.GetGUIObjectByName("closeEconomyCityButton").hidden = false;
+        Engine.GetGUIObjectByName("economyCity").hidden = false;
+        Engine.GetGUIObjectByName("closeEconomyButton").hidden = true;
+        g_IsEconomyCityOpen = true;
+        // we set the name of the city
+        Engine.GetGUIObjectByName("cityName").caption = sprintf(
+          translate("%(cityName)s Producers"),
+          {
+            cityName: citynamePressed
+          }
+        );
+        // we get all producers
+        for (let i = 0; i < CityPanelMarket.length; ++i) {
+          if (CityPanelMarket[i].cityCenter == citynamePressed) {
+            //CityPanelMarket[i].producers.unshift(0);
+            for (let i2 = 0; i2 < CityPanelMarket[i].producers.length; ++i2) {
+              // we get theentity state
+              let entState = Engine.GuiInterfaceCall(
+                "GetEntityState",
+                CityPanelMarket[i].producers[i2].id
+              );
+              let buttonProducer = Engine.GetGUIObjectByName(
+                "producerButton[" + i2 + "]"
+              );
+              if (i2 < 18) {
+                setPanelObjectPosition(buttonProducer, i2, i2 + 1, 10);
+              } else if (i2 >= 18 && i2 < 36) {
+                setPanelObjectPosition(buttonProducer, i2, 9, 10, 20, 10);
+              } else if (i2 >= 36 && i2 < 54) {
+                setPanelObjectPosition(buttonProducer, i2, 9, 10, 20, 50);
+              } else if (i2 >= 54 && i2 < 72) {
+                setPanelObjectPosition(buttonProducer, i2, 9, 10, 20, 50);
+              }
+              // we get the icon
+              let icon = displaySingleTemplate(entState).icon;
+              let buttonProducerIcon = Engine.GetGUIObjectByName(
+                "producerIcon[" + i2 + "]"
+              );
+              buttonProducerIcon.sprite = "stretched:session/portraits/" + icon;
+              // we put the tooltip
+              buttonProducer.tooltip = sprintf(translate("Buy %(resource)s"), {
+                resource: "resource"
+              });
+            }
+          }
+        }
+        // we update the cities panel
         currTradeSelection = city;
         updateTradeButtons();
       };
@@ -974,6 +1031,20 @@ function openEconomy() {
   updateTradeButtons();
 
   Engine.GetGUIObjectByName("tradeDialogPanel").hidden = false;
+}
+
+function displaySingleTemplate(entState) {
+  // Get general unit and player data
+  return GetTemplateData(entState.template);
+}
+
+function closeEconomyCity() {
+  g_IsEconomyCityOpen = false;
+  g_IsEconomyCities = true;
+  Engine.GetGUIObjectByName("economyCities").hidden = false;
+  Engine.GetGUIObjectByName("economyCity").hidden = true;
+  Engine.GetGUIObjectByName("closeEconomyButton").hidden = false;
+  Engine.GetGUIObjectByName("closeEconomyCityButton").hidden = true;
 }
 
 function updateTraderTexts() {
