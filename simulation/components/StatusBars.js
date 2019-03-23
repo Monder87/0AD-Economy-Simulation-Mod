@@ -28,7 +28,8 @@ StatusBars.prototype.Sprites = [
   "WalletBar",
   "AuraIcons",
   "RankIcon",
-  "HappyIcon"
+  "HappyIcon",
+  "CityName"
 ];
 
 StatusBars.prototype.Init = function() {
@@ -221,6 +222,28 @@ StatusBars.prototype.AddHappyIcon = function(cmpOverlayRenderer, yoffset) {
     //this.happinessIcon
     cmpOverlayRenderer.AddSprite(
       `art/textures/ui/session/icons/${this.happinessIcon}.png`,
+      //"art/textures/ui/session/icons/happy.png",
+      { x: -width / 2, y: yoffset },
+      { x: width / 2, y: height + yoffset },
+      offset,
+      g_NaturalColor
+    );
+  }
+};
+
+StatusBars.prototype.AddCityName = function(cmpOverlayRenderer, yoffset) {
+  if (!this.enabled) return 0;
+
+  let cmpIdentity = QueryMiragedInterface(this.entity, IID_Identity);
+  if (cmpIdentity.GetCityName()) {
+    let cityname = cmpIdentity.GetCityName().replace(/[0-9]/g, "");
+    let width = 20;
+    let height = 6;
+    let offset = { x: 0, y: 5, z: 0 };
+    yoffset = 15;
+    //this.happinessIcon
+    cmpOverlayRenderer.AddSprite(
+      `art/textures/ui/session/icons/cities/${cityname}.png`,
       //"art/textures/ui/session/icons/happy.png",
       { x: -width / 2, y: yoffset },
       { x: width / 2, y: height + yoffset },

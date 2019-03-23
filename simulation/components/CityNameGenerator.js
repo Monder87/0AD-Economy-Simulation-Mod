@@ -36,9 +36,7 @@ CityNameGenerator.prototype.GenerateCityName = function(civ) {
     this.cartCities.push(`${city2}${this.cartCityCounter2}`);
     // we addd the counter
     this.cartCityCounter += 1;
-    error(city);
-    error(this.cartCityCounter);
-    error(this.cartCityCounter2);
+
     // we return th name
     return city;
   }
