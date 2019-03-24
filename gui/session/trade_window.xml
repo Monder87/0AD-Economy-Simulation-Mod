@@ -44,6 +44,14 @@
                     <object name="populationContainerTitle" type="text" size="40% 0 80% 42" style="ModernLeftLabelText">
                         <translatableAttribute id="caption">Population</translatableAttribute>
                     </object>
+										<object type="image" size="5% 22% 25% 77%" sprite="populationIcon" />
+										<object name="economicPanelPopCounter" type="text" size="25% 22% 55% 77%" style="ModernLeftLabelText">
+						            <translatableAttribute id="caption"></translatableAttribute>
+						        </object>
+										<object name="ecopanelHappyIcon" type="image" size="65% 22% 80% 77%"  />
+										<object name="economicPanelHappyCounter" type="text" size="83% 22% 100% 77%" style="ModernLeftLabelText">
+						            <translatableAttribute id="caption"></translatableAttribute>
+						        </object>
                 </object>
 								<!-- City Economy Buttons Container -->
                 <object name="productsProducersContainer" size="-300 170 30% 370">

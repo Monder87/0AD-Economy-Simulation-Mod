@@ -969,6 +969,7 @@ function openEconomy() {
 
     buttonResource.enabled = controlsPlayer(g_ViewedPlayer);
     buttonResource.onPress = (resource => {
+      let marketSelected = market[i];
       let citynamePressed = market[i].cityCenter;
       let CityPanelCityID = cityID;
       let CityPanelMarket = market;
@@ -992,9 +993,20 @@ function openEconomy() {
         Engine.GetGUIObjectByName("dashboard").hidden = false;
         let productsButton = Engine.GetGUIObjectByName("productsButton");
         let producersButton = Engine.GetGUIObjectByName("producersButton");
+        let popCounter = Engine.GetGUIObjectByName("economicPanelPopCounter");
+        let happyCounter = Engine.GetGUIObjectByName(
+          "economicPanelHappyCounter"
+        );
+        let happyIcon = Engine.GetGUIObjectByName("ecopanelHappyIcon");
         // we set up the  Economy Chart
         initCityEconomyGUICharts();
-
+        // we set the pop counter and avarage happyness
+        popCounter.caption = `${marketSelected.pop}`;
+        happyCounter.caption = `${Math.floor(
+          marketSelected.avarageHappiness * 100
+        ) / 100}`;
+        let iconHappy = GetIconName(marketSelected.avarageHappiness);
+        happyIcon.sprite = `face${iconHappy}`;
         producersButton.onPress = (producers => {
           return () => {
             // we hide dashboard
@@ -1096,6 +1108,23 @@ function initCityEconomyGUICharts() {
   let chart = Engine.GetGUIObjectByName("chart");
   chart.series_color = ["green", "white"];
   chart.series = [[[1, 2], [2, 2], [3, 3]], [[1, 2], [2, 4], [3, 9]]];
+}
+
+function GetIconName(happylevel) {
+  let iconName;
+  if (happylevel > 0.8) {
+    iconName = "Happy";
+  } else if (happylevel > 0.6 && happylevel <= 0.8) {
+    iconName = "Happy8";
+  } else if (happylevel > 0.4 && happylevel <= 0.6) {
+    iconName = "Happy6";
+  } else if (happylevel > 0.2 && happylevel <= 0.4) {
+    iconName = "Happy4";
+  } else if (happylevel > 0 && happylevel <= 0.2) {
+    iconName = "Happy2";
+  }
+
+  return iconName;
 }
 
 function closeEconomyCityEnts() {

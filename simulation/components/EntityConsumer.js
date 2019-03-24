@@ -257,6 +257,14 @@ EntityConsumer.prototype.GetEntityFinances = function() {
   return cmpEntityFinance.GetFinancialStatus();
 };
 
+EntityConsumer.prototype.GetEntityHappyness = function() {
+  let cmpEntityHappyness = Engine.QueryInterface(
+    this.entity,
+    IID_EntityHappiness
+  );
+  return cmpEntityHappyness.CalculateHappinessLevel();
+};
+
 EntityConsumer.prototype.PriorityNeeds = function(
   cost,
   consumeDaily,

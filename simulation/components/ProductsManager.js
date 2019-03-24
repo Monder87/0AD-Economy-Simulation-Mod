@@ -4,6 +4,8 @@ this.market = [
   {
     cityCenter: Cityname,
     cityEntId: idCityCenter,
+    pop: 104,
+    happyness: 0.2
     producers: [
       {
         id:11,
@@ -26,6 +28,8 @@ this.market = [
   {
   cityCenter: Cityname,
   cityEntId: idCityCenter,
+  pop: 103,
+  happyness: 0.5
     producers: [
       {
         id:1,
@@ -101,7 +105,21 @@ ProductsManager.prototype.GetAllProducts = function(center) {
     [owner],
     IID_EntityProducer
   );
-
+  let consumers = cmpRangeManager.ExecuteQuery(
+    center,
+    0,
+    range,
+    [owner],
+    IID_EntityConsumer
+  );
+  let avarageHappiness = 0;
+  consumers.forEach(function(cons) {
+    let cmpEntityConsumer = Engine.QueryInterface(cons, IID_EntityConsumer);
+    let happy = cmpEntityConsumer.GetEntityHappyness();
+    avarageHappiness += happy;
+  });
+  avarageHappiness = avarageHappiness / consumers.length;
+  error(avarageHappiness);
   // we find all product sold for each producer and the city name
 
   let cmpIdentity = Engine.QueryInterface(center, IID_Identity);
@@ -110,6 +128,8 @@ ProductsManager.prototype.GetAllProducts = function(center) {
   let cityMarket = {
     cityCenter: cityName,
     cityEntId: center,
+    pop: consumers.length,
+    avarageHappiness: avarageHappiness,
     producers: [],
     products: []
   };
