@@ -846,6 +846,8 @@ function openEconomy() {
   if (g_ViewedPlayer < 1) return;
   Engine.GetGUIObjectByName("economyCity").hidden = true;
   Engine.GetGUIObjectByName("closeEconomyCityButton").hidden = true;
+  Engine.GetGUIObjectByName("closeEconomyCityEntsButton").hidden = true;
+  Engine.GetGUIObjectByName("dashboard").hidden = true;
   g_IsEconomyOpen = true;
   g_IsEconomyCities = true;
   let button = {};
@@ -981,46 +983,72 @@ function openEconomy() {
         g_IsEconomyCityOpen = true;
         // we set the name of the city
         Engine.GetGUIObjectByName("cityName").caption = sprintf(
-          translate("%(cityName)s Producers"),
+          translate("%(cityName)s Economy"),
           {
             cityName: citynamePressed
           }
         );
-        // we get all producers
-        for (let i = 0; i < CityPanelMarket.length; ++i) {
-          if (CityPanelMarket[i].cityCenter == citynamePressed) {
-            //CityPanelMarket[i].producers.unshift(0);
-            for (let i2 = 0; i2 < CityPanelMarket[i].producers.length; ++i2) {
-              // we get theentity state
-              let entState = Engine.GuiInterfaceCall(
-                "GetEntityState",
-                CityPanelMarket[i].producers[i2].id
-              );
-              let buttonProducer = Engine.GetGUIObjectByName(
-                "producerButton[" + i2 + "]"
-              );
-              if (i2 < 18) {
-                setPanelObjectPosition(buttonProducer, i2, i2 + 1, 10);
-              } else if (i2 >= 18 && i2 < 36) {
-                setPanelObjectPosition(buttonProducer, i2, 9, 10, 20, 10);
-              } else if (i2 >= 36 && i2 < 54) {
-                setPanelObjectPosition(buttonProducer, i2, 9, 10, 20, 50);
-              } else if (i2 >= 54 && i2 < 72) {
-                setPanelObjectPosition(buttonProducer, i2, 9, 10, 20, 50);
+        // we show the city economy dashboard
+        Engine.GetGUIObjectByName("dashboard").hidden = false;
+        let productsButton = Engine.GetGUIObjectByName("productsButton");
+        let producersButton = Engine.GetGUIObjectByName("producersButton");
+        producersButton.onPress = (producers => {
+          return () => {
+            // we hide dashboard
+            Engine.GetGUIObjectByName("dashboard").hidden = true;
+            // we hide back button 1
+            Engine.GetGUIObjectByName("closeEconomyCityButton").hidden = true;
+            // we show back button 2
+            Engine.GetGUIObjectByName(
+              "closeEconomyCityEntsButton"
+            ).hidden = false;
+            Engine.GetGUIObjectByName("producers").hidden = false;
+            // we get all producers
+            for (let i = 0; i < CityPanelMarket.length; ++i) {
+              if (CityPanelMarket[i].cityCenter == citynamePressed) {
+                //CityPanelMarket[i].producers.unshift(0);
+                for (
+                  let i2 = 0;
+                  i2 < CityPanelMarket[i].producers.length;
+                  ++i2
+                ) {
+                  // we get theentity state
+                  let entState = Engine.GuiInterfaceCall(
+                    "GetEntityState",
+                    CityPanelMarket[i].producers[i2].id
+                  );
+                  let buttonProducer = Engine.GetGUIObjectByName(
+                    "producerButton[" + i2 + "]"
+                  );
+                  if (i2 < 18) {
+                    setPanelObjectPosition(buttonProducer, i2, i2 + 1, 10);
+                  } else if (i2 >= 18 && i2 < 36) {
+                    setPanelObjectPosition(buttonProducer, i2, 9, 10, 20, 10);
+                  } else if (i2 >= 36 && i2 < 54) {
+                    setPanelObjectPosition(buttonProducer, i2, 9, 10, 20, 50);
+                  } else if (i2 >= 54 && i2 < 72) {
+                    setPanelObjectPosition(buttonProducer, i2, 9, 10, 20, 50);
+                  }
+                  // we get the icon
+                  let icon = displaySingleTemplate(entState).icon;
+                  let buttonProducerIcon = Engine.GetGUIObjectByName(
+                    "producerIcon[" + i2 + "]"
+                  );
+                  buttonProducerIcon.sprite =
+                    "stretched:session/portraits/" + icon;
+                  // we put the tooltip
+                  buttonProducer.tooltip = sprintf(
+                    translate("Buy %(resource)s"),
+                    {
+                      resource: "resource"
+                    }
+                  );
+                }
               }
-              // we get the icon
-              let icon = displaySingleTemplate(entState).icon;
-              let buttonProducerIcon = Engine.GetGUIObjectByName(
-                "producerIcon[" + i2 + "]"
-              );
-              buttonProducerIcon.sprite = "stretched:session/portraits/" + icon;
-              // we put the tooltip
-              buttonProducer.tooltip = sprintf(translate("Buy %(resource)s"), {
-                resource: "resource"
-              });
             }
-          }
-        }
+          };
+        })(producersButton);
+
         // we update the cities panel
         currTradeSelection = city;
         updateTradeButtons();
@@ -1036,6 +1064,14 @@ function openEconomy() {
 function displaySingleTemplate(entState) {
   // Get general unit and player data
   return GetTemplateData(entState.template);
+}
+
+function closeEconomyCityEnts() {
+  Engine.GetGUIObjectByName("products").hidden = true;
+  Engine.GetGUIObjectByName("producers").hidden = true;
+  Engine.GetGUIObjectByName("closeEconomyCityEntsButton").hidden = true;
+  Engine.GetGUIObjectByName("dashboard").hidden = false;
+  Engine.GetGUIObjectByName("closeEconomyCityButton").hidden = false;
 }
 
 function closeEconomyCity() {

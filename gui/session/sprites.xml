@@ -255,6 +255,21 @@
 
 	<!-- Bottom Right Panel -->
 
+	<!-- Economy Top Panel -->
+
+	<sprite name="productsIcon">
+		<image texture="session/products.png"
+			texture_size="2 1 98% 99%"
+			size="3 1 97% 99%"
+		/>
+	</sprite>
+
+	<sprite name="producersIcon">
+		<image texture="session/producers.png"
+			texture_size="2 1 98% 99%"
+			size="3 1 97% 99%"
+		/>
+	</sprite>
 
 	<!-- Economy Entities Right Panel -->
 
