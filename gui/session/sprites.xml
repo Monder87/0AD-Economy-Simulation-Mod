@@ -259,17 +259,68 @@
 
 	<sprite name="productsIcon">
 		<image texture="session/products.png"
-			texture_size="2 1 98% 99%"
-			size="3 1 97% 99%"
+			texture_size="2 0 98% 100%"
+			size="3 0 97% 100%"
 		/>
 	</sprite>
 
 	<sprite name="producersIcon">
 		<image texture="session/producers.png"
-			texture_size="2 1 98% 99%"
-			size="3 1 97% 99%"
+			texture_size="2 0 98% 100%"
+			size="3 0 97% 100%"
 		/>
 	</sprite>
+
+	<!-- Map Panel -->
+	<sprite name="economyContainer">
+		<image backcolor="0 0 0 50"
+			size="0 0 100% 100%"
+		/>
+		<!-- sides -->
+		<image
+			texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 0 100%-4 4"
+		/>
+		<image
+			texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="100%-4 4 100% 100%-4"
+		/>
+		<image
+			texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 100%-4 100%-4 100%"
+		/>
+		<image
+			texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="0 4 4 100%-4"
+		/>
+
+		<!-- corners -->
+		<image
+			texture="global/border/line_corner_top_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 0 100% 4"
+		/>
+		<image
+			texture="global/border/line_corner_bottom_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 100%-4 100% 100%"
+		/>
+		<image
+			texture="global/border/line_corner_bottom_left.png"
+			texture_size="0 0 4 4"
+			size="0 100%-4 4 100%"
+		/>
+		<image
+			texture="global/border/line_corner_top_left.png"
+			texture_size="0 0 4 4"
+			size="0 0 4 4"
+		/>
+	</sprite>
+
 
 	<!-- Economy Entities Right Panel -->
 

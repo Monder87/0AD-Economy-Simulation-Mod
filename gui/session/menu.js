@@ -992,6 +992,9 @@ function openEconomy() {
         Engine.GetGUIObjectByName("dashboard").hidden = false;
         let productsButton = Engine.GetGUIObjectByName("productsButton");
         let producersButton = Engine.GetGUIObjectByName("producersButton");
+        // we set up the  Economy Chart
+        initCityEconomyGUICharts();
+
         producersButton.onPress = (producers => {
           return () => {
             // we hide dashboard
@@ -1064,6 +1067,35 @@ function openEconomy() {
 function displaySingleTemplate(entState) {
   // Get general unit and player data
   return GetTemplateData(entState.template);
+}
+
+function initCityEconomyGUICharts() {
+  let chartLegend = Engine.GetGUIObjectByName("chartLegend");
+  chartLegend.caption = "■" + " " + "Gdp";
+  let chartLegend2 = Engine.GetGUIObjectByName("chartLegend2");
+  chartLegend2.caption = "■" + " " + "Consumes";
+  let chartPart = Engine.GetGUIObjectByName("chartPart");
+
+  //Engine.GetGUIObjectByName("chartXAxisLabel").caption = translate(
+  //  "Time elapsed"
+  //);
+  let series = [];
+  for (let j = 1; j <= 2; ++j) {
+    let time = [1, 2, 3, 4];
+    let data = [];
+    let type = "gdp";
+    for (let index in time) {
+      let value = {
+        gdp: 7
+      };
+      if (type) value = value[type];
+      data.push(time, value);
+    }
+    series.push(data);
+  }
+  let chart = Engine.GetGUIObjectByName("chart");
+  chart.series_color = ["green", "white"];
+  chart.series = [[[1, 2], [2, 2], [3, 3]], [[1, 2], [2, 4], [3, 9]]];
 }
 
 function closeEconomyCityEnts() {
