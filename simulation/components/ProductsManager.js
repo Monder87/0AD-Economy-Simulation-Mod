@@ -119,7 +119,7 @@ ProductsManager.prototype.GetAllProducts = function(center) {
     avarageHappiness += happy;
   });
   avarageHappiness = avarageHappiness / consumers.length;
-  error(avarageHappiness);
+
   // we find all product sold for each producer and the city name
 
   let cmpIdentity = Engine.QueryInterface(center, IID_Identity);

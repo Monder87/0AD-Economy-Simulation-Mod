@@ -848,6 +848,8 @@ function openEconomy() {
   Engine.GetGUIObjectByName("closeEconomyCityButton").hidden = true;
   Engine.GetGUIObjectByName("closeEconomyCityEntsButton").hidden = true;
   Engine.GetGUIObjectByName("dashboard").hidden = true;
+  Engine.GetGUIObjectByName("products").hidden = true;
+
   g_IsEconomyOpen = true;
   g_IsEconomyCities = true;
   let button = {};
@@ -1006,7 +1008,7 @@ function openEconomy() {
           marketSelected.avarageHappiness * 100
         ) / 100}`;
         let iconHappy = GetIconName(marketSelected.avarageHappiness);
-        happyIcon.sprite = `face${iconHappy}`;
+        if (iconHappy) happyIcon.sprite = `face${iconHappy}`;
         producersButton.onPress = (producers => {
           return () => {
             // we hide dashboard
@@ -1063,7 +1065,19 @@ function openEconomy() {
             }
           };
         })(producersButton);
-
+        productsButton.onPress = (producers => {
+          return () => {
+            // we hide dashboard
+            Engine.GetGUIObjectByName("dashboard").hidden = true;
+            // we hide back button 1
+            Engine.GetGUIObjectByName("closeEconomyCityButton").hidden = true;
+            // we show back button 2
+            Engine.GetGUIObjectByName(
+              "closeEconomyCityEntsButton"
+            ).hidden = false;
+            Engine.GetGUIObjectByName("products").hidden = false;
+          };
+        })(producersButton);
         // we update the cities panel
         currTradeSelection = city;
         updateTradeButtons();

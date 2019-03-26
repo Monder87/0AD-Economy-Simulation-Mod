@@ -257,6 +257,14 @@
 
 	<!-- Economy Top Panel -->
 
+
+	<sprite name="moneyIcon">
+		<image texture="session/icons/resources/money.png"
+			texture_size="2 0 98% 100%"
+			size="3 0 97% 100%"
+		/>
+	</sprite>
+
 	<sprite name="populationIcon">
 		<image texture="session/icons/resources/population.png"
 			texture_size="2 0 98% 100%"
