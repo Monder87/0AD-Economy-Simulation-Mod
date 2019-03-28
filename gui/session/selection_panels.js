@@ -461,9 +461,9 @@ g_SelectionPanels.Consume = {
     let ary = [];
     for (let state of unitEntStates) {
       if (state.entityConsumer) {
-        for (let type in state.entityConsumer.carring2) {
+        for (let type in state.entityConsumer.carring) {
           consumerStock[type] = {
-            quantity: state.entityConsumer.carring2[type],
+            quantity: state.entityConsumer.carring[type],
             maxCap: state.entityConsumer.maxCapac[type],
             id: state.id
           };
@@ -486,12 +486,11 @@ g_SelectionPanels.Consume = {
     if (!g_StockInfo.has(data.item))
       g_StockInfo.set(
         data.item,
-        Engine.GuiInterfaceCall("GetStockInfoFromTemplate", {
-          templateName: `special/stock/${data.item}`
-        })
+        Engine.GuiInterfaceCall("GetProductData", { type: data.item })
       );
 
     let stockInfo = g_StockInfo.get(data.item);
+
     let productActive = true;
     let actualCarried = consumerStock[data.item].quantity;
     let maxCap = consumerStock[data.item].maxCap;

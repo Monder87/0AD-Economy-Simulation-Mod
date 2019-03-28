@@ -200,6 +200,13 @@ ProductsManager.prototype.OnTimerDayChanged = function(msg) {
   }
 };
 
+ProductsManager.prototype.GetProductData = function(type) {
+  return {
+    name: type,
+    icon: `stock/${type}.png`
+  };
+};
+
 Engine.RegisterSystemComponentType(
   IID_ProductsManager,
   "ProductsManager",

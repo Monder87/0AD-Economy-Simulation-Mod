@@ -383,7 +383,7 @@ GuiInterface.prototype.GetEntityState = function(player, ent) {
   if (cmpEntityConsumer)
     ret.entityConsumer = {
       maxCapac: cmpEntityConsumer.GetProductCapacities(),
-      carring2: cmpEntityConsumer.GetProductCarring(),
+      carring: cmpEntityConsumer.GetProductCarring(),
       ent: ent
     };
 
@@ -880,6 +880,17 @@ GuiInterface.prototype.GetMarket = function(player, data) {
   );
 
   return cmpProductsManager.GetMarket();
+};
+
+GuiInterface.prototype.GetProductData = function(player, data) {
+  // we ask for the prices to build the construction
+  error(data.type);
+  let cmpProductsManager = Engine.QueryInterface(
+    SYSTEM_ENTITY,
+    IID_ProductsManager
+  );
+
+  return cmpProductsManager.GetProductData(data.type);
 };
 
 // Builder methods
@@ -2230,6 +2241,7 @@ let exposedFunctions = {
   GetAllBuildableEntitiesFromOneEnt: 1,
   // === Economy Functions == \\
   GetMarket: 1,
+  GetProductData: 1,
   GetBuilderQuotation: 1,
   GetAllConsumingProducts: 1,
   isEconomyEntity: 1,

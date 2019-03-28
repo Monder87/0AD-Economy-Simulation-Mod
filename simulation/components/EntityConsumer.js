@@ -108,10 +108,20 @@ EntityConsumer.prototype.Init = function() {
   };
   this.purchaseList = [];
   this.productNeedPriority = {};
-  this.GetProductNeededTypes();
+  this.InitStock();
   this.GetProductNeededCosumesRates();
   this.GetProductNeededDailyAvailability();
   this.test = 0;
+};
+
+EntityConsumer.prototype.InitStock = function() {
+  // We get the product needed Type
+  for (let type in this.template.ProductCapacities) {
+    if (this.template.ProductCapacities[type] != 0) {
+      // we construct the productsCarring Object
+      this.productsCarring[type] = Math.floor(Math.random() * 10) + 0.1;
+    }
+  }
 };
 
 EntityConsumer.prototype.OnEntityFinanceChanged = function(msg) {
@@ -153,16 +163,6 @@ EntityConsumer.prototype.AddProductCarring = function(type, amount) {
       ) {
         this.productsCarring[type2] += amount;
       }
-    }
-  }
-};
-
-EntityConsumer.prototype.GetProductNeededTypes = function() {
-  // We get the product needed Type
-  for (let type in this.template.ProductCapacities) {
-    if (this.template.ProductCapacities[type] != 0) {
-      // we construct the productsCarring Object
-      this.productsCarring[type] = Math.floor(Math.random() * 10) + 0.1;
     }
   }
 };
