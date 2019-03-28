@@ -1,0 +1,18 @@
+{
+  "code": "food",
+  "name": "Food",
+  "description": "Harvest from animals, berry bushes, fish, or fields.",
+  "order": 1,
+  "subtypes": {
+    "fish": "Fish",
+    "milk": "Milk",
+    "oil": "Oil",
+    "herbs": "Herbs",
+    "wool": "Wool",
+    "fruit": "Fruit",
+    "grain": "Grain",
+    "meat": "Meat"
+  },
+  "truePrice": 100,
+  "aiAnalysisInfluenceGroup": "ignore"
+}

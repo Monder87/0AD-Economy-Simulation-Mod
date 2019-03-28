@@ -966,6 +966,11 @@ GuiInterface.prototype.AddHappinessUnit = function(player, data) {
   cmpEntityHappiness.RecordValue(data.value);
 };
 
+GuiInterface.prototype.CalculateHappinessLevel = function(player, ent) {
+  let cmpEntityHappiness = QueryMiragedInterface(ent, IID_EntityHappiness);
+  return cmpEntityHappiness.CalculateHappinessLevel();
+};
+
 GuiInterface.prototype.GetPlayerColor = function(player, data) {
   if (typeof data.entity !== "undefined") {
     let cmpOwnership = Engine.QueryInterface(data.entity, IID_Ownership);
@@ -2232,6 +2237,7 @@ let exposedFunctions = {
   RightPanelFocused: 1,
   GetPlayerColor: 1,
   AddHappinessUnit: 1,
+  CalculateHappinessLevel: 1,
 
   // === End == \\
   SetStatusBars: 1,

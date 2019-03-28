@@ -34,6 +34,7 @@ let g_ProductsInfo = new Map();
 let g_AvailableStock = new Map();
 let g_AvailableStock2 = new Map();
 let g_AvailableStock3 = new Map();
+let consumerStock = {};
 let g_StockInfo = new Map();
 // used for the happiness calculation
 let totProducts = null;
@@ -456,32 +457,24 @@ g_SelectionPanels.Consume = {
   },
   rowLength: 6,
   getItems: function(unitEntStates) {
-    entity = unitEntStates;
     Engine.GetGUIObjectByName("tabButtonConsume").enabled = false;
-
-    //return getAllConsumingProductsFromSelection();
-    if (!g_AvailableStock.has(unitEntStates[0].player))
-      g_AvailableStock.set(
-        unitEntStates[0].player,
-        Engine.GuiInterfaceCall("GetAvailableStock", unitEntStates[0].player)
-      );
-    let availableStock = g_AvailableStock.get(unitEntStates[0].player);
+    let ary = [];
     for (let state of unitEntStates) {
       if (state.entityConsumer) {
         for (let type in state.entityConsumer.carring2) {
-          g_AvailableStock2.set(type, state.entityConsumer.carring2[type]);
-
-          g_AvailableStock3.set(type, state.entityConsumer.maxCapac[type]);
+          consumerStock[type] = {
+            quantity: state.entityConsumer.carring2[type],
+            maxCap: state.entityConsumer.maxCapac[type],
+            id: state.id
+          };
+          ary.push(type);
         }
-        // we use this for happiness calculation
-        totProducts = availableStock.length;
-        g_productStockLeveles = [];
-        let selection = g_Selection.groups.getEntsGrouped();
-        if (selection.length < 2) {
-          Engine.GetGUIObjectByName("tabButtonConsume").enabled = true;
-          if (Engine.GuiInterfaceCall("RightPanelEnabled", "Consume")) {
-            return availableStock;
-          }
+      }
+      let selection = g_Selection.groups.getEntsGrouped();
+      if (selection.length < 2) {
+        Engine.GetGUIObjectByName("tabButtonConsume").enabled = true;
+        if (Engine.GuiInterfaceCall("RightPanelEnabled", "Consume")) {
+          return ary;
         }
       } else {
         Engine.GetGUIObjectByName("tabButtonConsume").enabled = false;
@@ -494,31 +487,19 @@ g_SelectionPanels.Consume = {
       g_StockInfo.set(
         data.item,
         Engine.GuiInterfaceCall("GetStockInfoFromTemplate", {
-          templateName: data.item
+          templateName: `special/stock/${data.item}`
         })
       );
 
     let stockInfo = g_StockInfo.get(data.item);
-    let productActive = false;
-    let actualCarried = 0;
-    let maxCap = 0;
-    let dataclean = data.item.replace("special/stock/", "");
-    function logMapElements(value, key, map) {
-      if (key == dataclean) {
-        productActive = true;
-        actualCarried = value;
-        maxCap = g_AvailableStock3.get(key);
-      }
-    }
-    g_AvailableStock2.forEach(logMapElements);
+    let productActive = true;
+    let actualCarried = consumerStock[data.item].quantity;
+    let maxCap = consumerStock[data.item].maxCap;
+    let dataclean = data.item;
     let tooltip = translate(stockInfo.name);
-    //if (!formationOk && formationInfo.tooltip)
-    //  tooltip += "\n" + coloredText(translate(formationInfo.tooltip), "red");
     data.button.tooltip = tooltip + " " + actualCarried + " / " + maxCap;
     data.button.enabled = productActive && controlsPlayer(data.player);
     let grayscale = productActive ? "" : "grayscale:";
-    //let grayscale = "";
-    //data.guiSelection.hidden = !formationSelected;
     data.totAmount = 10;
     data.icon.sprite =
       "stretched:" + grayscale + "session/icons/" + stockInfo.icon;
@@ -541,81 +522,37 @@ g_SelectionPanels.Consume = {
 
     // Happiness Level
 
-    let happiness = 0;
+    let happiness = Engine.GuiInterfaceCall(
+      "CalculateHappinessLevel",
+      consumerStock[data.item].id
+    );
+    happiness = Math.floor(happiness * 100) / 100;
+    Engine.GetGUIObjectByName("happyPercent").caption = sprintf(
+      translate(`${happiness}/1`)
+    );
 
-    if (productActive) {
-      g_productStockLeveles.push(stockSize.rright);
-    } else {
-      totProducts -= 1;
-    }
-    if (g_productStockLeveles.length == totProducts) {
-      //error(g_productStockLeveles);
-      let sum = g_productStockLeveles.reduce(
-        (previous, current) => (current += previous)
-      );
-      happiness = sum / g_productStockLeveles.length / 100;
-      happiness = Math.floor(happiness * 100) / 100;
-      Engine.GetGUIObjectByName("happyPercent").caption = sprintf(
-        translate(`${happiness}/1`)
-      );
-
-      let face = Engine.GetGUIObjectByName("faceIcon");
-      let iconName = "happy";
-      if (happiness > 0.8) {
-        face.sprite = "faceHappy";
-        iconName = "happy";
-      } else if (happiness > 0.6 && happiness <= 0.8) {
-        face.sprite = "faceHappy8";
-        iconName = "happy8";
-      } else if (happiness > 0.4 && happiness <= 0.6) {
-        face.sprite = "faceHappy6";
-        iconName = "happy6";
-      } else if (happiness > 0.2 && happiness <= 0.4) {
-        face.sprite = "faceHappy4";
-        iconName = "happy4";
-      } else if (happiness > 0 && happiness <= 0.2) {
-        face.sprite = "faceHappy2";
-        iconName = "happy2";
-      }
-      //for (let state of entity) {
-      //  if (state.entityConsumer) {
-      //    //error(state.entityConsumer.ent);
-      //    Engine.GuiInterfaceCall("AddHappinessUnit", {
-      //      ent: state.entityConsumer.ent,
-      //      value: iconName
-      //    });
-      //  }
-      //}
-      //
+    let face = Engine.GetGUIObjectByName("faceIcon");
+    let iconName = "happy";
+    if (happiness > 0.8) {
+      face.sprite = "faceHappy";
+      iconName = "happy";
+    } else if (happiness > 0.6 && happiness <= 0.8) {
+      face.sprite = "faceHappy8";
+      iconName = "happy8";
+    } else if (happiness > 0.4 && happiness <= 0.6) {
+      face.sprite = "faceHappy6";
+      iconName = "happy6";
+    } else if (happiness > 0.2 && happiness <= 0.4) {
+      face.sprite = "faceHappy4";
+      iconName = "happy4";
+    } else if (happiness > 0 && happiness <= 0.2) {
+      face.sprite = "faceHappy2";
+      iconName = "happy2";
     }
 
     setPanelObjectPosition(data.button, data.i, data.rowLength);
 
     return true;
-
-    /*=========*/
-    /*
-
-
-    let template = GetTemplateData(data.item);
-    error(template.icon);
-
-    data.button.onPress = function() {
-      error("ciao");
-    };
-
-    data.button.tooltip = "ciao";
-
-
-    data.button.enabled = controlsPlayer(data.player);
-
-    setPanelObjectPosition(
-      data.button,
-      data.i + getNumberOfRightPanelButtons(),
-      data.rowLength
-    );
-    return true;
-    */
   }
 };
 
