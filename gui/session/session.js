@@ -702,6 +702,8 @@ function updateTopPanel() {
     viewPlayer.getComputedSize().left;
 
   let resCodes = g_ResourceData.GetCodes();
+  let resNames = g_ResourceData.GetNames();
+
   let r = 0;
   for (let res of resCodes) {
     if (!Engine.GetGUIObjectByName("resource[" + r + "]")) {
@@ -715,9 +717,66 @@ function updateTopPanel() {
     Engine.GetGUIObjectByName("resource[" + r + "]_icon").sprite =
       "stretched:session/icons/resources/" + res + ".png";
     Engine.GetGUIObjectByName("resource[" + r + "]").hidden = !isPlayer;
+    if (res == "food") {
+      Engine.GetGUIObjectByName("resource[" + r + "]").onPress = function() {
+        // we toogle the subresources panel
+        let subResourcePanelVisibility = Engine.GetGUIObjectByName(
+          "resourceFood"
+        ).hidden;
+        subResourcePanelVisibility = !subResourcePanelVisibility;
+        Engine.GetGUIObjectByName(
+          "resourceFood"
+        ).hidden = subResourcePanelVisibility;
+      };
+    }
     ++r;
   }
+  let arySub = [];
+  let arySub2 = [];
+  for (let res2 in resNames) {
+    arySub.push(res2);
+  }
+  arySub.forEach(name => {
+    if (
+      name !== "stone" &&
+      name !== "wood" &&
+      name !== "metal" &&
+      name !== "rock" &&
+      name !== "ruins" &&
+      name !== "tree" &&
+      name !== "food" &&
+      name !== "ore" &&
+      name !== "money" &&
+      name !== "well"
+    ) {
+      arySub2.push(name);
+    }
+  });
+  let r2 = 0;
+  for (let res of arySub2) {
+    //error(res);
+    Engine.GetGUIObjectByName("resourceFood[" + r2 + "]_icon").sprite =
+      "stretched:session/icons/resources/" + res + ".png";
+    Engine.GetGUIObjectByName("resourceFood[" + r2 + "]").hidden = false;
+    ++r2;
+  }
+  function horizontallySpaceObjectsCustom(parentName, margin = 0) {
+    let objects = Engine.GetGUIObjectByName(parentName).children;
+    let numb = 0;
+    for (let i = 0; i < objects.length; ++i) {
+      if (i == 0 || i == 1) continue;
+      numb += 75;
+      let size = objects[i].size;
+      let width = size.right - size.left;
+
+      size.left = numb;
+      size.right = numb;
+      objects[i].size = size;
+    }
+  }
   horizontallySpaceObjects("resourceCounts", 5);
+  horizontallySpaceObjectsCustom("resourceFood", 5);
+
   hideRemaining("resourceCounts", r);
 
   let resPop = Engine.GetGUIObjectByName("population");
