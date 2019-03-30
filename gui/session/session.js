@@ -763,6 +763,7 @@ function updateTopPanel() {
   function horizontallySpaceObjectsCustom(parentName, margin = 0) {
     let objects = Engine.GetGUIObjectByName(parentName).children;
     let numb = 0;
+
     for (let i = 0; i < objects.length; ++i) {
       if (i == 0 || i == 1) continue;
       numb += 75;
@@ -770,12 +771,14 @@ function updateTopPanel() {
       let width = size.right - size.left;
 
       size.left = numb;
-      size.right = numb;
+      size.right = 1000;
       objects[i].size = size;
     }
   }
+
   horizontallySpaceObjects("resourceCounts", 5);
-  horizontallySpaceObjectsCustom("resourceFood", 5);
+
+  horizontallySpaceObjectsCustom("resourceFood");
 
   hideRemaining("resourceCounts", r);
 
@@ -1419,11 +1422,44 @@ function updatePlayerDisplay() {
         });
 
   let resCodes = g_ResourceData.GetCodes();
+  let resObj = viewedPlayerState.resourceCounts;
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
   for (let r = 0; r < resCodes.length; ++r) {
     let resourceObj = Engine.GetGUIObjectByName("resource[" + r + "]");
     if (!resourceObj) break;
 
     let res = resCodes[r];
+
+    if (res == "food") {
+      let index = 0;
+      let mainRes = resObj[res];
+      let MainResCounter = 0;
+      let margin = 0;
+      for (let res2 in mainRes) {
+        let resourceSubtypeObj = Engine.GetGUIObjectByName(
+          "resourceFood[" + index + "]"
+        );
+        resourceSubtypeObj.tooltip = translate(res2);
+        if (index < 8) {
+          Engine.GetGUIObjectByName(
+            "resourceFood[" + index + "]_count"
+          ).caption = Math.floor(mainRes[res2]);
+
+          MainResCounter += mainRes[res2];
+          margin++;
+        }
+        index++;
+      }
+      Engine.GetGUIObjectByName(
+        "resource[" + r + "]_count"
+      ).caption = Math.floor(MainResCounter);
+    } else {
+      Engine.GetGUIObjectByName(
+        "resource[" + r + "]_count"
+      ).caption = Math.floor(viewedPlayerState.resourceCounts[res]);
+    }
 
     let tooltip =
       '[font="' +
@@ -1440,10 +1476,6 @@ function updatePlayerDisplay() {
       getAllyStatTooltip(res, viewablePlayerStates, tooltipSort);
 
     resourceObj.tooltip = tooltip;
-
-    Engine.GetGUIObjectByName("resource[" + r + "]_count").caption = Math.floor(
-      viewedPlayerState.resourceCounts[res]
-    );
   }
 
   Engine.GetGUIObjectByName("resourcePop").caption = sprintf(

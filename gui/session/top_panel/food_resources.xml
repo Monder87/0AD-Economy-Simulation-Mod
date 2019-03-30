@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <object size="2 85% 47% 230%" name="resourceFood" >
   <object size="0 0 100% 100%" type="image"  sprite="subResourcesContainer" ghost="true"/>
+
   <repeat count="8">
 		<object name="resourceFood[n]" size="0 17% 89 100%" type="button" style="resourceCounter" tooltip_style="sessionToolTipBold">
 			<object size="2 2 35 35" type="image" name="resourceFood[n]_icon" ghost="true"/>
-			<object size="34 0 100%-2 100%-2" type="text" style="resourceText" name="resourceFood[n]_count"/>
+			<object size="34 0 100%-2 100%-2" type="text" style="resourceText" name="resourceFood[n]_count" ><translatableAttribute id="caption">2</translatableAttribute></object>
 		</object>
 	</repeat>
 </object>

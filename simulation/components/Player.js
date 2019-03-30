@@ -83,7 +83,19 @@ Player.prototype.Init = function() {
   let remainder = 20 % resCodes.length;
   for (let i in resCodes) {
     let res = resCodes[i];
-    this.resourceCount[res] = 300;
+    // now for each resource with subTypes we set the quantity on the subtypes
+    // for now we just select the food , but can change in the future adding more subTypes of resources for other
+    if (Resources.GetResource(res).subtypes && res == "food") {
+      let mainResource = {};
+      // we iterate through the subtypes of the resource and we add
+      for (let res2 in Resources.GetResource(res).subtypes) {
+        mainResource[res2] = 100;
+      }
+      this.resourceCount[res] = mainResource;
+    } else {
+      this.resourceCount[res] = 300;
+    }
+
     this.resourceNames[res] = Resources.GetResource(res).name;
     this.tradingGoods.push({
       goods: res,
@@ -284,7 +296,24 @@ Player.prototype.UnBlockTraining = function() {
 };
 
 Player.prototype.SetResourceCounts = function(resources) {
-  for (let res in resources) this.resourceCount[res] = resources[res];
+  for (let res in resources) {
+    if (res == "food") {
+      let imputResources = resources[res];
+      let mainResource = {};
+      for (let res2 in this.resourceCount[res]) {
+        if (imputResources[res2]) {
+          mainResource[res2] = imputResources[res2];
+        } else {
+          mainResource[res2] = imputResources / 8;
+        }
+      }
+      this.resourceCount[res] = mainResource;
+    } else {
+      this.resourceCount[res] = 300;
+    }
+  }
+
+  this.resourceCount[res] = resources[res];
 };
 
 Player.prototype.GetResourceCounts = function() {
@@ -298,13 +327,38 @@ Player.prototype.GetResourceCounts = function() {
  */
 Player.prototype.AddResource = function(type, amount) {
   this.resourceCount[type] += +amount;
+
+  /*
+  if (type == "food") {
+
+    for (let res2 in Resources.GetResource(res).subtypes) {
+      let mainResource = this.resourceCount[res];
+      mainResource[res2] = 100;
+      this.resourceCount[type] += +amount;
+    }
+  } else {
+
+  }
+  */
 };
 
 /**
  * Add resources to player
  */
 Player.prototype.AddResources = function(amounts) {
-  for (var type in amounts) this.resourceCount[type] += +amounts[type];
+  for (var type in amounts) {
+    if (type == "food") {
+      let foodResourceCount = this.resourceCount[type];
+      if (typeof amounts[type] == "Object") {
+        let amountTypeObj = amounts[type];
+        for (let subType of amountTypeObj) {
+          foodResourceCount[subType] += amountTypeObj[subType];
+        }
+      }
+    } else {
+      this.resourceCount[type] += +amounts[type];
+    }
+  }
 };
 
 Player.prototype.GetNeededResources = function(amounts) {
