@@ -101,6 +101,13 @@ Builder.prototype.GetRange = function() {
   return { max: max, min: 0 };
 };
 
+Builder.prototype.GetRate = function() {
+  return ApplyValueModificationsToEntity(
+    "Builder/Rate",
+    +this.template.Rate,
+    this.entity
+  );
+};
 /**
  * Build/repair the target entity. This should only be called after a successful range check.
  * It should be called at a rate of once per second.
