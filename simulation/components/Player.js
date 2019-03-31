@@ -330,6 +330,7 @@ Player.prototype.AddResource = function(type, amount) {
     let mainResource = this.resourceCount[type];
     for (let res2 in amount) {
       if (mainResource[res2]) {
+        //error(amount[res2]);
         mainResource[res2] += amount[res2];
       }
     }

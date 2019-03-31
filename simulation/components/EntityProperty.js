@@ -29,7 +29,6 @@ EntityProperty.prototype.GenerateProperty = function(civ) {
     }
   }
   this.owner = `King of ${civ}`;
-  error(this.owner);
 };
 
 EntityProperty.prototype.SetOwner = function(ent) {

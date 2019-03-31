@@ -59,7 +59,9 @@ ProductsManager.prototype.Schema =
 
 ProductsManager.prototype.Init = function() {
   this.dayOfMonth = 0;
+
   // here where we set all the game products
+
   this.products = {
     bread: {
       initialPrice: 5,
@@ -282,6 +284,12 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
   if (!cmpOwnership || cmpOwnership.GetOwner() == INVALID_PLAYER)
     return undefined;
   var owner = cmpOwnership.GetOwner();
+
+  // we get all resources
+  var cmpPlayer = QueryPlayerIDInterface(owner);
+  let playerResources = cmpPlayer.GetResourceCounts();
+  //error(playerResources);
+
   // we set an avarage city range
   var range = 100;
   // we find all producers in city
@@ -319,7 +327,8 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
     pop: consumers.length,
     avarageHappiness: avarageHappiness,
     producers: [],
-    products: []
+    products: [],
+    resources: playerResources
   };
   // we define first the producers data
   producers.forEach(function(producer) {

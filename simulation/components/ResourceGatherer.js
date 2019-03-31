@@ -46,6 +46,7 @@ ResourceGatherer.prototype.Init = function() {
     grain: 0,
     meat: 0
   };
+
   // The last exact type gathered, so we can render appropriate props
   this.lastCarriedType = undefined; // { generic, specific }
 
@@ -330,6 +331,16 @@ ResourceGatherer.prototype.CommitResources = function(types) {
       if (type in this.carrying) {
         if (type == "food") {
           cmpPlayer.AddResource(type, this.foodSubTypesCarrying);
+          this.foodSubTypesCarrying = {
+            fish: 0,
+            milk: 0,
+            oil: 0,
+            herbs: 0,
+            wool: 0,
+            fruit: 0,
+            grain: 0,
+            meat: 0
+          };
         } else {
           cmpPlayer.AddResource(type, this.carrying[type]);
         }
