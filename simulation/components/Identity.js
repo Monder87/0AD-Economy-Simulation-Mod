@@ -30,6 +30,11 @@ Identity.prototype.Schema =
   "</element>" +
   "</optional>" +
   "<optional>" +
+  "<element name='EntityProperty'>" +
+  "<text/>" +
+  "</element>" +
+  "</optional>" +
+  "<optional>" +
   "<element name='SpecificName' a:help='Specific native-language name for this unit type.'>" +
   "<text/>" +
   "</element>" +
@@ -103,6 +108,10 @@ Identity.prototype.Init = function() {
   if (this.template.CityName) {
     this.CityName = this.GenerateCityName();
   }
+
+  if (this.template.EntityProperty) {
+    this.EntityProperty = this.GenerateProperty();
+  }
 };
 
 Identity.prototype.Deserialize = function() {
@@ -171,6 +180,14 @@ Identity.prototype.GenerateCityName = function() {
   );
   let name = cmpCityNameGenerator.GenerateCityName(civ);
   return name;
+};
+
+Identity.prototype.GenerateProperty = function() {
+  let cmpEntityProperty = Engine.QueryInterface(
+    SYSTEM_ENTITY,
+    IID_EntityProperty
+  );
+  cmpEntityProperty.GenerateProperty(this.template.Civ);
 };
 
 Identity.prototype.IsUndeletable = function() {

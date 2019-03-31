@@ -79,8 +79,10 @@
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
+
     <GenericName>Civic Center</GenericName>
     <CityName>Loiano</CityName>
+    <EntityProperty>true</EntityProperty>v
     <Tooltip>Build to acquire large tracts of territory. Train citizens.</Tooltip>
     <Classes datatype="tokens">Defensive CivCentre</Classes>
     <VisibleClasses datatype="tokens">CivilCentre</VisibleClasses>
