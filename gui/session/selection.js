@@ -19,7 +19,10 @@ function _setStatusBars(ents, enabled) {
   if (ents.length)
     Engine.GuiInterfaceCall("SetStatusBars", {
       entities: ents,
-      enabled: enabled
+      enabled: enabled,
+      showRank:
+        Engine.ConfigDB_GetValue("user", "gui.session.rankabovestatusbar") ==
+        "true"
     });
 }
 
