@@ -326,7 +326,16 @@ Player.prototype.GetResourceCounts = function() {
  * @param amount Amount of resource, which should be added (integer)
  */
 Player.prototype.AddResource = function(type, amount) {
-  this.resourceCount[type] += +amount;
+  if (type == "food") {
+    let mainResource = this.resourceCount[type];
+    for (let res2 in amount) {
+      if (mainResource[res2]) {
+        mainResource[res2] += amount[res2];
+      }
+    }
+  } else {
+    this.resourceCount[type] += +amount;
+  }
 
   /*
   if (type == "food") {
