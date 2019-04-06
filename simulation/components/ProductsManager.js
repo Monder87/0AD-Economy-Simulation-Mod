@@ -64,6 +64,7 @@ ProductsManager.prototype.Init = function() {
 
   this.products = {
     bread: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         grain: 5,
@@ -72,6 +73,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 1
     },
     cheese: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         milk: 5,
@@ -80,6 +82,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 2
     },
     sausage: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         herbs: 5,
@@ -89,6 +92,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 2
     },
     soup: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         herbs: 5,
@@ -97,6 +101,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 1
     },
     beer: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         herbs: 10,
@@ -106,6 +111,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 5
     },
     cake: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         milk: 15,
@@ -115,6 +121,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 5
     },
     soap: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         oil: 15,
@@ -124,6 +131,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 1
     },
     broom: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         metal: 10,
@@ -132,6 +140,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 3
     },
     parfume: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         metal: 10,
@@ -142,6 +151,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 10
     },
     woolenClothes: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         wool: 50,
@@ -151,6 +161,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 10
     },
     leatherClothes: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         meat: 40,
@@ -161,6 +172,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 20
     },
     shoes: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         wool: 20,
@@ -170,6 +182,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 15
     },
     banner: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         wool: 30,
@@ -179,6 +192,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 10
     },
     indoorDecoration: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         wool: 50,
@@ -189,6 +203,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 30
     },
     outdoorDecoration: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         stone: 100,
@@ -198,6 +213,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 40
     },
     jewellery: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         stone: 200,
@@ -206,7 +222,8 @@ ProductsManager.prototype.Init = function() {
       },
       processingTime: 50
     },
-    swords: {
+    sword: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         stone: 20,
@@ -215,7 +232,8 @@ ProductsManager.prototype.Init = function() {
       },
       processingTime: 15
     },
-    bows: {
+    bow: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         stone: 20,
@@ -225,6 +243,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 15
     },
     shield: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         stone: 30,
@@ -234,6 +253,7 @@ ProductsManager.prototype.Init = function() {
       processingTime: 20
     },
     engineParts: {
+      available: 0,
       initialPrice: 5,
       rawMaterial: {
         stone: 60,
@@ -252,10 +272,15 @@ ProductsManager.prototype.Init = function() {
 };
 
 ProductsManager.prototype.GetProductData = function(type) {
-  return {
-    name: type,
-    icon: `products/${type}.png`
-  };
+  for (let prType in this.products) {
+    if (prType == type) {
+      return {
+        name: type,
+        icon: `products/${type}.png`,
+        data: this.products[type]
+      };
+    }
+  }
 };
 
 ProductsManager.prototype.GetAllCivCenters = function() {
@@ -330,6 +355,10 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
     products: [],
     resources: playerResources
   };
+  // we define  the products data
+  for (let product in this.products) {
+    cityMarket.products.push({ name: product, data: this.products[product] });
+  }
   // we define first the producers data
   producers.forEach(function(producer) {
     let cmpEntityProducer = Engine.QueryInterface(producer, IID_EntityProducer);
@@ -339,15 +368,20 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
       type: cmpEntityProducer.getType(),
       catalogue: catalogue
     };
-    // also we add a list f product sold in the city
+    // also we decleare the list f product actually sold in the city in the moment
+
     for (let product in catalogue) {
-      if (cityMarket.products.indexOf(product) === -1) {
-        cityMarket.products.push(product);
-      }
+      cityMarket.products.forEach((product2, index) => {
+        error(product2.name);
+        if (product == product2.name) {
+          cityMarket.products[index].available = catalogue[product];
+        }
+      });
     }
     // we save all in this City Market
     cityMarket.producers.push(producer_data);
   });
+
   return cityMarket;
 };
 

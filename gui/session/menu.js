@@ -1076,8 +1076,59 @@ function openEconomy() {
               "closeEconomyCityEntsButton"
             ).hidden = false;
             Engine.GetGUIObjectByName("products").hidden = false;
+            for (let i = 0; i < CityPanelMarket.length; ++i) {
+              if (CityPanelMarket[i].cityCenter == citynamePressed) {
+                //CityPanelMarket[i].producers.unshift(0);
+                for (
+                  let i2 = 0;
+                  i2 < CityPanelMarket[i].products.length;
+                  ++i2
+                ) {
+                  // we get theentity state
+
+                  let containerProduct = Engine.GetGUIObjectByName(
+                    "productContainer[" + i2 + "]"
+                  );
+
+                  if (i2 < 4) {
+                    setPanelObjectPosition(containerProduct, i2, i2 + 1, 10);
+                  } else if (i2 >= 4 && i2 < 8) {
+                    setPanelObjectPosition(containerProduct, i2, 4, 10, 20, 10);
+                  } else if (i2 >= 8 && i2 < 12) {
+                    setPanelObjectPosition(containerProduct, i2, 4, 10, 20, 50);
+                  } else if (i2 >= 12 && i2 < 16) {
+                    setPanelObjectPosition(containerProduct, i2, 4, 10, 20, 50);
+                  } else if (i2 >= 16 && i2 < 20) {
+                    setPanelObjectPosition(containerProduct, i2, 4, 10, 20, 50);
+                  }
+                  // we get the icon
+
+                  let buttonProductIcon = Engine.GetGUIObjectByName(
+                    "productImages[" + i2 + "]"
+                  );
+                  let productActive;
+                  CityPanelMarket[i].products[i2].data.available !== 0
+                    ? productActive == true
+                    : productActive == false;
+                  let grayscale = productActive ? "" : "grayscale:";
+                  buttonProductIcon.sprite = `stretched:${grayscale}session/icons/products/${
+                    CityPanelMarket[i].products[i2].name
+                  }.png`;
+                  buttonProductIcon.tooltip = sprintf(translate("%(name)s"), {
+                    name: CityPanelMarket[i].products[i2].name
+                  });
+                  // we get the quantity
+                  let buttonProductQTY = Engine.GetGUIObjectByName(
+                    "productQty[" + i2 + "]"
+                  );
+                  buttonProductQTY.caption = translate(
+                    CityPanelMarket[i].products[i2].data.available
+                  );
+                }
+              }
+            }
           };
-        })(producersButton);
+        })(productsButton);
         // we update the cities panel
         currTradeSelection = city;
         updateTradeButtons();
