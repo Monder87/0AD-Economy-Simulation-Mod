@@ -26,56 +26,128 @@ EntityConsumer.prototype.Schema =
   "</a:example>" +
   "<element name='ProductCapacities' a:help='Max Product the Entity can hold '>" +
   "<interleave>" +
-  "<element name='sausage' a:help='sausage'>" +
-  "<ref name='positiveDecimal'/>" +
-  "</element>" +
   "<element name='bread' a:help='bread'>" +
-  "<ref name='positiveDecimal'/>" +
-  "</element>" +
-  "<element name='steak' a:help='steak'>" +
-  "<ref name='positiveDecimal'/>" +
-  "</element>" +
-  "<element name='wine' a:help='wine'>" +
-  "<ref name='positiveDecimal'/>" +
-  "</element>" +
-  "<element name='clothes' a:help='clothes'>" +
-  "<ref name='positiveDecimal'/>" +
-  "</element>" +
-  "<element name='entertainment' a:help='entertainment'>" +
-  "<ref name='positiveDecimal'/>" +
-  "</element>" +
-  "<element name='jewelry' a:help='jewelry'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='slave' a:help='slave'>" +
+  "<element name='cheese' a:help='cheese'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='sausage' a:help='sausage'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='soup' a:help='soup'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='beer' a:help='beer'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='cake' a:help='cake'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='soap' a:help='soap'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='broom' a:help='broom'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='parfume' a:help='parfume'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='woolenClothes' a:help='woolenClothes'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='leatherClothes' a:help='leatherClothes'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='shoes' a:help='shoes'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='banner' a:help='banner'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='indoorDecoration' a:help='indoorDecoration'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='outdoorDecoration' a:help='outdoorDecoration'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='jewellery' a:help='jewellery'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='swords' a:help='swords'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='bows' a:help='bows'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='shield' a:help='shield'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='engineParts' a:help='engineParts'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
   "</interleave>" +
   "</element>" +
   "<element name='ConsumingRate' a:help='Consuming Rate of the Entity'>" +
   "<interleave>" +
-  "<element name='sausage' a:help='sausage'>" +
-  "<ref name='nonNegativeDecimal'/>" +
-  "</element>" +
   "<element name='bread' a:help='bread'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='steak' a:help='steak'>" +
+  "<element name='cheese' a:help='cheese'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='wine' a:help='wine'>" +
+  "<element name='sausage' a:help='sausage'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='clothes' a:help='clothes'>" +
+  "<element name='soup' a:help='soup'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='entertainment' a:help='entertainment'>" +
+  "<element name='beer' a:help='beer'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='jewelry' a:help='jewelry'>" +
+  "<element name='cake' a:help='cake'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='slave' a:help='slave'>" +
+  "<element name='soap' a:help='soap'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='broom' a:help='broom'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='parfume' a:help='parfume'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='woolenClothes' a:help='woolenClothes'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='leatherClothes' a:help='leatherClothes'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='shoes' a:help='shoes'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='banner' a:help='banner'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='indoorDecoration' a:help='indoorDecoration'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='outdoorDecoration' a:help='outdoorDecoration'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='jewellery' a:help='jewellery'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='swords' a:help='swords'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='bows' a:help='bows'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='shield' a:help='shield'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='engineParts' a:help='engineParts'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
   "</interleave>" +
@@ -351,11 +423,17 @@ EntityConsumer.prototype.findTypeofProducer = function(list) {
     if (
       type == "sausage" ||
       type == "bread" ||
-      type == "steak" ||
-      type == "wine"
+      type == "cheese" ||
+      type == "soup" ||
+      type == "beer" ||
+      type == "cake"
     ) {
       producerType.push("Food_Dealer");
-    } else if (type == "clothes") {
+    } else if (
+      type == "woolenClothes" ||
+      type == "leatherClothes" ||
+      type == "shoes"
+    ) {
       producerType.push("Clothes_Dealer");
     } else if (type == "jewelry") {
       producerType.push("Jewelry_Dealer");

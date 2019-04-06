@@ -42,15 +42,15 @@
   </BuildingAI>
   <BuildRestrictions>
     <Territory>own neutral</Territory>
-    <Category>CivilCentre</Category>
+    <Category>StoreHouse</Category>
     <Distance>
-      <FromClass>CivilCentre</FromClass>
+      <FromClass>StoreHouse</FromClass>
       <MinDistance>200</MinDistance>
     </Distance>
   </BuildRestrictions>
   <Capturable>
-    <CapturePoints>2500</CapturePoints>
-    <RegenRate>5.0</RegenRate>
+    <CapturePoints>5000</CapturePoints>
+    <RegenRate>10.0</RegenRate>
   </Capturable>
   <Cost>
     <PopulationBonus>20</PopulationBonus>
@@ -75,16 +75,15 @@
     <LoadingRange>1</LoadingRange>
   </GarrisonHolder>
   <Health>
-    <Max>3000</Max>
+    <Max>6000</Max>
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <GenericName>Civic Center</GenericName>
-    <CityName>Loiano</CityName>
+    <GenericName>Store House</GenericName>
     <EntityProperty>true</EntityProperty>
-    <Tooltip>Build to acquire large tracts of territory. Train citizens.</Tooltip>
-    <Classes datatype="tokens">Defensive CivCentre</Classes>
-    <VisibleClasses datatype="tokens">CivilCentre</VisibleClasses>
+    <Tooltip>Build to stock resources.</Tooltip>
+    <Classes datatype="tokens">Defensive StoreHouse</Classes>
+    <VisibleClasses datatype="tokens">StoreHouse</VisibleClasses>
     <Icon>structures/civic_centre.png</Icon>
   </Identity>
   <Loot>
@@ -99,15 +98,7 @@
   </Obstruction>
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/{civ}_support_female_citizen
-    </Entities>
-    <Technologies datatype="tokens">
-      phase_town_{civ}
-      phase_city_{civ}
-      unlock_spies
-      spy_counter
-    </Technologies>
+
   </ProductionQueue>
   <ResourceDropsite>
     <Types>food wood stone metal</Types>
@@ -122,11 +113,7 @@
       <alert_end>interface/alarm/alarm_alert_1.xml</alert_end>
     </SoundGroups>
   </Sound>
-  <TerritoryInfluence>
-    <Root>true</Root>
-    <Radius>140</Radius>
-    <Weight>10000</Weight>
-  </TerritoryInfluence>
+  
   <Vision>
     <Range>90</Range>
   </Vision>

@@ -254,7 +254,7 @@ ProductsManager.prototype.Init = function() {
 ProductsManager.prototype.GetProductData = function(type) {
   return {
     name: type,
-    icon: `stock/${type}.png`
+    icon: `products/${type}.png`
   };
 };
 

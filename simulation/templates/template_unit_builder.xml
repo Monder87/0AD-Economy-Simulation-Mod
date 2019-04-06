@@ -60,24 +60,48 @@
     </EntityFinance>
     <EntityConsumer>
         <ProductCapacities>
-            <sausage>100</sausage>
             <bread>100</bread>
-            <steak>10</steak>
-            <wine>10</wine>
-            <clothes>30</clothes>
-            <entertainment>3</entertainment>
-            <jewelry>0</jewelry>
-            <slave>0</slave>
+            <cheese>100</cheese>
+            <sausage>10</sausage>
+            <soup>10</soup>
+            <beer>10</beer>
+            <cake>0</cake>
+            <soap>0</soap>
+            <broom>0</broom>
+            <parfume>0</parfume>
+            <woolenClothes>5</woolenClothes>
+            <leatherClothes>0</leatherClothes>
+            <shoes>10</shoes>
+            <banner>0</banner>
+            <indoorDecoration>0</indoorDecoration>
+            <outdoorDecoration>0</outdoorDecoration>
+            <jewellery>0</jewellery>
+            <swords>0</swords>
+            <bows>0</bows>
+            <shield>0</shield>
+            <engineParts>0</engineParts>
         </ProductCapacities>
         <ConsumingRate>
-            <sausage>5</sausage>
-            <bread>6</bread>
-            <steak>0.1</steak>
-            <wine>1</wine>
-            <clothes>0.3</clothes>
-            <entertainment>0.05</entertainment>
-            <jewelry>0</jewelry>
-            <slave>0</slave>
+          <bread>2</bread>
+          <cheese>1</cheese>
+          <sausage>1</sausage>
+          <soup>3</soup>
+          <beer>1</beer>
+          <cake>0</cake>
+          <soap>0</soap>
+          <broom>0</broom>
+          <parfume>0</parfume>
+          <woolenClothes>1</woolenClothes>
+          <leatherClothes>0</leatherClothes>
+          <shoes>1</shoes>
+          <banner>0</banner>
+          <indoorDecoration>0</indoorDecoration>
+          <outdoorDecoration>0</outdoorDecoration>
+          <jewellery>0</jewellery>
+          <swords>0</swords>
+          <bows>0</bows>
+          <shield>0</shield>
+          <engineParts>0</engineParts>
         </ConsumingRate>
     </EntityConsumer>
     <EntityProducer>

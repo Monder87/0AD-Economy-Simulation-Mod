@@ -703,7 +703,7 @@ function updateTopPanel() {
 
   let resCodes = g_ResourceData.GetCodes();
   let resNames = g_ResourceData.GetNames();
-
+  Engine.GetGUIObjectByName("resourceFood").hidden = true;
   let r = 0;
   for (let res of resCodes) {
     if (!Engine.GetGUIObjectByName("resource[" + r + "]")) {
