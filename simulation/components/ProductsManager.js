@@ -372,7 +372,7 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
 
     for (let product in catalogue) {
       cityMarket.products.forEach((product2, index) => {
-        error(product2.name);
+        error(product);
         if (product == product2.name) {
           cityMarket.products[index].available = catalogue[product];
         }
@@ -386,7 +386,6 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
 };
 
 ProductsManager.prototype.InitMarket = function() {
-  error("market initiated");
   let _this = this;
   // first we got all city centers
   let civCenters = this.GetAllCivCenters();

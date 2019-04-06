@@ -4,78 +4,119 @@ EntityProducer.prototype.Schema =
   "<a:help>Lets the unit collect and consume products!.</a:help>" +
   "<a:example>" +
   "<ProductCapacities>" +
-  "<sausage>100</sausage>" +
-  "<bread>100</bread>" +
-  "<steak>10</steak>" +
-  "<wine>10</wine>" +
-  "<clothes>10</clothes>" +
-  "<entertainment>5</entertainment>" +
-  "<jewelry>2</jewelry>" +
-  "<slave>0</slave>" +
+  "<fish>100</fish>" +
+  "<milk>100</milk>" +
+  "<oil>10</oil>" +
+  "<herbs>10</herbs>" +
+  "<wool>10</wool>" +
+  "<fruit>5</fruit>" +
+  "<grain>2</grain>" +
+  "<meat>0</meat>" +
+  "<metal>0</metal>" +
+  "<wood>0</wood>" +
+  "<stone>0</stone>" +
   "</ProductCapacities>" +
   "<ProducingRate>" +
-  "<sausage>1</sausage>" +
   "<bread>1</bread>" +
-  "<steak>0</steak>" +
-  "<wine>0</wine>" +
-  "<clothes>1</clothes>" +
-  "<entertainment>0</entertainment>" +
-  "<jewelry>1</jewelry>" +
-  "<slave>0</slave>" +
   "</ProducingRate>" +
   "</a:example>" +
   "<element name='ProductCapacities' a:help='Max Product the Entity can hold '>" +
   "<interleave>" +
-  "<element name='sausage' a:help='sausage'>" +
+  "<element name='fish' a:help='fish'>" +
   "<ref name='positiveDecimal'/>" +
   "</element>" +
-  "<element name='bread' a:help='bread'>" +
+  "<element name='milk' a:help='milk'>" +
   "<ref name='positiveDecimal'/>" +
   "</element>" +
-  "<element name='steak' a:help='steak'>" +
+  "<element name='oil' a:help='oil'>" +
   "<ref name='positiveDecimal'/>" +
   "</element>" +
-  "<element name='wine' a:help='wine'>" +
+  "<element name='herbs' a:help='herbs'>" +
   "<ref name='positiveDecimal'/>" +
   "</element>" +
-  "<element name='clothes' a:help='clothes'>" +
+  "<element name='wool' a:help='wool'>" +
   "<ref name='positiveDecimal'/>" +
   "</element>" +
-  "<element name='entertainment' a:help='entertainment'>" +
+  "<element name='fruit' a:help='fruit'>" +
   "<ref name='positiveDecimal'/>" +
   "</element>" +
-  "<element name='jewelry' a:help='jewelry'>" +
+  "<element name='grain' a:help='grain'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='slave' a:help='slave'>" +
+  "<element name='meat' a:help='meat'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='metal' a:help='metal'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='wood' a:help='wood'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='stone' a:help='stone'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
   "</interleave>" +
   "</element>" +
   "<element name='ProducingRate' a:help='Consuming Rate of the Entity'>" +
   "<interleave>" +
-  "<element name='sausage' a:help='sausage'>" +
-  "<ref name='nonNegativeDecimal'/>" +
-  "</element>" +
   "<element name='bread' a:help='bread'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='steak' a:help='steak'>" +
+  "<element name='cheese' a:help='cheese'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='wine' a:help='wine'>" +
+  "<element name='sausage' a:help='sausage'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='clothes' a:help='clothes'>" +
+  "<element name='soup' a:help='soup'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='entertainment' a:help='entertainment'>" +
+  "<element name='beer' a:help='beer'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='jewelry' a:help='jewelry'>" +
+  "<element name='cake' a:help='cake'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
-  "<element name='slave' a:help='slave'>" +
+  "<element name='soap' a:help='soap'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='broom' a:help='broom'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='parfume' a:help='parfume'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='woolenClothes' a:help='woolenClothes'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='leatherClothes' a:help='leatherClothes'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='shoes' a:help='shoes'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='banner' a:help='banner'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='indoorDecoration' a:help='indoorDecoration'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='outdoorDecoration' a:help='outdoorDecoration'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='jewellery' a:help='jewellery'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='swords' a:help='swords'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='bows' a:help='bows'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='shield' a:help='shield'>" +
+  "<ref name='nonNegativeDecimal'/>" +
+  "</element>" +
+  "<element name='engineParts' a:help='engineParts'>" +
   "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
   "</interleave>" +

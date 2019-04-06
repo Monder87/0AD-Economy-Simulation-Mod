@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_farmer">
+  <Builder>
+    <Entities datatype="tokens">
+
+    </Entities>
+  </Builder>
+
+
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Baker</SpecificName>
+    <GenericName>Baker</GenericName>
+    <SpecificName>Baker</SpecificName>
+    <Icon>units/cart_baker.png</Icon>
+    <SelectionGroupName>units/cart_baker</SelectionGroupName>
+  </Identity>
+
+  <VisualActor>
+    <Actor>units/carthaginians/baker.xml</Actor>
+  </VisualActor>
+</Entity>
