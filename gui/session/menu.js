@@ -1106,10 +1106,11 @@ function openEconomy() {
                   let buttonProductIcon = Engine.GetGUIObjectByName(
                     "productImages[" + i2 + "]"
                   );
-                  let productActive;
+                  //error(CityPanelMarket[i].products[i2].data.available);
+                  let productActie;
                   CityPanelMarket[i].products[i2].data.available !== 0
-                    ? productActive == true
-                    : productActive == false;
+                    ? (productActive = true)
+                    : (productActive = false);
                   let grayscale = productActive ? "" : "grayscale:";
                   buttonProductIcon.sprite = `stretched:${grayscale}session/icons/products/${
                     CityPanelMarket[i].products[i2].name

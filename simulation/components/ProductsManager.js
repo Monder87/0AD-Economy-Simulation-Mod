@@ -358,6 +358,8 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
   };
   // we define  the products data
   for (let product in this.products) {
+    // we reset the counter each update
+    this.products[product].available = 0;
     cityMarket.products.push({ name: product, data: this.products[product] });
   }
 
@@ -375,7 +377,8 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
     for (let product in catalogue) {
       cityMarket.products.forEach((product2, index) => {
         if (product == product2.name) {
-          cityMarket.products[index].available = catalogue[product];
+          // we calculate the products sum
+          cityMarket.products[index].data.available += catalogue[product];
         }
       });
     }
