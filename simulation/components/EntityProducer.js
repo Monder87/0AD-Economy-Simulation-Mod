@@ -3,7 +3,7 @@ function EntityProducer() {}
 EntityProducer.prototype.Schema =
   "<a:help>Lets the unit collect and consume products!.</a:help>" +
   "<a:example>" +
-  "<ProductCapacities>" +
+  "<RawMaterialCapacities>" +
   "<fish>100</fish>" +
   "<milk>100</milk>" +
   "<oil>10</oil>" +
@@ -15,30 +15,30 @@ EntityProducer.prototype.Schema =
   "<metal>0</metal>" +
   "<wood>0</wood>" +
   "<stone>0</stone>" +
-  "</ProductCapacities>" +
+  "</RawMaterialCapacities>" +
   "<ProducingRate>" +
   "<bread>1</bread>" +
   "</ProducingRate>" +
   "</a:example>" +
-  "<element name='ProductCapacities' a:help='Max Product the Entity can hold '>" +
+  "<element name='RawMaterialCapacities' a:help='Max Raw Material the Entity can hold '>" +
   "<interleave>" +
   "<element name='fish' a:help='fish'>" +
-  "<ref name='positiveDecimal'/>" +
+  "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
   "<element name='milk' a:help='milk'>" +
-  "<ref name='positiveDecimal'/>" +
+  "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
   "<element name='oil' a:help='oil'>" +
-  "<ref name='positiveDecimal'/>" +
+  "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
   "<element name='herbs' a:help='herbs'>" +
-  "<ref name='positiveDecimal'/>" +
+  "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
   "<element name='wool' a:help='wool'>" +
-  "<ref name='positiveDecimal'/>" +
+  "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
   "<element name='fruit' a:help='fruit'>" +
-  "<ref name='positiveDecimal'/>" +
+  "<ref name='nonNegativeDecimal'/>" +
   "</element>" +
   "<element name='grain' a:help='grain'>" +
   "<ref name='nonNegativeDecimal'/>" +
@@ -123,10 +123,13 @@ EntityProducer.prototype.Schema =
   "</element>";
 
 EntityProducer.prototype.Init = function() {
-  //error("i am a producer");
+  error("i am a producer");
   this.type = null;
   this.productCatalogue = {};
+  this.RawMaterialCapacities = {};
+  this.RawMaterialStock = {};
   this.ConstProductCatalogue();
+  this.ConstRawMaterialStock();
 };
 
 EntityProducer.prototype.Identify = function() {
@@ -163,12 +166,35 @@ EntityProducer.prototype.getType = function() {
 
 EntityProducer.prototype.ConstProductCatalogue = function() {
   // We get the product needed Type
-  for (let type in this.template.ProductCapacities) {
-    if (this.template.ProductCapacities[type] != 0) {
+  for (let type in this.template.ProducingRate) {
+    if (this.template.ProducingRate[type] != 0) {
       // we construct the productsCarring Object
       this.productCatalogue[type] = 100;
     }
   }
+};
+
+EntityProducer.prototype.GetRawMaterialStock = function() {
+  // We get the raw materials stock
+  return this.RawMaterialStock;
+};
+
+EntityProducer.prototype.ConstRawMaterialStock = function() {
+  // We get the product needed Type
+  for (let type in this.template.RawMaterialCapacities) {
+    if (this.template.RawMaterialCapacities[type] != 0) {
+      // we also contruct the maxcap for each raw material
+      this.RawMaterialCapacities[type] = this.template.RawMaterialCapacities[
+        type
+      ];
+      // we construct the productsCarring Object
+      this.RawMaterialStock[type] = 100;
+    }
+  }
+};
+
+EntityProducer.prototype.GetRawMaterialCapacities = function() {
+  return this.RawMaterialCapacities;
 };
 
 EntityProducer.prototype.AddProductToCatalogue = function(type, amount) {

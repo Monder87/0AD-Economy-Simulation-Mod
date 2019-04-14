@@ -387,6 +387,15 @@ GuiInterface.prototype.GetEntityState = function(player, ent) {
       ent: ent
     };
 
+  let cmpEntityProducer = Engine.QueryInterface(ent, IID_EntityProducer);
+  if (cmpEntityProducer)
+    ret.entityProducer = {
+      rawMaterialCapacities: cmpEntityProducer.GetRawMaterialCapacities(),
+      rawMaterialStock: cmpEntityProducer.GetRawMaterialStock(),
+      catalogue: cmpEntityProducer.GetProductCatalogue(),
+      ent: ent
+    };
+
   // end
   ret.canGarrison = !!Engine.QueryInterface(ent, IID_Garrisonable);
 
@@ -884,7 +893,7 @@ GuiInterface.prototype.GetMarket = function(player, data) {
 
 GuiInterface.prototype.GetProductData = function(player, data) {
   // we ask for the prices to build the construction
-  error(data.type);
+  //error(data.type);
   let cmpProductsManager = Engine.QueryInterface(
     SYSTEM_ENTITY,
     IID_ProductsManager

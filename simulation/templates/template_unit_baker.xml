@@ -41,8 +41,6 @@
         <Formations disable="" />
     </Identity>
     <!-- corners -->
-
-
     <EntityHappiness>
         <HappinessIcon>1</HappinessIcon>
     </EntityHappiness>
@@ -51,86 +49,86 @@
         <EarningRate>1.0</EarningRate>
     </EntityFinance>
     <EntityConsumer>
-      <ProductCapacities>
-          <bread>100</bread>
-          <cheese>100</cheese>
-          <sausage>10</sausage>
-          <soup>10</soup>
-          <beer>10</beer>
-          <cake>0</cake>
-          <soap>0</soap>
-          <broom>0</broom>
-          <parfume>0</parfume>
-          <woolenClothes>5</woolenClothes>
-          <leatherClothes>0</leatherClothes>
-          <shoes>10</shoes>
-          <banner>0</banner>
-          <indoorDecoration>0</indoorDecoration>
-          <outdoorDecoration>0</outdoorDecoration>
-          <jewellery>0</jewellery>
-          <swords>0</swords>
-          <bows>0</bows>
-          <shield>0</shield>
-          <engineParts>0</engineParts>
-      </ProductCapacities>
-      <ConsumingRate>
-        <bread>2</bread>
-        <cheese>1</cheese>
-        <sausage>1</sausage>
-        <soup>3</soup>
-        <beer>1</beer>
-        <cake>0</cake>
-        <soap>0</soap>
-        <broom>0</broom>
-        <parfume>0</parfume>
-        <woolenClothes>1</woolenClothes>
-        <leatherClothes>0</leatherClothes>
-        <shoes>1</shoes>
-        <banner>0</banner>
-        <indoorDecoration>0</indoorDecoration>
-        <outdoorDecoration>0</outdoorDecoration>
-        <jewellery>0</jewellery>
-        <swords>0</swords>
-        <bows>0</bows>
-        <shield>0</shield>
-        <engineParts>0</engineParts>
-      </ConsumingRate>
+        <ProductCapacities>
+            <bread>100</bread>
+            <cheese>100</cheese>
+            <sausage>10</sausage>
+            <soup>10</soup>
+            <beer>10</beer>
+            <cake>0</cake>
+            <soap>0</soap>
+            <broom>0</broom>
+            <parfume>0</parfume>
+            <woolenClothes>5</woolenClothes>
+            <leatherClothes>0</leatherClothes>
+            <shoes>10</shoes>
+            <banner>0</banner>
+            <indoorDecoration>0</indoorDecoration>
+            <outdoorDecoration>0</outdoorDecoration>
+            <jewellery>0</jewellery>
+            <swords>0</swords>
+            <bows>0</bows>
+            <shield>0</shield>
+            <engineParts>0</engineParts>
+        </ProductCapacities>
+        <ConsumingRate>
+            <bread>2</bread>
+            <cheese>1</cheese>
+            <sausage>1</sausage>
+            <soup>3</soup>
+            <beer>1</beer>
+            <cake>0</cake>
+            <soap>0</soap>
+            <broom>0</broom>
+            <parfume>0</parfume>
+            <woolenClothes>1</woolenClothes>
+            <leatherClothes>0</leatherClothes>
+            <shoes>1</shoes>
+            <banner>0</banner>
+            <indoorDecoration>0</indoorDecoration>
+            <outdoorDecoration>0</outdoorDecoration>
+            <jewellery>0</jewellery>
+            <swords>0</swords>
+            <bows>0</bows>
+            <shield>0</shield>
+            <engineParts>0</engineParts>
+        </ConsumingRate>
     </EntityConsumer>
     <EntityProducer>
-        <ProductCapacities>
-          <fish>0</fish>
-          <milk>0</milk>
-          <oil>0</oil>
-          <herbs>0</herbs>
-          <wool>0</wool>
-          <fruit>0</fruit>
-          <grain>200</grain>
-          <meat>0</meat>
-          <metal>0</metal>
-          <wood>500</wood>
-          <stone>0</stone>
-        </ProductCapacities>
+        <RawMaterialCapacities>
+            <fish>0</fish>
+            <milk>0</milk>
+            <oil>0</oil>
+            <herbs>0</herbs>
+            <wool>0</wool>
+            <fruit>0</fruit>
+            <grain>200</grain>
+            <meat>0</meat>
+            <metal>0</metal>
+            <wood>500</wood>
+            <stone>0</stone>
+        </RawMaterialCapacities>
         <ProducingRate>
-          <bread>2</bread>
-          <cheese>0</cheese>
-          <sausage>0</sausage>
-          <soup>0</soup>
-          <beer>0</beer>
-          <cake>0</cake>
-          <soap>0</soap>
-          <broom>0</broom>
-          <parfume>0</parfume>
-          <woolenClothes>0</woolenClothes>
-          <leatherClothes>0</leatherClothes>
-          <shoes>0</shoes>
-          <banner>0</banner>
-          <indoorDecoration>0</indoorDecoration>
-          <outdoorDecoration>0</outdoorDecoration>
-          <jewellery>0</jewellery>
-          <swords>0</swords>
-          <bows>0</bows>
-          <shield>0</shield>
-          <engineParts>0</engineParts>
+            <bread>2</bread>
+            <cheese>0</cheese>
+            <sausage>0</sausage>
+            <soup>0</soup>
+            <beer>0</beer>
+            <cake>0</cake>
+            <soap>0</soap>
+            <broom>0</broom>
+            <parfume>0</parfume>
+            <woolenClothes>0</woolenClothes>
+            <leatherClothes>0</leatherClothes>
+            <shoes>0</shoes>
+            <banner>0</banner>
+            <indoorDecoration>0</indoorDecoration>
+            <outdoorDecoration>0</outdoorDecoration>
+            <jewellery>0</jewellery>
+            <swords>0</swords>
+            <bows>0</bows>
+            <shield>0</shield>
+            <engineParts>0</engineParts>
         </ProducingRate>
     </EntityProducer>
     <ResourceGatherer>

@@ -35,6 +35,10 @@ let g_AvailableStock = new Map();
 let g_AvailableStock2 = new Map();
 let g_AvailableStock3 = new Map();
 let consumerStock = {};
+let producerStock = {
+  catalogue: {},
+  rawMaterials: {}
+};
 let g_StockInfo = new Map();
 // used for the happiness calculation
 let totProducts = null;
@@ -549,6 +553,95 @@ g_SelectionPanels.Consume = {
       iconName = "happy2";
     }
 
+    setPanelObjectPosition(data.button, data.i, data.rowLength);
+
+    return true;
+  }
+};
+
+g_SelectionPanels.Produce = {
+  getMaxNumberOfItems: function() {
+    return 18;
+  },
+  rowLength: 4,
+  getItems: function(unitEntStates) {
+    let ary = [];
+
+    let materialCapacitiesCounter = null;
+    for (let state of unitEntStates) {
+      if (state.entityProducer) {
+        Engine.GetGUIObjectByName("tabButtonProduce").enabled = true;
+        // we get the catalogue
+        for (let type in state.entityProducer.catalogue) {
+          producerStock.catalogue[type] = state.entityProducer.catalogue[type];
+          ary.push(type);
+        }
+        if (Engine.GuiInterfaceCall("RightPanelEnabled", "Produce")) {
+          return ary;
+        }
+      } else {
+        Engine.GetGUIObjectByName("tabButtonProduce").enabled = false;
+        Engine.GetGUIObjectByName("unitProducePanel").hidden = true;
+      }
+    }
+  },
+  setupButton: function(data) {
+    data.icon.sprite = "stretched:session/icons/products/" + data.item + ".png";
+    // stock  bars
+    let showStock = producerStock.catalogue[data.item];
+    data.countDisplay.caption = showStock;
+    data.button.tooltip = data.item + " " + showStock;
+    setPanelObjectPosition(data.button, data.i, data.rowLength);
+
+    return true;
+  }
+};
+
+g_SelectionPanels.ProduceRaw = {
+  getMaxNumberOfItems: function() {
+    return 18;
+  },
+  rowLength: 4,
+  getItems: function(unitEntStates) {
+    let ary = [];
+
+    let materialCapacitiesCounter = null;
+    for (let state of unitEntStates) {
+      if (state.entityProducer) {
+        // we get the raw material capacitites
+        for (let type in state.entityProducer.rawMaterialCapacities) {
+          producerStock.rawMaterials[type] = {
+            maxCap: state.entityProducer.rawMaterialCapacities[type],
+            stocked: state.entityProducer.rawMaterialStock[type]
+          };
+          ary.push(type);
+        }
+        if (Engine.GuiInterfaceCall("RightPanelEnabled", "Produce")) {
+          return ary;
+        }
+      } else {
+        Engine.GetGUIObjectByName("tabButtonProduce").enabled = false;
+        Engine.GetGUIObjectByName("unitProduceRawPanel").hidden = true;
+      }
+    }
+  },
+  setupButton: function(data) {
+    data.icon.sprite =
+      "stretched:session/icons/resources/" + data.item + ".png";
+
+    // stock  bars
+    let showStock = producerStock.rawMaterials[data.item].stocked;
+    let maxCap = producerStock.rawMaterials[data.item].maxCap;
+    let unitStockBar = data.bar;
+    let stockSize = unitStockBar.size;
+    if (showStock > 0) {
+      stockSize.rright = 100 * Math.max(0, Math.min(1, showStock / maxCap)); //entState.walletMaxCapacity));
+      unitStockBar.size = stockSize;
+    } else {
+      stockSize.rright = 0;
+      unitStockBar.size = stockSize;
+    }
+    data.button.tooltip = data.item + " " + showStock + " / " + maxCap;
     setPanelObjectPosition(data.button, data.i, data.rowLength);
 
     return true;
@@ -1580,7 +1673,8 @@ let g_PanelsOrder = [
   // === Economy Panels == \\
   "Order",
   "Consume",
-  //"Produce"
+  "Produce",
+  "ProduceRaw",
 
   // UNIQUE PANES (importance doesn't matter)
   "Command",

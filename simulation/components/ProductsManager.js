@@ -333,6 +333,7 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
     [owner],
     IID_EntityConsumer
   );
+  // to finish
   let avarageHappiness = 0;
   consumers.forEach(function(cons) {
     let cmpEntityConsumer = Engine.QueryInterface(cons, IID_EntityConsumer);
@@ -359,6 +360,7 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
   for (let product in this.products) {
     cityMarket.products.push({ name: product, data: this.products[product] });
   }
+
   // we define first the producers data
   producers.forEach(function(producer) {
     let cmpEntityProducer = Engine.QueryInterface(producer, IID_EntityProducer);
@@ -372,7 +374,6 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
 
     for (let product in catalogue) {
       cityMarket.products.forEach((product2, index) => {
-        error(product);
         if (product == product2.name) {
           cityMarket.products[index].available = catalogue[product];
         }

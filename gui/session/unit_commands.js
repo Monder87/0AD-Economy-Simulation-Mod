@@ -46,6 +46,27 @@ function setPanelObjectPosition(
   object.size = size;
 }
 
+function setPanelObjectPositionRawmaterials(
+  object,
+  index,
+  rowLength,
+  vMargin = 1,
+  hMargin = 1
+) {
+  var size = object.size;
+  // horizontal position
+  var oWidth = size.right - size.left;
+  var hIndex = 4 + index % rowLength;
+  size.left = hIndex * (oWidth + vMargin);
+  size.right = size.left + oWidth;
+  // vertical position
+  var oHeight = size.bottom - size.top;
+  var vIndex = Math.floor(index / rowLength);
+  size.top = vIndex * (oHeight + hMargin);
+  size.bottom = size.top + oHeight;
+  object.size = size;
+}
+
 /**
  * Helper function for updateUnitCommands; sets up "unit panels"
  * (i.e. panels with rows of icons) for the currently selected unit.
@@ -86,7 +107,6 @@ function setupUnitPanel(guiName, unitEntStates, playerState) {
       button: Engine.GetGUIObjectByName("unit" + guiName + "Button[" + i + "]"),
       icon: Engine.GetGUIObjectByName("unit" + guiName + "Icon[" + i + "]"),
       bar: Engine.GetGUIObjectByName("stock" + guiName + "Bar[" + i + "]"),
-
       guiSelection: Engine.GetGUIObjectByName(
         "unit" + guiName + "Selection[" + i + "]"
       ),

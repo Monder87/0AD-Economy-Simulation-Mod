@@ -8,7 +8,7 @@
     </object>
     <object name="unitOrderPanel" size="-11 22 100% 100%">
         <!-- Consume Panel Background-->
-        <object size="0 0 100% 100%" type="image" sprite="panelContainerCommand" />
+        <object size="2 1 100% 100%" type="image" sprite="tabButtonSprite" />
         <!-- Titles1 -->
         <object name="title0" size="29% 6% 42% 15%" type="button" style="ModernLabelText" text_valign="center">
             <translatableAttribute id="caption">Services</translatableAttribute>
@@ -28,7 +28,7 @@
     </object>
     <object name="unitConsumePanel" size="-11 22 100% 100%">
         <!-- Consume Panel Background-->
-        <object size="0 0 100% 100%" type="image" sprite="panelContainerConsume" />
+        <object size="2 1 100% 100%" type="image" sprite="tabButtonSprite" />
         <!-- Titles1 -->
         <object name="title1" size="29% 6% 42% 15%" type="button" style="ModernLabelText" text_valign="center">
             <translatableAttribute id="caption">Products</translatableAttribute>
@@ -66,8 +66,50 @@
         <translatableAttribute id="caption">Produce</translatableAttribute>
         <action on="Press">openProduce();</action>
     </object>
-    <object name="unitProducePanel" size="-11 22 100% 100%">
-        <object size="0 0 100% 100%" type="image" sprite="panelContainerProduce" />
+    <object name="unitProducePanel" size="-2% 22 48% 100%" >
+
+        <object size="0 1 97% 100%" type="image" sprite="tabButtonSprite" />
+        <!-- Titles1 -->
+        <object name="titleProduce" size="45% 6% 50% 15%" type="button" style="ModernLabelText" text_valign="center">
+            <translatableAttribute id="caption">Catalogue</translatableAttribute>
+        </object>
+        <!-- Buttons -->
+        <object size="10 32 100% 100%" >
+            <repeat count="24">
+                <object name="unitProduceButton[n]" hidden="true" style="iconButton" type="button" size="0 0 46 46" tooltip_style="sessionToolTipBottom">
+                    <object name="unitProduceIcon[n]" type="image" ghost="true" size="3 3 43 43" />
+                    <object name="unitProduceCount[n]" size="45% 45% 50% 50%" type="button" style="ModernLabelText" text_valign="center">
+                        <translatableAttribute id="caption">0</translatableAttribute>
+                    </object>
+                </object>
+            </repeat>
+        </object>
+    </object>
+    <!-- ProduceRaw Panel -->
+
+    <object name="unitProduceRawPanel" size="45% 22 100% 100%">
+        <object size="2 1 100% 100%" type="image" sprite="tabButtonSprite" />
+        <!-- Titles1 -->
+        <object name="titleProduceRaw" size="45% 6% 50% 15%" type="button" style="ModernLabelText" text_valign="center">
+            <translatableAttribute id="caption">Resources</translatableAttribute>
+        </object>
+        <!-- Buttons -->
+        <object size="10 32 100% 100%">
+            <repeat count="8">
+                <object name="unitProduceRawButton[n]" hidden="true" style="iconButton" type="button" size="0 0 46 46" tooltip_style="sessionToolTipBottom">
+                    <object name="unitProduceRawIcon[n]" type="image" ghost="true" size="3 3 43 43" />
+                    <!-- Buttons Stock Bar name="stockSection" -->
+                    <object>
+                        <object size="3 45 95% 49" type="image" tooltip_style="sessionToolTip">
+                            <object type="image" sprite="barBorder" ghost="true" size="-1 -1 100%+1 100%+1" />
+                            <object type="image" sprite="healthBackground" ghost="true" />
+                            <object type="image" sprite="healthForeground" ghost="true" name="stockProduceRawBar[n]" />
+                            <object type="image" sprite="statsBarShaderHorizontal" ghost="true" />
+                        </object>
+                    </object>
+                </object>
+            </repeat>
+        </object>
     </object>
     <!-- Build Panel -->
     <object name="tabButtonConstruction" size="274 0 370 26" type="button" sprite="tabButtonSprite" style="ModernLabelText" text_valign="center">
