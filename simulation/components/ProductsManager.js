@@ -263,6 +263,20 @@ ProductsManager.prototype.Init = function() {
       processingTime: 40
     }
   };
+  this.test = [];
+  // here where we store all consumes by city
+  this.allCitiesConsumes = {};
+  // here where we store all the product produces by city
+  this.allCitiesProduced = {};
+  // here where we store all stats
+  this.statistics = {
+    day: [
+      {
+        consumes: {},
+        produced: {}
+      }
+    ]
+  };
   // here where we store old data of market
   this.marketOld = [];
   // here where we store new data of the market
@@ -347,14 +361,21 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
   let cmpIdentity = Engine.QueryInterface(center, IID_Identity);
   let cityName = cmpIdentity.GetCityName();
 
+  // we get all city consumes
+
+  if (!this.allCitiesConsumes.hasOwnProperty(center))
+    this.allCitiesConsumes[center] = {};
+
   let cityMarket = {
     cityCenter: cityName,
     cityEntId: center,
     pop: consumers.length,
     avarageHappiness: avarageHappiness,
+    consumes: this.allCitiesConsumes[center],
     producers: [],
     products: [],
-    resources: playerResources
+    resources: playerResources,
+    timeLife: this.dayOfMonth
   };
   // we define  the products data
   for (let product in this.products) {
@@ -425,12 +446,105 @@ ProductsManager.prototype.GetMarket = function() {
   this.UpdateMarket();
   return this.marketNew;
 };
+
+ProductsManager.prototype.GetMarketStats = function() {
+  this.UpdateMarket();
+  return this.statistics;
+};
+
 // Listener \\
 
 ProductsManager.prototype.OnTimerDayChanged = function(msg) {
   if (msg.day !== this.dayOfMonth) {
     this.dayOfMonth = msg.day;
     this.UpdateMarket();
+
+    let allCitiesConsumesCopy = {};
+    let allCitiesProducedCopy = {};
+    for (let city in this.allCitiesConsumes) {
+      allCitiesConsumesCopy[city] = {};
+      for (let type in this.allCitiesConsumes[city]) {
+        allCitiesConsumesCopy[city][type] = this.allCitiesConsumes[city][type];
+      }
+    }
+    this.statistics.day.push({
+      consumes: allCitiesConsumesCopy,
+      produced: allCitiesProducedCopy
+    });
+    /*
+    this.statistics.day.forEach((stat, index) => {
+      error(index);
+      for (let city in stat.consumes) {
+        //error(city);
+        for (let type in stat.consumes[city]) {
+          if (type == "bread") {
+            error(type);
+            error(stat.consumes[city][type]);
+          }
+        }
+      }
+    });*/
+  }
+};
+
+ProductsManager.prototype.LocateConsumerCity = function(ent) {
+  // we get all cities centers
+  let consumerCity;
+  var cmpOwnership = Engine.QueryInterface(ent, IID_Ownership);
+  var owner = cmpOwnership.GetOwner();
+  var range = 100;
+  let cmpRangeManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager);
+  let allCitiesCenters = this.GetAllCivCenters();
+  if (allCitiesCenters.length > 1) {
+    allCitiesCenters.forEach(function(center) {
+      // we get all consumers
+
+      let consumers = cmpRangeManager.ExecuteQuery(
+        center,
+        0,
+        range,
+        [owner],
+        IID_EntityConsumer
+      );
+      // we locate our consumer entity
+      consumers.forEach(function(cons) {
+        if (ent == cons) {
+          consumerCity = center;
+        }
+      });
+    });
+  } else {
+    let consumers = cmpRangeManager.ExecuteQuery(
+      allCitiesCenters[0],
+      0,
+      range,
+      [owner],
+      IID_EntityConsumer
+    );
+
+    consumers.forEach(function(cons) {
+      if (ent == cons) {
+        let center = allCitiesCenters[0];
+        consumerCity = center;
+      }
+    });
+  }
+  return consumerCity;
+};
+
+ProductsManager.prototype.OnProductConsumed = function(msg) {
+  // we locate our consumer entity
+
+  let cityWhereConsumed = this.LocateConsumerCity(msg.ent);
+  let type = msg.type;
+  // we update the consumes in that city
+  if (!this.allCitiesConsumes.hasOwnProperty(cityWhereConsumed))
+    this.allCitiesConsumes[cityWhereConsumed] = {};
+
+  if (!this.allCitiesConsumes[cityWhereConsumed].hasOwnProperty(type)) {
+    this.allCitiesConsumes[cityWhereConsumed][type] = msg.consume;
+  } else {
+    this.allCitiesConsumes[cityWhereConsumed][type] += msg.consume;
   }
 };
 

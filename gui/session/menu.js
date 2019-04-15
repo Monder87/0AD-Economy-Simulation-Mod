@@ -855,6 +855,7 @@ function openEconomy() {
   let button = {};
   // we get all the cities economies
   let market = Engine.GuiInterfaceCall("GetMarket", {});
+  let marketStat = Engine.GuiInterfaceCall("GetMarketStats", {});
   //let entState = Engine.GuiInterfaceCall("GetSimulationState", {});
   market.unshift(0);
   let currTradeSelection = null;
@@ -885,6 +886,8 @@ function openEconomy() {
     let playerColor = Engine.GuiInterfaceCall("GetPlayerColor", {
       entity: cityID
     });
+    // we get the day of the mounth
+    let dayOfMonth = Number(market[i].timeLife);
     // we apply the color to the cityBar
     let playercolorBar = Engine.GetGUIObjectByName("playerBar[" + i + "]");
 
@@ -972,9 +975,14 @@ function openEconomy() {
     buttonResource.enabled = controlsPlayer(g_ViewedPlayer);
     buttonResource.onPress = (resource => {
       let marketSelected = market[i];
+
       let citynamePressed = market[i].cityCenter;
       let CityPanelCityID = cityID;
       let CityPanelMarket = market;
+      //for (let type in marketSelectedStats) {
+      //  error(type);
+      //  error(marketSelectedStats[type]);
+      //}
 
       return () => {
         // we open the city panel
@@ -993,6 +1001,7 @@ function openEconomy() {
         );
         // we show the city economy dashboard
         Engine.GetGUIObjectByName("dashboard").hidden = false;
+
         let productsButton = Engine.GetGUIObjectByName("productsButton");
         let producersButton = Engine.GetGUIObjectByName("producersButton");
         let popCounter = Engine.GetGUIObjectByName("economicPanelPopCounter");
@@ -1001,7 +1010,7 @@ function openEconomy() {
         );
         let happyIcon = Engine.GetGUIObjectByName("ecopanelHappyIcon");
         // we set up the  Economy Chart
-        initCityEconomyGUICharts();
+        initCityEconomyGUICharts(cityID);
         // we set the pop counter and avarage happyness
         popCounter.caption = `${marketSelected.pop}`;
         happyCounter.caption = `${Math.floor(
@@ -1107,7 +1116,7 @@ function openEconomy() {
                     "productImages[" + i2 + "]"
                   );
                   //error(CityPanelMarket[i].products[i2].data.available);
-                  let productActie;
+                  let productActive;
                   CityPanelMarket[i].products[i2].data.available !== 0
                     ? (productActive = true)
                     : (productActive = false);
@@ -1147,7 +1156,7 @@ function displaySingleTemplate(entState) {
   return GetTemplateData(entState.template);
 }
 
-function initCityEconomyGUICharts() {
+function initCityEconomyGUICharts(cityID) {
   let chartLegend = Engine.GetGUIObjectByName("chartLegend");
   chartLegend.caption = "■" + " " + "Gdp";
   let chartLegend2 = Engine.GetGUIObjectByName("chartLegend2");
@@ -1157,6 +1166,7 @@ function initCityEconomyGUICharts() {
   //Engine.GetGUIObjectByName("chartXAxisLabel").caption = translate(
   //  "Time elapsed"
   //);
+  /*
   let series = [];
   for (let j = 1; j <= 2; ++j) {
     let time = [1, 2, 3, 4];
@@ -1171,9 +1181,15 @@ function initCityEconomyGUICharts() {
     }
     series.push(data);
   }
+  */
   let chart = Engine.GetGUIObjectByName("chart");
   chart.series_color = ["green", "white"];
-  chart.series = [[[1, 2], [2, 2], [3, 3]], [[1, 2], [2, 4], [3, 9]]];
+  // we define the consumes series in the last 30 days
+  let consumesSerie = Engine.GuiInterfaceCall("GetMarketConsumesSerie", {
+    cityID: cityID
+  });
+
+  chart.series = [consumesSerie, [[1, 2], [2, 4], [3, 9]]];
 }
 
 function GetIconName(happylevel) {

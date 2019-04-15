@@ -891,6 +891,37 @@ GuiInterface.prototype.GetMarket = function(player, data) {
   return cmpProductsManager.GetMarket();
 };
 
+GuiInterface.prototype.GetMarketStats = function(player, data) {
+  // we ask for the prices to build the construction
+  let cmpProductsManager = Engine.QueryInterface(
+    SYSTEM_ENTITY,
+    IID_ProductsManager
+  );
+
+  return cmpProductsManager.GetMarketStats();
+};
+
+GuiInterface.prototype.GetMarketConsumesSerie = function(player, data) {
+  let consumesSerie = [];
+  // we define the cmp
+  let cmpProductsManager = Engine.QueryInterface(
+    SYSTEM_ENTITY,
+    IID_ProductsManager
+  );
+  let marketStats = cmpProductsManager.GetMarketStats();
+  let thisMonthData = marketStats.day; //.slice(0, 30);
+  thisMonthData.forEach((dayData, index) => {
+    let tot = 0;
+    let bread = 0;
+    for (let type in dayData.consumes[data.cityID]) {
+      tot += dayData.consumes[data.cityID][type];
+    }
+
+    consumesSerie.push([index, tot]);
+  });
+  return consumesSerie;
+};
+
 GuiInterface.prototype.GetProductData = function(player, data) {
   // we ask for the prices to build the construction
   //error(data.type);
@@ -2250,6 +2281,8 @@ let exposedFunctions = {
   GetAllBuildableEntitiesFromOneEnt: 1,
   // === Economy Functions == \\
   GetMarket: 1,
+  GetMarketStats: 1,
+  GetMarketConsumesSerie: 1,
   GetProductData: 1,
   GetBuilderQuotation: 1,
   GetAllConsumingProducts: 1,

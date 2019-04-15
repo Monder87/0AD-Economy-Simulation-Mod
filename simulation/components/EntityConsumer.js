@@ -182,7 +182,7 @@ EntityConsumer.prototype.Init = function() {
   this.productNeedPriority = {};
   this.InitStock();
   this.GetProductNeededCosumesRates();
-  this.GetProductNeededDailyAvailability();
+  //this.GetProductNeededDailyAvailability();
   this.test = 0;
 };
 
@@ -215,6 +215,11 @@ EntityConsumer.prototype.OnTimerDayChanged = function(msg) {
 EntityConsumer.prototype.ConsumeDaily = function() {
   for (let type in this.productDailyConsume) {
     this.productsCarring[type] -= this.productDailyConsume[type];
+    Engine.BroadcastMessage(MT_ProductConsumed, {
+      ent: this.entity,
+      type: type,
+      consume: Number(this.productDailyConsume[type])
+    });
   }
 };
 
