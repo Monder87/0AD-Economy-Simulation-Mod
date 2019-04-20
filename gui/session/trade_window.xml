@@ -89,22 +89,22 @@
 						<object name="allTimeIntervalButton" type="button" size="110 84% 200 89%" style="StoneButton" >
 							<translatableAttribute id="caption">Total</translatableAttribute>
 						</object>
-						<object name="allTimeIntervalButtonSelection" type="image" ghost="true" />
+						<object name="allTimeIntervalButtonSelection" type="image" ghost="true" size="110 84% 200 89%" />
 						<object name="dayIntervalButton" type="button" size="210 84% 300 89%" style="StoneButton" >
 							<translatableAttribute id="caption">Daily</translatableAttribute>
 						</object>
-						<object name="dayIntervalButtonSelection" type="image" ghost="true" />
+						<object name="dayIntervalButtonSelection" type="image" ghost="true" size="210 84% 300 89%"/>
 						<object name="title2chart" type="text" size="10 90% 100 96%" style="ModernLabelText" >
 							<translatableAttribute id="caption">Period:</translatableAttribute>
 						</object>
 						<object name="allTimePeriodButton" type="button" size="110 90% 200 95%" style="StoneButton" >
 							<translatableAttribute id="caption">Total</translatableAttribute>
 						</object>
-						<object name="allTimePeriodButtonSelection" type="image" ghost="true" />
+						<object name="allTimePeriodButtonSelection" type="image" ghost="true" size="110 90% 200 95%"/>
 						<object name="monthPeriodButton" type="button" size="210 90% 300 95%" style="StoneButton" >
 							<translatableAttribute id="caption">Month</translatableAttribute>
 						</object>
-						<object name="monthPeriodButtonSelection" type="image" ghost="true" />
+						<object name="monthPeriodButtonSelection" type="image" ghost="true" size="210 90% 300 95%"/>
 				</object>
 			</object>
 		</object>

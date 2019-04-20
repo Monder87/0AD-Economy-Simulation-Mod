@@ -859,6 +859,7 @@ function openEconomy() {
   //let entState = Engine.GuiInterfaceCall("GetSimulationState", {});
   market.unshift(0);
   let currTradeSelection = null;
+
   // we define the function to update the selection on the cities selected
   let updateTradeButtons = function() {
     for (let city in button) {
@@ -1012,6 +1013,7 @@ function openEconomy() {
         let happyIcon = Engine.GetGUIObjectByName("ecopanelHappyIcon");
 
         // we set up the  Economy Chart
+
         let interval;
         let period;
 
@@ -1026,30 +1028,40 @@ function openEconomy() {
           return () => {
             interval = "total";
             initCityEconomyGUICharts(cityID, interval, period);
-            let intervalButton1 = Engine.GetGUIObjectByName(
-              "allTimeIntervalButton"
+            let selectButtonChart = Engine.GetGUIObjectByName(
+              "allTimeIntervalButtonSelection"
             );
-            Engine.GetGUIObjectByName(
-              "allTimePeriodButtonSelection"
-            ).hidden = false;
+            updateTradeButtonsChartInterval(selectButtonChart);
           };
         })(intervalButton1);
         intervalButton2.onPress = (button => {
           return () => {
             interval = "daily";
             initCityEconomyGUICharts(cityID, interval, period);
+            let selectButtonChart = Engine.GetGUIObjectByName(
+              "dayIntervalButtonSelection"
+            );
+            updateTradeButtonsChartInterval(selectButtonChart);
           };
         })(intervalButton2);
         periodButton1.onPress = (button => {
           return () => {
             period = "total";
             initCityEconomyGUICharts(cityID, interval, period);
+            let selectButtonChart = Engine.GetGUIObjectByName(
+              "allTimePeriodButtonSelection"
+            );
+            updateTradeButtonsChartPeriod(selectButtonChart);
           };
         })(periodButton1);
         periodButton2.onPress = (button => {
           return () => {
             period = "month";
             initCityEconomyGUICharts(cityID, interval, period);
+            let selectButtonChart = Engine.GetGUIObjectByName(
+              "monthPeriodButtonSelection"
+            );
+            updateTradeButtonsChartPeriod(selectButtonChart);
           };
         })(periodButton2);
 
@@ -1199,6 +1211,33 @@ function displaySingleTemplate(entState) {
   return GetTemplateData(entState.template);
 }
 
+let updateTradeButtonsChartInterval = function(button) {
+  let buttons = [
+    Engine.GetGUIObjectByName("allTimeIntervalButtonSelection"),
+    Engine.GetGUIObjectByName("dayIntervalButtonSelection")
+  ];
+  buttons.forEach(button => {
+    button.hidden = true;
+  });
+  let selection = buttons.filter(selection => selection == button);
+
+  selection[0].hidden = false;
+  selection[0].sprite = "stretched:session/icons/corners.png";
+};
+let updateTradeButtonsChartPeriod = function(button) {
+  let buttons = [
+    Engine.GetGUIObjectByName("allTimePeriodButtonSelection"),
+    Engine.GetGUIObjectByName("monthPeriodButtonSelection")
+  ];
+  buttons.forEach(button => {
+    button.hidden = true;
+  });
+  let selection = buttons.filter(selection => selection == button);
+
+  selection[0].hidden = false;
+  selection[0].sprite = "stretched:session/icons/corners.png";
+};
+
 function initCityEconomyGUICharts(
   cityID,
   interval = "total",
@@ -1207,7 +1246,7 @@ function initCityEconomyGUICharts(
   let chartLegend = Engine.GetGUIObjectByName("chartLegend");
   chartLegend.caption = "■" + " " + "Consumption";
   let chartLegend2 = Engine.GetGUIObjectByName("chartLegend2");
-  chartLegend2.caption = "■" + " " + "Gdp";
+  chartLegend2.caption = "■" + " " + "Production";
   let chartPart = Engine.GetGUIObjectByName("chartPart");
   let chart = Engine.GetGUIObjectByName("chart");
   chart.series_color = ["green", "white"];
