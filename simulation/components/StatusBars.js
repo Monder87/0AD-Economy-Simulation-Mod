@@ -237,13 +237,14 @@ StatusBars.prototype.AddCityName = function(cmpOverlayRenderer, yoffset) {
   let cmpIdentity = QueryMiragedInterface(this.entity, IID_Identity);
   if (cmpIdentity.GetCityName()) {
     let cityname = cmpIdentity.GetCityName().replace(/[0-9]/g, "");
+    let civ = cmpIdentity.GetCiv();
     let width = 20;
     let height = 6;
     let offset = { x: 0, y: 5, z: 0 };
     yoffset = 15;
     //this.happinessIcon
     cmpOverlayRenderer.AddSprite(
-      `art/textures/ui/session/icons/cities/${cityname}.png`,
+      `art/textures/ui/session/icons/cities/${civ}/${cityname}.png`,
       //"art/textures/ui/session/icons/happy.png",
       { x: -width / 2, y: yoffset },
       { x: width / 2, y: height + yoffset },

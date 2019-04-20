@@ -1158,9 +1158,9 @@ function displaySingleTemplate(entState) {
 
 function initCityEconomyGUICharts(cityID) {
   let chartLegend = Engine.GetGUIObjectByName("chartLegend");
-  chartLegend.caption = "■" + " " + "Gdp";
+  chartLegend.caption = "■" + " " + "Consumption";
   let chartLegend2 = Engine.GetGUIObjectByName("chartLegend2");
-  chartLegend2.caption = "■" + " " + "Consumes";
+  chartLegend2.caption = "■" + " " + "Gdp";
   let chartPart = Engine.GetGUIObjectByName("chartPart");
 
   //Engine.GetGUIObjectByName("chartXAxisLabel").caption = translate(

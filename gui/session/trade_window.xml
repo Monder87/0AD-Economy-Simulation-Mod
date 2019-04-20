@@ -79,7 +79,7 @@
 							<object name="chart" type="chart" style="ModernChart" format_x="DURATION_SHORT" format_y="INTEGER" size="5 80 100%-5 100%-25"/>
 							<object name="chartXAxisLabel" type="text" style="ModernLabelText" size="5 100%-25 100%-5 100%-5"/></object>
 						<object name="chartLegend" type="text" textcolor="green" size="15 100%-35 100%-15 100%-5"/>
-						<object name="chartLegend2" type="text" textcolor="white" size="105 100%-35 100%-35 100%-5"/></object>
+						<object name="chartLegend2" type="text" textcolor="white" size="205 100%-35 100%-35 100%-5"/></object>
 				</object>
 			</object>
 		</object>

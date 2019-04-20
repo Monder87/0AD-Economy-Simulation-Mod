@@ -5,6 +5,7 @@ CityNameGenerator.prototype.Schema =
 
 CityNameGenerator.prototype.Init = function() {
   this.Cities = {};
+  // cart
   this.cartCities = [
     "Malaca",
     "Carthage",
@@ -21,8 +22,8 @@ CityNameGenerator.prototype.Init = function() {
   this.cartCityCounter2 = 1;
   // kush
   this.kushCities = [
-    "Napata﻿",
-    "Meroë﻿",
+    "Napata",
+    "Meroe",
     "Naqa",
     "Kawa",
     "Tabo",
@@ -30,15 +31,34 @@ CityNameGenerator.prototype.Init = function() {
     "Dangeil",
     "Basa",
     "Sedeinga",
-    "Sonijat ",
+    "Sonijat",
     "Muweis",
     "Karanog",
     "Dakka",
-    "Hamadab﻿﻿",
-    "Amara﻿ East"
+    "Hamadab",
+    "AmaraEast"
   ];
   this.kushCityCounter = 0;
   this.kushCityCounter2 = 1;
+  // athen
+  this.athenCities = [
+    "Athens",
+    "Aphidnae",
+    "Acharnae",
+    "Cephisia",
+    "Cytherus",
+    "Decelea",
+    "Delos",
+    "Eleusis",
+    "Laurium",
+    "Marathon",
+    "Phaeleron",
+    "Piraeus",
+    "Plataea",
+    "Rhamnous"
+  ];
+  this.athenCityCounter = 0;
+  this.athenCityCounter2 = 1;
 };
 
 CityNameGenerator.prototype.GenerateCityName = function(civ) {
@@ -47,6 +67,9 @@ CityNameGenerator.prototype.GenerateCityName = function(civ) {
   }
   if (this.kushCityCounter % this.kushCities.length == 0) {
     this.kushCityCounter2 += 1;
+  }
+  if (this.athenCityCounter % this.athenCities.length == 0) {
+    this.athenCityCounter2 += 1;
   }
   if (civ == "cart") {
     // we choose first
@@ -66,6 +89,13 @@ CityNameGenerator.prototype.GenerateCityName = function(civ) {
     let city2 = city.replace(/[0-9]/g, "");
     this.kushCities.push(`${city2}${this.kushCityCounter2}`);
     this.kushCityCounter += 1;
+    return city;
+  } else if (civ == "athen") {
+    let city = this.athenCities[0];
+    this.athenCities.shift();
+    let city2 = city.replace(/[0-9]/g, "");
+    this.athenCities.push(`${city2}${this.athenCityCounter2}`);
+    this.athenCityCounter += 1;
     return city;
   }
 };
