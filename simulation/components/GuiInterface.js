@@ -902,6 +902,7 @@ GuiInterface.prototype.GetMarketStats = function(player, data) {
 };
 
 GuiInterface.prototype.GetMarketConsumesSerie = function(player, data) {
+  // we init the consumes series
   let consumesSerie = [];
   // we define the cmp
   let cmpProductsManager = Engine.QueryInterface(
@@ -909,16 +910,33 @@ GuiInterface.prototype.GetMarketConsumesSerie = function(player, data) {
     IID_ProductsManager
   );
   let marketStats = cmpProductsManager.GetMarketStats();
-  let thisMonthData = marketStats.day; //.slice(0, 30);
-  thisMonthData.forEach((dayData, index) => {
+  // we init the data var
+  let thisData;
+  // we sampling the data based on period criteria
+  if (data.period == "total") {
+    // we get all time Period
+    thisData = marketStats.day;
+  } else if (data.period == "month") {
+    // we get just last 30 days Period
+    thisData = marketStats.day.slice(-30);
+  }
+  // we sampling the data based on interval criteria
+  let yesterdayConsumption = 0;
+  thisData.forEach((dayData, index) => {
     let tot = 0;
-    let bread = 0;
+    // we calculate all consumption sums of each products types
     for (let type in dayData.consumes[data.cityID]) {
       tot += dayData.consumes[data.cityID][type];
     }
-
-    consumesSerie.push([index, tot]);
+    if (data.interval == "total") {
+      consumesSerie.push([index, tot]);
+    } else if (data.interval == "daily") {
+      let dayliyConsumption = tot - yesterdayConsumption;
+      yesterdayConsumption = tot;
+      consumesSerie.push([index, dayliyConsumption]);
+    }
   });
+
   return consumesSerie;
 };
 

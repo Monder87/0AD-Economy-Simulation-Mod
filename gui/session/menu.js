@@ -986,6 +986,7 @@ function openEconomy() {
 
       return () => {
         // we open the city panel
+
         g_IsEconomyCities = false;
         Engine.GetGUIObjectByName("economyCities").hidden = true;
         Engine.GetGUIObjectByName("closeEconomyCityButton").hidden = false;
@@ -1009,8 +1010,50 @@ function openEconomy() {
           "economicPanelHappyCounter"
         );
         let happyIcon = Engine.GetGUIObjectByName("ecopanelHappyIcon");
+
         // we set up the  Economy Chart
-        initCityEconomyGUICharts(cityID);
+        let interval;
+        let period;
+
+        let intervalButton1 = Engine.GetGUIObjectByName(
+          "allTimeIntervalButton"
+        );
+        let intervalButton2 = Engine.GetGUIObjectByName("dayIntervalButton");
+        let periodButton1 = Engine.GetGUIObjectByName("allTimePeriodButton");
+        let periodButton2 = Engine.GetGUIObjectByName("monthPeriodButton");
+        // we set the user action on economy chart button
+        intervalButton1.onPress = (button => {
+          return () => {
+            interval = "total";
+            initCityEconomyGUICharts(cityID, interval, period);
+            let intervalButton1 = Engine.GetGUIObjectByName(
+              "allTimeIntervalButton"
+            );
+            Engine.GetGUIObjectByName(
+              "allTimePeriodButtonSelection"
+            ).hidden = false;
+          };
+        })(intervalButton1);
+        intervalButton2.onPress = (button => {
+          return () => {
+            interval = "daily";
+            initCityEconomyGUICharts(cityID, interval, period);
+          };
+        })(intervalButton2);
+        periodButton1.onPress = (button => {
+          return () => {
+            period = "total";
+            initCityEconomyGUICharts(cityID, interval, period);
+          };
+        })(periodButton1);
+        periodButton2.onPress = (button => {
+          return () => {
+            period = "month";
+            initCityEconomyGUICharts(cityID, interval, period);
+          };
+        })(periodButton2);
+
+        initCityEconomyGUICharts(cityID, interval, period);
         // we set the pop counter and avarage happyness
         popCounter.caption = `${marketSelected.pop}`;
         happyCounter.caption = `${Math.floor(
@@ -1156,37 +1199,24 @@ function displaySingleTemplate(entState) {
   return GetTemplateData(entState.template);
 }
 
-function initCityEconomyGUICharts(cityID) {
+function initCityEconomyGUICharts(
+  cityID,
+  interval = "total",
+  period = "total"
+) {
   let chartLegend = Engine.GetGUIObjectByName("chartLegend");
   chartLegend.caption = "■" + " " + "Consumption";
   let chartLegend2 = Engine.GetGUIObjectByName("chartLegend2");
   chartLegend2.caption = "■" + " " + "Gdp";
   let chartPart = Engine.GetGUIObjectByName("chartPart");
-
-  //Engine.GetGUIObjectByName("chartXAxisLabel").caption = translate(
-  //  "Time elapsed"
-  //);
-  /*
-  let series = [];
-  for (let j = 1; j <= 2; ++j) {
-    let time = [1, 2, 3, 4];
-    let data = [];
-    let type = "gdp";
-    for (let index in time) {
-      let value = {
-        gdp: 7
-      };
-      if (type) value = value[type];
-      data.push(time, value);
-    }
-    series.push(data);
-  }
-  */
   let chart = Engine.GetGUIObjectByName("chart");
   chart.series_color = ["green", "white"];
-  // we define the consumes series in the last 30 days
+
+  // we get the data
   let consumesSerie = Engine.GuiInterfaceCall("GetMarketConsumesSerie", {
-    cityID: cityID
+    cityID: cityID,
+    interval: interval,
+    period: period
   });
 
   chart.series = [consumesSerie, [[1, 2], [2, 4], [3, 9]]];
