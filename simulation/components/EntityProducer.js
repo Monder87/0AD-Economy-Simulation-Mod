@@ -130,6 +130,7 @@ EntityProducer.prototype.Init = function() {
   this.RawMaterialStock = {};
   this.ConstProductCatalogue();
   this.ConstRawMaterialStock();
+  this.dayOfMonth = 0;
 };
 
 EntityProducer.prototype.Identify = function() {
@@ -224,6 +225,45 @@ EntityProducer.prototype.GetProductAvailability = function(type) {
     if (type2 == type) {
       return this.productCatalogue[type2];
     }
+  }
+};
+
+// listeners
+
+EntityProducer.prototype.OnTimerDayChanged = function(msg) {
+  if (msg.day !== this.dayOfMonth) {
+    this.dayOfMonth = msg.day;
+    this.ProduceDaily();
+  }
+};
+
+EntityProducer.prototype.ProduceDaily = function() {
+  let cmpProductsManager = Engine.QueryInterface(
+    SYSTEM_ENTITY,
+    IID_ProductsManager
+  );
+  for (let product in this.productCatalogue) {
+    let productData = cmpProductsManager.GetProductData(product).data;
+    // for each product we consume some raw materials
+    for (let type in productData.rawMaterial) {
+      this.RawMaterialStock[type] -= productData.rawMaterial[type];
+      // we add them to consumption
+      Engine.BroadcastMessage(MT_ProductConsumed, {
+        ent: this.entity,
+        type: type,
+        consume: Number(productData.rawMaterial[type])
+      });
+    }
+    // we add the products to the catalogue
+    this.productCatalogue[product] += Number(
+      this.template.ProducingRate[product]
+    );
+    // we notify the products manager that we got n production
+    Engine.BroadcastMessage(MT_ProductProduced, {
+      ent: this.entity,
+      type: product,
+      production: Number(this.template.ProducingRate[product])
+    });
   }
 };
 

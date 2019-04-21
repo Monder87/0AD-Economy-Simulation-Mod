@@ -1,2 +1,2 @@
 Engine.RegisterInterface("EntityProducer");
-Engine.RegisterMessageType("EntityProducerSomething");
+Engine.RegisterMessageType("ProductProduced");

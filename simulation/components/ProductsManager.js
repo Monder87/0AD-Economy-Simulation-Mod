@@ -267,7 +267,7 @@ ProductsManager.prototype.Init = function() {
   // here where we store all consumes by city
   this.allCitiesConsumes = {};
   // here where we store all the product produces by city
-  this.allCitiesProduced = {};
+  this.allCitiesProduction = {};
   // here where we store all stats
   this.statistics = {
     day: [
@@ -372,6 +372,7 @@ ProductsManager.prototype.GetAllCityProducts = function(center) {
     pop: consumers.length,
     avarageHappiness: avarageHappiness,
     consumes: this.allCitiesConsumes[center],
+    productions: this.allCitiesProduction[center],
     producers: [],
     products: [],
     resources: playerResources,
@@ -460,16 +461,24 @@ ProductsManager.prototype.OnTimerDayChanged = function(msg) {
     this.UpdateMarket();
 
     let allCitiesConsumesCopy = {};
-    let allCitiesProducedCopy = {};
+    let allCitiesProductionCopy = {};
     for (let city in this.allCitiesConsumes) {
       allCitiesConsumesCopy[city] = {};
       for (let type in this.allCitiesConsumes[city]) {
         allCitiesConsumesCopy[city][type] = this.allCitiesConsumes[city][type];
       }
     }
+    for (let city in this.allCitiesProduction) {
+      allCitiesProductionCopy[city] = {};
+      for (let type in this.allCitiesProduction[city]) {
+        allCitiesProductionCopy[city][type] = this.allCitiesProduction[city][
+          type
+        ];
+      }
+    }
     this.statistics.day.push({
       consumes: allCitiesConsumesCopy,
-      produced: allCitiesProducedCopy
+      produced: allCitiesProductionCopy
     });
     /*
     this.statistics.day.forEach((stat, index) => {
@@ -487,9 +496,10 @@ ProductsManager.prototype.OnTimerDayChanged = function(msg) {
   }
 };
 
-ProductsManager.prototype.LocateConsumerCity = function(ent) {
+ProductsManager.prototype.LocateConsumerProducerCity = function(ent, type) {
   // we get all cities centers
-  let consumerCity;
+  let City;
+
   var cmpOwnership = Engine.QueryInterface(ent, IID_Ownership);
   var owner = cmpOwnership.GetOwner();
   var range = 100;
@@ -498,44 +508,76 @@ ProductsManager.prototype.LocateConsumerCity = function(ent) {
   if (allCitiesCenters.length > 1) {
     allCitiesCenters.forEach(function(center) {
       // we get all consumers
-
+      if (type == "consumer") {
+        let consumers = cmpRangeManager.ExecuteQuery(
+          center,
+          0,
+          range,
+          [owner],
+          IID_EntityConsumer
+        );
+        // we locate our consumer entity
+        consumers.forEach(function(cons) {
+          if (ent == cons) {
+            City = center;
+          }
+        });
+      } else {
+        let producers = cmpRangeManager.ExecuteQuery(
+          center,
+          0,
+          range,
+          [owner],
+          IID_EntityProducer
+        );
+        // we locate our consumer entity
+        producers.forEach(function(prod) {
+          if (ent == prod) {
+            City = center;
+          }
+        });
+      }
+    });
+  } else {
+    if (type == "consumer") {
       let consumers = cmpRangeManager.ExecuteQuery(
-        center,
+        allCitiesCenters[0],
         0,
         range,
         [owner],
         IID_EntityConsumer
       );
-      // we locate our consumer entity
+
       consumers.forEach(function(cons) {
         if (ent == cons) {
-          consumerCity = center;
+          let center = allCitiesCenters[0];
+          City = center;
         }
       });
-    });
-  } else {
-    let consumers = cmpRangeManager.ExecuteQuery(
-      allCitiesCenters[0],
-      0,
-      range,
-      [owner],
-      IID_EntityConsumer
-    );
+    } else {
+      let producers = cmpRangeManager.ExecuteQuery(
+        allCitiesCenters[0],
+        0,
+        range,
+        [owner],
+        IID_EntityProducer
+      );
 
-    consumers.forEach(function(cons) {
-      if (ent == cons) {
-        let center = allCitiesCenters[0];
-        consumerCity = center;
-      }
-    });
+      producers.forEach(function(prod) {
+        if (ent == prod) {
+          let center = allCitiesCenters[0];
+          City = center;
+        }
+      });
+    }
   }
-  return consumerCity;
+  return City;
 };
 
 ProductsManager.prototype.OnProductConsumed = function(msg) {
   // we locate our consumer entity
 
-  let cityWhereConsumed = this.LocateConsumerCity(msg.ent);
+  let cityWhereConsumed = this.LocateConsumerProducerCity(msg.ent, "consumer");
   let type = msg.type;
   // we update the consumes in that city
   if (!this.allCitiesConsumes.hasOwnProperty(cityWhereConsumed))
@@ -545,6 +587,22 @@ ProductsManager.prototype.OnProductConsumed = function(msg) {
     this.allCitiesConsumes[cityWhereConsumed][type] = msg.consume;
   } else {
     this.allCitiesConsumes[cityWhereConsumed][type] += msg.consume;
+  }
+};
+
+ProductsManager.prototype.OnProductProduced = function(msg) {
+  // we locate our consumer entity
+
+  let cityWhereProduced = this.LocateConsumerProducerCity(msg.ent, "producer");
+  let type = msg.type;
+  // we update the production in that city
+  if (!this.allCitiesProduction.hasOwnProperty(cityWhereProduced))
+    this.allCitiesProduction[cityWhereProduced] = {};
+
+  if (!this.allCitiesProduction[cityWhereProduced].hasOwnProperty(type)) {
+    this.allCitiesProduction[cityWhereProduced][type] = msg.production;
+  } else {
+    this.allCitiesProduction[cityWhereProduced][type] += msg.production;
   }
 };
 

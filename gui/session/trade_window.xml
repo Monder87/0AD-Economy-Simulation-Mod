@@ -94,6 +94,12 @@
 							<translatableAttribute id="caption">Daily</translatableAttribute>
 						</object>
 						<object name="dayIntervalButtonSelection" type="image" ghost="true" size="210 84% 300 89%"/>
+						<object name="title3chart" type="text" size="310 84% 400 89%" style="ModernLabelText" >
+							<translatableAttribute id="caption">Consumption:</translatableAttribute>
+						</object>
+						<object name="title4chart" type="text" size="410 84% 500 89%" font="sans-bold-18" textcolor="white" text_align="center" text_valign="center" >
+							<translatableAttribute id="caption">+ 10%</translatableAttribute>
+						</object>
 						<object name="title2chart" type="text" size="10 90% 100 96%" style="ModernLabelText" >
 							<translatableAttribute id="caption">Period:</translatableAttribute>
 						</object>
@@ -105,6 +111,12 @@
 							<translatableAttribute id="caption">Month</translatableAttribute>
 						</object>
 						<object name="monthPeriodButtonSelection" type="image" ghost="true" size="210 90% 300 95%"/>
+						<object name="title5chart" type="text" size="310 90% 400 95%" style="ModernLabelText" >
+							<translatableAttribute id="caption">Production:</translatableAttribute>
+						</object>
+						<object name="title6chart" type="text" size="410 90% 500 95%" font="sans-bold-18" textcolor="white" text_align="center" text_valign="center" >
+							<translatableAttribute id="caption">+ 10%</translatableAttribute>
+						</object>
 				</object>
 			</object>
 		</object>

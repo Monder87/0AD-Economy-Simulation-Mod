@@ -901,9 +901,10 @@ GuiInterface.prototype.GetMarketStats = function(player, data) {
   return cmpProductsManager.GetMarketStats();
 };
 
-GuiInterface.prototype.GetMarketConsumesSerie = function(player, data) {
+GuiInterface.prototype.GetMarketSeries = function(player, data) {
   // we init the consumes series
   let consumesSerie = [];
+  let productionsSerie = [];
   // we define the cmp
   let cmpProductsManager = Engine.QueryInterface(
     SYSTEM_ENTITY,
@@ -922,22 +923,47 @@ GuiInterface.prototype.GetMarketConsumesSerie = function(player, data) {
   }
   // we sampling the data based on interval criteria
   let yesterdayConsumption = 0;
+  let yesterdayProduction = 0;
+  let consumptionTrend;
+  let productionsTrend;
   thisData.forEach((dayData, index) => {
     let tot = 0;
+    let tot2 = 0;
     // we calculate all consumption sums of each products types
     for (let type in dayData.consumes[data.cityID]) {
       tot += dayData.consumes[data.cityID][type];
     }
+    for (let type in dayData.produced[data.cityID]) {
+      tot2 += dayData.produced[data.cityID][type];
+    }
     if (data.interval == "total") {
       consumesSerie.push([index, tot]);
+      productionsSerie.push([index, tot2]);
     } else if (data.interval == "daily") {
       let dayliyConsumption = tot - yesterdayConsumption;
       yesterdayConsumption = tot;
       consumesSerie.push([index, dayliyConsumption]);
+
+      let dayliyProduction = tot2 - yesterdayProduction;
+      yesterdayProduction = tot2;
+      productionsSerie.push([index, dayliyProduction]);
     }
   });
+  let consumesSerieCopy = consumesSerie;
+  let values = consumesSerieCopy.slice(-2);
+  consumptionTrend = (values[1][1] - values[0][1]) / (values[0][1] / 100);
+  consumptionTrend = Math.round(consumptionTrend * 100) / 100;
+  let productionsSerieCopy = productionsSerie;
+  let values2 = productionsSerieCopy.slice(-2);
+  productionsTrend = (values2[1][1] - values2[0][1]) / (values2[0][1] / 100);
+  productionsTrend = Math.round(productionsTrend * 100) / 100;
 
-  return consumesSerie;
+  return {
+    consumes: consumesSerie,
+    consumptionTrend: consumptionTrend,
+    productions: productionsSerie,
+    productionsTrend: productionsTrend
+  };
 };
 
 GuiInterface.prototype.GetProductData = function(player, data) {
@@ -2300,7 +2326,7 @@ let exposedFunctions = {
   // === Economy Functions == \\
   GetMarket: 1,
   GetMarketStats: 1,
-  GetMarketConsumesSerie: 1,
+  GetMarketSeries: 1,
   GetProductData: 1,
   GetBuilderQuotation: 1,
   GetAllConsumingProducts: 1,

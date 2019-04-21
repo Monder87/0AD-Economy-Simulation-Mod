@@ -1224,6 +1224,7 @@ let updateTradeButtonsChartInterval = function(button) {
   selection[0].hidden = false;
   selection[0].sprite = "stretched:session/icons/corners.png";
 };
+
 let updateTradeButtonsChartPeriod = function(button) {
   let buttons = [
     Engine.GetGUIObjectByName("allTimePeriodButtonSelection"),
@@ -1252,13 +1253,46 @@ function initCityEconomyGUICharts(
   chart.series_color = ["green", "white"];
 
   // we get the data
-  let consumesSerie = Engine.GuiInterfaceCall("GetMarketConsumesSerie", {
+  let economySeries = Engine.GuiInterfaceCall("GetMarketSeries", {
     cityID: cityID,
     interval: interval,
     period: period
   });
+  let colorConsumptionTrend = null;
+  let trendCons = null;
+  let colorProductionTrend = null;
+  let trendProd = null;
+  if (economySeries.consumptionTrend > 0) {
+    colorConsumptionTrend = "green";
+    trendCons = "+";
+  } else if (economySeries.consumptionTrend < 0) {
+    colorConsumptionTrend = "red";
+    trendCons = "-";
+  } else {
+    colorConsumptionTrend = "orange";
+    trendCons = "~";
+  }
+  if (economySeries.productionsTrend > 0) {
+    colorProductionTrend = "green";
+    trendProd = "+";
+  } else if (economySeries.productionsTrend < 0) {
+    colorProductionTrend = "red";
+    trendProd = "-";
+  } else {
+    colorProductionTrend = "orange";
+    trendProd = "~";
+  }
 
-  chart.series = [consumesSerie, [[1, 2], [2, 4], [3, 9]]];
+  Engine.GetGUIObjectByName("title4chart").textcolor = colorConsumptionTrend;
+  Engine.GetGUIObjectByName("title4chart").caption = `${trendCons} ${
+    economySeries.consumptionTrend
+  } %`;
+  Engine.GetGUIObjectByName("title6chart").textcolor = colorProductionTrend;
+  Engine.GetGUIObjectByName("title6chart").caption = `${trendProd} ${
+    economySeries.productionsTrend
+  } %`;
+
+  chart.series = [economySeries.consumes, economySeries.productions];
 }
 
 function GetIconName(happylevel) {
