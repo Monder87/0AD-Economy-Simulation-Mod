@@ -901,6 +901,16 @@ GuiInterface.prototype.GetMarketStats = function(player, data) {
   return cmpProductsManager.GetMarketStats();
 };
 
+GuiInterface.prototype.GetProductPrice = function(player, data) {
+  // we ask for the prices to build the construction
+  let cmpProductsManager = Engine.QueryInterface(
+    SYSTEM_ENTITY,
+    IID_ProductsManager
+  );
+
+  return cmpProductsManager.GetProductPrice(data.type, data.cityId);
+};
+
 GuiInterface.prototype.GetMarketSeries = function(player, data) {
   // we init the consumes series
   let consumesSerie = [];
@@ -2326,6 +2336,7 @@ let exposedFunctions = {
   // === Economy Functions == \\
   GetMarket: 1,
   GetMarketStats: 1,
+  GetProductPrice: 1,
   GetMarketSeries: 1,
   GetProductData: 1,
   GetBuilderQuotation: 1,

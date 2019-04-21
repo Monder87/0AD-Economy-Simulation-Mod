@@ -1157,13 +1157,19 @@ function openEconomy() {
                   if (i2 < 4) {
                     setPanelObjectPosition(containerProduct, i2, i2 + 1, 10);
                   } else if (i2 >= 4 && i2 < 8) {
-                    setPanelObjectPosition(containerProduct, i2, 4, 10, 20, 10);
+                    setPanelObjectPosition(containerProduct, i2, 4, 10, 8, 10);
                   } else if (i2 >= 8 && i2 < 12) {
-                    setPanelObjectPosition(containerProduct, i2, 4, 10, 20, 50);
+                    setPanelObjectPosition(containerProduct, i2, 4, 10, 8, 50);
                   } else if (i2 >= 12 && i2 < 16) {
-                    setPanelObjectPosition(containerProduct, i2, 4, 10, 20, 50);
+                    setPanelObjectPosition(containerProduct, i2, 4, 10, 8, 50);
                   } else if (i2 >= 16 && i2 < 20) {
-                    setPanelObjectPosition(containerProduct, i2, 4, 10, 20, 50);
+                    setPanelObjectPosition(containerProduct, i2, 4, 10, 8, 50);
+                  } else if (i2 >= 20 && i2 < 24) {
+                    setPanelObjectPosition(containerProduct, i2, 4, 10, 8, 50);
+                  } else if (i2 >= 24 && i2 < 28) {
+                    setPanelObjectPosition(containerProduct, i2, 4, 10, 8, 50);
+                  } else if (i2 >= 28 && i2 < 32) {
+                    setPanelObjectPosition(containerProduct, i2, 4, 10, 8, 50);
                   }
                   // we get the icon
 
@@ -1176,9 +1182,17 @@ function openEconomy() {
                     ? (productActive = true)
                     : (productActive = false);
                   let grayscale = productActive ? "" : "grayscale:";
-                  buttonProductIcon.sprite = `stretched:${grayscale}session/icons/products/${
-                    CityPanelMarket[i].products[i2].name
-                  }.png`;
+
+                  if (i2 < 20) {
+                    buttonProductIcon.sprite = `stretched:${grayscale}session/icons/products/${
+                      CityPanelMarket[i].products[i2].name
+                    }.png`;
+                  } else if (i2 >= 20) {
+                    buttonProductIcon.sprite = `stretched:${grayscale}session/icons/resources/${
+                      CityPanelMarket[i].products[i2].name
+                    }.png`;
+                  }
+
                   buttonProductIcon.tooltip = sprintf(translate("%(name)s"), {
                     name: CityPanelMarket[i].products[i2].name
                   });
@@ -1189,6 +1203,14 @@ function openEconomy() {
                   buttonProductQTY.caption = translate(
                     CityPanelMarket[i].products[i2].data.available
                   );
+                  let buttonProductPrice = Engine.GetGUIObjectByName(
+                    "productPriceText[" + i2 + "]"
+                  );
+                  let price = Engine.GuiInterfaceCall("GetProductPrice", {
+                    type: CityPanelMarket[i].products[i2].name,
+                    cityId: CityPanelCityID
+                  });
+                  buttonProductPrice.caption = translate(price);
                 }
               }
             }

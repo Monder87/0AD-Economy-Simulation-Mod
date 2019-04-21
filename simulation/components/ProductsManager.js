@@ -66,6 +66,8 @@ ProductsManager.prototype.Init = function() {
     bread: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         grain: 5,
         wood: 10
@@ -75,6 +77,8 @@ ProductsManager.prototype.Init = function() {
     cheese: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         milk: 5,
         wood: 10
@@ -84,6 +88,8 @@ ProductsManager.prototype.Init = function() {
     sausage: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         herbs: 5,
         meat: 10,
@@ -94,6 +100,8 @@ ProductsManager.prototype.Init = function() {
     soup: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         herbs: 5,
         wood: 10
@@ -103,6 +111,8 @@ ProductsManager.prototype.Init = function() {
     beer: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         herbs: 10,
         wood: 20,
@@ -113,6 +123,8 @@ ProductsManager.prototype.Init = function() {
     cake: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         milk: 15,
         fruit: 15,
@@ -123,6 +135,8 @@ ProductsManager.prototype.Init = function() {
     soap: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         oil: 15,
         meat: 30,
@@ -133,6 +147,8 @@ ProductsManager.prototype.Init = function() {
     broom: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         metal: 10,
         wood: 20
@@ -142,6 +158,8 @@ ProductsManager.prototype.Init = function() {
     parfume: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         metal: 10,
         wood: 50,
@@ -153,6 +171,8 @@ ProductsManager.prototype.Init = function() {
     woolenClothes: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         wool: 50,
         metal: 15,
@@ -163,6 +183,8 @@ ProductsManager.prototype.Init = function() {
     leatherClothes: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         meat: 40,
         wool: 30,
@@ -174,6 +196,8 @@ ProductsManager.prototype.Init = function() {
     shoes: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         wool: 20,
         metal: 15,
@@ -184,6 +208,8 @@ ProductsManager.prototype.Init = function() {
     banner: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         wool: 30,
         metal: 15,
@@ -194,6 +220,8 @@ ProductsManager.prototype.Init = function() {
     indoorDecoration: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         wool: 50,
         stone: 50,
@@ -205,6 +233,8 @@ ProductsManager.prototype.Init = function() {
     outdoorDecoration: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         stone: 100,
         metal: 50,
@@ -215,6 +245,8 @@ ProductsManager.prototype.Init = function() {
     jewellery: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         stone: 200,
         metal: 200,
@@ -225,6 +257,8 @@ ProductsManager.prototype.Init = function() {
     sword: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         stone: 20,
         metal: 50,
@@ -235,6 +269,8 @@ ProductsManager.prototype.Init = function() {
     bow: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         stone: 20,
         metal: 30,
@@ -245,6 +281,8 @@ ProductsManager.prototype.Init = function() {
     shield: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         stone: 30,
         metal: 80,
@@ -255,11 +293,90 @@ ProductsManager.prototype.Init = function() {
     engineParts: {
       available: 0,
       initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       rawMaterial: {
         stone: 60,
         metal: 100,
         wood: 100
       },
+      processingTime: 40
+    },
+    fish: {
+      available: 0,
+      initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
+      processingTime: 40
+    },
+    milk: {
+      available: 0,
+      initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
+      processingTime: 40
+    },
+    oil: {
+      available: 0,
+      initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
+      processingTime: 40
+    },
+    herbs: {
+      available: 0,
+      initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
+      processingTime: 40
+    },
+    wool: {
+      available: 0,
+      initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
+      processingTime: 40
+    },
+    fruit: {
+      available: 0,
+      initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
+      processingTime: 40
+    },
+    grain: {
+      available: 0,
+      initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
+      processingTime: 40
+    },
+    meat: {
+      available: 0,
+      initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
+      processingTime: 40
+    },
+    metal: {
+      available: 0,
+      initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
+      processingTime: 40
+    },
+    wood: {
+      available: 0,
+      initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
+      processingTime: 40
+    },
+    stone: {
+      available: 0,
+      initialPrice: 5,
+      actualPrice: 5,
+      cost: 0,
       processingTime: 40
     }
   };
@@ -283,6 +400,45 @@ ProductsManager.prototype.Init = function() {
   this.marketNew = [];
   // we initialize the market for the first time
   this.InitMarket();
+};
+ProductsManager.prototype.GetProductPrice = function(type, cityID) {
+  // we get the day stat
+  let todayStat = this.statistics.day[this.statistics.day.length - 1];
+  // we get the city stats of consumption and production of today
+  let todayConsumeCityStat = todayStat.consumes[cityID];
+  let todayProductionCityStat = todayStat.produced[cityID];
+
+  // we calculate the ratio dividing supply for demand
+  let ratio;
+  if (todayProductionCityStat[type] && todayConsumeCityStat[type]) {
+    ratio = todayProductionCityStat[type] / todayConsumeCityStat[type];
+  } else if (!todayProductionCityStat[type] && todayConsumeCityStat[type]) {
+    ratio = 0.1 / todayConsumeCityStat[type];
+  } else if (todayProductionCityStat[type] && !todayConsumeCityStat[type]) {
+    ratio = todayProductionCityStat[type] / 0.1;
+  } else if (!todayProductionCityStat[type] && !todayConsumeCityStat[type]) {
+    ratio = 1;
+  }
+  // we get the cost
+  let cost = 0;
+  // if is a processed product
+
+  if (this.products[type].rawMaterial) {
+    for (let rawMaterial in this.products[type].rawMaterial) {
+      let costraw = this.GetProductPrice(rawMaterial, cityID);
+      let totalCost = costraw * this.products[type].rawMaterial[rawMaterial];
+
+      cost += totalCost;
+    }
+  } else {
+    // otherwise we give a base cost of 1 dollar
+    cost = 1;
+  }
+  //we define an avarage profit margin of 12% and we proportionate it with the ratio of supply and demand
+  let markup = cost / 100 * 12 / ratio;
+  // we calculate the price
+  let price = cost + markup;
+  return Math.round(price * 100) / 100;
 };
 
 ProductsManager.prototype.GetProductData = function(type) {
@@ -440,8 +596,6 @@ ProductsManager.prototype.UpdateMarket = function() {
     _this.marketNew.push(cityMarket);
   });
 };
-
-ProductsManager.prototype.GetMarketPrice = function(product, trade_type) {};
 
 ProductsManager.prototype.GetMarket = function() {
   this.UpdateMarket();
