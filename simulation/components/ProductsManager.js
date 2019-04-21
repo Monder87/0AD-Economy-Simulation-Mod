@@ -634,19 +634,6 @@ ProductsManager.prototype.OnTimerDayChanged = function(msg) {
       consumes: allCitiesConsumesCopy,
       produced: allCitiesProductionCopy
     });
-    /*
-    this.statistics.day.forEach((stat, index) => {
-      error(index);
-      for (let city in stat.consumes) {
-        //error(city);
-        for (let type in stat.consumes[city]) {
-          if (type == "bread") {
-            error(type);
-            error(stat.consumes[city][type]);
-          }
-        }
-      }
-    });*/
   }
 };
 
@@ -659,72 +646,76 @@ ProductsManager.prototype.LocateConsumerProducerCity = function(ent, type) {
   var range = 100;
   let cmpRangeManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager);
   let allCitiesCenters = this.GetAllCivCenters();
-  if (allCitiesCenters.length > 1) {
-    allCitiesCenters.forEach(function(center) {
-      // we get all consumers
+
+  if (allCitiesCenters.length > 0) {
+    if (allCitiesCenters.length > 1) {
+      allCitiesCenters.forEach(function(center) {
+        // we get all consumers
+        if (type == "consumer") {
+          let consumers = cmpRangeManager.ExecuteQuery(
+            center,
+            0,
+            range,
+            [owner],
+            IID_EntityConsumer
+          );
+          // we locate our consumer entity
+          consumers.forEach(function(cons) {
+            if (ent == cons) {
+              City = center;
+            }
+          });
+        } else {
+          let producers = cmpRangeManager.ExecuteQuery(
+            center,
+            0,
+            range,
+            [owner],
+            IID_EntityProducer
+          );
+          // we locate our consumer entity
+          producers.forEach(function(prod) {
+            if (ent == prod) {
+              City = center;
+            }
+          });
+        }
+      });
+    } else {
       if (type == "consumer") {
         let consumers = cmpRangeManager.ExecuteQuery(
-          center,
+          allCitiesCenters[0],
           0,
           range,
           [owner],
           IID_EntityConsumer
         );
-        // we locate our consumer entity
+
         consumers.forEach(function(cons) {
           if (ent == cons) {
+            let center = allCitiesCenters[0];
             City = center;
           }
         });
       } else {
         let producers = cmpRangeManager.ExecuteQuery(
-          center,
+          allCitiesCenters[0],
           0,
           range,
           [owner],
           IID_EntityProducer
         );
-        // we locate our consumer entity
+
         producers.forEach(function(prod) {
           if (ent == prod) {
+            let center = allCitiesCenters[0];
             City = center;
           }
         });
       }
-    });
-  } else {
-    if (type == "consumer") {
-      let consumers = cmpRangeManager.ExecuteQuery(
-        allCitiesCenters[0],
-        0,
-        range,
-        [owner],
-        IID_EntityConsumer
-      );
-
-      consumers.forEach(function(cons) {
-        if (ent == cons) {
-          let center = allCitiesCenters[0];
-          City = center;
-        }
-      });
-    } else {
-      let producers = cmpRangeManager.ExecuteQuery(
-        allCitiesCenters[0],
-        0,
-        range,
-        [owner],
-        IID_EntityProducer
-      );
-
-      producers.forEach(function(prod) {
-        if (ent == prod) {
-          let center = allCitiesCenters[0];
-          City = center;
-        }
-      });
     }
   }
+
   return City;
 };
 
